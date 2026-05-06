@@ -72,6 +72,15 @@ jobs:
           name: docs-dist
           path: dist
 
+      - name: Clear target directory
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: sudo rm -rf /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/*
+
       - name: Deploy to server via SCP
         uses: appleboy/scp-action@v0.1.7
         with:
