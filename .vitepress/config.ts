@@ -17,7 +17,7 @@ export default defineConfig({
   // ========== SEO & GEO: Head Meta ==========
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/1.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/icon.png' }],
 
     // SEO: Canonical & Robots
     ['link', { rel: 'canonical', href: SITE_URL }],
@@ -193,7 +193,7 @@ export default defineConfig({
 
   // ========== Theme Config ==========
   themeConfig: {
-    logo: '/img/1.png',
+    logo: '/img/icon.png',
     siteTitle: 'AI 批改助手',
 
     nav: [
@@ -202,6 +202,13 @@ export default defineConfig({
       { text: '平台', link: '/platforms/zhixue' },
       { text: '开发者', link: '/advanced/adapter-dev' },
       { text: '更新日志', link: '/changelog' },
+      {
+        text: '加入社群',
+        items: [
+          { text: '微信交流群', link: 'https://r-l.ink/s/L9Akf' },
+          { text: 'QQ 交流群', link: 'https://r-l.ink/s/WbMrR' },
+        ],
+      },
       {
         text: 'v1.11.2',
         items: [
@@ -271,7 +278,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '基于 MIT 许可证发布',
+      message: '友情链接：<a href="https://five-plus-one.com/" target="_blank">五加一</a> · <a href="https://api.ai.five-plus-one.com/" target="_blank">5+1 AI</a><br><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">苏ICP备2025155286号-1</a> | <a href="https://beian.mps.gov.cn/" target="_blank" rel="nofollow">苏公网安备32060202002665号</a><br>本站由 <a href="https://r-l.ink/rain" target="_blank">雨云</a> 提供云计算服务，由 <a href="https://r-l.ink/upyun" target="_blank">又拍云</a> 提供文件下载 CDN 加速服务',
       copyright: 'Copyright © 2026 5plus1',
     },
 
