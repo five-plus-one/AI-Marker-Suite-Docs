@@ -199,10 +199,10 @@ export default defineConfig({
     siteTitle: 'AI 批改助手',
 
     nav: [
-      { text: '快速上手', link: '/guide/introduction' },
-      { text: '配置', link: '/config/api-setup' },
-      { text: '平台', link: '/platforms/zhixue' },
-      { text: '开发者', link: '/advanced/adapter-dev' },
+      { text: '快速上手', link: '/guide/' },
+      { text: '配置', link: '/config/' },
+      { text: '平台', link: '/platforms/' },
+      { text: '开发者', link: '/advanced/' },
       { text: '更新日志', link: '/changelog' },
       {
         text: '加入社群',
