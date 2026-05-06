@@ -226,6 +226,7 @@ export default defineConfig({
         {
           text: '入门',
           items: [
+            { text: '概述', link: '/guide/' },
             { text: '项目介绍', link: '/guide/introduction' },
             { text: '安装教程', link: '/guide/installation' },
             { text: '快速上手', link: '/guide/quickstart' },
@@ -237,6 +238,7 @@ export default defineConfig({
         {
           text: '配置',
           items: [
+            { text: '概述', link: '/config/' },
             { text: 'AI 接口配置', link: '/config/api-setup' },
             { text: '评分规则', link: '/config/rubric' },
             { text: '预设方案管理', link: '/config/presets' },
@@ -248,6 +250,7 @@ export default defineConfig({
         {
           text: '批改模式',
           items: [
+            { text: '概述', link: '/modes/' },
             { text: '普通模式', link: '/modes/normal' },
             { text: '试改模式', link: '/modes/trial' },
             { text: '无人值守模式', link: '/modes/unattended' },
@@ -258,6 +261,7 @@ export default defineConfig({
         {
           text: '支持平台',
           items: [
+            { text: '概述', link: '/platforms/' },
             { text: '智学网', link: '/platforms/zhixue' },
             { text: '七天网络', link: '/platforms/qitian' },
           ],
@@ -267,6 +271,7 @@ export default defineConfig({
         {
           text: '进阶',
           items: [
+            { text: '概述', link: '/advanced/' },
             { text: '分数纠错', link: '/advanced/correction' },
             { text: '批改历史', link: '/advanced/history' },
             { text: '开发新适配器', link: '/advanced/adapter-dev' },

@@ -1,0 +1,29 @@
+/* 侧边栏标题字体加大 */
+.VPSidebar .group .title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* 侧边栏链接字体加大 */
+.VPSidebar .VPSidebarItem .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* 侧边栏当前激活项更醒目 */
+.VPSidebar .VPSidebarItem.is-active > .item > .indicator {
+  width: 3px;
+}
+
+.VPSidebar .VPSidebarItem.is-active > .item > .text {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* 侧边栏分组间距 */
+.VPSidebar .group + .group {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--vp-c-divider);
+}
