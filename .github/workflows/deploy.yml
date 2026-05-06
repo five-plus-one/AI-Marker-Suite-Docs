@@ -92,5 +92,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            chown -R www:www /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
-            chmod -R 755 /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
+            sudo chown -R www:www /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
+            sudo chmod -R 755 /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
