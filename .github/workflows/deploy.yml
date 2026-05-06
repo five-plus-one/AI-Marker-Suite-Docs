@@ -72,27 +72,7 @@ jobs:
           name: docs-dist
           path: dist
 
-      - name: Clear target directory
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          script: sudo rm -rf /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/*
-
-      - name: Deploy to server via SCP
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          source: "dist/*"
-          target: /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
-          strip_components: 1
-
-      - name: Set permissions
+      - name: Deploy to server
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -100,5 +80,32 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
+            # 清理临时目录
+            rm -rf /tmp/deploy-docs
+            mkdir -p /tmp/deploy-docs
+          command_timeout: 30s
+
+      - name: Upload to temp directory
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          source: "dist/*"
+          target: /tmp/deploy-docs/
+          strip_components: 1
+
+      - name: Move to target and set permissions
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            sudo rm -rf /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/*
+            sudo cp -r /tmp/deploy-docs/* /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
             sudo chown -R www:www /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
             sudo chmod -R 755 /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
+            rm -rf /tmp/deploy-docs
