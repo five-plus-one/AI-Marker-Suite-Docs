@@ -65,7 +65,6 @@ jobs:
   deploy-server:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ secrets.SSH_HOST != '' }}
     steps:
       - name: Download dist
         uses: actions/download-artifact@v4
