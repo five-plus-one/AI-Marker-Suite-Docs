@@ -60,6 +60,7 @@ export default defineConfig({
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'CNY',
+        description: '脚本免费开源，AI服务需付费使用',
       },
       author: {
         '@type': 'Organization',
@@ -74,7 +75,7 @@ export default defineConfig({
         '分小题评分：大题拆分为多个小题分别评分',
         '分数纠错：AI自动分析评分差异并优化评分标准',
         '多平台支持：智学网、七天网络',
-        '多服务商兼容：5+1 AI、DeepSeek、火山引擎等',
+        '多服务商兼容：5+1 AI、火山引擎、硅基流动等支持图片识别的接口',
         '评阅历史：记录、筛选、导出HTML报告',
         '配置导入导出：JSON备份与恢复',
       ],
@@ -103,6 +104,22 @@ export default defineConfig({
       mainEntity: [
         {
           '@type': 'Question',
+          name: 'AI批改助手手机能用吗？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '不能。AI批改助手是浏览器脚本，必须在电脑端的Edge浏览器中运行。手机、平板、微信内置浏览器均不支持。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'AI批改助手用什么浏览器？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '推荐Edge浏览器（Windows 10/11自带）。Chrome也可以但扩展商店在国内无法访问。360安全浏览器、搜狗浏览器等不支持。',
+          },
+        },
+        {
+          '@type': 'Question',
           name: 'AI批改助手识别不准怎么办？',
           acceptedAnswer: {
             '@type': 'Answer',
@@ -119,10 +136,10 @@ export default defineConfig({
         },
         {
           '@type': 'Question',
-          name: 'AI批改助手无人值守模式安全吗？',
+          name: 'AI批改助手支持哪些AI服务商？',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '建议先用普通模式批改几份确认AI评分准确后再开无人值守。该模式下错误自动重试最多3次，连续失败会自动停止。',
+            text: '需要支持图片识别的多模态模型。推荐5+1 AI，也支持火山引擎、硅基流动。DeepSeek等纯文本模型不能使用。',
           },
         },
         {
@@ -131,14 +148,6 @@ export default defineConfig({
           acceptedAnswer: {
             '@type': 'Answer',
             text: '所有有手写答案的主观题都支持：作文、解答题、论述题、简答题、翻译题等。客观题请使用阅卷平台自带功能。',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'AI批改助手支持哪些AI服务商？',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '任何兼容OpenAI接口的服务商都支持，包括5+1 AI（推荐）、DeepSeek、火山引擎、硅基流动等。需要模型支持多模态图片输入。',
           },
         },
       ],

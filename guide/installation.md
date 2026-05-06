@@ -1,43 +1,93 @@
 ---
 title: 安装教程 — AI 批改助手
-description: AI批改助手安装教程。安装Tampermonkey浏览器扩展后，一键安装AI批改助手油猴脚本，支持Chrome、Edge、Firefox。
+description: AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。
 ---
 
 # 安装教程
 
-## 第一步：安装 Tampermonkey 浏览器扩展
+## 准备工作
 
-**Tampermonkey（油猴）** 是一个免费的浏览器脚本管理器，支持主流浏览器。
-
-| 浏览器 | 安装地址 |
-|--------|---------|
-| Chrome | [Chrome 网上应用店](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) |
-| Edge | [Edge 外接程序商店](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) |
-| Firefox | [Firefox 附加组件](https://addons.mozilla.org/zh-CN/firefox/addon/tampermonkey/) |
-
-安装完成后，浏览器右上角会出现 Tampermonkey 图标。
-
-::: tip 浏览器兼容性
-推荐使用 Chrome 或 Edge，兼容性最佳。Firefox 也完全支持。
+::: danger 重要前提
+AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器中运行。**手机无法使用**（微信中打开此页面也无法安装）。
 :::
+
+### 需要什么？
+
+| 条件 | 说明 |
+|------|------|
+| **电脑** | Windows 或 Mac 均可，**手机、平板不行** |
+| **Edge 浏览器** | Windows 10/11 已预装，无需额外下载 |
+| **Tampermonkey 扩展** | 免费的浏览器脚本管理器，下面会教你怎么安装 |
+
+### 为什么推荐 Edge？
+
+- **Windows 电脑自带**：Windows 10 和 Windows 11 都预装了 Edge 浏览器，不需要额外下载
+- **兼容性好**：Edge 基于 Chromium 内核，对油猴脚本的支持非常完善
+- **Chrome 在国内无法访问应用商店**：虽然 Chrome 也能用，但它的扩展商店在国内无法直接打开
+
+::: warning 不支持的浏览器
+以下浏览器**不支持**油猴脚本，无法使用 AI 批改助手：
+- 360 安全浏览器、360 极速浏览器
+- 搜狗浏览器
+- QQ 浏览器
+- 各种"安全浏览器"
+
+如果你目前使用的是上述浏览器，请切换到 **Edge 浏览器**。
+:::
+
+## 第一步：安装 Tampermonkey 扩展
+
+**Tampermonkey（油猴）** 是一个免费的浏览器扩展（插件），它可以让你在浏览器中运行额外的脚本程序。AI 批改助手就是通过它来运行的。
+
+### 操作步骤
+
+1. **打开 Edge 浏览器**（在开始菜单或桌面搜索 "Edge"）
+2. **点击下方链接**打开 Tampermonkey 安装页面：
+
+   **[点击安装 Tampermonkey 扩展](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)**
+
+3. 在打开的页面中，点击 **「获取」** 按钮
+4. 浏览器会弹出确认提示，点击 **「添加扩展」**
+5. 安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标
+
+::: tip 找不到图标？
+安装完成后如果看不到图标，点击浏览器右上角的 **拼图图标**（扩展管理），找到 Tampermonkey，点击 **「在工具栏中显示」**。
+:::
+
+### 允许扩展运行
+
+部分浏览器可能默认禁止扩展在某些网站上运行。请确认：
+
+1. 打开 Edge 浏览器，地址栏输入 `edge://extensions/` 并回车
+2. 找到 Tampermonkey，确认开关是 **打开** 状态
+3. 点击 **「详情」**，确认 **「允许访问文件网址」** 已开启（如需要）
 
 ## 第二步：安装 AI 批改助手脚本
 
-确保 Tampermonkey 已安装，点击下方链接，浏览器会自动弹出安装提示：
+Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。
 
-**[点击一键安装脚本](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)**
+1. **在 Edge 浏览器中**打开下方链接（不要在微信中打开）：
 
-安装时 Tampermonkey 会显示脚本的权限请求，点击「安装」即可。
+   **[点击一键安装 AI 批改助手](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)**
 
-::: warning 注意
-如果点击链接后没有弹出安装提示，请确认 Tampermonkey 扩展已启用。可以尝试刷新页面后重新点击。
+2. 浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限
+3. 点击 **「安装」** 按钮
+
+::: warning 点击链接后没有反应？
+- 确认你是在 **Edge 浏览器** 中打开的，不是微信或其他 App
+- 确认 Tampermonkey 扩展已安装并启用
+- 尝试刷新页面后重新点击
 :::
 
 ## 第三步：验证安装
 
 1. 打开 Tampermonkey 管理面板（点击浏览器右上角 Tampermonkey 图标 → 管理面板）
 2. 在「已安装脚本」列表中，确认「AI 批改助手」已启用（开关为绿色）
-3. 打开智学网或七天网络的阅卷页面，页面上应出现 AI 批改相关的浮动按钮
+3. 打开**智学网**或**七天网络**的阅卷页面，页面上应出现 AI 批改相关的浮动按钮
+
+::: tip 注意
+脚本只在阅卷页面（能看到答题卡图片和分数输入框的页面）上才会激活，其他页面上不会显示任何内容，这是正常的。
+:::
 
 ## 手动安装（高级）
 
