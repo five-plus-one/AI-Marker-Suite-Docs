@@ -77,4 +77,4 @@ features:
 ## 友情链接
 
 - [五加一](https://five-plus-one.com/) — 五加一官方网站
-- [5+1 AI](https://api.ai.five-plus-one.com/) — AI 批改助手推荐的 AI 服务
+- [5+1 API](https://api.ai.five-plus-one.com/) — AI 批改助手推荐的 API 服务
