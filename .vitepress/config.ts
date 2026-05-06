@@ -1,12 +1,14 @@
 import { defineConfig } from 'vitepress'
 
+// 环境变量 BASE_URL：本地构建默认 '/'，GitHub Actions 构建传入 '/AI-Marker-Suite-Docs/'
+const BASE = process.env.BASE_URL || '/'
 const SITE_URL = 'https://aimarking.five-plus-one.com'
 
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
   description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网和七天网络。晚上挂机睡觉，早上起来全改完。',
-  base: '/',
+  base: BASE,
   cleanUrls: true,
 
   // ========== SEO: Sitemap ==========
@@ -17,7 +19,7 @@ export default defineConfig({
   // ========== SEO & GEO: Head Meta ==========
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/png', href: '/img/icon.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/icon.png` }],
 
     // SEO: Canonical & Robots
     ['link', { rel: 'canonical', href: SITE_URL }],

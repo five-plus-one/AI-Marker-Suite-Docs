@@ -37,6 +37,8 @@ jobs:
 
       - name: Build with VitePress
         run: npm run build
+        env:
+          BASE_URL: /AI-Marker-Suite-Docs/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
