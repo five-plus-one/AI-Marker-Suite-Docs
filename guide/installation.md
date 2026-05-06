@@ -1,3 +1,8 @@
+---
+title: 安装教程 — AI 批改助手
+description: AI批改助手安装教程。安装Tampermonkey浏览器扩展后，一键安装AI批改助手油猴脚本，支持Chrome、Edge、Firefox。
+---
+
 # 安装教程
 
 ## 第一步：安装 Tampermonkey 浏览器扩展

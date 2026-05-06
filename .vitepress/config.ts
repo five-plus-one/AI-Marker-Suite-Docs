@@ -1,17 +1,190 @@
 import { defineConfig } from 'vitepress'
 
+const SITE_URL = 'https://aimarking.five-plus-one.com'
+
 export default defineConfig({
   lang: 'zh-CN',
-  title: 'AI-Marker-Suite',
-  description: 'AI 批改助手 — 晚上挂机睡觉，早上起来全改完',
-  base: '/AI-Marker-Suite-Docs/',
+  title: 'AI 批改助手',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网和七天网络。晚上挂机睡觉，早上起来全改完。',
+  base: '/',
+  cleanUrls: true,
 
+  // ========== SEO: Sitemap ==========
+  sitemap: {
+    hostname: SITE_URL,
+  },
+
+  // ========== SEO & GEO: Head Meta ==========
   head: [
-    ['link', { rel: 'icon', href: '/AI-Marker-Suite-Docs/favicon.ico' }],
+    // Favicon
+    ['link', { rel: 'icon', type: 'image/png', href: '/img/1.png' }],
+
+    // SEO: Canonical & Robots
+    ['link', { rel: 'canonical', href: SITE_URL }],
+    ['meta', { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' }],
+
+    // SEO: Open Graph
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'AI 批改助手' }],
+    ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
+    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络，自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { property: 'og:url', content: SITE_URL }],
+    ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+
+    // SEO: Twitter Card
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
+    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
+
+    // SEO: Additional Keywords
+    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
+
+    // GEO: AI crawler hints
+    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网和七天网络阅卷平台上自动批改主观题试卷' }],
+
+    // GEO: Structured Data (JSON-LD) - SoftwareApplication
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: 'AI 批改助手',
+      alternateName: 'AI-Marker-Suite',
+      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网和七天网络。自动识别手写答案并评分，支持三种批改模式、分小题评分和分数纠错。',
+      url: SITE_URL,
+      applicationCategory: 'EducationalApplication',
+      operatingSystem: '浏览器（Tampermonkey）',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'CNY',
+      },
+      author: {
+        '@type': 'Organization',
+        name: '5plus1',
+        url: 'https://five-plus-one.com',
+      },
+      softwareVersion: '1.11.2',
+      screenshot: `${SITE_URL}/img/1.png`,
+      featureList: [
+        'AI自动评分：多模态视觉识别手写答案',
+        '三种批改模式：普通模式、试改模式、无人值守模式',
+        '分小题评分：大题拆分为多个小题分别评分',
+        '分数纠错：AI自动分析评分差异并优化评分标准',
+        '多平台支持：智学网、七天网络',
+        '多服务商兼容：5+1 AI、DeepSeek、火山引擎等',
+        '评阅历史：记录、筛选、导出HTML报告',
+        '配置导入导出：JSON备份与恢复',
+      ],
+    })],
+
+    // GEO: Structured Data - WebSite with SearchAction
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: 'AI 批改助手',
+      url: SITE_URL,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    })],
+
+    // GEO: Structured Data - FAQPage (for guide/faq)
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'AI批改助手识别不准怎么办？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '填写「题目内容」「标准答案」「评分标准」三项，准确率会大幅提升。建议先用试改模式批改几份试卷，使用纠错功能优化评分标准。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'AI批改助手支持哪些平台？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '目前支持智学网（zhixue.com）和七天网络（7net.cc / qt7.net / yj5.7net.cc），通过适配器模式自动检测当前平台。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'AI批改助手无人值守模式安全吗？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '建议先用普通模式批改几份确认AI评分准确后再开无人值守。该模式下错误自动重试最多3次，连续失败会自动停止。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'AI批改助手支持哪些题型？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '所有有手写答案的主观题都支持：作文、解答题、论述题、简答题、翻译题等。客观题请使用阅卷平台自带功能。',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'AI批改助手支持哪些AI服务商？',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '任何兼容OpenAI接口的服务商都支持，包括5+1 AI（推荐）、DeepSeek、火山引擎、硅基流动等。需要模型支持多模态图片输入。',
+          },
+        },
+      ],
+    })],
+
+    // GEO: Structured Data - HowTo (Installation)
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: '如何安装和使用 AI 批改助手',
+      description: '3分钟完成AI批改助手的安装和配置，开始自动批改主观题试卷',
+      step: [
+        {
+          '@type': 'HowToStep',
+          name: '安装 Tampermonkey 扩展',
+          text: '在浏览器中安装 Tampermonkey（油猴）脚本管理器扩展',
+          url: `${SITE_URL}/guide/installation`,
+        },
+        {
+          '@type': 'HowToStep',
+          name: '安装 AI 批改助手脚本',
+          text: '点击一键安装链接，通过 Tampermonkey 安装 AI 批改助手用户脚本',
+          url: `${SITE_URL}/guide/installation`,
+        },
+        {
+          '@type': 'HowToStep',
+          name: '配置 API 密钥',
+          text: '打开阅卷页面，在设置面板中填入 AI 服务的 API 密钥',
+          url: `${SITE_URL}/guide/quickstart`,
+        },
+        {
+          '@type': 'HowToStep',
+          name: '开始批改',
+          text: '点击右下角 AI 批改按钮，脚本自动下载答题卡、AI评分、填分提交',
+          url: `${SITE_URL}/guide/quickstart`,
+        },
+      ],
+    })],
+
+    // GEO: llms.txt - for AI crawlers
+    ['link', { rel: 'alternate', type: 'text/plain', title: 'llms.txt', href: '/llms.txt' }],
   ],
 
+  // ========== Theme Config ==========
   themeConfig: {
-    logo: '/logo.png',
+    logo: '/img/1.png',
     siteTitle: 'AI 批改助手',
 
     nav: [

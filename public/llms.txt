@@ -1,0 +1,60 @@
+# AI 批改助手 (AI-Marker-Suite)
+
+> 基于多模态 AI 的在线阅卷自动批改工具。支持智学网和七天网络，自动识别手写答案并评分。
+
+## 概述
+
+AI 批改助手是一款免费开源的 Tampermonkey（油猴）用户脚本，运行在浏览器中，能够自动完成在线阅卷平台上的主观题批改工作。它使用多模态 AI 视觉识别技术，从阅卷页面抓取学生答题卡图片，识别手写答案，根据教师设定的评分标准自动打分，并填入分数提交。
+
+- 官网: https://aimarking.five-plus-one.com
+- 源码: https://github.com/five-plus-one/AI-Marker-Suite
+- 许可证: MIT
+- 当前版本: v1.11.2
+
+## 核心功能
+
+- **AI 自动评分**: 使用多模态 AI（支持图片输入）识别手写答案，根据评分标准打分，生成评语
+- **三种批改模式**: 普通模式（5秒倒计时）、试改模式（等待教师确认）、无人值守模式（1秒自动提交，错误自动重试）
+- **分小题评分**: 一道大题拆分为多个小题分别评分（如作文分内容/语言/结构）
+- **分数纠错**: 教师输入正确分数后，AI 自动分析评分差异原因并优化评分标准
+- **多平台支持**: 智学网 (zhixue.com)、七天网络 (7net.cc, qt7.net, yj5.7net.cc)
+- **多服务商兼容**: 5+1 AI（推荐）、DeepSeek、火山引擎、硅基流动等任何 OpenAI 兼容接口
+- **评阅历史**: 记录所有批改结果，支持筛选、导出 HTML/CSV/JSON 报告
+- **预设方案管理**: 不同题目保存不同配置，支持 URL 绑定自动切换
+- **配置导入导出**: JSON 文件备份和恢复
+
+## 安装方式
+
+1. 安装 Tampermonkey 浏览器扩展
+2. 访问 https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js 一键安装脚本
+3. 在阅卷页面配置 AI 服务的 API 密钥
+4. 点击"AI 批改"按钮开始使用
+
+## 技术架构
+
+- 纯原生 JavaScript，无框架依赖
+- 模块化 + 适配器模式架构
+- Tampermonkey API (GM_xmlhttpRequest, GM_setValue)
+- IndexedDB 存储图片数据
+- SSE 流式输出 AI 响应
+- 构建工具: Node.js + Terser
+
+## 文档页面
+
+- 项目介绍: https://aimarking.five-plus-one.com/guide/introduction
+- 安装教程: https://aimarking.five-plus-one.com/guide/installation
+- 快速上手: https://aimarking.five-plus-one.com/guide/quickstart
+- 常见问题: https://aimarking.five-plus-one.com/guide/faq
+- AI 接口配置: https://aimarking.five-plus-one.com/config/api-setup
+- 评分规则: https://aimarking.five-plus-one.com/config/rubric
+- 预设方案管理: https://aimarking.five-plus-one.com/config/presets
+- 分小题配置: https://aimarking.five-plus-one.com/config/sub-questions
+- 普通模式: https://aimarking.five-plus-one.com/modes/normal
+- 试改模式: https://aimarking.five-plus-one.com/modes/trial
+- 无人值守模式: https://aimarking.five-plus-one.com/modes/unattended
+- 智学网适配: https://aimarking.five-plus-one.com/platforms/zhixue
+- 七天网络适配: https://aimarking.five-plus-one.com/platforms/qitian
+- 分数纠错: https://aimarking.five-plus-one.com/advanced/correction
+- 批改历史: https://aimarking.five-plus-one.com/advanced/history
+- 开发新适配器: https://aimarking.five-plus-one.com/advanced/adapter-dev
+- 更新日志: https://aimarking.five-plus-one.com/changelog

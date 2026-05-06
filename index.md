@@ -1,10 +1,12 @@
 ---
 layout: home
+title: AI 批改助手 — 基于多模态AI的在线阅卷自动批改工具
+description: AI批改助手是一款免费开源的Tampermonkey油猴脚本，支持智学网和七天网络，自动识别手写答案并评分。三种批改模式、分小题评分、分数纠错，让AI替你改卷。
 
 hero:
   name: "AI 批改助手"
   text: "让 AI 替你改卷"
-  tagline: 晚上挂机睡觉，早上起来全改完。
+  tagline: 基于多模态 AI 的在线阅卷自动批改工具，免费开源，支持智学网和七天网络。
   image:
     src: /img/1.png
     alt: AI 批改助手界面截图

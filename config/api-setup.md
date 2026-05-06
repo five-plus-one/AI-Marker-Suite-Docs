@@ -1,3 +1,8 @@
+---
+title: AI 接口配置 — AI 批改助手
+description: AI批改助手支持5+1 AI、DeepSeek、火山引擎、硅基流动等OpenAI兼容接口。配置端点地址、模型名称和API密钥即可使用。
+---
+
 # AI 接口配置
 
 AI 批改助手通过 OpenAI 兼容的 `/v1/chat/completions` 接口与 AI 服务通信，支持文本 + 图片多模态输入。
