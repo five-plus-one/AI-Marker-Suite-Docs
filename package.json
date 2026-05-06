@@ -1,0 +1,14 @@
+{
+  "name": "ai-marker-suite-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI-Marker-Suite 文档站",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
