@@ -32,15 +32,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build with VitePress
+      - name: Build for GitHub Pages
         run: npm run build
         env:
-          BASE_URL: /
+          BASE_URL: /AI-Marker-Suite-Docs/
 
-      - name: Upload artifact
+      - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v4
         with:
           path: .vitepress/dist
+
+      - name: Build for server
+        run: npm run build
+        env:
+          BASE_URL: /
 
       - name: Upload dist for server deploy
         uses: actions/upload-artifact@v4

@@ -202,7 +202,7 @@ export default defineConfig({
       { text: '快速上手', link: '/guide/' },
       { text: '配置', link: '/config/' },
       { text: '平台', link: '/platforms/' },
-      { text: '开发者', link: '/advanced/' },
+      { text: '进阶', link: '/advanced/' },
       { text: '更新日志', link: '/changelog' },
       {
         text: '加入社群',
