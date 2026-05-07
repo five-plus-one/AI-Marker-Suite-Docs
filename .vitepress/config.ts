@@ -7,7 +7,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网和七天网络。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络和好分数。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -29,7 +29,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'AI 批改助手' }],
     ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络，自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络和好分数，自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
     ['meta', { property: 'og:url', content: SITE_URL }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
@@ -39,14 +39,14 @@ export default defineConfig({
     // SEO: Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络和好分数，三种批改模式，支持分小题评分和分数纠错。' }],
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
 
     // SEO: Additional Keywords
-    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
+    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
 
     // GEO: AI crawler hints
-    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网和七天网络阅卷平台上自动批改主观题试卷' }],
+    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络和好分数阅卷平台上自动批改主观题试卷' }],
 
     // GEO: Structured Data (JSON-LD) - SoftwareApplication
     ['script', { type: 'application/ld+json' }, JSON.stringify({
@@ -54,7 +54,7 @@ export default defineConfig({
       '@type': 'SoftwareApplication',
       name: 'AI 批改助手',
       alternateName: 'AI-Marker-Suite',
-      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网和七天网络。自动识别手写答案并评分，支持三种批改模式、分小题评分和分数纠错。',
+      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络和好分数。自动识别手写答案并评分，支持三种批改模式、分小题评分和分数纠错。',
       url: SITE_URL,
       applicationCategory: 'EducationalApplication',
       operatingSystem: '浏览器（Tampermonkey）',
@@ -69,14 +69,14 @@ export default defineConfig({
         name: '5plus1',
         url: 'https://five-plus-one.com',
       },
-      softwareVersion: '1.11.2',
+      softwareVersion: '1.12.0',
       screenshot: `${SITE_URL}/img/1.png`,
       featureList: [
         'AI自动评分：多模态视觉识别手写答案',
         '三种批改模式：普通模式、试改模式、无人值守模式',
         '分小题评分：大题拆分为多个小题分别评分',
         '分数纠错：AI自动分析评分差异并优化评分标准',
-        '多平台支持：智学网、七天网络',
+        '多平台支持：智学网、七天网络、好分数',
         '多服务商兼容：5+1 AI、火山引擎、硅基流动等支持图片识别的接口',
         '评阅历史：记录、筛选、导出HTML报告',
         '配置导入导出：JSON备份与恢复',
@@ -133,7 +133,7 @@ export default defineConfig({
           name: 'AI批改助手支持哪些平台？',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '目前支持智学网（zhixue.com）和七天网络（7net.cc / qt7.net / yj5.7net.cc），通过适配器模式自动检测当前平台。',
+            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / yj5.7net.cc）和好分数（haofenshu.com），通过适配器模式自动检测当前平台。',
           },
         },
         {
@@ -212,7 +212,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'v1.11.2',
+        text: 'v1.12.0',
         items: [
           { text: '一键安装脚本', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: 'GitHub 源码', link: 'https://github.com/five-plus-one/AI-Marker-Suite' },
@@ -264,6 +264,7 @@ export default defineConfig({
             { text: '概述', link: '/platforms/' },
             { text: '智学网', link: '/platforms/zhixue' },
             { text: '七天网络', link: '/platforms/qitian' },
+            { text: '好分数', link: '/platforms/haofenshu' },
           ],
         },
       ],
