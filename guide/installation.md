@@ -47,22 +47,38 @@ AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器
    **[点击安装 Tampermonkey 扩展](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)**
 
 3. 在打开的页面中，点击 **「获取」** 按钮
+
+![](https://img.assets.five-plus-one.com/2026/05/e4dda0a1047a12d49dc27e615d591dbd.png)
+
 4. 浏览器会弹出确认提示，点击 **「添加扩展」**
+
+![](https://img.assets.five-plus-one.com/2026/05/0ee33f3b3677ce816010d9309704c9dc.png)
+
 5. 安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标
 
 ::: tip 找不到图标？
 安装完成后如果看不到图标，点击浏览器右上角的 **拼图图标**（扩展管理），找到 Tampermonkey，点击 **「在工具栏中显示」**。
 :::
 
+![](https://img.assets.five-plus-one.com/2026/05/0eeb6c42c1d31f6ca820d5326563f116.png)
+
 ### 允许扩展运行
 
-部分浏览器可能默认禁止扩展在某些网站上运行。请确认：
 
-1. 打开 Edge 浏览器，地址栏输入 `edge://extensions/` 并回车
-2. 找到 Tampermonkey，确认开关是 **打开** 状态
-3. 点击 **「详情」**，确认 **「允许访问文件网址」** 已开启（如需要）
+
+1. 打开 Edge 浏览器，按照下面的图示依次点击 **扩展→篡改猴旁的更多选项→管理扩展**
+
+![](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
+
+2. 在设置菜单中，勾选 **“允许用户脚本” 和 “允许访问文件 URL”**
+
+![](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
 
 ## 第二步：安装 AI 批改助手脚本
+
+::: danger 重要前提
+执行这一步前，请你确保你已经按照上面的操作完成了 Tampermonkey 扩展的安装和启用。
+:::
 
 Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。
 
@@ -72,6 +88,8 @@ Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。
 
 2. 浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限
 3. 点击 **「安装」** 按钮
+
+![](https://img.assets.five-plus-one.com/2026/05/230fdabb40dffd845252170452402a32.png)
 
 ::: warning 点击链接后没有反应？
 - 确认你是在 **Edge 浏览器** 中打开的，不是微信或其他 App
