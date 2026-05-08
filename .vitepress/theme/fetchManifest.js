@@ -40,10 +40,16 @@ export async function updateNavVersion() {
     const manifest = await fetchManifest();
     if (!manifest?.version) return;
 
-    // 查找版本号元素并更新
-    const versionEl = document.querySelector('.VPNav .VPNavBarMenuLink:last-child');
-    if (versionEl && versionEl.textContent.includes('v')) {
-        versionEl.textContent = `v${manifest.version}`;
+    const version = manifest.version;
+
+    // 查找包含 "v" 开头文本的导航链接
+    const navLinks = document.querySelectorAll('.VPNavBarMenuLink, .VPNav .VPNavBarMenuGroup a');
+    for (const link of navLinks) {
+        const text = link.textContent?.trim();
+        if (text && text.startsWith('v') && text.includes('.')) {
+            link.textContent = `v${version}`;
+            break;
+        }
     }
 }
 
