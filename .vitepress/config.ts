@@ -1,13 +1,29 @@
 import { defineConfig } from 'vitepress'
+import fs from 'fs'
+import path from 'path'
 
 // 环境变量 BASE_URL：本地构建默认 '/'，GitHub Actions 构建传入 '/AI-Marker-Suite-Docs/'
 const BASE = process.env.BASE_URL || '/'
 const SITE_URL = 'https://aimarking.five-plus-one.com'
 
+// 从 manifest-data.json 读取版本号（由 fetch-manifest.js 生成）
+function getManifestVersion(): string {
+  try {
+    const dataPath = path.resolve(__dirname, 'manifest-data.json')
+    if (fs.existsSync(dataPath)) {
+      const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
+      return data.version || '1.12.1'
+    }
+  } catch {}
+  return '1.12.1'
+}
+
+const APP_VERSION = getManifestVersion()
+
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络和好分数。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数和五岳阅卷。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -212,7 +228,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'v1.12.0',
+        text: `v${APP_VERSION}`,
         items: [
           { text: '一键安装脚本', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: 'GitHub 源码', link: 'https://github.com/five-plus-one/AI-Marker-Suite' },
