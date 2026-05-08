@@ -4,9 +4,8 @@
   "type": "module",
   "description": "AI-Marker-Suite 文档站",
   "scripts": {
-    "fetch-manifest": "node fetch-manifest.cjs",
-    "dev": "node fetch-manifest.cjs && vitepress dev",
-    "build": "node fetch-manifest.cjs && vitepress build",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
     "preview": "vitepress preview"
   },
   "devDependencies": {

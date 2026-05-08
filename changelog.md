@@ -5,115 +5,77 @@ description: AI批改助手完整更新日志，所有版本更新记录。
 
 # 更新日志
 
-## v1.12.1 (2026-05-08)
+<div id="dynamic-changelog" class="changelog-container">
+  <p style="color: #999;">正在加载最新更新日志...</p>
+</div>
 
-- 新增五岳阅卷 (wylkyj.com) 平台适配，支持答题卡识别和分小题评分
-- 轻量级更新检查：优先检查 manifest.json (~1KB)，失败时降级检查完整脚本
-- Changelog 统一管理：文档站和脚本从远端 manifest.json 加载
-- 更新后刷新优化：等待时间从 15 秒缩短到 10 秒，新增「立即刷新」按钮
-- 开源协议从 MIT 更改为 GPL-3.0
+<style>
+.changelog-container {
+  margin-top: 1rem;
+}
 
-## v1.12.0 (2026-05-07)
+.changelog-version {
+  margin-bottom: 1rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-- 新增好分数 (haofenshu.com) 平台适配，支持 SVG 答题卡识别和 Vue 输入框分数填充
-- 侧边栏配置页重构为分组结构：基本、批改、AI 配置、其他
-- 关于页新增完整 CHANGELOG 展示
-- 通信密钥未填写时显示醒目红色警告横幅和分组标题提示
-- 新增「保存答题卡图片」开关，可关闭图片缓存以节省存储空间
+.changelog-version.collapsed .changelog-items {
+  display: none;
+}
 
-## v1.11.3 (2026-05-07)
+.changelog-version.collapsed .changelog-toggle {
+  transform: rotate(-90deg);
+}
 
-- 新增好分数 (haofenshu.com) 平台适配
-- 新增「保存答题卡图片」配置选项
-- match 规则放宽至 *.haofenshu.com/*，提升兼容性
+.changelog-version-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: var(--vp-c-bg-soft);
+  transition: background 0.2s;
+}
 
-## v1.11.2 (2026-05-02)
+.changelog-version-header:hover {
+  background: var(--vp-c-bg-mute);
+}
 
-- 修复纠错面板"提示词优化"不显示优化结果的问题
-- 修复解析器将"不变"后的括号注释误认为评分标准内容的问题
-- 优化分析提示词：要求 AI 将发现的问题写入对应字段
-- 修复 Toast、确认弹窗等 z-index 层级被历史面板遮挡的问题
-- 智学网单题模式下自动跳过分小题给分
+.changelog-toggle {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
 
-## v1.11.1 (2026-05-02)
+.changelog-ver {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
 
-- 智学网分小题给分适配，自动识别多个小题输入框并逐题填入分数
-- 修复 64MiB 存储溢出：imageUrls 中的 base64 data URL 自动剥离
-- 历史记录存储主动防御：超 50MB 自动清理旧记录
-- 每次保存后控制台输出存储大小
-- 纠错面板支持分小题独立修正
-- 历史面板新增存储状态栏和清理选项
-- 历史面板新增批量选择和删除功能
+.changelog-date {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-3);
+  margin-left: auto;
+}
 
-## v1.11.0 (2026-05-02)
+.changelog-items {
+  margin: 0;
+  padding: 0.5rem 1rem 0.75rem 2.5rem;
+  list-style: disc;
+}
 
-- 全面 UI 重构：设置面板改为右侧滑入式侧边栏
-- 浮动按钮增加脉冲动画状态指示
-- 历史按钮改为 SVG 图标
-- Toast 通知支持成功/错误/信息状态，可手动关闭
-- 模态弹窗动画优化（scale + translate）
-- 流输出面板新增复制按钮
-- 提交对话框分数改为环形展示，倒计时改为环形进度
-- 纠错面板新增步骤进度指示器
-- 历史详情改为右侧抽屉式滑入
-- 历史筛选改为可折叠面板
+.changelog-items li {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--vp-c-text-2);
+}
+</style>
 
-## v1.10.4 (2026-05-01)
-
-- 修复配置导入功能中错误的函数名引用（showConfirmDialog、refreshPresetSelect）
-
-## v1.10.3 (2026-05-01)
-
-- 修复配置导入功能报错 showConfirmDialog is not defined
-
-## v1.10.2 (2026-05-01)
-
-- 修复历史记录面板清空确认弹窗被遮挡的 z-index 层级问题
-- 修复更新检查时 changelog 不显示的问题（从远端脚本提取 CHANGELOG）
-- 修复历史记录弹窗动画开始时位置不居中的问题
-- 更新后自动刷新页面，无需手动重载
-- 检查更新按钮增加加载动画
-- 新增配置导出/导入功能，支持 JSON 文件备份和恢复
-
-## v1.10.0 (2026-05-01)
-
-- 新增分小题评分适配：七天网络新UI和旧版支持分小题独立给分
-- detectSubQuestions() 纳入标准适配器协议，平台自动检测小题列表
-- 设置面板自动识别平台小题，无需手动配置分小题信息
-- 历史记录图片存储改为 IndexedDB，修复长时间批改后脚本崩溃（64MiB 限制）
-- 旧记录图片数据自动迁移到 IndexedDB，升级无感
-
-## v1.9.0 (2026-04-30)
-
-- 新增七天网络新 UI (yj5.7net.cc) 适配，支持 Vue SPA + Canvas 渲染答题卡
-- 通过 XMLHttpRequest 拦截 API 响应精确获取当前学生图片，解决预取图片干扰问题
-- 新增试改模式，每次批改后暂停等待教师确认，支持分数纠错和提示词优化
-- AI 失败自动重试时复用已下载图片，避免重复抓取
-- 构建输出自动压缩 (terser)，文件体积减少约 30%
-- 修复七天网络新 UI 提交按钮选择器错误
-- 修复连续批改时图片错位问题
-
-## v1.8.6 (2026-04-30)
-
-- 优化导出逻辑，支持筛选
-
-## v1.8.5 (2026-04-30)
-
-- 新增七天网络阅卷平台适配，一个脚本同时支持智学网和七天网络
-- 统一构建输出，自动检测当前平台并加载对应适配器
-
-## v1.8.3 (2026-04-30)
-
-- 纠错流程精简为两步，确认后直接使用教师分数
-- 新增独立浮动历史按钮和多服务商管理系统
-
-## v1.8.0 (2026-04-20)
-
-- 纠错面板重新设计，支持查看 AI 分析和手动修改提示词
-- 新增评分模式切换（普通/无人值守）
-
-## v1.7.0 (2026-04-10)
-
-- 新增自动检查更新功能
-- 重构代码结构为模块化
-
+::: tip 提示
+此页面会自动从远端加载最新的更新日志。如果加载失败，将显示本地缓存内容。
+:::

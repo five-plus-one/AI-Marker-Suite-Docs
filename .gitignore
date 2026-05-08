@@ -3,4 +3,3 @@ node_modules
 .vitepress/cache
 .vitepress/temp
 .vitepress/.temp
-.vitepress/manifest-data.json
