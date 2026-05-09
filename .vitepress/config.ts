@@ -212,7 +212,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'v1.12.1', // 版本号会由前端 JavaScript 动态更新
+        text: '获取中...', // 版本号会由前端 JavaScript 动态更新
         items: [
           { text: '一键安装脚本', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: 'GitHub 源码', link: 'https://github.com/five-plus-one/AI-Marker-Suite' },

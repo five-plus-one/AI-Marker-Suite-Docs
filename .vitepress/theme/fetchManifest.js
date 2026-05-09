@@ -21,6 +21,7 @@ export async function fetchManifest() {
             const response = await fetch(MANIFEST_URL + '?_t=' + Date.now());
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             manifestCache = await response.json();
+            console.log('[Manifest] 获取成功，版本:', manifestCache.version);
             return manifestCache;
         } catch (error) {
             console.warn('[Manifest] 获取失败:', error.message);
@@ -41,14 +42,39 @@ export async function updateNavVersion() {
     if (!manifest?.version) return;
 
     const version = manifest.version;
+    const versionText = `v${version}`;
 
-    // 查找包含 "v" 开头文本的导航链接
-    const navLinks = document.querySelectorAll('.VPNavBarMenuLink, .VPNav .VPNavBarMenuGroup a');
-    for (const link of navLinks) {
-        const text = link.textContent?.trim();
-        if (text && text.startsWith('v') && text.includes('.')) {
-            link.textContent = `v${version}`;
+    // VitePress 的版本号在 VPFlyout > button > .text > span 中
+    // 查找所有 flyout 按钮的文本
+    const flyoutTexts = document.querySelectorAll('.VPNavBarMenuGroup .text > span:first-child');
+    for (const el of flyoutTexts) {
+        const text = el.textContent?.trim();
+        // 匹配 "获取中..." 或 "v" 开头的版本号
+        if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
+            el.textContent = versionText;
+            console.log('[Manifest] 版本号已更新:', versionText);
             break;
+        }
+    }
+
+    // 更新 JSON-LD 中的 softwareVersion
+    updateJsonLdVersion(version);
+}
+
+/**
+ * 更新页面中 JSON-LD 的 softwareVersion
+ */
+function updateJsonLdVersion(version) {
+    const scripts = document.querySelectorAll('script[type="application/ld+json"]');
+    for (const script of scripts) {
+        try {
+            const data = JSON.parse(script.textContent);
+            if (data.softwareVersion) {
+                data.softwareVersion = version;
+                script.textContent = JSON.stringify(data);
+            }
+        } catch (e) {
+            // 忽略解析错误
         }
     }
 }
@@ -124,35 +150,17 @@ export async function initChangelogPage() {
     const container = document.getElementById('dynamic-changelog');
     if (!container) return;
 
+    // 检查是否已经渲染过（避免重复渲染）
+    if (container.dataset.loaded === 'true') return;
+
     // 显示加载状态
     container.innerHTML = '<p style="color: #999;">正在加载最新更新日志...</p>';
 
     const manifest = await fetchManifest();
     if (manifest?.changelog) {
         renderChangelog(container, manifest.changelog);
+        container.dataset.loaded = 'true';
     } else {
-        container.innerHTML = '<p style="color: #999;">加载失败，显示本地缓存</p>';
+        container.innerHTML = '<p style="color: #999;">加载失败，请刷新页面重试</p>';
     }
-}
-
-// 页面加载时自动执行
-if (typeof window !== 'undefined') {
-    // 等待 DOM 加载完成
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            updateNavVersion();
-            initChangelogPage();
-        });
-    } else {
-        updateNavVersion();
-        initChangelogPage();
-    }
-
-    // VitePress SPA 路由变化时也需要执行
-    window.addEventListener('hashchange', () => {
-        setTimeout(() => {
-            updateNavVersion();
-            initChangelogPage();
-        }, 100);
-    });
 }
