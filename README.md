@@ -37,7 +37,9 @@ npm run preview
 │   └── unattended.md      # 无人值守模式
 ├── platforms/       # 平台适配
 │   ├── zhixue.md          # 智学网
-│   └── qitian.md          # 七天网络
+│   ├── qitian.md          # 七天网络
+│   ├── haofenshu.md       # 好分数
+│   └── wuyue.md           # 五岳阅卷
 ├── advanced/        # 进阶功能
 │   ├── correction.md      # 分数纠错
 │   ├── history.md         # 批改历史
@@ -60,4 +62,4 @@ npm run preview
 
 ## 许可证
 
-[MIT](https://github.com/five-plus-one/AI-Marker-Suite/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/five-plus-one/AI-Marker-Suite/blob/main/LICENSE)
