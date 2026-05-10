@@ -203,6 +203,7 @@ export default defineConfig({
     nav: [
       { text: '快速上手', link: '/guide/' },
       { text: '配置', link: '/config/' },
+      { text: '批改模式', link: '/modes/' },
       { text: '平台', link: '/platforms/' },
       { text: '进阶', link: '/advanced/' },
       { text: '更新日志', link: '/changelog' },
