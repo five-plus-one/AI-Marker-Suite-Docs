@@ -15,15 +15,19 @@ description: 查看和导出评阅历史记录，管理批改数据
     </div>
 </div>
 
-<script>
-// 延迟检查脚本是否注入
-setTimeout(() => {
-    const container = document.getElementById('ai-history-root');
-    if (container && container.querySelector('div[style*="text-align:center"]')) {
-        // 脚本未注入，显示提示
-        console.log('[文档站] 未检测到 AI 批改助手脚本');
-    }
-}, 3000);
+<script setup>
+// VitePress 客户端脚本（仅在浏览器执行）
+import { onMounted } from 'vue'
+
+onMounted(() => {
+    // 延迟检查脚本是否注入
+    setTimeout(() => {
+        const container = document.getElementById('ai-history-root');
+        if (container && container.querySelector('div[style*="text-align:center"]')) {
+            console.log('[文档站] 未检测到 AI 批改助手脚本');
+        }
+    }, 3000);
+})
 </script>
 
 ## 功能说明
