@@ -206,6 +206,7 @@ export default defineConfig({
       { text: '批改模式', link: '/modes/' },
       { text: '平台', link: '/platforms/' },
       { text: '进阶', link: '/advanced/' },
+      { text: '历史', link: '/history' },
       { text: '更新日志', link: '/changelog' },
       {
         text: '加入社群',
