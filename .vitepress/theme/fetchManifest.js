@@ -100,6 +100,7 @@ export function renderChangelog(container, changelog) {
 
     // 日期映射
     const dateMap = {
+        '1.21.3': '2026-05-13',
         '1.21.2': '2026-05-09',
         '1.12.1': '2026-05-08',
         '1.12.0': '2026-05-07',
