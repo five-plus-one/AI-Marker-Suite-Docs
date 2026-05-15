@@ -7,7 +7,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷和华翰云。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷和新教育。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -69,7 +69,7 @@ export default defineConfig({
         name: '5plus1',
         url: 'https://five-plus-one.com',
       },
-      softwareVersion: '1.21.3',
+      softwareVersion: '1.21.4',
       screenshot: `${SITE_URL}/img/1.png`,
       featureList: [
         'AI自动评分：多模态视觉识别手写答案',
@@ -273,6 +273,9 @@ export default defineConfig({
             { text: '好分数', link: '/platforms/haofenshu' },
             { text: '五岳阅卷', link: '/platforms/wuyue' },
             { text: '华翰云', link: '/platforms/hanhan' },
+            { text: '光大阅卷', link: '/platforms/guangda' },
+            { text: '云阅卷', link: '/platforms/yunyuejuan' },
+            { text: '新教育', link: '/platforms/xinjiaoyu' },
           ],
         },
       ],
