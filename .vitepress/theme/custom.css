@@ -1070,6 +1070,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .VPHero {
     padding-top: 44px;
     padding-bottom: 36px;
@@ -1100,7 +1105,15 @@ body {
   .home-hero {
     min-height: 640px;
     margin-top: -24px;
+    margin-right: -24px;
     margin-bottom: 36px;
+    margin-left: -24px;
+    width: auto;
+  }
+
+  .home-hero,
+  .home-hero * {
+    box-sizing: border-box;
   }
 
   .home-hero__content {
@@ -1129,10 +1142,13 @@ body {
 
   .home-hero__meta {
     bottom: 22px;
-    width: calc(100vw - 48px);
+    right: 24px;
+    left: 24px;
+    width: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
+    transform: none;
   }
 
   .home-hero__meta span {
