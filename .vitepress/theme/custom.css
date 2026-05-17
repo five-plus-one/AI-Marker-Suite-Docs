@@ -23,6 +23,7 @@
   --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
   --vp-font-family-base: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ams-local-nav-height: 45px;
 }
 
 .dark {
@@ -849,14 +850,14 @@ body {
 }
 
 .VPSidebar .group .title {
-  font-size: 14px;
-  font-weight: 720;
+  font-size: 15px;
+  font-weight: 760;
   letter-spacing: 0;
 }
 
 .VPSidebar .VPSidebarItem .text {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 .VPSidebar .VPSidebarItem.is-active > .item > .indicator {
@@ -1072,13 +1073,32 @@ body {
   }
 
   .VPLocalNav .container {
-    min-height: 44px;
+    min-height: var(--ams-local-nav-height);
   }
 
   .VPLocalNav .menu,
   .VPLocalNav .VPOutlineDropdown {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+  }
+
+  .VPSidebar.open {
+    top: calc(var(--vp-nav-height) + var(--ams-local-nav-height)) !important;
+    max-height: calc(100vh - var(--vp-nav-height) - var(--ams-local-nav-height)) !important;
+    padding-top: 20px !important;
+  }
+
+  .VPSidebar .group .title {
+    font-size: 16px;
+  }
+
+  .VPSidebar .VPSidebarItem .text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .VPSidebar .VPSidebarItem .item {
+    min-height: 34px;
   }
 }
 
