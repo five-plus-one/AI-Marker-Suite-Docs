@@ -98,6 +98,27 @@ body {
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.38);
 }
 
+.VPLocalNav {
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: saturate(140%) blur(14px);
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.dark .VPLocalNav {
+  background: rgba(15, 15, 15, 0.94) !important;
+}
+
+.nav-scrolled .VPLocalNav {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.dark.nav-scrolled .VPLocalNav {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+}
+
 .VPNavBarTitle .title {
   font-weight: 760;
 }
@@ -1040,6 +1061,24 @@ body {
     width: 100vw !important;
     min-height: calc(100vh - var(--vp-nav-height)) !important;
     background: var(--vp-c-bg) !important;
+  }
+
+  .VPLocalNav {
+    position: sticky !important;
+    top: var(--vp-nav-height) !important;
+    z-index: 998 !important;
+    border-top: 0 !important;
+    border-bottom: 1px solid var(--vp-c-divider) !important;
+  }
+
+  .VPLocalNav .container {
+    min-height: 44px;
+  }
+
+  .VPLocalNav .menu,
+  .VPLocalNav .VPOutlineDropdown {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 }
 
