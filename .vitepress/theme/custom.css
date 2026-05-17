@@ -53,11 +53,24 @@ body {
 }
 
 .VPNav {
-  position: relative;
-  z-index: 50;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
   border-bottom: 1px solid rgba(229, 229, 229, 0.88);
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: saturate(140%) blur(14px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  transition:
+    background-color 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.nav-scrolled .VPNav {
+  border-bottom-color: rgba(17, 17, 17, 0.1);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.07);
 }
 
 .VPNavScreen {
@@ -77,6 +90,12 @@ body {
 
 .dark .VPNav {
   background: rgba(15, 15, 15, 0.9);
+}
+
+.dark.nav-scrolled .VPNav {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+  background: rgba(15, 15, 15, 0.94);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.38);
 }
 
 .VPNavBarTitle .title {

@@ -49,6 +49,8 @@ export default {
 
     // 页面加载完成后执行
     const init = () => {
+      initNavScrollState()
+
       // 初始执行
       updateNavVersion()
       initChangelogPage()
@@ -60,6 +62,15 @@ export default {
           initChangelogPage()
         }, 300)
       }
+    }
+
+    const initNavScrollState = () => {
+      const update = () => {
+        document.documentElement.classList.toggle('nav-scrolled', window.scrollY > 8)
+      }
+
+      update()
+      window.addEventListener('scroll', update, { passive: true })
     }
 
     // 等待 DOM 加载完成
