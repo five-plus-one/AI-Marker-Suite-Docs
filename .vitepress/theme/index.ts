@@ -4,6 +4,7 @@ import { updateNavVersion, initChangelogPage } from './fetchManifest'
 import type { Theme } from 'vitepress'
 import { h } from 'vue'
 import HomeHero from './HomeHero.vue'
+import HomeSections from './HomeSections.vue'
 
 const CardGrid = {
   name: 'CardGrid',
@@ -41,6 +42,7 @@ export default {
     app.component('CardGrid', CardGrid)
     app.component('Card', Card)
     app.component('HomeHero', HomeHero)
+    app.component('HomeSections', HomeSections)
 
     // 仅在客户端执行
     if (typeof window === 'undefined') return

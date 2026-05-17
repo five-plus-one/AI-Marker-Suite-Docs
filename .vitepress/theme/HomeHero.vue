@@ -24,79 +24,11 @@
       </div>
     </div>
 
-    <div class="home-hero__console" aria-label="功能概览">
-      <div class="home-hero__console-head">
-        <span>WORKFLOW</span>
-        <span>READY</span>
-      </div>
-      <div class="home-hero__console-body">
-        <div class="home-hero__metric">
-          <span>01</span>
-          <strong>识别答题卡</strong>
-        </div>
-        <div class="home-hero__metric">
-          <span>02</span>
-          <strong>按规则评分</strong>
-        </div>
-        <div class="home-hero__metric">
-          <span>03</span>
-          <strong>填分并提交</strong>
-        </div>
-      </div>
+    <div class="home-hero__meta" aria-label="核心能力">
+      <span>多平台</span>
+      <span>双评仲裁</span>
+      <span>批改历史</span>
+      <span>开源免费</span>
     </div>
-
-    <div class="home-hero__marquee" aria-hidden="true">
-      <div class="home-hero__marquee-track">
-        <span>智学网</span>
-        <span>七天网络</span>
-        <span>好分数</span>
-        <span>五岳阅卷</span>
-        <span>华翰云</span>
-        <span>光大阅卷</span>
-        <span>云阅卷</span>
-        <span>新教育</span>
-        <span>智学网</span>
-        <span>七天网络</span>
-        <span>好分数</span>
-        <span>五岳阅卷</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-feature-strip" aria-label="核心能力">
-    <a v-for="feature in features" :key="feature.title" :href="feature.href" class="home-feature-strip__item">
-      <span>{{ feature.index }}</span>
-      <strong>{{ feature.title }}</strong>
-      <small>{{ feature.text }}</small>
-    </a>
   </section>
 </template>
-
-<script setup lang="ts">
-const features = [
-  {
-    index: '01',
-    title: '全自动评分',
-    text: '识别、评分、评语生成',
-    href: '/guide/introduction',
-  },
-  {
-    index: '02',
-    title: '无人值守',
-    text: '挂机批改与自动重试',
-    href: '/modes/unattended',
-  },
-  {
-    index: '03',
-    title: '双评仲裁',
-    text: '两个模型独立评分',
-    href: '/modes/dual',
-  },
-  {
-    index: '04',
-    title: '批改历史',
-    text: '记录、筛选与导出',
-    href: '/advanced/history',
-  },
-]
-</script>

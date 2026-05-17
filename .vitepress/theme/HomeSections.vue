@@ -1,0 +1,102 @@
+<template>
+  <main class="home-sections">
+    <section class="home-panel home-panel--split">
+      <div>
+        <p class="home-kicker">Why it matters</p>
+        <h2>为什么你需要它？</h2>
+        <p class="home-lead">
+          把重复、耗时、容易疲劳的主观题批改流程交给脚本处理，老师只需要把控评分标准与关键结果。
+        </p>
+      </div>
+
+      <div class="home-pain-grid">
+        <div v-for="item in comparisons" :key="item.pain" class="home-pain-card">
+          <span>{{ item.pain }}</span>
+          <strong>{{ item.answer }}</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-panel">
+      <div class="home-section-head">
+        <div>
+          <p class="home-kicker">Modes</p>
+          <h2>三种模式，按需选择</h2>
+        </div>
+        <p>从首次试改到夜间批量挂机，按照风险和效率切换工作方式。</p>
+      </div>
+
+      <div class="home-mode-grid">
+        <article v-for="mode in modes" :key="mode.name" class="home-mode-card">
+          <span>{{ mode.index }}</span>
+          <h3>{{ mode.name }}</h3>
+          <p>{{ mode.description }}</p>
+          <ul>
+            <li v-for="point in mode.points" :key="point">{{ point }}</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--community">
+      <div>
+        <p class="home-kicker">Community</p>
+        <h2>加入交流群</h2>
+        <p class="home-lead">遇到问题、想分享使用经验，欢迎加入社群交流。</p>
+      </div>
+
+      <div class="home-link-grid">
+        <a href="https://r-l.ink/s/L9Akf">微信交流群</a>
+        <a href="https://r-l.ink/s/WbMrR">QQ 交流群</a>
+        <a href="https://five-plus-one.com/">五加一官网</a>
+        <a href="https://api.ai.five-plus-one.com/">5+1 API</a>
+      </div>
+    </section>
+  </main>
+</template>
+
+<script setup lang="ts">
+const comparisons = [
+  {
+    pain: '一份主观题看 2~3 分钟',
+    answer: 'AI 自动评分，生成分数和评语',
+  },
+  {
+    pain: '改到半夜眼睛酸',
+    answer: '无人值守模式，挂机自动批改',
+  },
+  {
+    pain: '评分标准难统一',
+    answer: '按同一套评分标准稳定执行',
+  },
+  {
+    pain: '每道题都要手动输分',
+    answer: '识别、打分、填入、提交自动完成',
+  },
+  {
+    pain: '改完想回看某份试卷',
+    answer: '评阅历史可回看并导出报告',
+  },
+]
+
+const modes = [
+  {
+    index: '01',
+    name: '普通模式',
+    description: '适合日常少量批改。提交前保留确认机会，方便随时暂停或取消。',
+    points: ['5 秒倒计时提交', '弹窗提示错误', '支持分数纠错'],
+  },
+  {
+    index: '02',
+    name: '试改模式',
+    description: '适合首次使用和调优评分标准。先观察 AI 评分，再确认提交。',
+    points: ['等待教师确认', '便于观察评分依据', '支持分数纠错'],
+  },
+  {
+    index: '03',
+    name: '无人值守模式',
+    description: '适合大批量试卷和夜间挂机。流程稳定后，用它把重复动作交给脚本。',
+    points: ['1 秒自动提交', '最多自动重试 3 次', '适合批量处理'],
+  },
+]
+</script>
