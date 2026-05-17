@@ -93,8 +93,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            sudo rm -rf /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/*
-            sudo cp -r /tmp/deploy-docs/* /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
-            sudo chown -R www:www /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
-            sudo chmod -R 755 /opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index/
+            DEPLOY_DIR=/opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index
+            OWNER=$(stat -c '%U:%G' "$DEPLOY_DIR")
+            sudo rm -rf ${DEPLOY_DIR:?}/*
+            sudo cp -r /tmp/deploy-docs/* $DEPLOY_DIR/
+            sudo chown -R $OWNER $DEPLOY_DIR/
+            sudo chmod -R 755 $DEPLOY_DIR/
             rm -rf /tmp/deploy-docs
