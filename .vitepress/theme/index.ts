@@ -56,6 +56,7 @@ export default {
       clientInitDone = true
 
       initNavScrollState()
+      enhanceTables()
 
       // 初始执行
       updateNavVersion()
@@ -64,6 +65,7 @@ export default {
       // 监听路由变化
       router.onAfterRouteChanged = (to) => {
         setTimeout(() => {
+          enhanceTables()
           updateNavVersion()
           initChangelogPage()
         }, 300)
@@ -80,6 +82,17 @@ export default {
 
       update()
       window.addEventListener('scroll', update, { passive: true })
+    }
+
+    const enhanceTables = () => {
+      document.querySelectorAll<HTMLTableElement>('.vp-doc table').forEach((table) => {
+        if (table.parentElement?.classList.contains('table-wrapper')) return
+
+        const wrapper = document.createElement('div')
+        wrapper.className = 'table-wrapper'
+        table.parentNode?.insertBefore(wrapper, table)
+        wrapper.appendChild(table)
+      })
     }
 
     // 等待 DOM 加载完成

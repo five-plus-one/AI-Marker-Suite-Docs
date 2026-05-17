@@ -290,13 +290,36 @@ body {
 
 .vp-doc table {
   display: table;
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  overflow: hidden;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   font-size: 14px;
+}
+
+.vp-doc .table-wrapper {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  margin: 20px 0;
+  border-radius: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc .table-wrapper::after {
+  position: sticky;
+  right: 0;
+  display: block;
+  width: 36px;
+  height: 0;
+  margin-top: -1px;
+  margin-left: auto;
+  background: linear-gradient(90deg, transparent, var(--vp-c-bg));
+  content: "";
+  pointer-events: none;
 }
 
 .vp-doc tr {
@@ -704,6 +727,20 @@ body {
   background: var(--vp-c-bg-soft);
 }
 
+.home-panel--support {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: start;
+}
+
+.home-panel--links {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: center;
+}
+
 .home-kicker {
   margin: 0 0 10px !important;
   color: var(--vp-c-text-3) !important;
@@ -844,6 +881,95 @@ body {
   background: var(--vp-c-bg-mute);
 }
 
+.home-story {
+  margin-top: 26px;
+  color: var(--vp-c-text-2);
+}
+
+.home-story p {
+  margin: 0 0 14px !important;
+  line-height: 1.9 !important;
+}
+
+.home-story__ending {
+  color: var(--vp-c-text-1) !important;
+  font-weight: 720;
+}
+
+.home-story-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 12px;
+  border: 1px solid var(--vp-c-text-1);
+  border-radius: 8px;
+  padding: 0 16px;
+  background: var(--vp-c-text-1);
+  color: var(--vp-c-bg) !important;
+  font-weight: 720;
+  text-decoration: none !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.home-story-link:hover {
+  transform: translateY(-2px);
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1) !important;
+}
+
+.home-donate-card {
+  position: sticky;
+  top: calc(var(--vp-nav-height) + 24px);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  padding: 24px;
+  background: var(--vp-c-bg-soft);
+}
+
+.home-donate-card h3 {
+  margin: 0 0 10px !important;
+  color: var(--vp-c-text-1);
+  font-size: 24px !important;
+}
+
+.home-donate-card p {
+  margin: 0 !important;
+  color: var(--vp-c-text-2) !important;
+  line-height: 1.75 !important;
+}
+
+.home-donate-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.home-donate-grid figure {
+  margin: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  padding: 10px;
+  background: var(--vp-c-bg);
+  text-align: center;
+}
+
+.home-donate-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.home-donate-grid figcaption {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 680;
+}
+
 /* 侧边栏 */
 .VPSidebar {
   background: var(--vp-c-bg-alt);
@@ -958,8 +1084,13 @@ body {
   }
 
   .vp-doc table {
-    width: max-content;
-    min-width: 100%;
+    min-width: 680px;
+  }
+
+  .vp-doc .table-wrapper {
+    margin-right: -8px;
+    margin-left: -8px;
+    padding: 0 8px 8px;
   }
 
   .ams-card {
@@ -999,6 +1130,17 @@ body {
   .home-hero__meta {
     bottom: 22px;
     width: calc(100vw - 48px);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .home-hero__meta span {
+    min-width: 0;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.03em;
   }
 
   .home-sections {
@@ -1008,7 +1150,9 @@ body {
 
   .home-panel,
   .home-panel--split,
-  .home-panel--community {
+  .home-panel--community,
+  .home-panel--support,
+  .home-panel--links {
     display: block;
     padding: 22px;
     border-radius: 16px;
@@ -1040,6 +1184,15 @@ body {
 
   .home-mode-card h3 {
     margin-top: 28px !important;
+  }
+
+  .home-donate-card {
+    position: static;
+    margin-top: 24px;
+  }
+
+  .home-donate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .home-mode-grid {

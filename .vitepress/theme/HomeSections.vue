@@ -48,8 +48,63 @@
       <div class="home-link-grid">
         <a href="https://r-l.ink/s/L9Akf">微信交流群</a>
         <a href="https://r-l.ink/s/WbMrR">QQ 交流群</a>
-        <a href="https://five-plus-one.com/">五加一官网</a>
-        <a href="https://api.ai.five-plus-one.com/">5+1 API</a>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--support">
+      <div class="home-support-main">
+        <p class="home-kicker">Support</p>
+        <h2>支持这个项目继续走下去</h2>
+        <p class="home-lead">
+          如果 AI 批改助手帮你少熬了一点夜、少做了一点重复劳动，欢迎用赞赏、转发或反馈支持它继续更新。
+        </p>
+
+        <div class="home-story">
+          <p>
+            这两天我才真正意识到：做出一个功能，和把它交到真实用户手里，是完全不同的两件事。
+          </p>
+          <p>
+            一个真正有用的工具，还需要文档、教程、反馈、稳定性和问题排查。很多看起来很小的改动，背后对应的都是老师们真实使用时遇到的问题。
+          </p>
+          <p>
+            AI 像一根杠杆，把一个普通人的行动半径突然放大；表达也是一根杠杆，让工具被真正需要它的人看到。
+          </p>
+          <p>
+            改变世界不一定从很大的事情开始，也可能只是先帮一个老师少盯一会儿屏幕，少做一点重复劳动。它很小，但它是真的。
+          </p>
+          <p class="home-story__ending">世界不死，理想不灭。我想继续试试看。</p>
+        </div>
+
+        <a class="home-story-link" href="https://v8515M.rk.r-l.ink/common/channel/redirect/?cid=569019">
+          了解幕后故事
+        </a>
+      </div>
+
+      <aside class="home-donate-card" aria-label="赞赏信息">
+        <h3>赞赏支持</h3>
+        <p>你的支持会变成继续适配平台、维护文档和处理反馈的动力。</p>
+        <div class="home-donate-grid">
+          <figure>
+            <img src="https://r-l.ink/paywx1" alt="微信赞赏二维码" loading="lazy" />
+            <figcaption>微信赞赏</figcaption>
+          </figure>
+          <figure>
+            <img src="https://r-l.ink/payzfb1" alt="支付宝赞赏二维码" loading="lazy" />
+            <figcaption>支付宝赞赏</figcaption>
+          </figure>
+        </div>
+      </aside>
+    </section>
+
+    <section class="home-panel home-panel--links">
+      <div>
+        <p class="home-kicker">Links</p>
+        <h2>友情链接</h2>
+      </div>
+
+      <div class="home-link-grid">
+        <a href="https://five-plus-one.com/">五加一的星空</a>
+        <a href="https://api.ai.five-plus-one.com/">5+1API</a>
       </div>
     </section>
   </main>
