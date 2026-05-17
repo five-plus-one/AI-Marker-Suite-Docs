@@ -1,52 +1,10 @@
 ---
-layout: home
+layout: page
 title: AI 批改助手 — 基于多模态AI的在线阅卷自动批改工具
 description: AI批改助手是一款开源的Tampermonkey油猴脚本，支持智学网、七天网络、好分数、五岳阅卷和华翰云，自动识别手写答案并评分。双评仲裁模式、工作流配置、分小题评分、分数纠错，让AI替你改卷。
-
-hero:
-  name: "AI 批改助手"
-  text: "让 AI 替你改卷"
-  tagline: 基于多模态 AI 的在线阅卷自动批改工具，开源免费，支持智学网、七天网络、好分数、五岳阅卷和华翰云。需在电脑端 Edge 浏览器中使用。
-  image:
-    src: /img/1.png
-    alt: AI 批改助手界面截图
-  actions:
-    - theme: brand
-      text: 安装教程
-      link: /guide/installation
-    - theme: alt
-      text: 快速上手
-      link: /guide/quickstart
-    - theme: alt
-      text: GitHub
-      link: https://github.com/five-plus-one/AI-Marker-Suite
-
-features:
-  - icon: 01
-    title: AI 全自动评分
-    details: 自动识别手写答案，根据你设定的评分标准打分，生成评语和得分理由，可实时查看 AI 思考过程。
-  - icon: 02
-    title: 无人值守模式
-    details: 挂机自动批改，1 秒自动提交，最多重试 3 次。睡一觉，几百份试卷全部改完。
-  - icon: 03
-    title: 统一评分标准
-    details: 自定义评分规则，AI 按同一把尺子打分，告别评分不一致的烦恼。
-  - icon: 04
-    title: 分小题评分
-    details: 一道大题拆成多个小题分别打分，支持作文分内容 / 语言 / 结构独立评分。
-  - icon: 05
-    title: 分数纠错
-    details: AI 打分不准？输入正确分数，AI 自动分析原因并优化评分标准，越用越准。
-  - icon: 06
-    title: 批改历史
-    details: 随时查看批改记录，支持导出 HTML 报告（含答题卡图片），方便存档和复查。
-  - icon: 07
-    title: 多平台支持
-    details: 同时支持智学网、七天网络（含新旧 UI）、好分数、五岳阅卷和华翰云，一个脚本搞定所有平台。
-  - icon: 08
-    title: 多服务商兼容
-    details: 内置 5+1 AI 推荐服务，也支持火山引擎、硅基流动等任何支持图片识别的 OpenAI 兼容接口。
 ---
+
+<HomeHero />
 
 ## 为什么你需要它？
 

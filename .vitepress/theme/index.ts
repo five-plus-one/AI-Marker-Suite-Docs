@@ -3,6 +3,7 @@ import './custom.css'
 import { updateNavVersion, initChangelogPage } from './fetchManifest'
 import type { Theme } from 'vitepress'
 import { h } from 'vue'
+import HomeHero from './HomeHero.vue'
 
 const CardGrid = {
   name: 'CardGrid',
@@ -39,6 +40,7 @@ export default {
   enhanceApp({ app, router }) {
     app.component('CardGrid', CardGrid)
     app.component('Card', Card)
+    app.component('HomeHero', HomeHero)
 
     // 仅在客户端执行
     if (typeof window === 'undefined') return
