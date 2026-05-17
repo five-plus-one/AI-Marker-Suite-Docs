@@ -1,8 +1,8 @@
 <template>
   <section class="home-hero" aria-labelledby="home-hero-title">
     <div class="home-hero__pattern" aria-hidden="true">
-      <div v-for="row in 7" :key="row" class="home-hero__pattern-row">
-        <span v-for="item in 8" :key="item">AI MARKER</span>
+      <div v-for="row in 4" :key="row" class="home-hero__pattern-row">
+        <span v-for="item in 4" :key="item">AI MARKER</span>
       </div>
     </div>
 

@@ -58,6 +58,7 @@ export async function updateNavVersion() {
 }
 
 function updateVersionText(versionText) {
+    let changed = false;
     const versionTexts = document.querySelectorAll([
         '.VPNavBarMenuGroup .text > span:first-child',
         '.VPNavScreenMenuGroup .button-text',
@@ -67,9 +68,14 @@ function updateVersionText(versionText) {
     for (const el of versionTexts) {
         const text = el.textContent?.trim();
         if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
-            el.textContent = versionText;
+            if (text !== versionText) {
+                el.textContent = versionText;
+                changed = true;
+            }
         }
     }
+
+    return changed;
 }
 
 function observeNavVersion(versionText) {
@@ -79,7 +85,10 @@ function observeNavVersion(versionText) {
         updateVersionText(versionText);
     });
 
-    navObserver.observe(document.body, {
+    const nav = document.querySelector('.VPNav');
+    if (!nav) return;
+
+    navObserver.observe(nav, {
         childList: true,
         subtree: true,
     });
