@@ -77,29 +77,16 @@ jobs:
           name: docs-dist
           path: dist
 
-      - name: Deploy to server
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Deploy to server via rsync
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          script: |
-            # 清理临时目录
-            rm -rf /tmp/deploy-docs
-            mkdir -p /tmp/deploy-docs
-          command_timeout: 30s
-
-      - name: Upload to temp directory
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT || 22 }}
-          source: "dist/*"
-          target: /tmp/deploy-docs/
-          strip_components: 1
+          switches: -avzr --delete
+          path: dist/
+          remote_path: /tmp/deploy-docs/
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: ${{ secrets.SSH_PORT || 22 }}
+          remote_user: ${{ secrets.SSH_USERNAME }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Move to target and set permissions
         uses: appleboy/ssh-action@v1.0.3
