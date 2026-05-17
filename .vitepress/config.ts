@@ -11,6 +11,21 @@ export default defineConfig({
   base: BASE,
   cleanUrls: true,
 
+  markdown: {
+    config(md) {
+      const tableOpen = md.renderer.rules.table_open || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+      const tableClose = md.renderer.rules.table_close || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
+
+      md.renderer.rules.table_open = (tokens, idx, options, env, self) => {
+        return `<div class="table-wrapper">${tableOpen(tokens, idx, options, env, self)}`
+      }
+
+      md.renderer.rules.table_close = (tokens, idx, options, env, self) => {
+        return `${tableClose(tokens, idx, options, env, self)}</div>`
+      }
+    },
+  },
+
   // ========== SEO: Sitemap ==========
   sitemap: {
     hostname: SITE_URL,

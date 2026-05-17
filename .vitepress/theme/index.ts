@@ -2,18 +2,60 @@ import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import { updateNavVersion, initChangelogPage } from './fetchManifest'
 import type { Theme } from 'vitepress'
+import { h } from 'vue'
+import HomeHero from './HomeHero.vue'
+import HomeSections from './HomeSections.vue'
+
+let clientInitDone = false
+let navScrollStateBound = false
+
+const CardGrid = {
+  name: 'CardGrid',
+  setup(_, { slots }) {
+    return () => h('div', { class: 'ams-card-grid' }, slots.default?.())
+  },
+}
+
+const Card = {
+  name: 'Card',
+  props: {
+    title: String,
+    href: String,
+    description: String,
+  },
+  setup(props) {
+    return () =>
+      h(
+        'a',
+        {
+          class: 'ams-card',
+          href: props.href,
+        },
+        [
+          h('span', { class: 'ams-card__title' }, props.title),
+          h('span', { class: 'ams-card__description' }, props.description),
+        ],
+      )
+  },
+}
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
+    app.component('CardGrid', CardGrid)
+    app.component('Card', Card)
+    app.component('HomeHero', HomeHero)
+    app.component('HomeSections', HomeSections)
+
     // 仅在客户端执行
     if (typeof window === 'undefined') return
 
-    console.log('[Theme] enhanceApp 执行')
-
     // 页面加载完成后执行
     const init = () => {
-      console.log('[Theme] 初始化客户端脚本')
+      if (clientInitDone) return
+      clientInitDone = true
+
+      initNavScrollState()
 
       // 初始执行
       updateNavVersion()
@@ -21,12 +63,23 @@ export default {
 
       // 监听路由变化
       router.onAfterRouteChanged = (to) => {
-        console.log('[Theme] 路由变化:', to)
         setTimeout(() => {
           updateNavVersion()
           initChangelogPage()
         }, 300)
       }
+    }
+
+    const initNavScrollState = () => {
+      if (navScrollStateBound) return
+      navScrollStateBound = true
+
+      const update = () => {
+        document.documentElement.classList.toggle('nav-scrolled', window.scrollY > 8)
+      }
+
+      update()
+      window.addEventListener('scroll', update, { passive: true })
     }
 
     // 等待 DOM 加载完成

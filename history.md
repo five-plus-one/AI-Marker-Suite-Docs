@@ -6,12 +6,12 @@ description: 查看和导出评阅历史记录，管理批改数据
 # 评阅历史
 
 <div id="ai-history-root">
-    <div style="text-align:center;padding:60px 20px;color:#86868b;">
-        <div style="font-size:48px;margin-bottom:16px;">📊</div>
-        <h2 style="font-size:18px;font-weight:600;color:#1a1a1a;margin-bottom:8px;">评阅历史</h2>
-        <p style="font-size:14px;line-height:1.6;">此页面用于查看和导出评阅历史记录。</p>
-        <p style="font-size:13px;color:#aaa;margin-top:16px;">需要安装 AI 批改助手脚本才能使用此功能</p>
-        <a href="https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js" style="display:inline-block;margin-top:12px;padding:10px 20px;background:#1a1a1a;color:white;border-radius:8px;text-decoration:none;font-size:13px;font-weight:500;">安装脚本</a>
+    <div class="tool-empty-state">
+        <div class="tool-empty-state__mark">History</div>
+        <h2>评阅历史</h2>
+        <p>此页面用于查看和导出评阅历史记录。</p>
+        <p class="tool-empty-state__hint">需要安装 AI 批改助手脚本才能使用此功能</p>
+        <a href="https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js">安装脚本</a>
     </div>
 </div>
 
@@ -53,6 +53,6 @@ onMounted(() => {
 
 安装脚本后，在任意页面点击油猴图标，可以看到以下快捷菜单：
 
-- 📊 **查看历史记录** - 跳转到此页面
-- ⚙️ **打开设置** - 打开脚本设置面板
-- 🔄 **检查更新** - 检查脚本是否有新版本
+- **查看历史记录** - 跳转到此页面
+- **打开设置** - 打开脚本设置面板
+- **检查更新** - 检查脚本是否有新版本

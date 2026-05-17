@@ -8,6 +8,7 @@ const MANIFEST_URL = 'https://auto-update.aimarking.five-plus-one.com/ota/manife
 // 缓存 manifest 数据
 let manifestCache = null;
 let fetchPromise = null;
+let navVersionClickBound = false;
 
 /**
  * 获取 manifest 数据（带缓存）
@@ -44,21 +45,48 @@ export async function updateNavVersion() {
     const version = manifest.version;
     const versionText = `v${version}`;
 
-    // VitePress 的版本号在 VPFlyout > button > .text > span 中
-    // 查找所有 flyout 按钮的文本
-    const flyoutTexts = document.querySelectorAll('.VPNavBarMenuGroup .text > span:first-child');
-    for (const el of flyoutTexts) {
-        const text = el.textContent?.trim();
-        // 匹配 "获取中..." 或 "v" 开头的版本号
-        if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
-            el.textContent = versionText;
-            console.log('[Manifest] 版本号已更新:', versionText);
-            break;
-        }
-    }
+    updateVersionText(versionText);
+    bindNavVersionRefresh(versionText);
+
+    // 移动端菜单是按需渲染的，做有限次补刷，不监听 DOM，避免循环触发。
+    [0, 100, 300, 800].forEach(delay => {
+        window.setTimeout(() => updateVersionText(versionText), delay);
+    });
 
     // 更新 JSON-LD 中的 softwareVersion
     updateJsonLdVersion(version);
+}
+
+function updateVersionText(versionText) {
+    const versionTexts = document.querySelectorAll([
+        '.VPNavBarMenuGroup .text > span:first-child',
+        '.VPNavScreenMenuGroup .button-text',
+        '.VPNavScreenMenuLink span',
+    ].join(','));
+
+    for (const el of versionTexts) {
+        const text = el.textContent?.trim();
+        if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
+            if (text !== versionText) {
+                el.textContent = versionText;
+            }
+        }
+    }
+}
+
+function bindNavVersionRefresh(versionText) {
+    if (navVersionClickBound) return;
+    navVersionClickBound = true;
+
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        if (!target.closest('.VPNavBarHamburger')) return;
+
+        requestAnimationFrame(() => updateVersionText(versionText));
+        window.setTimeout(() => updateVersionText(versionText), 120);
+        window.setTimeout(() => updateVersionText(versionText), 320);
+    });
 }
 
 /**
