@@ -6,12 +6,12 @@ description: 查看评阅历史、检查更新、管理设置
 # 工具
 
 <div id="ai-tools-root">
-    <div style="text-align:center;padding:60px 20px;color:#86868b;">
-        <div style="font-size:48px;margin-bottom:16px;">🛠️</div>
-        <h2 style="font-size:18px;font-weight:600;color:#1a1a1a;margin-bottom:8px;">AI 批改助手工具</h2>
-        <p style="font-size:14px;line-height:1.6;">查看历史记录、检查更新、管理设置</p>
-        <p style="font-size:13px;color:#aaa;margin-top:16px;">需要安装 AI 批改助手脚本才能使用此功能</p>
-        <a href="https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js" style="display:inline-block;margin-top:12px;padding:10px 20px;background:#1a1a1a;color:white;border-radius:8px;text-decoration:none;font-size:13px;font-weight:500;">安装脚本</a>
+    <div class="tool-empty-state">
+        <div class="tool-empty-state__mark">Tools</div>
+        <h2>AI 批改助手工具</h2>
+        <p>查看历史记录、检查更新、管理设置</p>
+        <p class="tool-empty-state__hint">需要安装 AI 批改助手脚本才能使用此功能</p>
+        <a href="https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js">安装脚本</a>
     </div>
 </div>
 
@@ -33,7 +33,7 @@ onMounted(() => {
 
 安装脚本后，此页面将显示以下功能：
 
-### 📊 评阅历史
+### 评阅历史
 - 查看所有评阅记录
 - 支持 CSV、JSON、HTML 三种格式导出
 - 支持查看详情和纠错记录
@@ -44,7 +44,7 @@ onMounted(() => {
 - 查看更新日志
 - 联系作者
 
-### 🔄 检查更新
+### 检查更新
 - 检查是否有新版本
 - 自动下载更新
 
