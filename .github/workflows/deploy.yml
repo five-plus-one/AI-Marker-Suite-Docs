@@ -77,16 +77,13 @@ jobs:
           name: docs-dist
           path: dist
 
-      - name: Deploy to server via rsync
-        uses: burnett01/rsync-deployments@7.0.1
-        with:
-          switches: -avzr --delete
-          path: dist/
-          remote_path: /tmp/deploy-docs/
-          remote_host: ${{ secrets.SSH_HOST }}
-          remote_port: ${{ secrets.SSH_PORT || 22 }}
-          remote_user: ${{ secrets.SSH_USERNAME }}
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Upload dist via tar+ssh
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts 2>/dev/null
+          tar czf - -C dist . | ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT || 22 }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "rm -rf /tmp/deploy-docs && mkdir -p /tmp/deploy-docs && tar xzf - -C /tmp/deploy-docs"
 
       - name: Move to target and set permissions
         uses: appleboy/ssh-action@v1.0.3
