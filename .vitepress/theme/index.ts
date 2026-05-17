@@ -6,6 +6,9 @@ import { h } from 'vue'
 import HomeHero from './HomeHero.vue'
 import HomeSections from './HomeSections.vue'
 
+let clientInitDone = false
+let navScrollStateBound = false
+
 const CardGrid = {
   name: 'CardGrid',
   setup(_, { slots }) {
@@ -49,6 +52,9 @@ export default {
 
     // 页面加载完成后执行
     const init = () => {
+      if (clientInitDone) return
+      clientInitDone = true
+
       initNavScrollState()
 
       // 初始执行
@@ -65,6 +71,9 @@ export default {
     }
 
     const initNavScrollState = () => {
+      if (navScrollStateBound) return
+      navScrollStateBound = true
+
       const update = () => {
         document.documentElement.classList.toggle('nav-scrolled', window.scrollY > 8)
       }

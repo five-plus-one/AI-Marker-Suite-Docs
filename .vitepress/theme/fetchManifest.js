@@ -8,7 +8,7 @@ const MANIFEST_URL = 'https://auto-update.aimarking.five-plus-one.com/ota/manife
 // 缓存 manifest 数据
 let manifestCache = null;
 let fetchPromise = null;
-let navObserver = null;
+let navVersionClickBound = false;
 
 /**
  * 获取 manifest 数据（带缓存）
@@ -46,10 +46,10 @@ export async function updateNavVersion() {
     const versionText = `v${version}`;
 
     updateVersionText(versionText);
-    observeNavVersion(versionText);
+    bindNavVersionRefresh(versionText);
 
-    // 移动端菜单是按需渲染的，展开后再补几次，避免仍显示“获取中...”
-    [100, 300, 800].forEach(delay => {
+    // 移动端菜单是按需渲染的，做有限次补刷，不监听 DOM，避免循环触发。
+    [0, 100, 300, 800].forEach(delay => {
         window.setTimeout(() => updateVersionText(versionText), delay);
     });
 
@@ -58,7 +58,6 @@ export async function updateNavVersion() {
 }
 
 function updateVersionText(versionText) {
-    let changed = false;
     const versionTexts = document.querySelectorAll([
         '.VPNavBarMenuGroup .text > span:first-child',
         '.VPNavScreenMenuGroup .button-text',
@@ -70,27 +69,23 @@ function updateVersionText(versionText) {
         if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
             if (text !== versionText) {
                 el.textContent = versionText;
-                changed = true;
             }
         }
     }
-
-    return changed;
 }
 
-function observeNavVersion(versionText) {
-    if (navObserver) return;
+function bindNavVersionRefresh(versionText) {
+    if (navVersionClickBound) return;
+    navVersionClickBound = true;
 
-    navObserver = new MutationObserver(() => {
-        updateVersionText(versionText);
-    });
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        if (!target.closest('.VPNavBarHamburger')) return;
 
-    const nav = document.querySelector('.VPNav');
-    if (!nav) return;
-
-    navObserver.observe(nav, {
-        childList: true,
-        subtree: true,
+        requestAnimationFrame(() => updateVersionText(versionText));
+        window.setTimeout(() => updateVersionText(versionText), 120);
+        window.setTimeout(() => updateVersionText(versionText), 320);
     });
 }
 
