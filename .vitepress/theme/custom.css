@@ -1069,6 +1069,12 @@ body {
   line-height: 1.6;
 }
 
+.changelog-channel-version {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--vp-c-text-3);
+}
+
 @media (max-width: 768px) {
   html,
   body {
