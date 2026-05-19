@@ -1,17 +1,21 @@
 /**
  * fetchManifest.js
  * 客户端脚本：从远端 manifest.json 动态加载版本号和 changelog
+ * 支持 stable / preview 双渠道
  */
 
 const MANIFEST_URL = 'https://auto-update.aimarking.five-plus-one.com/ota/manifest.json';
+const PREVIEW_MANIFEST_URL = 'https://auto-update.aimarking.five-plus-one.com/ota/preview/manifest.json';
 
 // 缓存 manifest 数据
 let manifestCache = null;
+let previewManifestCache = null;
 let fetchPromise = null;
+let fetchPreviewPromise = null;
 let navVersionClickBound = false;
 
 /**
- * 获取 manifest 数据（带缓存）
+ * 获取 stable manifest 数据（带缓存）
  */
 export async function fetchManifest() {
     if (manifestCache) return manifestCache;
@@ -36,14 +40,51 @@ export async function fetchManifest() {
 }
 
 /**
- * 更新导航栏版本号
+ * 获取 preview manifest 数据（带缓存）
+ */
+export async function fetchPreviewManifest() {
+    if (previewManifestCache) return previewManifestCache;
+    if (fetchPreviewPromise) return fetchPreviewPromise;
+
+    fetchPreviewPromise = (async () => {
+        try {
+            const response = await fetch(PREVIEW_MANIFEST_URL + '?_t=' + Date.now());
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            previewManifestCache = await response.json();
+            console.log('[Manifest-Preview] 获取成功，版本:', previewManifestCache.version);
+            return previewManifestCache;
+        } catch (error) {
+            console.warn('[Manifest-Preview] 获取失败:', error.message);
+            return null;
+        } finally {
+            fetchPreviewPromise = null;
+        }
+    })();
+
+    return fetchPreviewPromise;
+}
+
+/**
+ * 更新导航栏版本号（同时展示 stable 和 preview）
  */
 export async function updateNavVersion() {
-    const manifest = await fetchManifest();
-    if (!manifest?.version) return;
+    const [manifest, previewManifest] = await Promise.all([
+        fetchManifest(),
+        fetchPreviewManifest(),
+    ]);
 
-    const version = manifest.version;
-    const versionText = `v${version}`;
+    const stableVersion = manifest?.version;
+    const previewVersion = previewManifest?.version;
+
+    if (!stableVersion && !previewVersion) return;
+
+    // 构造版本文本
+    let versionText;
+    if (stableVersion && previewVersion && stableVersion !== previewVersion) {
+        versionText = `v${stableVersion} / 预览 v${previewVersion}`;
+    } else {
+        versionText = `v${stableVersion || previewVersion}`;
+    }
 
     updateVersionText(versionText);
     bindNavVersionRefresh(versionText);
@@ -53,8 +94,10 @@ export async function updateNavVersion() {
         window.setTimeout(() => updateVersionText(versionText), delay);
     });
 
-    // 更新 JSON-LD 中的 softwareVersion
-    updateJsonLdVersion(version);
+    // 更新 JSON-LD 中的 softwareVersion（使用 stable 版本）
+    if (stableVersion) {
+        updateJsonLdVersion(stableVersion);
+    }
 }
 
 function updateVersionText(versionText) {
@@ -109,12 +152,17 @@ function updateJsonLdVersion(version) {
 
 /**
  * 渲染 changelog 到指定容器
+ * @param {HTMLElement} container - 容器元素
+ * @param {Object} changelog - 版本 changelog 对象 { '1.21.5': ['...'], ... }
+ * @param {Object|null} changelogDates - 版本日期映射 { '1.21.5': '2026-05-16', ... }
  */
-export function renderChangelog(container, changelog) {
+export function renderChangelog(container, changelog, changelogDates) {
     if (!changelog || typeof changelog !== 'object') {
         container.innerHTML = '<p style="color: #999;">暂无更新日志</p>';
         return;
     }
+
+    const dates = changelogDates || {};
 
     const versions = Object.keys(changelog).sort((a, b) => {
         const pa = a.split('.').map(Number);
@@ -126,37 +174,10 @@ export function renderChangelog(container, changelog) {
         return 0;
     });
 
-    // 日期映射
-    const dateMap = {
-        '1.21.5': '2026-05-16',
-        '1.21.4': '2026-05-15',
-        '1.21.3.0': '2026-05-13',
-        '1.21.3': '2026-05-13',
-        '1.21.2.203': '2026-05-09',
-        '1.21.2.105': '2026-05-09',
-        '1.21.2': '2026-05-09',
-        '1.12.1': '2026-05-08',
-        '1.12.0': '2026-05-07',
-        '1.11.3': '2026-05-07',
-        '1.11.2': '2026-05-02',
-        '1.11.1': '2026-05-02',
-        '1.11.0': '2026-05-02',
-        '1.10.4': '2026-05-01',
-        '1.10.3': '2026-05-01',
-        '1.10.2': '2026-05-01',
-        '1.10.0': '2026-05-01',
-        '1.9.0': '2026-04-30',
-        '1.8.6': '2026-04-30',
-        '1.8.5': '2026-04-30',
-        '1.8.3': '2026-04-30',
-        '1.8.0': '2026-04-20',
-        '1.7.0': '2026-04-10',
-    };
-
     let html = '';
     versions.forEach((ver, idx) => {
         const items = changelog[ver];
-        const date = dateMap[ver] || '';
+        const date = dates[ver] || '';
         const isLatest = idx === 0;
 
         html += `<div class="changelog-version${isLatest ? '' : ' collapsed'}">`;
@@ -176,26 +197,54 @@ export function renderChangelog(container, changelog) {
 }
 
 /**
- * 初始化 changelog 页面
+ * 初始化 changelog 页面（同时加载 stable 和 preview）
  */
 export async function initChangelogPage() {
     // 只在 changelog 页面执行
     if (!window.location.pathname.includes('/changelog')) return;
 
-    const container = document.getElementById('dynamic-changelog');
-    if (!container) return;
+    const stableContainer = document.getElementById('dynamic-changelog');
+    const previewContainer = document.getElementById('dynamic-changelog-preview');
 
-    // 检查是否已经渲染过（避免重复渲染）
-    if (container.dataset.loaded === 'true') return;
+    // 如果两个容器都不存在，跳过
+    if (!stableContainer && !previewContainer) return;
 
-    // 显示加载状态
-    container.innerHTML = '<p style="color: #999;">正在加载最新更新日志...</p>';
+    // 检查是否已经渲染过
+    if (stableContainer?.dataset.loaded === 'true' && previewContainer?.dataset.loaded === 'true') return;
 
-    const manifest = await fetchManifest();
-    if (manifest?.changelog) {
-        renderChangelog(container, manifest.changelog);
-        container.dataset.loaded = 'true';
-    } else {
-        container.innerHTML = '<p style="color: #999;">加载失败，请刷新页面重试</p>';
+    // 并行加载 stable 和 preview
+    const [stableManifest, previewManifest] = await Promise.all([
+        fetchManifest(),
+        fetchPreviewManifest(),
+    ]);
+
+    // 渲染 stable changelog
+    if (stableContainer && stableContainer.dataset.loaded !== 'true') {
+        if (stableManifest?.changelog) {
+            // 更新 stable 版本号显示
+            const stableVersionEl = document.getElementById('stable-version');
+            if (stableVersionEl && stableManifest.version) {
+                stableVersionEl.textContent = `v${stableManifest.version}`;
+            }
+            renderChangelog(stableContainer, stableManifest.changelog, stableManifest.changelogDates);
+            stableContainer.dataset.loaded = 'true';
+        } else {
+            stableContainer.innerHTML = '<p style="color: #999;">加载失败，请刷新页面重试</p>';
+        }
+    }
+
+    // 渲染 preview changelog
+    if (previewContainer && previewContainer.dataset.loaded !== 'true') {
+        if (previewManifest?.changelog) {
+            // 更新 preview 版本号显示
+            const previewVersionEl = document.getElementById('preview-version');
+            if (previewVersionEl && previewManifest.version) {
+                previewVersionEl.textContent = `v${previewManifest.version}`;
+            }
+            renderChangelog(previewContainer, previewManifest.changelog, previewManifest.changelogDates);
+            previewContainer.dataset.loaded = 'true';
+        } else {
+            previewContainer.innerHTML = '<p style="color: #999;">暂无预览版更新日志</p>';
+        }
     }
 }

@@ -82,10 +82,20 @@ AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器
 
 Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。
 
-1. **在 Edge 浏览器中**打开下方链接（不要在微信中打开）：
+AI 批改助手提供两个版本渠道，请根据需要选择：
 
-   **[点击一键安装 AI 批改助手](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)**
+| 版本 | 说明 | 安装链接 |
+|------|------|---------|
+| **稳定版** | 经过充分测试，推荐日常使用 | **[点击安装稳定版](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)** |
+| **预览版** | 包含最新功能，可能不够稳定 | **[点击安装预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)** |
 
+::: tip 稳定版和预览版的区别
+- **稳定版**：经过充分测试的功能版本，适合日常批改使用
+- **预览版**：包含正在测试中的新功能，适合想提前体验的用户。如遇到问题可随时在脚本设置中切换回稳定版
+- **开发版**：面向开发者的自动构建版本，不提供公开安装链接
+:::
+
+1. **在 Edge 浏览器中**点击上方安装链接（不要在微信中打开）
 2. 浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限
 3. 点击 **「安装」** 按钮
 
@@ -123,7 +133,7 @@ Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。
 
 你也可以手动更新：
 
-1. 重新点击[一键安装链接](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)
+1. 重新点击对应的安装链接（[稳定版](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js) / [预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)）
 2. Tampermonkey 会提示是否更新，点击「更新」即可
 
 ## 卸载脚本
