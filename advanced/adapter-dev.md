@@ -24,7 +24,11 @@ src/
     ├── qitian/              # 七天网络旧版
     │   ├── adapter.js
     │   └── selectors.js
-    └── qitian-new/          # 七天网络新 UI
+    ├── qitian-new/          # 七天网络新 UI
+    │   ├── adapter.js
+    │   └── selectors.js
+    ├── ...                  # 其他平台适配器（共 11 个）
+    └── runjian/             # 润建学情
         ├── adapter.js
         └── selectors.js
 ```
@@ -268,9 +272,12 @@ node build.js
 
 建议参考现有适配器的实现：
 
-- **智学网** (`src/adapters/zhixue/`) — 最成熟的实现
+- **智学网** (`src/adapters/zhixue/`) — 最成熟的实现，传统 DOM + 输入框评分
 - **七天网络旧版** (`src/adapters/qitian/`) — 传统页面适配
-- **七天网络新 UI** (`src/adapters/qitian-new/`) — Vue SPA + Canvas 适配
+- **七天网络新 UI** (`src/adapters/qitian-new/`) — Vue SPA + Canvas + XHR 拦截
+- **光大阅卷** (`src/adapters/guangda/`) — 点击式评分 + Canvas + Vue 组件交互
+- **新教育** (`src/adapters/xinjiaoyu/`) — 双模式（考试+作业）+ API 拦截
+- **润建学情** (`src/adapters/runjian/`) — CSS background-image + Element UI 点击式评分
 
 ## 提交贡献
 
