@@ -43,7 +43,8 @@ npm run preview
 │   ├── hanhan.md          # 华翰云
 │   ├── guangda.md         # 光大阅卷
 │   ├── yunyuejuan.md      # 云阅卷
-│   └── xinjiaoyu.md       # 新教育
+│   ├── xinjiaoyu.md       # 新教育
+│   └── runjian.md         # 润建学情
 ├── advanced/        # 进阶功能
 │   ├── correction.md      # 分数纠错
 │   ├── history.md         # 批改历史

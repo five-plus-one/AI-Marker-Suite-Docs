@@ -7,7 +7,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷和新教育。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -44,7 +44,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'AI 批改助手' }],
     ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷和华翰云，自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸，自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
     ['meta', { property: 'og:url', content: SITE_URL }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
@@ -54,14 +54,14 @@ export default defineConfig({
     // SEO: Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷和华翰云，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸，三种批改模式，支持分小题评分和分数纠错。' }],
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
 
     // SEO: Additional Keywords
-    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
+    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
 
     // GEO: AI crawler hints
-    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络、好分数、五岳阅卷和华翰云阅卷平台上自动批改主观题试卷' }],
+    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸阅卷平台上自动批改主观题试卷' }],
 
     // GEO: Structured Data (JSON-LD) - SoftwareApplication
     ['script', { type: 'application/ld+json' }, JSON.stringify({
@@ -69,7 +69,7 @@ export default defineConfig({
       '@type': 'SoftwareApplication',
       name: 'AI 批改助手',
       alternateName: 'AI-Marker-Suite',
-      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷和华翰云。自动识别手写答案并评分，支持三种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
+      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸。自动识别手写答案并评分，支持三种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
       url: SITE_URL,
       applicationCategory: 'EducationalApplication',
       operatingSystem: '浏览器（Tampermonkey）',
@@ -93,7 +93,7 @@ export default defineConfig({
         '工作流配置：快速批改/普通批改/双评模式，支持自定义模型和思考链深度',
         '分小题评分：大题拆分为多个小题分别评分',
         '分数纠错：AI自动分析评分差异并优化评分标准',
-        '多平台支持：智学网、七天网络、好分数、五岳阅卷、华翰云',
+        '多平台支持：智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸',
         '多服务商兼容：5+1 AI、火山引擎、硅基流动等支持图片识别的接口',
         '评阅历史：记录、筛选、导出HTML报告',
         '配置导入导出：JSON备份与恢复',
@@ -150,7 +150,7 @@ export default defineConfig({
           name: 'AI批改助手支持哪些平台？',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / yj5.7net.cc）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）和华翰云（yunyuejuan.net），通过适配器模式自动检测当前平台。',
+            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / yj5.7net.cc）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）、华翰云（yunyuejuan.net）、光大阅卷（pj.yixx.cn）、云阅卷、新教育（xinjiaoyu.com）、润建学情（aisusheng.runjian.com）和54学霸（54xueba.cn），通过适配器模式自动检测当前平台。',
           },
         },
         {
@@ -292,6 +292,8 @@ export default defineConfig({
             { text: '光大阅卷', link: '/platforms/guangda' },
             { text: '云阅卷', link: '/platforms/yunyuejuan' },
             { text: '新教育', link: '/platforms/xinjiaoyu' },
+            { text: '润建学情', link: '/platforms/runjian' },
+            { text: '54学霸', link: '/platforms/xueba54' },
           ],
         },
       ],
