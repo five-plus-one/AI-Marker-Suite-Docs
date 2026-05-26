@@ -1,6 +1,7 @@
 ---
 title: 安装教程 — AI 批改助手
-description: AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。
+description: AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等十大阅卷平台自动批改主观题。
+keywords: AI批改助手,安装教程,Tampermonkey,油猴脚本,Edge浏览器,一键安装,自动批改,智能阅卷,智学网,七天网络,好分数,浏览器扩展
 ---
 
 # 安装教程
