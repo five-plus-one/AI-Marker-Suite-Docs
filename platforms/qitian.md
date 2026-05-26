@@ -1,6 +1,7 @@
 ---
 title: 七天网络适配 — AI 批改助手
-description: AI批改助手在七天网络(7net.cc/qt7.net/yj5.7net.cc)阅卷平台上的使用说明。支持旧版和新UI两个适配器。
+description: AI批改助手七天网络适配器使用说明。支持7net.cc/qt7.net旧版和yj5.7net.cc新UI两个阅卷平台，自动识别答题卡图片、AI智能评分、自动填分提交，包含Canvas渲染和API拦截技术方案。
+keywords: 七天网络,AI批改,AI阅卷,自动批改,智能阅卷,7net.cc,qt7.net,答题卡识别,AI评分,自动提交,分小题评分,手写识别,在线阅卷助手
 ---
 
 # 七天网络

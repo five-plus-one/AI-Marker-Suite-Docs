@@ -1,6 +1,7 @@
 ---
-title: 润建学情 — AI 批改助手
-description: AI 批改助手在润建学情大数据精准分析平台 (aisusheng.runjian.com) 上的使用说明。
+title: 润建学情适配 — AI 批改助手
+description: AI批改助手润建学情适配器使用说明。支持aisusheng.runjian.com阅卷平台CSS背景图渲染、点击式评分按钮、API拦截获取答题卡图片。包含技术特点、操作流程和常见问题解答。
+keywords: 润建学情,AI批改,AI阅卷,自动批改,智能阅卷,aisusheng.runjian.com,答题卡识别,AI评分,点击式评分,自动提交,手写识别,在线阅卷助手
 ---
 
 # 润建学情

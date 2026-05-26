@@ -1,6 +1,7 @@
 ---
-title: 54学霸 — AI 批改助手
-description: AI 批改助手在54学霸在线阅卷平台 (54xueba.cn) 上的使用说明。
+title: 54学霸阅卷平台适配 — AI 批改助手
+description: AI批改助手54学霸适配器使用说明。支持54xueba.cn阅卷平台Canvas/base64图片渲染、多小题输入框评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。
+keywords: 54学霸,AI批改,AI阅卷,自动批改,智能阅卷,54xueba.cn,Canvas渲染,base64图片,答题卡识别,AI评分,多小题评分,自动提交,手写识别,在线阅卷助手
 ---
 
 # 54学霸
