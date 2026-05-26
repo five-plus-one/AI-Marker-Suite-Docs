@@ -100,3 +100,10 @@ jobs:
             sudo chown -R $OWNER $DEPLOY_DIR/
             sudo chmod -R 755 $DEPLOY_DIR/
             rm -rf /tmp/deploy-docs
+
+      - name: Wait for sitemap to be available
+        run: sleep 30
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/submit-indexnow.cjs
+        continue-on-error: true
