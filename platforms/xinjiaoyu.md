@@ -1,6 +1,7 @@
 ---
-title: 新教育 — AI 批改助手
-description: AI 批改助手在新教育智能平台 (www.xinjiaoyu.com) 上的使用说明。
+title: 新教育适配 — AI 批改助手
+description: AI批改助手新教育适配器使用说明。支持xinjiaoyu.com阅卷平台考试系统和作业系统两种批改模式，通过API拦截获取答题卡图片，AI智能评分自动提交。
+keywords: 新教育,AI批改,AI阅卷,自动批改,智能阅卷,xinjiaoyu.com,考试系统,作业系统,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
 ---
 
 # 新教育

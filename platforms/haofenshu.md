@@ -1,6 +1,7 @@
 ---
 title: 好分数适配 — AI 批改助手
-description: AI批改助手在好分数(haofenshu.com)阅卷平台上的使用说明。支持SVG答题卡识别、Vue输入框分数填充、分小题评分。
+description: AI批改助手好分数适配器使用说明。支持haofenshu.com阅卷平台SVG答题卡识别、Vue响应式输入框分数填充、分小题评分功能。包含技术特点、操作流程和常见问题解答。
+keywords: 好分数,AI批改,AI阅卷,自动批改,智能阅卷,haofenshu.com,SVG答题卡,答题卡识别,AI评分,自动提交,分小题评分,手写识别,在线阅卷助手
 ---
 
 # 好分数

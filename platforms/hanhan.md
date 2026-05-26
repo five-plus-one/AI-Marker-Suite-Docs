@@ -1,6 +1,7 @@
 ---
 title: 华翰云适配 — AI 批改助手
-description: AI批改助手在华翰云(yunyuejuan.net)阅卷平台上的使用说明。支持答题卡识别、分小题评分。
+description: AI批改助手华翰云适配器使用说明。支持yunyuejuan.net阅卷平台答题卡识别、Vue响应式输入框分数填充、自动提交功能。包含技术特点、操作流程和常见问题解答。
+keywords: 华翰云,AI批改,AI阅卷,自动批改,智能阅卷,yunyuejuan.net,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
 ---
 
 # 华翰云

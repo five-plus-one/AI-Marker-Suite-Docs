@@ -1,6 +1,7 @@
 ---
-title: 光大阅卷 — AI 批改助手
-description: AI 批改助手在光大阅卷平台 (pj.yixx.cn) 上的使用说明。
+title: 光大阅卷适配 — AI 批改助手
+description: AI批改助手光大阅卷适配器使用说明。支持pj.yixx.cn阅卷平台Canvas图片渲染、点击式分数选择、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。
+keywords: 光大阅卷,AI批改,AI阅卷,自动批改,智能阅卷,pj.yixx.cn,Canvas渲染,答题卡识别,AI评分,点击式评分,自动提交,手写识别,在线阅卷助手
 ---
 
 # 光大阅卷

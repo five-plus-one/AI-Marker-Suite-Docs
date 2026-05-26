@@ -58,7 +58,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
 
     // SEO: Additional Keywords
-    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手' }],
+    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手,AI自动批改,智能阅卷助手,手写识别,AI作文评分,在线阅卷工具,自动批改脚本,阅卷效率工具,AI手写识别,自动评分系统,在线考试阅卷' }],
 
     // GEO: AI crawler hints
     ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情和54学霸阅卷平台上自动批改主观题试卷' }],
