@@ -1289,3 +1289,52 @@ body {
     animation: none !important;
   }
 }
+
+/* ========== Feedback Thank You Page ========== */
+.feedback-thankyou {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+  text-align: center;
+}
+
+.feedback-thankyou h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.feedback-thankyou p {
+  color: var(--vp-c-text-2);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.feedback-qr {
+  margin: 32px 0;
+}
+
+.feedback-qr img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.feedback-qr figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--vp-c-text-3);
+}
+
+.feedback-thankyou a {
+  display: inline-block;
+  margin-top: 24px;
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+}
+
+.feedback-thankyou a:hover {
+  color: var(--vp-c-brand-2);
+}

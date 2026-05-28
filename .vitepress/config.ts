@@ -236,7 +236,7 @@ export default defineConfig({
           { text: '安装稳定版（推荐）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: '安装预览版（尝鲜）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js' },
           { text: 'GitHub 源码', link: 'https://github.com/five-plus-one/AI-Marker-Suite' },
-          { text: '问题反馈', link: 'https://github.com/five-plus-one/AI-Marker-Suite/issues' },
+          { text: '问卷反馈', link: 'https://3dpWmS.rk.r-l.ink/common/channel/redirect/?cid=728548' },
         ],
       },
     ],
