@@ -223,20 +223,13 @@ export default defineConfig({
       { text: '进阶', link: '/advanced/' },
       { text: '工具', link: '/tools' },
       { text: '更新日志', link: '/changelog' },
-      {
-        text: '加入社群',
-        items: [
-          { text: '微信交流群', link: 'https://r-l.ink/s/L9Akf' },
-          { text: 'QQ 交流群', link: 'https://r-l.ink/s/WbMrR' },
-        ],
-      },
+      { text: '帮助与支持', link: '/support' },
       {
         text: '获取中...', // 版本号会由前端 JavaScript 动态更新
         items: [
           { text: '安装稳定版（推荐）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: '安装预览版（尝鲜）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js' },
           { text: 'GitHub 源码', link: 'https://github.com/five-plus-one/AI-Marker-Suite' },
-          { text: '问卷反馈', link: 'https://3dpWmS.rk.r-l.ink/common/channel/redirect/?cid=728548' },
         ],
       },
     ],

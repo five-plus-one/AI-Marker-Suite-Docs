@@ -1341,3 +1341,48 @@ body {
 .feedback-thankyou a:hover {
   color: var(--vp-c-brand-2);
 }
+
+/* ========== Support Page ========== */
+.support-link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 32px;
+}
+
+.support-link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+.support-link-card:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft-up);
+  color: var(--vp-c-brand-1);
+}
+
+.support-link-card--primary {
+  border-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.support-link-card--primary:hover {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+}
+
+.support-link-icon {
+  font-size: 18px;
+  line-height: 1;
+}
