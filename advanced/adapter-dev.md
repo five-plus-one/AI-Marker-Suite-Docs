@@ -27,8 +27,8 @@ src/
     ├── qitian-new/          # 七天网络新 UI
     │   ├── adapter.js
     │   └── selectors.js
-    ├── ...                  # 其他平台适配器（共 11 个）
-    └── runjian/             # 润建学情
+    ├── ...                  # 其他平台适配器（共 15 个）
+    └── xinkao/              # 鑫考
         ├── adapter.js
         └── selectors.js
 ```
@@ -278,6 +278,10 @@ node build.js
 - **光大阅卷** (`src/adapters/guangda/`) — 点击式评分 + Canvas + Vue 组件交互
 - **新教育** (`src/adapters/xinjiaoyu/`) — 双模式（考试+作业）+ API 拦截
 - **润建学情** (`src/adapters/runjian/`) — CSS background-image + Element UI 点击式评分
+- **九科星** (`src/adapters/jiukexing/`) — Vue SPA + OBS 图片裁剪 + 多小题输入框
+- **慧阅卷** (`src/adapters/huiyuejuan/`) — AngularJS + frameset/frame 架构 + 点击式评分
+- **乐华阅卷** (`src/adapters/lehua/`) — Vue + Element UI + Canvas + 点击式评分
+- **鑫考** (`src/adapters/xinkao/`) — jQuery + 动态 IP 部署 + DOM 特征检测
 
 ## 提交贡献
 
