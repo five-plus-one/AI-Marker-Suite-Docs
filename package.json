@@ -10,6 +10,7 @@
     "indexnow": "node scripts/submit-indexnow.cjs"
   },
   "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
   }
 }

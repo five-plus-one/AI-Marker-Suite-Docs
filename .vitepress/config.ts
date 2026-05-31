@@ -12,6 +12,7 @@ export default defineConfig({
   cleanUrls: true,
 
   markdown: {
+    math: true,
     config(md) {
       const tableOpen = md.renderer.rules.table_open || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
       const tableClose = md.renderer.rules.table_close || ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options))
@@ -264,6 +265,7 @@ export default defineConfig({
             { text: '评分规则', link: '/config/rubric' },
             { text: '预设方案管理', link: '/config/presets' },
             { text: '分小题配置', link: '/config/sub-questions' },
+            { text: '公式语法指南', link: '/config/formula' },
           ],
         },
       ],
