@@ -93,7 +93,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT || 22 }}
           script: |
-            DEPLOY_DIR=/opt/1panel/apps/openresty/openresty/www/sites/aimarking-suite-docs/index
+            DEPLOY_DIR=/opt/1panel/www/sites/aimarking-docs/index
             OWNER=$(stat -c '%U:%G' "$DEPLOY_DIR")
             sudo rm -rf ${DEPLOY_DIR:?}/*
             sudo cp -r /tmp/deploy-docs/* $DEPLOY_DIR/
