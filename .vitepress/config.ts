@@ -224,7 +224,13 @@ export default defineConfig({
       { text: '进阶', link: '/advanced/' },
       { text: '工具', link: '/tools' },
       { text: '更新日志', link: '/changelog' },
-      { text: '帮助与支持', link: '/support' },
+      {
+        text: '帮助与支持',
+        items: [
+          { text: '帮助中心', link: '/support' },
+          { text: '服务状态', link: 'https://status.five-plus-one.com/status/aimarking', target: '_blank' },
+        ],
+      },
       {
         text: '获取中...', // 版本号会由前端 JavaScript 动态更新
         items: [

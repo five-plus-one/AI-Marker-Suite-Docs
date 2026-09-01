@@ -37,3 +37,14 @@ description: AI 批改助手帮助与支持。加入微信、QQ 交流群，填�
 
 - **GitHub Issues**：[提交 Bug 或功能建议](https://github.com/five-plus-one/AI-Marker-Suite/issues)
 - **联系方式**：[https://r-l.ink/contact](https://r-l.ink/contact)
+
+## 服务状态
+
+查看 AI 批改助手各服务的实时运行状态，包括 OTA 更新服务器、API 接口等。
+
+<div class="support-link-grid">
+  <a class="support-link-card support-link-card--primary" href="https://status.five-plus-one.com/status/aimarking" target="_blank">
+    <span class="support-link-icon">📊</span>
+    <span>查看服务状态</span>
+  </a>
+</div>
