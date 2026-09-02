@@ -27,7 +27,7 @@ src/
     ├── qitian-new/          # 七天网络新 UI
     │   ├── adapter.js
     │   └── selectors.js
-    ├── ...                  # 其他平台适配器（共 15 个）
+    ├── ...                  # 其他平台适配器（src/adapters/ 下共 22 个）
     └── xinkao/              # 鑫考
         ├── adapter.js
         └── selectors.js
@@ -131,32 +131,36 @@ async fetchImageAsBase64(url) {
 
 ### 分数填入
 
-#### `fillScore(request)`
+#### `fillScores(scores)`（推荐）
 
-将分数值填入页面上的分数输入框。
+按顺序将分数填入页面上的输入框。`scores` 数组长度与 `getScoreInputs()` 返回的输入框数量一致（单题模式为 1 个）。
 
 ```javascript
 /**
- * @param {ScoreFillRequest} request
+ * @param {number[]} scores - 各评分单元的分数（已含勤勉加分和取整）
  * @returns {boolean} 成功找到并填入了输入框
  */
-fillScore(request) {
-    const input = document.querySelector('.score-input');
-    if (!input) return false;
+fillScores(scores) {
+    const inputs = document.querySelectorAll('.score-input');
+    if (!inputs.length || scores[0] == null) return false;
 
     const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
         window.HTMLInputElement.prototype, 'value'
     ).set;
-    nativeInputValueSetter.call(input, request.total);
-    input.dispatchEvent(new Event('input', { bubbles: true }));
-    input.dispatchEvent(new Event('change', { bubbles: true }));
+    nativeInputValueSetter.call(inputs[0], scores[0]);
+    inputs[0].dispatchEvent(new Event('input', { bubbles: true }));
+    inputs[0].dispatchEvent(new Event('change', { bubbles: true }));
 
     return true;
 }
 ```
 
+#### `fillScore(request)`（已废弃）
+
+旧接口，仅为向后兼容保留。核心层会自动将 `fillScores` 包装为 `fillScore` 调用，**新适配器无需实现此方法**，统一实现 `fillScores` 即可。
+
 ::: tip 分小题填入
-如果 `request.subScores` 存在，需要将每个小题的分数填入对应的输入框。参考智学网适配器的实现。
+多小题平台的输入框数量由 `getScoreInputs()` 返回，`fillScores` 会按相同顺序收到每个小题的分数。参考智学网适配器的实现。
 :::
 
 ### 提交
@@ -213,9 +217,9 @@ isRegradeMode() {
 
 返回当前页面上所有分数输入框的信息数组。
 
-#### `detectSubQuestions()`
+#### `detectSubQuestions()`（已废弃）
 
-从 DOM 自动检测当前题目的小题列表。
+旧接口，仅为向后兼容保留。新适配器应使用 `getScoreInputs()` 替代：返回多个输入框即代表多个评分单元。
 
 ### 可选钩子
 
@@ -263,7 +267,7 @@ node build.js
 
 ```
 新平台打分助手加载中...
-[诊断] 脚本版本: 1.11.2 | 平台: 新平台 | 浏览器: Chrome/xxx
+[诊断] 脚本版本: 1.21.11 | 平台: 新平台 | 浏览器: Chrome/xxx
 ```
 
 在关键方法中添加 `console.log` 输出调试信息。
