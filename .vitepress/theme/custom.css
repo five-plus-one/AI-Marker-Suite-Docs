@@ -53,6 +53,12 @@ body {
   letter-spacing: 0;
 }
 
+/* 裁掉 home-hero 全宽出血（100vw 含滚动条宽度）带来的几像素横向溢出，
+   避免整页出现横向滚动条；clip 不创建滚动容器，不影响吸顶导航 */
+html {
+  overflow-x: clip;
+}
+
 .VPNav {
   position: sticky !important;
   top: 0 !important;
@@ -322,6 +328,58 @@ body {
   pointer-events: none;
 }
 
+/* ========== 正文列宽调整（VitePress 默认 688px 偏窄，宽表格频繁横向滚动） ========== */
+/* 注意：VitePress 源规则带 scoped 属性选择器，特异性更高，
+   故用 .VPDoc.VPDoc 双写提升特异性（相同特异性时靠后的 custom.css 胜出） */
+/* ≥1420px：空间充足，正文列放宽到 768px，右侧"本页目录"保持 256px 不受挤压 */
+@media (min-width: 1420px) {
+  .VPDoc.VPDoc.has-aside .content-container {
+    max-width: 768px;
+  }
+}
+
+/* 1280–1419px：正文列上限 744px（右侧"本页目录"显示时） */
+@media (min-width: 1280px) and (max-width: 1419.98px) {
+  .VPDoc.VPDoc.has-aside .content-container {
+    max-width: 744px;
+  }
+}
+
+/* 768–1419px：空间较紧张（含最常见的 1280 笔记本）。
+   收窄侧边导航（272→232）与两侧留白（32→24），右侧"本页目录"临时收窄到 168px，
+   让宽表格（如"模式对比"表，自然宽约 730px）尽量完整显示 */
+@media (min-width: 768px) and (max-width: 1419.98px) {
+  :root {
+    --vp-sidebar-width: 232px;
+  }
+
+  .VPDoc.VPDoc {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .VPDoc .content {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .VPDoc .aside {
+    max-width: 200px;
+  }
+
+  .VPDoc .aside-container {
+    width: 168px;
+  }
+}
+
+/* <1280px：右侧"本页目录"隐藏，VitePress 仍把正文锁在 688px，容器存在大量空余；
+   放宽到 848px 让宽表格用上这些空间 */
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .VPDoc.VPDoc.has-aside .content-container {
+    max-width: min(100%, 848px);
+  }
+}
+
 .vp-doc tr {
   border: 0;
 }
@@ -336,7 +394,7 @@ body {
 .vp-doc td {
   border-right: 1px solid var(--vp-c-divider);
   border-bottom: 1px solid var(--vp-c-divider);
-  padding: 12px 14px;
+  padding: 10px 11px;
 }
 
 .vp-doc th:last-child,
@@ -535,7 +593,7 @@ body {
 .home-hero__content {
   align-self: center;
   justify-self: center;
-  width: min(1080px, calc(100vw - 72px));
+  width: min(1080px, calc(100% - 72px));
   padding: 78px 0 118px;
   text-align: center;
 }
@@ -630,7 +688,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: min(760px, calc(100vw - 72px));
+  width: min(760px, calc(100% - 72px));
   gap: 10px;
   transform: translateX(-50%);
   animation: homeFadeUp 0.8s 0.36s ease-out both;
@@ -695,7 +753,7 @@ body {
 }
 
 .home-sections {
-  width: min(1120px, calc(100vw - 48px));
+  width: min(1120px, calc(100% - 48px));
   margin: 0 auto 72px;
 }
 

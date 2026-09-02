@@ -12,7 +12,6 @@ let manifestCache = null;
 let previewManifestCache = null;
 let fetchPromise = null;
 let fetchPreviewPromise = null;
-let navVersionClickBound = false;
 
 /**
  * 获取 stable manifest 数据（带缓存）
@@ -65,71 +64,18 @@ export async function fetchPreviewManifest() {
 }
 
 /**
- * 更新导航栏版本号（同时展示 stable 和 preview）
+ * 更新页面结构化数据中的版本号
+ * 注：导航栏下载入口固定显示「下载」，不再替换为长版本号
+ * （长版本号如 "v1.21.10.0 / 预览 v1.21.11.0-preview.29" 会把导航栏撑宽，
+ *  导致窄屏下整个页面出现横向滚动）
  */
 export async function updateNavVersion() {
-    const [manifest, previewManifest] = await Promise.all([
-        fetchManifest(),
-        fetchPreviewManifest(),
-    ]);
-
-    const stableVersion = manifest?.version;
-    const previewVersion = previewManifest?.version;
-
-    if (!stableVersion && !previewVersion) return;
-
-    // 构造版本文本
-    let versionText;
-    if (stableVersion && previewVersion && stableVersion !== previewVersion) {
-        versionText = `v${stableVersion} / 预览 v${previewVersion}`;
-    } else {
-        versionText = `v${stableVersion || previewVersion}`;
-    }
-
-    updateVersionText(versionText);
-    bindNavVersionRefresh(versionText);
-
-    // 移动端菜单是按需渲染的，做有限次补刷，不监听 DOM，避免循环触发。
-    [0, 100, 300, 800].forEach(delay => {
-        window.setTimeout(() => updateVersionText(versionText), delay);
-    });
+    const manifest = await fetchManifest();
 
     // 更新 JSON-LD 中的 softwareVersion（使用 stable 版本）
-    if (stableVersion) {
-        updateJsonLdVersion(stableVersion);
+    if (manifest?.version) {
+        updateJsonLdVersion(manifest.version);
     }
-}
-
-function updateVersionText(versionText) {
-    const versionTexts = document.querySelectorAll([
-        '.VPNavBarMenuGroup .text > span:first-child',
-        '.VPNavScreenMenuGroup .button-text',
-        '.VPNavScreenMenuLink span',
-    ].join(','));
-
-    for (const el of versionTexts) {
-        const text = el.textContent?.trim();
-        if (text === '获取中...' || (text && text.startsWith('v') && text.includes('.'))) {
-            if (text !== versionText) {
-                el.textContent = versionText;
-            }
-        }
-    }
-}
-
-function bindNavVersionRefresh(versionText) {
-    if (navVersionClickBound) return;
-    navVersionClickBound = true;
-
-    document.addEventListener('click', (event) => {
-        const target = event.target;
-        if (!(target instanceof Element)) return;
-        if (!target.closest('.VPNavBarHamburger')) return;
-
-        requestAnimationFrame(() => updateVersionText(versionText));
-        window.setTimeout(() => updateVersionText(versionText), 120);
-        window.setTimeout(() => updateVersionText(versionText), 320);
-    });
 }
 
 /**

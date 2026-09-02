@@ -7,7 +7,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 export default defineConfig({
   lang: 'zh-CN',
   title: 'AI 批改助手',
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2和威科姆（悦卷通）二十大平台。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云等 20+ 平台。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -45,7 +45,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'AI 批改助手' }],
     ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2和威科姆（悦卷通），自动识别手写答案并评分，三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云等 20+ 平台，自动识别手写答案并评分，支持多种批改模式、分小题评分和分数纠错。' }],
     ['meta', { property: 'og:url', content: SITE_URL }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
@@ -55,14 +55,14 @@ export default defineConfig({
     // SEO: Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2和威科姆（悦卷通），三种批改模式，支持分小题评分和分数纠错。' }],
+    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云等 20+ 平台，支持多种批改模式、分小题评分和分数纠错。' }],
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
 
     // SEO: Additional Keywords
-    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,九科星,慧阅卷,乐华阅卷,鑫考,慧学星,粤教翔云,云阅卷好分数,科耘阅卷,光大阅卷V2,威科姆,悦卷通,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手,AI自动批改,智能阅卷助手,手写识别,AI作文评分,在线阅卷工具,自动批改脚本,阅卷效率工具,AI手写识别,自动评分系统,在线考试阅卷' }],
+    ['meta', { name: 'keywords', content: 'AI批改,AI阅卷,自动批改,智能阅卷,智学网,七天网络,好分数,五岳阅卷,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,九科星,慧阅卷,乐华阅卷,鑫考,慧学星,粤教翔云,云阅卷好分数,科耘阅卷,光大阅卷V2,威科姆,悦卷通,C30教育云,iclass30,主观题批改,作文批改,Tampermonkey,油猴脚本,AI评分,在线阅卷助手,AI自动批改,智能阅卷助手,手写识别,AI作文评分,在线阅卷工具,自动批改脚本,阅卷效率工具,AI手写识别,自动评分系统,在线考试阅卷' }],
 
     // GEO: AI crawler hints
-    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2和威科姆（悦卷通）阅卷平台上自动批改主观题试卷' }],
+    ['meta', { name: 'ai-purpose', content: 'AI批改助手是一款Tampermonkey用户脚本，用于在智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）和C30教育云等 20+ 阅卷平台上自动批改主观题试卷' }],
 
     // GEO: Structured Data (JSON-LD) - SoftwareApplication
     ['script', { type: 'application/ld+json' }, JSON.stringify({
@@ -70,7 +70,7 @@ export default defineConfig({
       '@type': 'SoftwareApplication',
       name: 'AI 批改助手',
       alternateName: 'AI-Marker-Suite',
-      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2和威科姆（悦卷通）。自动识别手写答案并评分，支持三种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
+      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云等 20+ 平台。自动识别手写答案并评分，支持多种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
       url: SITE_URL,
       applicationCategory: 'EducationalApplication',
       operatingSystem: '浏览器（Tampermonkey）',
@@ -85,7 +85,7 @@ export default defineConfig({
         name: '5plus1',
         url: 'https://five-plus-one.com',
       },
-      softwareVersion: '1.21.10',
+      softwareVersion: '1.21.11',
       screenshot: `${SITE_URL}/img/1.png`,
       featureList: [
         'AI自动评分：多模态视觉识别手写答案',
@@ -94,7 +94,7 @@ export default defineConfig({
         '工作流配置：快速批改/普通批改/双评模式，支持自定义模型和思考链深度',
         '分小题评分：大题拆分为多个小题分别评分',
         '分数纠错：AI自动分析评分差异并优化评分标准',
-        '多平台支持：智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）',
+        '多平台支持：智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云',
         '多服务商兼容：5+1 AI、火山引擎、硅基流动等支持图片识别的接口',
         '评阅历史：记录、筛选、导出HTML报告',
         '配置导入导出：JSON备份与恢复',
@@ -151,7 +151,7 @@ export default defineConfig({
           name: 'AI批改助手支持哪些平台？',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）、华翰云（yunyuejuan.net）、光大阅卷（pj.yixx.cn）、云阅卷、新教育（xinjiaoyu.com）、润建学情（aisusheng.runjian.com）、54学霸（54xueba.cn）、九科星（marking.jkxjxw.com）、慧阅卷（web.17yuejuan.cn）、乐华阅卷（main.lhsvr.cn）、鑫考、慧学星（www.hxxai.com）、粤教翔云（rrtcp.gdedu.gov.cn）、云阅卷(好分数)（haofenshuyize.com）、科耘阅卷（kaoshi.keewing.com）、光大阅卷V2和威科姆/悦卷通（wyna.onlyets.com），通过适配器模式自动检测当前平台。',
+            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / qt7.cn / yj5.7net.cc）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）、华翰云（yunyuejuan.net）、光大阅卷（pj.yixx.cn）、云阅卷、新教育（xinjiaoyu.com）、润建学情（aisusheng.runjian.com）、54学霸（54xueba.cn）、九科星（marking.jkxjxw.com）、慧阅卷（web.17yuejuan.cn）、乐华阅卷（main.lhsvr.cn）、鑫考、慧学星（www.hxxai.com）、粤教翔云（rrtcp.gdedu.gov.cn）、云阅卷(好分数)（haofenshuyize.com）、科耘阅卷（kaoshi.keewing.com）、光大阅卷V2、威科姆/悦卷通（wyna.onlyets.com）、C30教育云（zy.iclass30.com）等 20+ 平台，通过适配器模式自动检测当前平台。',
           },
         },
         {
@@ -222,17 +222,17 @@ export default defineConfig({
       { text: '批改模式', link: '/modes/' },
       { text: '平台', link: '/platforms/' },
       { text: '进阶', link: '/advanced/' },
-      { text: '工具', link: '/tools' },
-      { text: '更新日志', link: '/changelog' },
       {
-        text: '帮助与支持',
+        text: '资源',
         items: [
+          { text: '工具', link: '/tools' },
+          { text: '更新日志', link: '/changelog' },
           { text: '帮助中心', link: '/support' },
           { text: '服务状态', link: 'https://status.five-plus-one.com/status/aimarking', target: '_blank' },
         ],
       },
       {
-        text: '获取中...', // 版本号会由前端 JavaScript 动态更新
+        text: '下载', // 固定短文案：长版本号会把导航栏撑宽，导致页面横向溢出
         items: [
           { text: '安装稳定版（推荐）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js' },
           { text: '安装预览版（尝鲜）', link: 'https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js' },
@@ -305,6 +305,7 @@ export default defineConfig({
             { text: '科耘阅卷', link: '/platforms/keewing' },
             { text: '光大阅卷V2', link: '/platforms/guangda-2' },
             { text: '威科姆(悦卷通)', link: '/platforms/weicom' },
+            { text: 'C30教育云', link: '/platforms/c30' },
           ],
         },
       ],
