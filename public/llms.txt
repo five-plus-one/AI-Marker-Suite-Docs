@@ -1,6 +1,6 @@
 # AI 批改助手 (AI-Marker-Suite)
 
-> 基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云等 20+ 平台，自动识别手写答案并评分。
+> 基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷等 22 个平台，自动识别手写答案并评分。
 
 ## 概述
 
@@ -9,22 +9,24 @@ AI 批改助手是一款开源的 Tampermonkey（油猴）用户脚本，运行�
 - 官网: https://aimarking.five-plus-one.com
 - 源码: https://github.com/five-plus-one/AI-Marker-Suite
 - 许可证: GPL-3.0
-- 当前版本: v1.21.11.0
+- 当前版本: v1.21.11.3
 
 ## 核心功能
 
 - **AI 自动评分**: 使用多模态 AI（支持图片输入）识别手写答案，根据评分标准打分，生成评语
-- **三种批改模式**: 普通模式（5秒倒计时）、试改模式（等待教师确认）、无人值守模式（1秒自动提交，错误自动重试）
+- **四种批改模式**: 普通模式（5秒倒计时）、试改模式（等待教师确认）、无人值守模式（1秒自动提交，错误自动重试）、双评模式（双模型仲裁）
 - **双评仲裁模式**: 两个 AI 模型独立评分，分差超阈值自动触发第三模型仲裁
 - **分小题评分**: 一道大题拆分为多个小题分别评分（如作文分内容/语言/结构）
 - **分数纠错**: 教师输入正确分数后，AI 自动分析评分差异原因并优化评分标准
 - **批阅份数**: 支持设置目标批阅份数，达到后自动暂停
 - **批改进度面板**: 支持拖动，可自由调整位置，避免遮挡网页原有内容
-- **多平台支持**: 智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云
+- **多平台支持**: 智学网、七天网络、好分数、五岳阅卷、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷
 - **多服务商兼容**: 5+1 AI（推荐）、火山引擎、硅基流动等支持图片识别的多模态 AI 接口
 - **评阅历史**: 记录所有批改结果，支持筛选、导出 HTML/CSV/JSON 报告
 - **预设方案管理**: 不同题目保存不同配置，支持 URL 绑定自动切换
 - **配置导入导出**: JSON 文件备份和恢复
+- **评分理由编辑**: 支持手动编辑评分理由，Markdown 格式与预览
+- **勉励分**: 支持自定义勉励分规则，鼓励性加分不超过总分上限
 
 ## 支持平台
 
@@ -49,6 +51,7 @@ AI 批改助手是一款开源的 Tampermonkey（油猴）用户脚本，运行�
 - 光大阅卷V2（IP:端口部署）
 - 威科姆/悦卷通 (wyna.onlyets.com)
 - C30教育云 (zy.iclass30.com)
+- AMEQP网上评卷（内网 IP 部署）
 
 ## 安装方式
 
@@ -77,6 +80,7 @@ AI 批改助手是一款开源的 Tampermonkey（油猴）用户脚本，运行�
 - 评分规则: https://aimarking.five-plus-one.com/config/rubric
 - 预设方案管理: https://aimarking.five-plus-one.com/config/presets
 - 分小题配置: https://aimarking.five-plus-one.com/config/sub-questions
+- 公式语法指南: https://aimarking.five-plus-one.com/config/formula
 - 普通模式: https://aimarking.five-plus-one.com/modes/normal
 - 试改模式: https://aimarking.five-plus-one.com/modes/trial
 - 无人值守模式: https://aimarking.five-plus-one.com/modes/unattended
@@ -90,9 +94,24 @@ AI 批改助手是一款开源的 Tampermonkey（油猴）用户脚本，运行�
 - 云阅卷适配: https://aimarking.five-plus-one.com/platforms/yunyuejuan
 - 新教育适配: https://aimarking.five-plus-one.com/platforms/xinjiaoyu
 - 润建学情适配: https://aimarking.five-plus-one.com/platforms/runjian
+- 54学霸适配: https://aimarking.five-plus-one.com/platforms/xueba54
+- 九科星适配: https://aimarking.five-plus-one.com/platforms/jiukexing
+- 慧阅卷适配: https://aimarking.five-plus-one.com/platforms/huiyuejuan
+- 乐华阅卷适配: https://aimarking.five-plus-one.com/platforms/lehua
+- 鑫考适配: https://aimarking.five-plus-one.com/platforms/xinkao
+- 慧学星适配: https://aimarking.five-plus-one.com/platforms/huixuexing
+- 粤教翔云适配: https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun
+- 云阅卷(好分数)适配: https://aimarking.five-plus-one.com/platforms/haofenshuyize
+- 科耘阅卷适配: https://aimarking.five-plus-one.com/platforms/keewing
+- 光大阅卷V2适配: https://aimarking.five-plus-one.com/platforms/guangda-2
+- 威科姆(悦卷通)适配: https://aimarking.five-plus-one.com/platforms/weicom
+- C30教育云适配: https://aimarking.five-plus-one.com/platforms/c30
+- AMEQP网上评卷适配: https://aimarking.five-plus-one.com/platforms/ameqp
 - 分数纠错: https://aimarking.five-plus-one.com/advanced/correction
 - 批改历史: https://aimarking.five-plus-one.com/advanced/history
 - 开发新适配器: https://aimarking.five-plus-one.com/advanced/adapter-dev
+- 工具页: https://aimarking.five-plus-one.com/tools
+- 帮助与反馈: https://aimarking.five-plus-one.com/support
 - 更新日志: https://aimarking.five-plus-one.com/changelog
 
 ## 社群与友情链接
