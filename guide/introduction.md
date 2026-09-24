@@ -104,7 +104,7 @@ AI 批改助手提供三个版本渠道，用户可在脚本设置中随时切�
 
 ## 许可证
 
-本项目基于 [GPL-3.0 许可证](https://github.com/five-plus-one/AI-Marker-Suite/blob/main/LICENSE) 开源。
+本项目基于 [GPL-3.0 许可证](https://github.com/five-plus-one/AI-Marker-Suite/blob/stable/LICENSE) 开源。
 
 ## 免责声明
 

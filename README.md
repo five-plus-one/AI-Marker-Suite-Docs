@@ -102,4 +102,4 @@ npm run indexnow
 
 ## 许可证
 
-[GNU General Public License v3.0](https://github.com/five-plus-one/AI-Marker-Suite/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/five-plus-one/AI-Marker-Suite/blob/stable/LICENSE)
