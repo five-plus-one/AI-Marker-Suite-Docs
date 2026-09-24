@@ -24,7 +24,7 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 | 配置项 | 值 |
 |-------|---|
 | 端点 | `https://api.ai.five-plus-one.com/v1/chat/completions`（脚本内置，无需手动填写） |
-| 模型 | `mimo-v2.5`（脚本内置，无需手动填写） |
+| 模型 | `aimarker-fast`（脚本内置，无需手动填写） |
 | API KEY | [注册获取](https://api.ai.five-plus-one.com/console/token) |
 
 ### 获取步骤
@@ -94,7 +94,7 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 
 | 参数 | 值 | 说明 |
 |------|---|------|
-| `model` | 你配置的模型名 | 如 `mimo-v2.5` |
+| `model` | 你配置的模型名 | 如 `aimarker-fast` |
 | `max_tokens` | 2048 | 最大输出 token 数 |
 | `stream` | true | 启用流式输出 |
 | `messages` | 多模态消息 | 包含文本提示词 + 答题卡图片 |
