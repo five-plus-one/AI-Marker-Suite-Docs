@@ -44,7 +44,7 @@ npm run indexnow
 │   ├── trial.md            # 试改模式
 │   ├── unattended.md       # 无人值守模式
 │   └── dual.md             # 双评模式
-├── platforms/       # 平台适配（22 个）
+├── platforms/       # 平台适配（23 个）
 │   ├── index.md            # 平台对比与快速导航
 │   ├── zhixue.md           # 智学网
 │   ├── qitian.md           # 七天网络
