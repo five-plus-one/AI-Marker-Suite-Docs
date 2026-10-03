@@ -44,7 +44,7 @@ npm run indexnow
 │   ├── trial.md            # 试改模式
 │   ├── unattended.md       # 无人值守模式
 │   └── dual.md             # 双评模式
-├── platforms/       # 平台适配（23 个）
+├── platforms/       # 平台适配（24 个）
 │   ├── index.md            # 平台对比与快速导航
 │   ├── zhixue.md           # 智学网
 │   ├── qitian.md           # 七天网络
@@ -67,7 +67,8 @@ npm run indexnow
 │   ├── guangda-2.md        # 光大阅卷V2
 │   ├── weicom.md           # 威科姆(悦卷通)
 │   ├── c30.md              # C30教育云
-│   └── ameqp.md            # AMEQP网上评卷
+│   ├── ameqp.md            # AMEQP网上评卷
+│   └── haiyun.md           # 海云智评
 ├── advanced/        # 进阶功能
 │   ├── index.md            # 概述
 │   ├── correction.md       # 分数纠错
