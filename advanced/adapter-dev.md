@@ -27,7 +27,7 @@ src/
     ├── qitian-new/          # 七天网络新 UI
     │   ├── adapter.js
     │   └── selectors.js
-    ├── ...                  # 其他平台适配器（src/adapters/ 下共 23 个）
+    ├── ...                  # 其他平台适配器（src/adapters/ 下共 24 个）
     └── xinkao/              # 鑫考
         ├── adapter.js
         └── selectors.js
