@@ -15,7 +15,7 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 ## 平台对比
 
 | | 智学网 | 七天网络 | 好分数 | 五岳阅卷 | 阅小二 | 华翰云 | 光大阅卷 | 云阅卷 | 新教育 | 润建学情 | 54学霸 | 九科星 | 慧阅卷 | 乐华阅卷 | 鑫考 | 慧学星 | 粤教翔云 | 云阅卷(好分数) | 科耘阅卷 | 光大阅卷V2 | 威科姆(悦卷通) | C30教育云 | AMEQP网上评卷 | 海云智评 | 鑫考(内网) | 九五优评 | 上进教育服务云 |
-|--|--------|---------|-------|---------|-------|-------|---------|-------|-------|---------|-------|-------|-------|---------|-----|-------|---------|--------------|--------|-----------|--------------|------------|--------------|----------|------------|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 网址 | zhixue.com | 7net.cc / qt7.net / qt7.cn | haofenshu.com | wylkyj.com | haoyuejuan.com | yunyuejuan.net | pj.yixx.cn | 内网部署 | xinjiaoyu.com | aisusheng.runjian.com | 54xueba.cn | marking.jkxjxw.com | web.17yuejuan.cn | main.lhsvr.cn | 内网部署 | www.hxxai.com | rrtcp.gdedu.gov.cn | haofenshuyize.com | kaoshi.keewing.com | IP:端口 | wyna.onlyets.com | zy.iclass30.com | 内网 IP 部署 | zp.kaow.cn | 内网裸 IP /biluo/display.jsp | timesphoenix.com | www.sipd.cn |
 | 适配状态 | 完整支持 | 完整支持（含新旧 UI） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（题组批改） | 完整支持 | 完整支持 | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持（多评分单元） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（分给分点） | 完整支持 |
 | 答题卡渲染 | `<img>` 标签 | `<img>` / Canvas | SVG `<image>` | `<img>` 标签 | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | Canvas | `<img>` 标签 | Canvas / API | CSS background-image | Canvas + base64 img | OBS 图片裁剪 | `<img>` 标签 | Canvas | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | SVG `<image>` | Canvas | `<img>` 标签（OSS） | Canvas | `<img>` 标签（题块裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | `<img>` 标签（多页） | `<img>` 标签（OSS 裁剪） |
