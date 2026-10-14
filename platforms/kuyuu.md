@@ -60,7 +60,7 @@ https://ky-metacut.oss-cn-hangzhou.aliyuncs.com/{年}/{月}/{考试ID}/{试卷�
 脚本的取图流程：
 
 1. **Performance 资源条目**: 从浏览器资源加载记录中提取 OSS 图片 URL
-2. **锁定当前卷**: 平台会预加载多份试卷（如 5580018~5580021），脚本用「页面可见文本中的试卷号」匹配 OSS URL 中的试卷号，锁定当前正在批的那份（无法唯一定位时拒绝取图，避免批错卷）
+2. **锁定当前卷**: 平台会预加载多份试卷（如 5580018~5580021），脚本从页脚 `#infoTasktype`（如「正常卷：5580018」）读取当前试卷号，与 OSS URL 中的试卷号匹配锁定（匹配不到时拒绝取图，避免批错卷）
 3. **GM_xmlhttpRequest 下载**: OSS 不允许跨域直接 fetch（无 CORS 头），脚本使用 `GM_xmlhttpRequest` 绕过限制下载图片，再转 base64 送 AI 识别
 
 ## 满分提取
@@ -75,7 +75,7 @@ https://ky-metacut.oss-cn-hangzhou.aliyuncs.com/{年}/{月}/{考试ID}/{试卷�
 | 域名 | www.kuyuu.cn |
 | 页面检测 | URL 路径 `/read/read` + 评分面板 + Canvas |
 | 任务标识 | URL 参数 `examid` + `itemid` |
-| 图片策略 | Performance 条目 + 可见文本试卷号锁定 → GM 下载 |
+| 图片策略 | Performance 条目 + 页脚 #infoTasktype 试卷号锁定 → GM 下载 |
 | 分数填入 | 键模式输入框，触发 input/change/blur/keyup 事件 |
 
 ## 常见问题
