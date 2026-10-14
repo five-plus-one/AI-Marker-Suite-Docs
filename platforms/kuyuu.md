@@ -49,15 +49,19 @@ keywords: 酷鱼网,酷鱼,kuyuu,AI批改,AI阅卷,自动批改,智能阅卷,www
 
 ## 图片获取
 
-酷鱼网的答题卡绘制在 `<canvas class="ems-iv-img">` 上。由于图片是跨域绘制，Canvas 处于 **tainted（污染）状态**，`toDataURL()` 无法导出。
+酷鱼网的答题卡绘制在 `<canvas class="ems-iv-img">` 上。由于图片是跨域绘制，Canvas 处于 **tainted（污染）状态**，`toDataURL()` 无法导出。页面上也没有答题卡的 `<img>` 标签（只有 logo 和二维码）。
 
-脚本采用三重策略取图：
+实测确认：答题卡真身是**阿里云 OSS 图片**：
 
-1. **img 标签**: 查找页面上尺寸大于 200px 的 `<img>`（排除 UI 背景图）
-2. **Performance 资源条目**: 从浏览器资源加载记录中提取图片 URL（排除 `/public/images/plugins/` 下的 UI 资源）
-3. **canvas 兜底**: 尝试 `toDataURL`（万一未污染时可用）
+```
+https://ky-metacut.oss-cn-hangzhou.aliyuncs.com/{年}/{月}/{考试ID}/{试卷号}/{N}.jpg
+```
 
-拿到 URL 后，脚本使用 `GM_xmlhttpRequest` 下载图片（绕过 CORS 限制），再转 base64 送 AI 识别。
+脚本的取图流程：
+
+1. **Performance 资源条目**: 从浏览器资源加载记录中提取 OSS 图片 URL
+2. **锁定当前卷**: 平台会预加载多份试卷（如 5580018~5580021），脚本用「页面可见文本中的试卷号」匹配 OSS URL 中的试卷号，锁定当前正在批的那份（无法唯一定位时拒绝取图，避免批错卷）
+3. **GM_xmlhttpRequest 下载**: OSS 不允许跨域直接 fetch（无 CORS 头），脚本使用 `GM_xmlhttpRequest` 绕过限制下载图片，再转 base64 送 AI 识别
 
 ## 满分提取
 
@@ -71,7 +75,7 @@ keywords: 酷鱼网,酷鱼,kuyuu,AI批改,AI阅卷,自动批改,智能阅卷,www
 | 域名 | www.kuyuu.cn |
 | 页面检测 | URL 路径 `/read/read` + 评分面板 + Canvas |
 | 任务标识 | URL 参数 `examid` + `itemid` |
-| 图片策略 | img 标签 / Performance 条目 / canvas 兜底 → GM 下载 |
+| 图片策略 | Performance 条目 + 可见文本试卷号锁定 → GM 下载 |
 | 分数填入 | 键模式输入框，触发 input/change/blur/keyup 事件 |
 
 ## 常见问题
