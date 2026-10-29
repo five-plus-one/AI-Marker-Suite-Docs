@@ -1,0 +1,190 @@
+[
+  {
+    "blocks": [
+      {
+        "contrast": 11.31,
+        "kind": "danger custom-block"
+      },
+      {
+        "contrast": 10.16,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 10.16,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 11.31,
+        "kind": "danger custom-block"
+      },
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 10.16,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      }
+    ],
+    "path": "/guide/installation",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "dark"
+  },
+  {
+    "blocks": [
+      {
+        "contrast": 14.53,
+        "kind": "danger custom-block"
+      },
+      {
+        "contrast": 14.52,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 14.52,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 14.53,
+        "kind": "danger custom-block"
+      },
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 14.52,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      }
+    ],
+    "path": "/guide/installation",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "light"
+  },
+  {
+    "blocks": [
+      {
+        "contrast": 10.07,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 12.25,
+        "kind": "info custom-block"
+      },
+      {
+        "contrast": 12.25,
+        "kind": "info custom-block"
+      },
+      {
+        "contrast": 10.16,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 10.16,
+        "kind": "warning custom-block"
+      }
+    ],
+    "path": "/config/formula",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "dark"
+  },
+  {
+    "blocks": [
+      {
+        "contrast": 14.2,
+        "kind": "tip custom-block"
+      },
+      {
+        "contrast": 14.41,
+        "kind": "info custom-block"
+      },
+      {
+        "contrast": 14.41,
+        "kind": "info custom-block"
+      },
+      {
+        "contrast": 14.52,
+        "kind": "warning custom-block"
+      },
+      {
+        "contrast": 14.52,
+        "kind": "warning custom-block"
+      }
+    ],
+    "path": "/config/formula",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "light"
+  },
+  {
+    "blocks": [],
+    "path": "/platforms/",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "dark"
+  },
+  {
+    "blocks": [],
+    "path": "/platforms/",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "light"
+  },
+  {
+    "blocks": [],
+    "path": "/changelog",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "dark"
+  },
+  {
+    "blocks": [],
+    "path": "/changelog",
+    "sheets": [
+      "http://127.0.0.1:4180/docs-assets/client-X2M2AYK5.css"
+    ],
+    "theme": "light"
+  }
+]

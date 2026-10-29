@@ -1,0 +1,62 @@
+[
+  {
+    "colorScheme": "light",
+    "overflow": false,
+    "theme": "light",
+    "width": 390
+  },
+  {
+    "colorScheme": "light",
+    "overflow": false,
+    "theme": "light",
+    "width": 640
+  },
+  {
+    "colorScheme": "light",
+    "overflow": false,
+    "theme": "light",
+    "width": 768
+  },
+  {
+    "colorScheme": "light",
+    "overflow": false,
+    "theme": "light",
+    "width": 1024
+  },
+  {
+    "colorScheme": "light",
+    "overflow": false,
+    "theme": "light",
+    "width": 1440
+  },
+  {
+    "colorScheme": "dark",
+    "overflow": false,
+    "theme": "dark",
+    "width": 390
+  },
+  {
+    "colorScheme": "dark",
+    "overflow": false,
+    "theme": "dark",
+    "width": 640
+  },
+  {
+    "colorScheme": "dark",
+    "overflow": false,
+    "theme": "dark",
+    "width": 768
+  },
+  {
+    "colorScheme": "dark",
+    "overflow": false,
+    "theme": "dark",
+    "width": 1024
+  },
+  {
+    "colorScheme": "dark",
+    "overflow": false,
+    "theme": "dark",
+    "width": 1440
+  }
+]
