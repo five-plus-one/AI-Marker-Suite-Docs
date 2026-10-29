@@ -19,5 +19,6 @@ for(const file of await walk(out)){
 }
 const sitemap=load(await fs.readFile(out+'/sitemap.xml','utf8'),{xmlMode:true}),indexed=new Set(seo.filter(p=>p.indexable).map(p=>p.canonical));
 sitemap('url').each((_,el)=>{const loc=sitemap(el).find('loc'),current=new URL(loc.text()),route=base!=='/'&&current.pathname.startsWith(base)?'/'+current.pathname.slice(base.length):current.pathname,canonical='https://aimarking.five-plus-one.com'+route;if(!indexed.has(canonical))sitemap(el).remove();else loc.text(canonical)});
-await fs.writeFile(out+'/sitemap.xml',sitemap.xml());await fs.writeFile(out+'/seo.json',JSON.stringify(seo));await fs.writeFile('site/seo-report.json',JSON.stringify(seo,null,2));await fs.writeFile(out+'/release.json',JSON.stringify({ui:'0.5.81',pages:seo.length,builtAt:new Date().toISOString(),base},null,2));
+await fs.writeFile(out+'/sitemap.xml',sitemap.xml());await fs.writeFile(out+'/seo.json',JSON.stringify(seo));await fs.writeFile('site/seo-report.json',JSON.stringify(seo,null,2));await fs.writeFile(out+'/release.json',JSON.stringify({ui:JSON.parse(await fs.readFile('node_modules/@fiveplusone/ui/package.json','utf8')).version,pages:seo.length,builtAt:new Date().toISOString(),base},null,2));
 console.log(`Documentation compiled: ${seo.length} pages; original VitePress runtime; base ${base}`);
+

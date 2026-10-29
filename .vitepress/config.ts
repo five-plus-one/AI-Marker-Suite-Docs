@@ -347,6 +347,18 @@ export default defineConfig({
 
     search: {
       provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+          modal: {
+            displayDetails: '显示详细结果',
+            resetButtonTitle: '清空搜索',
+            backButtonTitle: '返回',
+            noResultsText: '没有找到相关内容',
+            footer: { selectText: '打开', navigateText: '切换结果', closeText: '关闭' },
+          },
+        },
+      },
     },
 
     editLink: {
