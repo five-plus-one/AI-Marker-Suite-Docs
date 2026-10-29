@@ -1447,13 +1447,16 @@ html {
 
 /* 文档截图尺寸约束：原始截图多为 2K retina，直接铺满内容栏观感差 */
 .vp-doc img {
-  max-width: 720px;
+  /* 双向约束：宽图按宽度收、竖长图按高度收，都保持比例 */
+  max-width: 780px;
+  max-height: 620px;
   width: auto;
   height: auto;
   display: block;
   margin: 20px auto;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+  background: #fff;
 }
 .vp-doc p > img {
   margin: 20px auto;

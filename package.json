@@ -4,13 +4,21 @@
   "type": "module",
   "description": "AI-Marker-Suite 文档站",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
+    "dev": "npm run build && vitepress preview --host 127.0.0.1",
+    "build": "vitepress build && node site/build.mjs",
     "preview": "vitepress preview",
     "indexnow": "node scripts/submit-indexnow.cjs"
   },
   "devDependencies": {
+    "cheerio": "^1.2.0",
+    "esbuild": "^0.28.2",
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.77.tgz",
+    "lucide-react": "^1.64.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   }
 }
