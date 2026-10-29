@@ -25,11 +25,11 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 |-------|---|
 | 端点 | `https://api.ai.five-plus-one.com/v1/chat/completions`（脚本内置，无需手动填写） |
 | 模型 | `aimarker-fast`（脚本内置，无需手动填写） |
-| API KEY | [注册获取](https://api.ai.five-plus-one.com/console/token) |
+| API KEY | [注册获取](https://api.ai.five-plus-one.com/keys) |
 
 ### 获取步骤
 
-1. 访问 [5+1 AI 控制台](https://api.ai.five-plus-one.com/console/token)
+1. 访问 [5+1 AI 控制台](https://api.ai.five-plus-one.com/keys)
 2. 注册账号（支持手机号或邮箱）
 3. 新注册用户会获得**少量试用额度**
 4. 在控制台中创建 API Token

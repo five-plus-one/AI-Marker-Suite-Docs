@@ -1,6 +1,6 @@
 ---
 title: 进阶功能 - AI 批改助手
-description: AI批改助手进阶功能，包括分数纠错让AI越用越准、批改历史记录导出HTML/CSV/JSON报告、开发新适配器扩展支持平台。掌握这些功能让AI批改更高效。
+description: AI批改助手进阶功能，包括分数纠错让AI越用越准、批改历史记录导出 HTML/CSV/JSON/材料包ZIP 报告、开发新适配器扩展支持平台。掌握这些功能让AI批改更高效。
 keywords: AI批改助手,进阶功能,分数纠错,批改历史,开发新适配器,导出报告,HTML报告,CSV导出,JSON导出,适配器开发,自动批改优化
 ---
 
@@ -20,7 +20,7 @@ keywords: AI批改助手,进阶功能,分数纠错,批改历史,开发新适配�
 
 <CardGrid>
 <Card title="分数纠错" href="/advanced/correction" description="AI 评分不准时，输入正确分数让 AI 自动分析原因并优化评分标准" />
-<Card title="批改历史" href="/advanced/history" description="查看所有批改记录，支持筛选、导出 HTML/CSV/JSON 报告" />
+<Card title="批改历史" href="/advanced/history" description="查看所有批改记录，支持筛选、导出 HTML/CSV/JSON/材料包ZIP 报告" />
 <Card title="开发新适配器" href="/advanced/adapter-dev" description="为新的阅卷平台开发适配器，扩展 AI 批改助手的支持范围" />
 </CardGrid>
 
