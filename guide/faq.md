@@ -50,7 +50,7 @@ AI 批改助手提供三个版本渠道：
 
 点击浏览器右上角篡改猴图标，如果顶部出现**蓝色提示条**：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
+![尚未允许用户脚本时的扩展提示](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
 
 说明**扩展还没被允许运行用户脚本**，脚本不会生效。按下面的方法开启后刷新页面即可。
 
@@ -60,7 +60,7 @@ AI 批改助手提供三个版本渠道：
 
 **✅ 正常** —— 显示「✓ 已启用」，下方列出 AI-Marker-Suite：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
+![AI-Marker-Suite 脚本已启用](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
 
 **❌ 异常** —— 顶部出现蓝色提示「请启用"允许用户脚本"扩展设置」（见上一条）。
 
@@ -68,11 +68,11 @@ AI 批改助手提供三个版本渠道：
 
 1. 在篡改猴扩展图标上**右键** → 点击 **「管理扩展程序」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
+![通过篡改猴图标进入扩展管理](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
 
 2. 打开右上角的 **「开发者模式」**，再打开 **「允许运行用户脚本」** 与 **「允许访问文件网址」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
+![Chrome 扩展详情中的用户脚本权限](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
 
 ::: tip 提示
 不打开「开发者模式」的话，看不到「允许运行用户脚本」这一项。
@@ -82,7 +82,7 @@ AI 批改助手提供三个版本渠道：
 
 新版 Edge 的扩展设置里有「允许用户脚本」开关；**部分旧版 Edge 没有这一项**。此时打开 **「开发人员模式」** 开关即可：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
+![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
 
 ### 脚本已启用但页面上还是没有按钮？
 

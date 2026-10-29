@@ -108,6 +108,8 @@ npm run indexnow
 
 ## 共享组件接入
 
-文档页面使用 `DocumentationLayout`、`DocumentationCards`、主题切换和即时提示。组件包保存在 `site/vendor/`，版本由 package.json 与锁文件固定。更新顺序为共享库实现、组件与实际页面验收、共享库发布，再替换安装包并更新引用。
+文档页面使用 `DocumentationLayout`、`DocumentationSearch`、`ProductStatementHero`、`ProductEditorialSections`、`DocumentationCards`、主题切换和即时提示。组件包保存在 `site/vendor/`，版本由 package.json 与锁文件固定。更新顺序为共享库实现、组件与实际页面验收、共享库发布，再替换安装包并更新引用。
 
 `npm run build` 先编译 Markdown、代码与公式，再由 `site/build.mjs` 生成 React 静态页面及全文搜索索引。页面路由、章节导航来自原配置，支持 `BASE_URL=/` 与 `BASE_URL=/AI-Marker-Suite-Docs/`。`npm run dev` 构建并启动预览，编辑后重新构建即可查看。
+
+`npm run check` 覆盖页面与章节链接、搜索锚点，以及全部页面的标题、摘要、canonical、分享卡片、结构化数据和 sitemap。逐页检查结果保存在 `site/seo-report.json`。

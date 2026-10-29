@@ -31,6 +31,7 @@ export default defineConfig({
   // ========== SEO: Sitemap ==========
   sitemap: {
     hostname: SITE_URL,
+    transformItems: items => items.filter(item => !item.url.includes("feedback/thankyou") && !item.url.includes("404")),
   },
 
   // ========== SEO & GEO: Head Meta ==========

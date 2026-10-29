@@ -1,0 +1,82 @@
+{
+  "dark": [
+    {
+      "client": 305,
+      "scroll": 305,
+      "theme": "dark",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "scroll": 375,
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "client": 625,
+      "scroll": 625,
+      "theme": "dark",
+      "width": 640
+    },
+    {
+      "client": 753,
+      "scroll": 753,
+      "theme": "dark",
+      "width": 768
+    },
+    {
+      "client": 1009,
+      "scroll": 1009,
+      "theme": "dark",
+      "width": 1024
+    },
+    {
+      "client": 1425,
+      "scroll": 1425,
+      "theme": "dark",
+      "width": 1440
+    }
+  ],
+  "light": [
+    {
+      "client": 305,
+      "scroll": 305,
+      "theme": "light",
+      "width": 320
+    },
+    {
+      "client": 375,
+      "scroll": 375,
+      "theme": "light",
+      "width": 390
+    },
+    {
+      "client": 625,
+      "scroll": 625,
+      "theme": "light",
+      "width": 640
+    },
+    {
+      "client": 753,
+      "scroll": 753,
+      "theme": "light",
+      "width": 768
+    },
+    {
+      "client": 1009,
+      "scroll": 1009,
+      "theme": "light",
+      "width": 1024
+    },
+    {
+      "client": 1425,
+      "scroll": 1425,
+      "theme": "light",
+      "width": 1440
+    }
+  ],
+  "donationImages": {
+    "loaded": true,
+    "mobileWidth": 257
+  }
+}

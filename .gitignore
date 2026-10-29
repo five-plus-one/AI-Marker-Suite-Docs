@@ -10,3 +10,5 @@ site/.server.css
 site/.config.mjs.map
 
 .work/
+
+site/review-images/
