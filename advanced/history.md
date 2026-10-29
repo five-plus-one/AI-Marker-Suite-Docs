@@ -1,6 +1,6 @@
 ---
 title: 批改历史 — AI 批改助手
-description: 查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出HTML/CSV/JSON报告、标记回评、批量管理。
+description: 查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记回评、批量管理。
 ---
 
 # 批改历史
