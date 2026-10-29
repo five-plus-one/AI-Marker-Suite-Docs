@@ -248,6 +248,7 @@ export default defineConfig({
           items: [
             { text: '概述', link: '/guide/' },
             { text: '项目介绍', link: '/guide/introduction' },
+            { text: '油猴脚本安装', link: '/guide/userscript-install' },
             { text: '安装教程', link: '/guide/installation' },
             { text: '快速上手', link: '/guide/quickstart' },
             { text: '常见问题', link: '/guide/faq' },
