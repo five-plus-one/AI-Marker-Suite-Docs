@@ -5,7 +5,8 @@
     "description": "此页面暂时无法找到。请返回 AI 批改助手文档首页，或搜索安装、配置与阅卷平台指南。",
     "canonical": "https://aimarking.five-plus-one.com/404",
     "indexable": false,
-    "schemas": []
+    "schemas": [],
+    "schemaData": []
   },
   {
     "route": "/advanced/adapter-dev",
@@ -16,6 +17,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/advanced/adapter-dev#page",
+        "url": "https://aimarking.five-plus-one.com/advanced/adapter-dev",
+        "name": "开发新适配器 | AI 批改助手",
+        "description": "为AI批改助手开发新阅卷平台适配器的完整指南。包含PlatformAdapter接口定义、生命周期方法、图片获取、分数填入等。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "进阶",
+            "item": "https://aimarking.five-plus-one.com/advanced/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "开发新适配器",
+            "item": "https://aimarking.five-plus-one.com/advanced/adapter-dev"
+          }
+        ]
+      }
     ]
   },
   {
@@ -27,6 +66,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/advanced/correction#page",
+        "url": "https://aimarking.five-plus-one.com/advanced/correction",
+        "name": "分数纠错 | AI 批改助手",
+        "description": "当AI打分不准时，输入正确分数，AI自动分析原因并优化评分标准。支持分小题独立纠错，越用越准。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "进阶",
+            "item": "https://aimarking.five-plus-one.com/advanced/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "分数纠错",
+            "item": "https://aimarking.five-plus-one.com/advanced/correction"
+          }
+        ]
+      }
     ]
   },
   {
@@ -38,6 +115,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/advanced/history#page",
+        "url": "https://aimarking.five-plus-one.com/advanced/history",
+        "name": "批改历史 | AI 批改助手",
+        "description": "查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记回评、批量管理。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "进阶",
+            "item": "https://aimarking.five-plus-one.com/advanced/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "批改历史",
+            "item": "https://aimarking.five-plus-one.com/advanced/history"
+          }
+        ]
+      }
     ]
   },
   {
@@ -49,6 +164,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/advanced/#page",
+        "url": "https://aimarking.five-plus-one.com/advanced/",
+        "name": "进阶功能 | AI 批改助手",
+        "description": "AI批改助手进阶功能，包括分数纠错让AI越用越准、批改历史记录导出 HTML/CSV/JSON/材料包ZIP 报告、开发新适配器扩展支持平台。掌握这些功能让AI批改更高效。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "进阶功能",
+            "item": "https://aimarking.five-plus-one.com/advanced/"
+          }
+        ]
+      }
     ]
   },
   {
@@ -60,6 +207,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/changelog#page",
+        "url": "https://aimarking.five-plus-one.com/changelog",
+        "name": "更新日志 | AI 批改助手",
+        "description": "AI批改助手完整更新日志，所有版本更新记录。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "更新日志",
+            "item": "https://aimarking.five-plus-one.com/changelog"
+          }
+        ]
+      }
     ]
   },
   {
@@ -71,6 +250,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/api-setup#page",
+        "url": "https://aimarking.five-plus-one.com/config/api-setup",
+        "name": "AI 接口配置 | AI 批改助手",
+        "description": "AI批改助手需要支持图片识别的多模态AI服务。推荐5+1 AI，也支持火山引擎、硅基流动等OpenAI兼容接口。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AI 接口配置",
+            "item": "https://aimarking.five-plus-one.com/config/api-setup"
+          }
+        ]
+      }
     ]
   },
   {
@@ -82,6 +299,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/formula#page",
+        "url": "https://aimarking.five-plus-one.com/config/formula",
+        "name": "公式语法指南 | AI 批改助手",
+        "description": "AI批改助手的公式编辑语法指南。详细介绍LaTeX数学公式、化学方程式的编写方法，涵盖上下标、分数、根号、求和、积分、希腊字母等常用语法，配有丰富示例。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "公式语法指南",
+            "item": "https://aimarking.five-plus-one.com/config/formula"
+          }
+        ]
+      }
     ]
   },
   {
@@ -93,6 +348,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/#page",
+        "url": "https://aimarking.five-plus-one.com/config/",
+        "name": "配置指南 | AI 批改助手",
+        "description": "AI批改助手配置指南，包括AI接口配置、批改工作流、评分规则、预设方案管理和分小题配置。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商，灵活自定义批改行为。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置指南",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          }
+        ]
+      }
     ]
   },
   {
@@ -104,6 +391,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/presets#page",
+        "url": "https://aimarking.five-plus-one.com/config/presets",
+        "name": "预设方案管理 | AI 批改助手",
+        "description": "为不同题目保存不同评分配置，支持URL绑定自动切换。语文作文、数学大题各有独立配置，支持导入导出备份。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "预设方案管理",
+            "item": "https://aimarking.five-plus-one.com/config/presets"
+          }
+        ]
+      }
     ]
   },
   {
@@ -115,6 +440,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/rubric#page",
+        "url": "https://aimarking.five-plus-one.com/config/rubric",
+        "name": "评分规则 | AI 批改助手",
+        "description": "如何编写高质量的AI评分标准。包含题目内容、标准答案、评分标准三个关键字段的编写技巧和不同题型的配置建议。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "评分规则",
+            "item": "https://aimarking.five-plus-one.com/config/rubric"
+          }
+        ]
+      }
     ]
   },
   {
@@ -126,6 +489,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/sub-questions#page",
+        "url": "https://aimarking.five-plus-one.com/config/sub-questions",
+        "name": "分小题配置 | AI 批改助手",
+        "description": "将大题拆分为多个小题分别评分。支持作文分内容/语言/结构评分，解答题分小问评分，自动检测页面小题输入框。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "分小题配置",
+            "item": "https://aimarking.five-plus-one.com/config/sub-questions"
+          }
+        ]
+      }
     ]
   },
   {
@@ -137,6 +538,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/config/workflow#page",
+        "url": "https://aimarking.five-plus-one.com/config/workflow",
+        "name": "批改工作流 | AI 批改助手",
+        "description": "AI批改助手的工作流系统，配置使用的AI模型、双评模式和思考链深度。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "配置",
+            "item": "https://aimarking.five-plus-one.com/config/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "批改工作流",
+            "item": "https://aimarking.five-plus-one.com/config/workflow"
+          }
+        ]
+      }
     ]
   },
   {
@@ -145,7 +584,8 @@
     "description": "感谢你为 AI 批改助手提供反馈。查看后续交流方式，或返回文档首页继续阅读。",
     "canonical": "https://aimarking.five-plus-one.com/feedback/thankyou",
     "indexable": false,
-    "schemas": []
+    "schemas": [],
+    "schemaData": []
   },
   {
     "route": "/guide/faq",
@@ -156,6 +596,270 @@
     "schemas": [
       "FAQPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/faq#page",
+        "url": "https://aimarking.five-plus-one.com/guide/faq",
+        "name": "常见问题 | AI 批改助手",
+        "description": "AI批改助手常见问题解答。手机能用吗、用什么浏览器、识别不准怎么办、支持哪些平台和题型、API密钥怎么获取、无人值守模式安全吗、分数填入失败怎么办等使用疑难解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "手机能用吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "不能。 AI 批改助手是一个浏览器脚本，必须在电脑端的 Edge 浏览器中运行。手机、平板、微信内置浏览器均不支持。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "用什么浏览器？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "推荐使用 Edge 浏览器（Windows 10/11 自带）。Chrome 也可以，但其扩展商店在国内无法直接访问。以下浏览器不支持：360 安全浏览器、搜狗浏览器、QQ 浏览器等国产浏览器。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "什么是 Tampermonkey（油猴）？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tampermonkey 是一个免费的浏览器扩展（插件），它可以让浏览器运行额外的脚本程序。AI 批改助手就是通过它来运行的。你只需要安装一次，之后脚本会自动更新。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "稳定版、预览版、开发版有什么区别？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AI 批改助手提供三个版本渠道：渠道说明安装方式稳定版经过充分测试，推荐日常使用一键安装预览版包含最新功能，可能不够稳定一键安装开发版面向开发者的自动构建版本不提供公开安装链接安装后可以在脚本设置中随时切换渠道。如遇到问题，建议切换回稳定版。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "安装后看不到浮动按钮？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "脚本只在阅卷页面（能看到答题卡图片和分数输入框的页面）上才会激活。请确认：当前页面是已支持平台（如智学网、七天网络、好分数等，完整列表见下方「平台相关」）的阅卷页面页面上能看到学生答题卡图片Tampermonkey 扩展已启用（浏览器右上角图标为黑色，不是灰色）通用油猴脚本安装教程油猴脚本的安装（Tampermonkey 扩展 + 允许用户脚本）是所有脚本的通用步骤，已整理为独立页面：油猴脚本安装指南，含 Edge 新旧版 / Chrome 完整图文与常见问题。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "篡改猴弹出「请启用\"允许用户脚本\"」提示怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "点击浏览器右上角篡改猴图标，如果顶部出现蓝色提示条：说明扩展还没被允许运行用户脚本，脚本不会生效。按下面的方法开启后刷新页面即可。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何确认脚本已正常启用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "点击浏览器右上角的篡改猴图标：✅ 正常 —— 显示「✓ 已启用」，下方列出 AI-Marker-Suite：❌ 异常 —— 顶部出现蓝色提示「请启用\"允许用户脚本\"扩展设置」（见上一条）。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Chrome 浏览器如何启用用户脚本？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在篡改猴扩展图标上右键 → 点击 「管理扩展程序」打开右上角的 「开发者模式」，再打开 「允许运行用户脚本」 与 「允许访问文件网址」提示不打开「开发者模式」的话，看不到「允许运行用户脚本」这一项。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "旧版 Edge 没有「允许用户脚本」选项怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "新版 Edge 的扩展设置里有「允许用户脚本」开关；部分旧版 Edge 没有这一项。此时打开 「开发人员模式」 开关即可："
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "脚本已启用但页面上还是没有按钮？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "确认当前是阅卷页面（能看到答题卡图片和分数输入框），脚本只在这种页面激活确认平台在支持列表内（见下方「平台相关」）刷新页面——脚本启用后需要刷新才会在已打开的页面上生效点击篡改猴图标确认没有「请启用允许用户脚本」的蓝色提示"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "识别不准怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "填写「题目内容」「标准答案」「评分标准」三项，准确率会大幅提升。AI 需要这些上下文信息才能做出准确判断。建议先用试改模式批改几份试卷，观察 AI 的识别和评分结果，根据实际情况调整评分标准。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "遇到 403 错误怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "脚本会自动检测 403 错误并刷新页面，无需手动处理。这通常是阅卷平台的会话过期导致的。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "无人值守模式安全吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "建议先用普通模式批改几份试卷，确认 AI 评分准确后再开启无人值守模式。无人值守模式下：提交间隔为 1 秒AI 识别失败时瞬态错误退避重试（次数可配），其余暂停提示连续失败会自动停止，避免误操作"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持哪些题型？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "所有有手写答案的主观题都支持，包括：作文解答题论述题简答题翻译题客观题（选择题、填空题等）请使用阅卷平台自带的功能。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "怎么停止批改？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "点击右下角的浮动按钮暂停，在弹窗中点击「取消并退出」即可停止。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "弹窗没出现？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "按 F12 打开浏览器控制台，查看带 [诊断] 标记的日志，截图反馈给作者。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "API 密钥在哪里获取？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "推荐使用 5+1 AI 服务：获取 API KEY。新注册用户有少量试用额度，用完后需充值。也支持火山引擎、硅基流动等其他 OpenAI 兼容接口，但所选模型必须支持图片输入。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持哪些 AI 服务商？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "任何兼容 OpenAI /v1/chat/completions 接口且**支持图片输入（多模态）**的服务商都支持：5+1 AI（推荐，内置默认配置）火山引擎（豆包）硅基流动DeepSeek 不能用DeepSeek 的模型是纯文本模型，不支持图片输入，无法识别手写答案。请不要选择 DeepSeek。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "怎么为不同题目保存不同配置？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "使用预设方案管理功能。详见 预设方案管理。简单来说：创建新方案，填写题目内容、标准答案、评分标准将方案绑定到对应题目的 URL之后打开该题目时会自动切换到对应方案"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "配置会丢失吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "配置保存在浏览器的 Tampermonkey 存储中，除非手动清除浏览器数据，否则不会丢失。脚本还支持配置导出/导入功能，可以将所有配置导出为 JSON 文件备份。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "分数填入失败？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可能是阅卷平台页面结构发生了变化。请检查：当前页面是否为批改页面（包含答题卡和分数输入框）脚本是否为最新版本控制台是否有报错信息"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AI 一直返回 \"未能识别\"？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可能的原因：图片质量太低或图片加载失败AI 服务暂时不可用API 密钥额度用尽建议在设置面板中切换到「流式输出」模式，查看 AI 的实时响应。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "AI 返回结果不完整 / 被截断怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "深度思考类模型可能把输出额度消耗在思考链上，导致正式回答被截断、解析不到分数。v1.21.12.3 起可：打开配置面板「批改工作流」→ 编辑当前工作流勾选「限制单次回答长度」并设置上限（默认 2048）保存后重新批改脚本在回答被截断时会自动升级额度重试。详见 批改工作流。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "纠错功能怎么使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在普通模式或试改模式下，AI 打分后会弹出提交确认对话框。如果分数不准确：点击对话框中的纠错按钮输入正确的分数和评分理由AI 会自动分析差异原因，并优化评分标准详见 分数纠错。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "怎么查看批改历史？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "点击页面右下角的历史按钮（时钟图标），可以查看所有批改记录，支持：按时间、方案筛选查看详情（含答题卡图片）导出为 CSV / JSON / HTML / 材料包ZIP 报告标记不正确的评分以便回评"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持哪些阅卷平台？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "目前支持以下 33 个平台，脚本会自动检测并加载对应适配器：智学网 (zhixue.com) — 最早支持的平台七天网络 (7net.cc / qt7.net / qt7.cn / yj5.7net.cc) — 支持新旧两种 UI好分数 (haofenshu.com) — v1.11.3 新增支持五岳阅卷 (wylkyj.com) — v1.12.1 新增支持阅小二 (haoyuejuan.com) — v1.21.12.1 新增支持，与五岳阅卷同构华翰云 (yunyuejuan.net) — v1.21.2 新增支持光大阅卷 (pj.yixx.cn) — v1.21.2 新增支持云阅卷 — 内网阅卷系统新教育 (xinjiaoyu.com) — 支持考试和作业两种批改模式润建学情 (aisusheng.runjian.com) — 支持 CSS 背景图和点击式评分54学霸 (54xueba.cn) — 支持 Canvas/base64 图片和多小题输入框九科星 (marking.jkxjxw.com) — 支持 OBS 图片裁剪和多小题评分慧阅卷 (web.17yuejuan.cn) — 支持 frame 架构和点击式评分乐华阅卷 (main.lhsvr.cn) — 支持 Canvas 渲染和点击式评分鑫考 — 内网阅卷系统，支持动态 IP 部署慧学星 (www.hxxai.com) — 支持 OSS 图片托管和分步骤评分模式粤教翔云 (rrtcp.gdedu.gov.cn) — 支持题组批改模式云阅卷(好分数) (haofenshuyize.com) — Vue 3 + Element Plus 框架科耘阅卷 (kaoshi.keewing.com) — 支持 SVG 图片渲染和延迟填分模式光大阅卷V2 — 支持 IP:端口部署版本威科姆(悦卷通) (wyna.onlyets.com) — 支持多小题评分和键盘/鼠标/步骤三种打分模式C30教育云 (zy.iclass30.com) — Canvas 答题卡，平台自动提交（v1.21.11 新增支持）AMEQP网上评卷 — 内网裸 IP 部署，题块裁剪图（v1.21.11.2 新增支持）海云智评 (zp.kaow.cn) — OSS 裁剪答题卡、多小题满分提取、提交二次确认（v1.21.12.3 新增支持）鑫考(内网) (内网裸 IP /biluo/display.jsp) — fen 属性满分提取、inputkey 键盘确认提交（v1.21.12.4 新增支持）九五优评 (timesphoenix.com) — iframe 阅卷界面取图、分给分点评分、提交限速自适应（v1.21.14 新增支持）上进教育服务云 (www.sipd.cn) — OSS 裁剪答题卡、0分确认弹窗自动处理（v1.21.14.4 新增支持）南昊AI教学提分 (nhcisc.com) — showimage 答题图取图、满分提取、clearNoNum 分数归一化（v1.21.14.7 新增支持）鑫考校园 (内网裸 IP:端口 /Marking/NormalReadPaper) — data-score 属性满分提取、inputkey 键盘确认提交（v1.21.16 新增支持）酷鱼网 (www.kuyuu.cn) — Canvas tainted canvas 安全取图、scores 属性满分提取、键模式填分（v1.21.16 新增支持）A佳教育 (y.ajia.cn) — 行级 num-source 评分、data-score 满分提取、确定按钮提交自动翻卷（v1.21.16.1 新增支持）云阅卷(开州) (yyj.kzedu.cn) — scoreitem 点击给分、自动给分勾选状态自适应提交、图片路径变化翻卷检测（v1.21.16.10 新增支持）"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "不同平台有什么区别？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "脚本对所有平台的核心功能一致（识别 → 打分 → 填入 → 提交），差异在于页面结构和交互方式。脚本会自动检测当前平台并加载对应的适配器，用户无需手动选择。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "支持其他阅卷平台吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "完整支持列表见上一条（也可查看 支持平台 页面）。如果你需要适配其他平台，请 联系作者 或参考 开发新适配器 自行开发。"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "常见问题",
+            "item": "https://aimarking.five-plus-one.com/guide/faq"
+          }
+        ]
+      }
     ]
   },
   {
@@ -167,6 +871,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/#page",
+        "url": "https://aimarking.five-plus-one.com/guide/",
+        "name": "入门指南 | AI 批改助手",
+        "description": "AI批改助手入门指南，了解项目介绍、安装教程、快速上手和常见问题。基于多模态AI的Tampermonkey油猴脚本，支持智学网等 33 个阅卷平台自动批改主观题试卷。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门指南",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          }
+        ]
+      }
     ]
   },
   {
@@ -179,6 +915,71 @@
       "WebPage",
       "BreadcrumbList",
       "HowTo"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/installation#page",
+        "url": "https://aimarking.five-plus-one.com/guide/installation",
+        "name": "安装教程 | AI 批改助手",
+        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "安装教程",
+            "item": "https://aimarking.five-plus-one.com/guide/installation"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "安装教程",
+        "url": "https://aimarking.five-plus-one.com/guide/installation",
+        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "第一步：安装 Tampermonkey 扩展",
+            "url": "https://aimarking.five-plus-one.com/guide/installation#第一步-安装-tampermonkey-扩展",
+            "text": "Tampermonkey（油猴） 是一个免费的浏览器扩展（插件），它可以让你在浏览器中运行额外的脚本程序。AI 批改助手就是通过它来运行的。操作步骤 打开 Edge 浏览器（在开始菜单或桌面搜索 \"Edge\"）点击下方链接打开 Tampermonkey 安装页面：点击安装 Tampermonkey 扩展在打开的页面中，点击 「获取」 按钮浏览器会弹出确认提示，点击 「添加扩展」安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标找不到图标？安装完成后如果看不到图标，点击浏览器右上角的 拼图图标（扩展管理），找到 Tampermonkey，点击 「在工具栏中显示」。允许扩展运行 安装扩展后必须允许它运行用户脚本，否则脚本不会生效。不同浏览器/版本操作略有不同。Microsoft Edge 在 Edge 地址栏输入 edge://extensions/，打开扩展管理页。找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。打开「允许用户脚本」。如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。Google Chrome 在篡改猴扩展图标上右键 → 点击 「管理扩展程序」打开 「允许运行用户脚本」 与 「允许访问文件网址」提示Chrome 需先打开右上角的 「开发者模式」（见上图右上角），才会出现「允许运行用户脚本」选项。"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "第二步：安装 AI 批改助手脚本",
+            "url": "https://aimarking.five-plus-one.com/guide/installation#第二步-安装-ai-批改助手脚本",
+            "text": "重要前提执行这一步前，请你确保你已经按照上面的操作完成了 Tampermonkey 扩展的安装和启用。Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。AI 批改助手提供两个版本渠道，请根据需要选择：版本说明安装链接稳定版经过充分测试，推荐日常使用点击安装稳定版预览版包含最新功能，可能不够稳定点击安装预览版稳定版和预览版的区别稳定版：经过充分测试的功能版本，适合日常批改使用预览版：包含正在测试中的新功能，适合想提前体验的用户。如遇到问题可随时在脚本设置中切换回稳定版开发版：面向开发者的自动构建版本，不提供公开安装链接在 Edge 浏览器中点击上方安装链接（不要在微信中打开）浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限点击 「安装」 按钮点击链接后没有反应？确认你是在 Edge 浏览器 中打开的，不是微信或其他 App确认 Tampermonkey 扩展已安装并启用尝试刷新页面后重新点击"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "第三步：验证安装",
+            "url": "https://aimarking.five-plus-one.com/guide/installation#第三步-验证安装",
+            "text": "打开 Tampermonkey 管理面板（点击浏览器右上角 Tampermonkey 图标 → 管理面板）在「已安装脚本」列表中，确认「AI 批改助手」已启用（开关为绿色）打开支持的阅卷平台（如智学网、七天网络等）的阅卷页面，页面上应出现 AI 批改相关的浮动按钮确认脚本已启用 点击浏览器右上角的篡改猴图标，看弹出的菜单：✅ 正常情况 —— 显示「✓ 已启用」，下方列出 AI-Marker-Suite：❌ 异常情况 —— 顶部出现蓝色提示「请启用\"允许用户脚本\"扩展设置」：出现异常提示时，请回到上一步完成「允许扩展运行」设置，然后刷新阅卷页面。注意脚本只在阅卷页面（能看到答题卡图片和分数输入框的页面）上才会激活，其他页面上不会显示任何内容，这是正常的。"
+          }
+        ]
+      }
     ]
   },
   {
@@ -190,6 +991,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/introduction#page",
+        "url": "https://aimarking.five-plus-one.com/guide/introduction",
+        "name": "项目介绍 | AI 批改助手",
+        "description": "了解 AI 批改助手的工作方式、适用场景与核心功能。通过浏览器脚本连接阅卷平台和多模态 AI，完成手写识别、按标准评分、双评仲裁与批改记录管理。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "项目介绍",
+            "item": "https://aimarking.five-plus-one.com/guide/introduction"
+          }
+        ]
+      }
     ]
   },
   {
@@ -201,6 +1040,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/quickstart#page",
+        "url": "https://aimarking.five-plus-one.com/guide/quickstart",
+        "name": "快速上手 | AI 批改助手",
+        "description": "3分钟完成AI批改助手的配置并开始使用。获取API密钥、配置评分标准、选择批改模式，立即开始AI自动批改主观题试卷。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "快速上手",
+            "item": "https://aimarking.five-plus-one.com/guide/quickstart"
+          }
+        ]
+      }
     ]
   },
   {
@@ -212,6 +1089,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/guide/userscript-install#page",
+        "url": "https://aimarking.five-plus-one.com/guide/userscript-install",
+        "name": "油猴脚本安装指南 — Tampermonkey 用户脚本通用教程 | AI 批改助手",
+        "description": "油猴脚本（用户脚本）通用安装教程，适用于所有 Tampermonkey 脚本。覆盖 Edge 与 Chrome 浏览器的 Tampermonkey 扩展安装、允许用户脚本、旧版 Edge 开发人员模式、安装验证与常见问题排查。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "入门",
+            "item": "https://aimarking.five-plus-one.com/guide/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "油猴脚本安装指南",
+            "item": "https://aimarking.five-plus-one.com/guide/userscript-install"
+          }
+        ]
+      }
     ]
   },
   {
@@ -224,6 +1139,53 @@
       "WebPage",
       "WebSite",
       "SoftwareApplication"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/#page",
+        "url": "https://aimarking.five-plus-one.com/",
+        "name": "AI 批改助手 — 让 AI 替你改卷",
+        "description": "AI 批改助手是免费的开源浏览器脚本，通过多模态 AI 识别手写答案，按评分标准批改主观题。支持主流阅卷平台、双评仲裁、分小题评分与批改历史，提供安装教程和配置指南。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://aimarking.five-plus-one.com/#website",
+        "name": "AI 批改助手",
+        "url": "https://aimarking.five-plus-one.com/",
+        "inLanguage": "zh-CN",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://aimarking.five-plus-one.com/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AI 批改助手",
+        "url": "https://aimarking.five-plus-one.com/",
+        "description": "AI 批改助手是免费的开源浏览器脚本，通过多模态 AI 识别手写答案，按评分标准批改主观题。支持主流阅卷平台、双评仲裁、分小题评分与批改历史，提供安装教程和配置指南。",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "浏览器（Tampermonkey）",
+        "isAccessibleForFree": true,
+        "license": "https://github.com/five-plus-one/AI-Marker-Suite/blob/stable/LICENSE",
+        "author": {
+          "@type": "Organization",
+          "name": "5plus1",
+          "url": "https://five-plus-one.com"
+        },
+        "screenshot": "https://aimarking.five-plus-one.com/img/1.png"
+      }
     ]
   },
   {
@@ -235,6 +1197,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/modes/dual#page",
+        "url": "https://aimarking.five-plus-one.com/modes/dual",
+        "name": "双评模式 | AI 批改助手",
+        "description": "AI批改助手的双评仲裁模式，两个AI模型独立评分，分差超阈值自动触发第三模型仲裁，适合高精度要求的场景。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "批改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "双评模式",
+            "item": "https://aimarking.five-plus-one.com/modes/dual"
+          }
+        ]
+      }
     ]
   },
   {
@@ -246,6 +1246,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/modes/#page",
+        "url": "https://aimarking.five-plus-one.com/modes/",
+        "name": "批改模式 | AI 批改助手",
+        "description": "AI批改助手批改模式介绍：普通模式5秒倒计时、试改模式等待确认、无人值守模式1秒自动提交错误自动重试、双评模式双模型仲裁。按需选择适合的批改模式。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "批改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/"
+          }
+        ]
+      }
     ]
   },
   {
@@ -257,6 +1289,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/modes/normal#page",
+        "url": "https://aimarking.five-plus-one.com/modes/normal",
+        "name": "普通模式 | AI 批改助手",
+        "description": "普通模式是默认批改模式，5秒倒计时自动提交，支持暂停、取消和纠错。适合日常少量试卷批改。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "批改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "普通模式",
+            "item": "https://aimarking.five-plus-one.com/modes/normal"
+          }
+        ]
+      }
     ]
   },
   {
@@ -268,6 +1338,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/modes/trial#page",
+        "url": "https://aimarking.five-plus-one.com/modes/trial",
+        "name": "试改模式 | AI 批改助手",
+        "description": "试改模式每次AI评分后暂停等待教师确认，不会自动提交。适合首次使用时调优评分标准和重要考试人工审核。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "批改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "试改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/trial"
+          }
+        ]
+      }
     ]
   },
   {
@@ -279,6 +1387,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/modes/unattended#page",
+        "url": "https://aimarking.five-plus-one.com/modes/unattended",
+        "name": "无人值守模式 | AI 批改助手",
+        "description": "无人值守模式专为大批量批改设计，1秒自动提交，瞬态错误自动退避重试（次数可配）。适合夜间挂机，睡一觉几百份试卷全部改完。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "批改模式",
+            "item": "https://aimarking.five-plus-one.com/modes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "无人值守模式",
+            "item": "https://aimarking.five-plus-one.com/modes/unattended"
+          }
+        ]
+      }
     ]
   },
   {
@@ -290,6 +1436,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/ajia#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/ajia",
+        "name": "A佳教育适配 | AI 批改助手",
+        "description": "AI批改助手A佳教育适配器使用说明。支持y.ajia.cn在线阅卷（marking.html），行级 num-source 评分、data-score 满分提取、「确定」按钮提交自动翻卷。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "A佳教育",
+            "item": "https://aimarking.five-plus-one.com/platforms/ajia"
+          }
+        ]
+      }
     ]
   },
   {
@@ -301,6 +1485,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/ameqp#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/ameqp",
+        "name": "AMEQP网上评卷适配 | AI 批改助手",
+        "description": "AI批改助手AMEQP网上评卷适配器使用说明。支持内网裸IP部署的AMEQP/Webroot/mar阅卷系统，题块裁剪图取完整图、jQuery+EasyUI组件交互、多评分单元，v1.21.11.2新增支持。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AMEQP网上评卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/ameqp"
+          }
+        ]
+      }
     ]
   },
   {
@@ -312,6 +1534,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/c30#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/c30",
+        "name": "C30教育云适配 | AI 批改助手",
+        "description": "AI批改助手C30教育云适配器使用说明。支持zy.iclass30.com阅卷平台，Canvas答题卡自动导出、AI智能评分、自动填分提交，v1.21.11新增支持。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "C30教育云",
+            "item": "https://aimarking.five-plus-one.com/platforms/c30"
+          }
+        ]
+      }
     ]
   },
   {
@@ -323,6 +1583,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/guangda-2#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/guangda-2",
+        "name": "光大阅卷 V2 适配 | AI 批改助手",
+        "description": "AI批改助手光大阅卷V2适配器使用说明。支持IP:端口部署的光大阅卷平台Canvas图片渲染、点击式评分、XHR拦截获取图片。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "光大阅卷 V2",
+            "item": "https://aimarking.five-plus-one.com/platforms/guangda-2"
+          }
+        ]
+      }
     ]
   },
   {
@@ -334,6 +1632,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/guangda#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/guangda",
+        "name": "光大阅卷适配 | AI 批改助手",
+        "description": "AI批改助手光大阅卷适配器使用说明。支持pj.yixx.cn阅卷平台Canvas图片渲染、点击式分数选择、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "光大阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/guangda"
+          }
+        ]
+      }
     ]
   },
   {
@@ -345,6 +1681,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/haiyun#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/haiyun",
+        "name": "海云智评适配 | AI 批改助手",
+        "description": "AI批改助手海云智评适配器使用说明。支持 zp.kaow.cn 区域学业监测智能阅卷平台，OSS裁剪答题卡多页取图、多小题满分提取、提交二次确认弹窗自动处理，v1.21.12.3新增支持。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "海云智评",
+            "item": "https://aimarking.five-plus-one.com/platforms/haiyun"
+          }
+        ]
+      }
     ]
   },
   {
@@ -356,6 +1730,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/hanhan#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/hanhan",
+        "name": "华翰云适配 | AI 批改助手",
+        "description": "AI批改助手华翰云适配器使用说明。支持yunyuejuan.net阅卷平台答题卡识别、Vue响应式输入框分数填充、自动提交功能。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "华翰云",
+            "item": "https://aimarking.five-plus-one.com/platforms/hanhan"
+          }
+        ]
+      }
     ]
   },
   {
@@ -367,6 +1779,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/haofenshu#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/haofenshu",
+        "name": "好分数适配 | AI 批改助手",
+        "description": "AI批改助手好分数适配器使用说明。支持haofenshu.com阅卷平台SVG答题卡识别、Vue响应式输入框分数填充、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "好分数",
+            "item": "https://aimarking.five-plus-one.com/platforms/haofenshu"
+          }
+        ]
+      }
     ]
   },
   {
@@ -378,6 +1828,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/haofenshuyize#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/haofenshuyize",
+        "name": "云阅卷(好分数)适配 | AI 批改助手",
+        "description": "AI批改助手云阅卷(好分数)适配器使用说明。支持haofenshuyize.com阅卷平台Vue 3 + Element Plus框架、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "云阅卷(好分数)",
+            "item": "https://aimarking.five-plus-one.com/platforms/haofenshuyize"
+          }
+        ]
+      }
     ]
   },
   {
@@ -389,6 +1877,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/haoyuejuan#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/haoyuejuan",
+        "name": "阅小二适配 | AI 批改助手",
+        "description": "AI批改助手阅小二适配器使用说明。支持haoyuejuan.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分与回评模式识别。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "阅小二",
+            "item": "https://aimarking.five-plus-one.com/platforms/haoyuejuan"
+          }
+        ]
+      }
     ]
   },
   {
@@ -400,6 +1926,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/huixuexing#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/huixuexing",
+        "name": "慧学星适配 | AI 批改助手",
+        "description": "AI批改助手慧学星适配器使用说明。支持www.hxxai.com阅卷平台OSS图片托管、分步骤评分模式、满分/零分快捷按钮。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "慧学星",
+            "item": "https://aimarking.five-plus-one.com/platforms/huixuexing"
+          }
+        ]
+      }
     ]
   },
   {
@@ -411,6 +1975,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/huiyuejuan#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/huiyuejuan",
+        "name": "慧阅卷适配 | AI 批改助手",
+        "description": "AI批改助手慧阅卷适配器使用说明。支持web.17yuejuan.cn阅卷平台frameset/frame架构访问、点击式分数按钮评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "慧阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/huiyuejuan"
+          }
+        ]
+      }
     ]
   },
   {
@@ -422,6 +2024,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/",
+        "name": "支持平台 | AI 批改助手",
+        "description": "查看 AI 批改助手支持的阅卷平台，按名称查找智学网、七天网络、好分数等平台的使用指南，了解各平台的安装、评分与操作注意事项。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          }
+        ]
+      }
     ]
   },
   {
@@ -433,6 +2067,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/jiukexing#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/jiukexing",
+        "name": "九科星阅卷平台适配 | AI 批改助手",
+        "description": "AI批改助手九科星适配器使用说明。支持marking.jkxjxw.com阅卷平台OBS图片裁剪、多小题输入框评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "九科星",
+            "item": "https://aimarking.five-plus-one.com/platforms/jiukexing"
+          }
+        ]
+      }
     ]
   },
   {
@@ -444,6 +2116,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping",
+        "name": "九五优评适配 | AI 批改助手",
+        "description": "AI批改助手九五优评（timesphoenix.com）适配器使用说明。支持iframe阅卷界面取图、分给分点评分、提交限速自适应和打分确认弹窗自动确认。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "九五优评",
+            "item": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping"
+          }
+        ]
+      }
     ]
   },
   {
@@ -455,6 +2165,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/keewing#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/keewing",
+        "name": "科耘阅卷适配 | AI 批改助手",
+        "description": "AI批改助手科耘阅卷适配器使用说明。支持kaoshi.keewing.com阅卷平台SVG图片渲染、Element UI组件、延迟填分模式。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "科耘阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/keewing"
+          }
+        ]
+      }
     ]
   },
   {
@@ -466,6 +2214,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/kuyuu#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/kuyuu",
+        "name": "酷鱼网适配 | AI 批改助手",
+        "description": "AI批改助手酷鱼网适配器使用说明。支持www.kuyuu.cn阅卷平台Canvas答题卡渲染（tainted canvas安全取图）、键/鼠/批三种打分模式、scores属性满分提取。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "酷鱼网",
+            "item": "https://aimarking.five-plus-one.com/platforms/kuyuu"
+          }
+        ]
+      }
     ]
   },
   {
@@ -477,6 +2263,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/kzedu#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/kzedu",
+        "name": "云阅卷(开州)适配 | AI 批改助手",
+        "description": "AI批改助手云阅卷(开州)适配器使用说明。支持 yyj.kzedu.cn 阅卷平台（Vue 3 + Element Plus），scoreitem 点击给分、「自动给分」勾选状态自适应提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "云阅卷(开州)",
+            "item": "https://aimarking.five-plus-one.com/platforms/kzedu"
+          }
+        ]
+      }
     ]
   },
   {
@@ -488,6 +2312,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/lehua#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/lehua",
+        "name": "乐华阅卷适配 | AI 批改助手",
+        "description": "AI批改助手乐华阅卷适配器使用说明。支持main.lhsvr.cn阅卷平台Canvas图片渲染、点击式评分按钮、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "乐华阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/lehua"
+          }
+        ]
+      }
     ]
   },
   {
@@ -499,6 +2361,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/nhcisc#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/nhcisc",
+        "name": "南昊AI教学提分平台适配 | AI 批改助手",
+        "description": "AI批改助手南昊AI教学提分平台（nhcisc.com）适配器使用说明。支持showimage答题图取图、满分提取、clearNoNum分数归一化和自动换卷检测。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "南昊AI教学提分平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/nhcisc"
+          }
+        ]
+      }
     ]
   },
   {
@@ -510,6 +2410,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/qitian#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/qitian",
+        "name": "七天网络适配 | AI 批改助手",
+        "description": "AI批改助手七天网络适配器使用说明。支持7net.cc/qt7.net/qt7.cn旧版和yj5.7net.cc新UI两个阅卷平台，自动识别答题卡图片、AI智能评分、自动填分提交，包含Canvas渲染和API拦截技术方案。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "七天网络",
+            "item": "https://aimarking.five-plus-one.com/platforms/qitian"
+          }
+        ]
+      }
     ]
   },
   {
@@ -521,6 +2459,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/runjian#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/runjian",
+        "name": "润建学情适配 | AI 批改助手",
+        "description": "AI批改助手润建学情适配器使用说明。支持aisusheng.runjian.com阅卷平台CSS背景图渲染、点击式评分按钮、API拦截获取答题卡图片。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "润建学情",
+            "item": "https://aimarking.five-plus-one.com/platforms/runjian"
+          }
+        ]
+      }
     ]
   },
   {
@@ -532,6 +2508,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/sipd#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/sipd",
+        "name": "上进教育服务云平台适配 | AI 批改助手",
+        "description": "AI批改助手上进教育服务云平台（智慧上进，sipd.cn）适配器使用说明。支持OSS裁剪答题卡、键盘打分、0分确认弹窗自动处理和方案绑定。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "上进教育服务云平台（智慧上进）",
+            "item": "https://aimarking.five-plus-one.com/platforms/sipd"
+          }
+        ]
+      }
     ]
   },
   {
@@ -543,6 +2557,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/weicom#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/weicom",
+        "name": "威科姆（悦卷通）适配 | AI 批改助手",
+        "description": "AI批改助手威科姆阅卷（悦卷通）适配器使用说明。支持wyna.onlyets.com阅卷平台多小题评分、OSS图片、键盘/鼠标/步骤三种打分模式。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "威科姆（悦卷通）",
+            "item": "https://aimarking.five-plus-one.com/platforms/weicom"
+          }
+        ]
+      }
     ]
   },
   {
@@ -554,6 +2606,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/wuyue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/wuyue",
+        "name": "五岳阅卷适配 | AI 批改助手",
+        "description": "AI批改助手五岳阅卷适配器使用说明。支持wylkyj.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "五岳阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/wuyue"
+          }
+        ]
+      }
     ]
   },
   {
@@ -565,6 +2655,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu",
+        "name": "新教育适配 | AI 批改助手",
+        "description": "AI批改助手新教育适配器使用说明。支持xinjiaoyu.com阅卷平台考试系统和作业系统两种批改模式，通过API拦截获取答题卡图片，AI智能评分自动提交。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "新教育",
+            "item": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu"
+          }
+        ]
+      }
     ]
   },
   {
@@ -576,6 +2704,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xinkao-2#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xinkao-2",
+        "name": "鑫考(内网版)适配 | AI 批改助手",
+        "description": "AI批改助手鑫考内网版适配器使用说明。支持内网裸 IP 部署的 biluo/display.jsp 鑫考网上阅卷系统，fen 属性满分提取、inputkey 键盘确认提交、URL query 任务标识，v1.21.12.4 新增支持。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "鑫考(内网版)",
+            "item": "https://aimarking.five-plus-one.com/platforms/xinkao-2"
+          }
+        ]
+      }
     ]
   },
   {
@@ -587,6 +2753,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xinkao-campus#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xinkao-campus",
+        "name": "鑫考校园适配 | AI 批改助手",
+        "description": "AI批改助手鑫考校园适配器使用说明。支持内网裸 IP:端口部署的 Marking/NormalReadPaper 鑫考校园6.0系统，data-score 属性满分提取、inputkey 键盘确认提交、subId+teaCode 任务标识和 token 换卷检测，v1.21.16 新增支持。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "鑫考校园",
+            "item": "https://aimarking.five-plus-one.com/platforms/xinkao-campus"
+          }
+        ]
+      }
     ]
   },
   {
@@ -598,6 +2802,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xinkao#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xinkao",
+        "name": "鑫考网上阅卷适配 | AI 批改助手",
+        "description": "AI批改助手鑫考适配器使用说明。支持鑫考网上阅卷系统答题卡识别、AI智能评分、自动填分提交。通过DOM特征检测平台，兼容动态IP部署。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "鑫考",
+            "item": "https://aimarking.five-plus-one.com/platforms/xinkao"
+          }
+        ]
+      }
     ]
   },
   {
@@ -609,6 +2851,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xueba54#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xueba54",
+        "name": "54学霸阅卷平台适配 | AI 批改助手",
+        "description": "AI批改助手54学霸适配器使用说明。支持54xueba.cn阅卷平台Canvas/base64图片渲染、多小题输入框评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "54学霸",
+            "item": "https://aimarking.five-plus-one.com/platforms/xueba54"
+          }
+        ]
+      }
     ]
   },
   {
@@ -620,6 +2900,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun",
+        "name": "粤教翔云智慧测评适配 | AI 批改助手",
+        "description": "AI批改助手粤教翔云智慧测评适配器使用说明。支持rrtcp.gdedu.gov.cn阅卷平台题组批改模式、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "粤教翔云智慧测评",
+            "item": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun"
+          }
+        ]
+      }
     ]
   },
   {
@@ -631,6 +2949,44 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/yunyuejuan#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/yunyuejuan",
+        "name": "云阅卷适配 | AI 批改助手",
+        "description": "AI批改助手云阅卷适配器使用说明。支持内网部署的云阅卷平台答题卡识别、AI智能评分、自动填分提交、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "云阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/yunyuejuan"
+          }
+        ]
+      }
     ]
   },
   {
@@ -642,7 +2998,54 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/zhixue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/zhixue",
+        "name": "智学网适配 | AI 批改助手",
+        "description": "AI批改助手智学网适配器详细说明。支持zhixue.com阅卷页面自动识别答题卡、AI智能评分、自动填分提交、分小题评分、图片防盗链绕过。包含页面检测、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "智学网",
+            "item": "https://aimarking.five-plus-one.com/platforms/zhixue"
+          }
+        ]
+      }
     ]
+  },
+  {
+    "route": "/README",
+    "title": "AI 批改助手 — 文档站 | AI 批改助手",
+    "description": "AI 批改助手文档站的本地开发、目录结构、部署流程与项目链接，提供面向维护者的文档站仓库说明。",
+    "canonical": "https://aimarking.five-plus-one.com/README",
+    "indexable": false,
+    "schemas": [],
+    "schemaData": []
   },
   {
     "route": "/support",
@@ -653,6 +3056,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/support#page",
+        "url": "https://aimarking.five-plus-one.com/support",
+        "name": "帮助与支持 | AI 批改助手",
+        "description": "AI 批改助手帮助与支持。加入微信、QQ 交流群，填写反馈问卷，联系作者获取帮助。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "帮助与支持",
+            "item": "https://aimarking.five-plus-one.com/support"
+          }
+        ]
+      }
     ]
   },
   {
@@ -664,6 +3099,38 @@
     "schemas": [
       "WebPage",
       "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/tools#page",
+        "url": "https://aimarking.five-plus-one.com/tools",
+        "name": "工具 | AI 批改助手",
+        "description": "AI 批改助手的实用工具入口。安装并启用脚本后，查看评阅历史、检查脚本更新与管理设置。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "工具",
+            "item": "https://aimarking.five-plus-one.com/tools"
+          }
+        ]
+      }
     ]
   }
 ]

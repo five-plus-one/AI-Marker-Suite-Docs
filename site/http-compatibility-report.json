@@ -1,0 +1,504 @@
+{
+  "preview": "http://127.0.0.1:4193/",
+  "baseline": "d4775ec462a6f22450badaa954ff0d2ad55713e7",
+  "pages": 62,
+  "requests": 124,
+  "checks": [
+    {
+      "path": "404",
+      "status": 200
+    },
+    {
+      "path": "404.html",
+      "status": 200
+    },
+    {
+      "path": "advanced/adapter-dev",
+      "status": 200
+    },
+    {
+      "path": "advanced/adapter-dev.html",
+      "status": 200
+    },
+    {
+      "path": "advanced/correction",
+      "status": 200
+    },
+    {
+      "path": "advanced/correction.html",
+      "status": 200
+    },
+    {
+      "path": "advanced/history",
+      "status": 200
+    },
+    {
+      "path": "advanced/history.html",
+      "status": 200
+    },
+    {
+      "path": "advanced/",
+      "status": 200
+    },
+    {
+      "path": "advanced/index.html",
+      "status": 200
+    },
+    {
+      "path": "changelog",
+      "status": 200
+    },
+    {
+      "path": "changelog.html",
+      "status": 200
+    },
+    {
+      "path": "config/api-setup",
+      "status": 200
+    },
+    {
+      "path": "config/api-setup.html",
+      "status": 200
+    },
+    {
+      "path": "config/formula",
+      "status": 200
+    },
+    {
+      "path": "config/formula.html",
+      "status": 200
+    },
+    {
+      "path": "config/",
+      "status": 200
+    },
+    {
+      "path": "config/index.html",
+      "status": 200
+    },
+    {
+      "path": "config/presets",
+      "status": 200
+    },
+    {
+      "path": "config/presets.html",
+      "status": 200
+    },
+    {
+      "path": "config/rubric",
+      "status": 200
+    },
+    {
+      "path": "config/rubric.html",
+      "status": 200
+    },
+    {
+      "path": "config/sub-questions",
+      "status": 200
+    },
+    {
+      "path": "config/sub-questions.html",
+      "status": 200
+    },
+    {
+      "path": "config/workflow",
+      "status": 200
+    },
+    {
+      "path": "config/workflow.html",
+      "status": 200
+    },
+    {
+      "path": "feedback/thankyou",
+      "status": 200
+    },
+    {
+      "path": "feedback/thankyou.html",
+      "status": 200
+    },
+    {
+      "path": "guide/faq",
+      "status": 200
+    },
+    {
+      "path": "guide/faq.html",
+      "status": 200
+    },
+    {
+      "path": "guide/",
+      "status": 200
+    },
+    {
+      "path": "guide/index.html",
+      "status": 200
+    },
+    {
+      "path": "guide/installation",
+      "status": 200
+    },
+    {
+      "path": "guide/installation.html",
+      "status": 200
+    },
+    {
+      "path": "guide/introduction",
+      "status": 200
+    },
+    {
+      "path": "guide/introduction.html",
+      "status": 200
+    },
+    {
+      "path": "guide/quickstart",
+      "status": 200
+    },
+    {
+      "path": "guide/quickstart.html",
+      "status": 200
+    },
+    {
+      "path": "guide/userscript-install",
+      "status": 200
+    },
+    {
+      "path": "guide/userscript-install.html",
+      "status": 200
+    },
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "status": 200
+    },
+    {
+      "path": "modes/dual",
+      "status": 200
+    },
+    {
+      "path": "modes/dual.html",
+      "status": 200
+    },
+    {
+      "path": "modes/",
+      "status": 200
+    },
+    {
+      "path": "modes/index.html",
+      "status": 200
+    },
+    {
+      "path": "modes/normal",
+      "status": 200
+    },
+    {
+      "path": "modes/normal.html",
+      "status": 200
+    },
+    {
+      "path": "modes/trial",
+      "status": 200
+    },
+    {
+      "path": "modes/trial.html",
+      "status": 200
+    },
+    {
+      "path": "modes/unattended",
+      "status": 200
+    },
+    {
+      "path": "modes/unattended.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/ajia",
+      "status": 200
+    },
+    {
+      "path": "platforms/ajia.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/ameqp",
+      "status": 200
+    },
+    {
+      "path": "platforms/ameqp.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/c30",
+      "status": 200
+    },
+    {
+      "path": "platforms/c30.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/guangda-2",
+      "status": 200
+    },
+    {
+      "path": "platforms/guangda-2.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/guangda",
+      "status": 200
+    },
+    {
+      "path": "platforms/guangda.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/haiyun",
+      "status": 200
+    },
+    {
+      "path": "platforms/haiyun.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/hanhan",
+      "status": 200
+    },
+    {
+      "path": "platforms/hanhan.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/haofenshu",
+      "status": 200
+    },
+    {
+      "path": "platforms/haofenshu.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/haofenshuyize",
+      "status": 200
+    },
+    {
+      "path": "platforms/haofenshuyize.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/haoyuejuan",
+      "status": 200
+    },
+    {
+      "path": "platforms/haoyuejuan.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/huixuexing",
+      "status": 200
+    },
+    {
+      "path": "platforms/huixuexing.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/huiyuejuan",
+      "status": 200
+    },
+    {
+      "path": "platforms/huiyuejuan.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/",
+      "status": 200
+    },
+    {
+      "path": "platforms/index.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/jiukexing",
+      "status": 200
+    },
+    {
+      "path": "platforms/jiukexing.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/jiuwuyouping",
+      "status": 200
+    },
+    {
+      "path": "platforms/jiuwuyouping.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/keewing",
+      "status": 200
+    },
+    {
+      "path": "platforms/keewing.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/kuyuu",
+      "status": 200
+    },
+    {
+      "path": "platforms/kuyuu.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/kzedu",
+      "status": 200
+    },
+    {
+      "path": "platforms/kzedu.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/lehua",
+      "status": 200
+    },
+    {
+      "path": "platforms/lehua.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/nhcisc",
+      "status": 200
+    },
+    {
+      "path": "platforms/nhcisc.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/qitian",
+      "status": 200
+    },
+    {
+      "path": "platforms/qitian.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/runjian",
+      "status": 200
+    },
+    {
+      "path": "platforms/runjian.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/sipd",
+      "status": 200
+    },
+    {
+      "path": "platforms/sipd.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/weicom",
+      "status": 200
+    },
+    {
+      "path": "platforms/weicom.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/wuyue",
+      "status": 200
+    },
+    {
+      "path": "platforms/wuyue.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinjiaoyu",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinjiaoyu.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao-2",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao-2.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao-campus",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao-campus.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao",
+      "status": 200
+    },
+    {
+      "path": "platforms/xinkao.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/xueba54",
+      "status": 200
+    },
+    {
+      "path": "platforms/xueba54.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/yuejiaoxiangyun",
+      "status": 200
+    },
+    {
+      "path": "platforms/yuejiaoxiangyun.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/yunyuejuan",
+      "status": 200
+    },
+    {
+      "path": "platforms/yunyuejuan.html",
+      "status": 200
+    },
+    {
+      "path": "platforms/zhixue",
+      "status": 200
+    },
+    {
+      "path": "platforms/zhixue.html",
+      "status": 200
+    },
+    {
+      "path": "README",
+      "status": 200
+    },
+    {
+      "path": "README.html",
+      "status": 200
+    },
+    {
+      "path": "support",
+      "status": 200
+    },
+    {
+      "path": "support.html",
+      "status": 200
+    },
+    {
+      "path": "tools",
+      "status": 200
+    },
+    {
+      "path": "tools.html",
+      "status": 200
+    }
+  ]
+}

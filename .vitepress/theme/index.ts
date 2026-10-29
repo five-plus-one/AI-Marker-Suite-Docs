@@ -1,7 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
+import '@fiveplusone/ui/vitepress.css'
+import {mountDocumentationEnhancements,synchronizeDocumentationSeo} from '../../site/enhancements.jsx'
 import { updateNavVersion, initChangelogPage } from './fetchManifest'
 import type { Theme } from 'vitepress'
+import { withBase } from 'vitepress'
 import { h } from 'vue'
 import HomeHero from './HomeHero.vue'
 import HomeSections from './HomeSections.vue'
@@ -29,7 +32,7 @@ const Card = {
         'a',
         {
           class: 'ams-card',
-          href: props.href,
+          href: props.href ? withBase(props.href) : undefined,
         },
         [
           h('span', { class: 'ams-card__title' }, props.title),
@@ -55,6 +58,8 @@ export default {
       if (clientInitDone) return
       clientInitDone = true
 
+      mountDocumentationEnhancements()
+      synchronizeDocumentationSeo()
       initNavScrollState()
 
       // 初始执行
@@ -64,6 +69,7 @@ export default {
       // 监听路由变化
       router.onAfterRouteChanged = (to) => {
         setTimeout(() => {
+          synchronizeDocumentationSeo()
           updateNavVersion()
           initChangelogPage()
         }, 300)

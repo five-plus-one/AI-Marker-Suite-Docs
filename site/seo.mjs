@@ -1,10 +1,11 @@
 const origin='https://aimarking.five-plus-one.com';
 export function applyPageSeo($,{route,title,article,groups,base}){
- const canonical=origin+route,home=route==='/',excluded=route==='/404'||route==='/feedback/thankyou';
+ const canonical=origin+route,home=route==='/',excluded=route==='/404'||route==='/feedback/thankyou'||route==='/README';
  const clean=text=>text.replace(/[\u200b-\u200d]/g,'').replace(/\s+/g,' ').trim();
  const original=$('title').text();
  const pageTitle=home?'AI 批改助手 — 让 AI 替你改卷':route==='/404'?'页面未找到 | AI 批改助手':original.replace(/\s*(?:—|\||-)\s*AI 批改助手/g,'').trim()+' | AI 批改助手';
  const descriptions={
+  '/README':'AI 批改助手文档站的本地开发、目录结构、部署流程与项目链接，提供面向维护者的文档站仓库说明。',
   '/':'AI 批改助手是免费的开源浏览器脚本，通过多模态 AI 识别手写答案，按评分标准批改主观题。支持主流阅卷平台、双评仲裁、分小题评分与批改历史，提供安装教程和配置指南。',
   '/guide/introduction':'了解 AI 批改助手的工作方式、适用场景与核心功能。通过浏览器脚本连接阅卷平台和多模态 AI，完成手写识别、按标准评分、双评仲裁与批改记录管理。',
   '/platforms/':'查看 AI 批改助手支持的阅卷平台，按名称查找智学网、七天网络、好分数等平台的使用指南，了解各平台的安装、评分与操作注意事项。',
@@ -22,7 +23,7 @@ export function applyPageSeo($,{route,title,article,groups,base}){
  $('html').attr('lang','zh-CN');
  $('meta[name="ai-purpose"]').remove();$('link[rel="alternate"][type="text/plain"]').attr('href',origin+'/llms.txt');
  $('script[type="application/ld+json"]').remove();
- if(excluded)return {route,title:pageTitle,description,canonical,indexable:false,schemas:[]};
+ if(excluded)return {route,title:pageTitle,description,canonical,indexable:false,schemas:[],schemaData:[]};
  const context='https://schema.org',schemas=[];
  const webpage={'@context':context,'@type':route==='/guide/faq'?'FAQPage':'WebPage','@id':canonical+'#page',url:canonical,name:pageTitle,description,inLanguage:'zh-CN',isPartOf:{'@id':origin+'/#website'}};
  if(route==='/guide/faq')webpage.mainEntity=article.find('h3[id]').toArray().map(el=>({'@type':'Question',name:clean($(el).text()),acceptedAnswer:{'@type':'Answer',text:clean($(el).nextUntil('h2,h3').text())}})).filter(q=>q.acceptedAnswer.text);
@@ -31,5 +32,5 @@ export function applyPageSeo($,{route,title,article,groups,base}){
  else {const group=groups.find(g=>(base+route.slice(1)).startsWith(g.prefix));const crumbs=[{name:'首页',item:origin+'/'}];if(group&&route!==group.prefix.slice(base.length-1))crumbs.push({name:group.label,item:origin+group.prefix.slice(base.length-1)});crumbs.push({name:clean(title),item:canonical});schemas.push({'@context':context,'@type':'BreadcrumbList',itemListElement:crumbs.map((c,i)=>({'@type':'ListItem',position:i+1,...c}))})}
  if(route==='/guide/installation'){schemas.push({'@context':context,'@type':'HowTo',name:clean(title),url:canonical,description,step:article.find('h2[id]').toArray().filter(el=>/第[一二三]步/.test($(el).text())).map(el=>({'@type':'HowToStep',name:clean($(el).text()),url:canonical+'#'+$(el).attr('id'),text:clean($(el).nextUntil('h2').text())}))})}
  for(const schema of schemas)$('head').append($('<script>').attr('type','application/ld+json').text(JSON.stringify(schema).replaceAll('<','\\u003c')));
- return {route,title:pageTitle,description,canonical,indexable:true,schemas:schemas.map(s=>s['@type'])};
+ return {route,title:pageTitle,description,canonical,indexable:true,schemas:schemas.map(s=>s['@type']),schemaData:schemas};
 }
