@@ -19,7 +19,7 @@ AI 批改助手需要一个支持**图片识别**的 AI 服务来识别手写答
 
 1. 访问 [5+1 AI 密钥页](https://api.ai.five-plus-one.com/keys)
 
-![](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
+![](https://img.assets.five-plus-one.com/img/2026/10/8740d488f548c29fc642332a3afe6aff.png)
 
 2. 若您是首次使用，请先完成注册。**推荐使用「五加一账号」登录**（也支持 Passkey / GitHub）
 

@@ -15,7 +15,7 @@ keywords: AI批改助手,入门指南,安装教程,快速上手,常见问题,Tam
 ## 快速导航
 
 1. **[项目介绍](/guide/introduction)** — 了解 AI 批改助手是什么、能做什么
-2. **[安装教程](/guide/installation)** — 在 Edge 浏览器中安装 Tampermonkey 扩展和用户脚本
+2. **[油猴脚本安装](/guide/userscript-install) · [安装教程](/guide/installation)** — 在 Edge 浏览器中安装 Tampermonkey 扩展和用户脚本
 3. **[快速上手](/guide/quickstart)** — 配置 AI 服务，5 分钟完成第一次批改
 4. **[常见问题](/guide/faq)** — 浏览器兼容、手机端、费用等常见问题
 
