@@ -6,6 +6,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 
 export default defineConfig({
   lang: 'zh-CN',
+  srcExclude: ['**/AGENTS.md'],
   title: 'AI 批改助手',
   description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)等 33 个平台。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
@@ -30,6 +31,7 @@ export default defineConfig({
   // ========== SEO: Sitemap ==========
   sitemap: {
     hostname: SITE_URL,
+    transformItems: items => items.filter(item => !item.url.includes("feedback/thankyou") && !item.url.includes("404")),
   },
 
   // ========== SEO & GEO: Head Meta ==========

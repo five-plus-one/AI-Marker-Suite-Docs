@@ -56,7 +56,7 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,userscript,Gre
 
 部分旧版 Edge 的扩展设置里**没有「允许用户脚本」这一项**。此时打开 **「开发人员模式」** 开关即可：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
+![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
 
 开启后脚本即可正常运行。
 
@@ -64,11 +64,11 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,userscript,Gre
 
 1. 在篡改猴扩展图标上**右键** → 点击 **「管理扩展程序」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
+![通过篡改猴图标进入扩展管理](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
 
 2. 打开右上角的 **「开发者模式」**，再打开 **「允许运行用户脚本」** 与 **「允许访问文件网址」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
+![Chrome 扩展详情中的用户脚本权限](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
 
 ::: tip 提示
 Chrome 需先打开「开发者模式」，才会出现「允许运行用户脚本」选项。
@@ -90,11 +90,11 @@ Chrome 需先打开「开发者模式」，才会出现「允许运行用户脚�
 
 **✅ 正常情况** —— 显示「✓ 已启用」，下方列出你安装的脚本：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
+![AI-Marker-Suite 脚本已启用](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
 
 **❌ 异常情况** —— 顶部出现蓝色提示「请启用"允许用户脚本"扩展设置」：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
+![尚未允许用户脚本时的扩展提示](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
 
 出现异常提示时，请回到上一步完成「允许扩展运行用户脚本」的设置，然后**刷新页面**。
 

@@ -1,0 +1,318 @@
+{
+  "base": "/",
+  "baseline": "d4775ec462a6f22450badaa954ff0d2ad55713e7",
+  "pages": 62,
+  "anchors": 746,
+  "results": [
+    {
+      "file": "404.html",
+      "anchors": 0,
+      "status": "preserved"
+    },
+    {
+      "file": "advanced/adapter-dev.html",
+      "anchors": 31,
+      "status": "preserved"
+    },
+    {
+      "file": "advanced/correction.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "advanced/history.html",
+      "anchors": 17,
+      "status": "preserved"
+    },
+    {
+      "file": "advanced/index.html",
+      "anchors": 2,
+      "status": "preserved"
+    },
+    {
+      "file": "changelog.html",
+      "anchors": 7,
+      "status": "preserved"
+    },
+    {
+      "file": "config/api-setup.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "config/formula.html",
+      "anchors": 33,
+      "status": "preserved"
+    },
+    {
+      "file": "config/index.html",
+      "anchors": 3,
+      "status": "preserved"
+    },
+    {
+      "file": "config/presets.html",
+      "anchors": 18,
+      "status": "preserved"
+    },
+    {
+      "file": "config/rubric.html",
+      "anchors": 18,
+      "status": "preserved"
+    },
+    {
+      "file": "config/sub-questions.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "config/workflow.html",
+      "anchors": 9,
+      "status": "preserved"
+    },
+    {
+      "file": "feedback/thankyou.html",
+      "anchors": 1,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/faq.html",
+      "anchors": 35,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/index.html",
+      "anchors": 2,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/installation.html",
+      "anchors": 16,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/introduction.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/quickstart.html",
+      "anchors": 8,
+      "status": "preserved"
+    },
+    {
+      "file": "guide/userscript-install.html",
+      "anchors": 18,
+      "status": "preserved"
+    },
+    {
+      "file": "index.html",
+      "anchors": 1,
+      "status": "preserved"
+    },
+    {
+      "file": "modes/dual.html",
+      "anchors": 16,
+      "status": "preserved"
+    },
+    {
+      "file": "modes/index.html",
+      "anchors": 3,
+      "status": "preserved"
+    },
+    {
+      "file": "modes/normal.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "modes/trial.html",
+      "anchors": 9,
+      "status": "preserved"
+    },
+    {
+      "file": "modes/unattended.html",
+      "anchors": 17,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/ajia.html",
+      "anchors": 9,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/ameqp.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/c30.html",
+      "anchors": 11,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/guangda-2.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/guangda.html",
+      "anchors": 19,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/haiyun.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/hanhan.html",
+      "anchors": 11,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/haofenshu.html",
+      "anchors": 12,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/haofenshuyize.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/haoyuejuan.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/huixuexing.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/huiyuejuan.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/index.html",
+      "anchors": 3,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/jiukexing.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/jiuwuyouping.html",
+      "anchors": 12,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/keewing.html",
+      "anchors": 15,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/kuyuu.html",
+      "anchors": 11,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/kzedu.html",
+      "anchors": 9,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/lehua.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/nhcisc.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/qitian.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/runjian.html",
+      "anchors": 16,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/sipd.html",
+      "anchors": 12,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/weicom.html",
+      "anchors": 15,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/wuyue.html",
+      "anchors": 12,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/xinjiaoyu.html",
+      "anchors": 19,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/xinkao-2.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/xinkao-campus.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/xinkao.html",
+      "anchors": 13,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/xueba54.html",
+      "anchors": 17,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/yuejiaoxiangyun.html",
+      "anchors": 10,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/yunyuejuan.html",
+      "anchors": 14,
+      "status": "preserved"
+    },
+    {
+      "file": "platforms/zhixue.html",
+      "anchors": 9,
+      "status": "preserved"
+    },
+    {
+      "file": "README.html",
+      "anchors": 6,
+      "status": "preserved"
+    },
+    {
+      "file": "support.html",
+      "anchors": 5,
+      "status": "preserved"
+    },
+    {
+      "file": "tools.html",
+      "anchors": 7,
+      "status": "preserved"
+    }
+  ]
+}

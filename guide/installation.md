@@ -65,39 +65,27 @@ AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器
 安装完成后如果看不到图标，点击浏览器右上角的 **拼图图标**（扩展管理），找到 Tampermonkey，点击 **「在工具栏中显示」**。
 :::
 
-![](https://img.assets.five-plus-one.com/2026/05/0eeb6c42c1d31f6ca820d5326563f116.png)
-
 ### 允许扩展运行
 
 安装扩展后**必须允许它运行用户脚本**，否则脚本不会生效。不同浏览器/版本操作略有不同。
 
 #### Microsoft Edge
 
-1. 点击浏览器右上角 **扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展**
+1. 在 Edge 地址栏输入 `edge://extensions/`，打开扩展管理页。
+2. 找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。
+3. 打开「允许用户脚本」。如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。
 
-![](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
-
-2. 勾选 **「允许用户脚本」** 和 **「允许访问文件 URL」**
-
-![](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
-
-::: warning 旧版 Edge 没有「允许用户脚本」选项？
-部分旧版 Edge 的扩展设置里**没有**「允许用户脚本」这一项。此时需要打开 **「开发人员模式」** 开关：
-
-![](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
-
-开启后脚本即可正常运行。
-:::
+![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
 
 #### Google Chrome
 
 1. 在篡改猴扩展图标上**右键** → 点击 **「管理扩展程序」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
+![通过篡改猴图标进入扩展管理](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
 
 2. 打开 **「允许运行用户脚本」** 与 **「允许访问文件网址」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
+![Chrome 扩展详情中的用户脚本权限](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
 
 ::: tip 提示
 Chrome 需先打开右上角的 **「开发者模式」**（见上图右上角），才会出现「允许运行用户脚本」选项。
@@ -148,11 +136,11 @@ AI 批改助手提供两个版本渠道，请根据需要选择：
 
 **✅ 正常情况** —— 显示「✓ 已启用」，下方列出 AI-Marker-Suite：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
+![AI-Marker-Suite 脚本已启用](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
 
 **❌ 异常情况** —— 顶部出现蓝色提示「请启用"允许用户脚本"扩展设置」：
 
-![](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
+![尚未允许用户脚本时的扩展提示](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
 
 出现异常提示时，请回到上一步完成「允许扩展运行」设置，然后刷新阅卷页面。
 

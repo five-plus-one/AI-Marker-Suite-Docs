@@ -19,35 +19,24 @@ AI 批改助手需要一个支持**图片识别**的 AI 服务来识别手写答
 
 1. 访问 [5+1 AI 密钥页](https://api.ai.five-plus-one.com/keys)
 
-![](https://img.assets.five-plus-one.com/img/2026/10/8740d488f548c29fc642332a3afe6aff.png)
+![5plus1 API 登录页](https://img.assets.five-plus-one.com/img/2026/10/8740d488f548c29fc642332a3afe6aff.png)
 
-2. 若您是首次使用，请先完成注册。**推荐使用「五加一账号」登录**（也支持 Passkey / GitHub）
+2. 使用「五加一账号」、Passkey 或 GitHub 登录；首次使用请先完成注册。登录后进入「API 密钥」页。
 
-![](https://img.assets.five-plus-one.com/img/2026/05/a89ff51233483ee7be27c7073df49814.png)
+![登录后的 API 密钥列表](https://img.assets.five-plus-one.com/img/2026/10/22af19052ffbd5bde8f35d1069687926.png)
 
 3. 登录后进入 **「API 密钥」** 页，点击右上角 **「+ 创建 API 密钥」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/9d979c2ebac818111eb4fc1ae373cdd8.png)
+![API 密钥页右上角的创建按钮](https://img.assets.five-plus-one.com/img/2026/10/9d979c2ebac818111eb4fc1ae373cdd8.png)
 
 4. 填写密钥名称（如「阅卷」），点击 **「保存更改」**
 
-![](https://img.assets.five-plus-one.com/img/2026/10/abbced78388fd3ad1be68bd9a414fe51.png)
+![填写密钥名称并保存更改](https://img.assets.five-plus-one.com/img/2026/10/abbced78388fd3ad1be68bd9a414fe51.png)
 
 5. 在密钥列表中点击**复制**图标，得到形如 `sk-xxxx` 的密钥
 
-![](https://img.assets.five-plus-one.com/img/2026/10/d71404545630c9788947501c33020431.png)
+![复制 API 密钥的按钮](https://img.assets.five-plus-one.com/img/2026/10/d71404545630c9788947501c33020431.png)
 
-
-![](https://img.assets.five-plus-one.com/img/2026/05/dc886948d62c76b423f9cdb40941a6d5.png)
-![](https://img.assets.five-plus-one.com/img/2026/05/d8be7be6a37cb9b4ac3b9e58401373fd.png)
-
-4. 在弹出的左侧菜单中，填写令牌名称（可为任意，比如说“阅卷”），其他配置保持默认即可，点击右下角的“提交”按钮
-
-![](https://img.assets.five-plus-one.com/img/2026/05/70b49965bf059b6ba28fd0bb48e65285.png)
-
-5. 令牌管理界面中，出现新创建的令牌，点击图示按钮，复制即可。
-
-![](https://img.assets.five-plus-one.com/img/2026/05/289d0c12dc3daa45e39645654c39124b.png)
 
 ::: tip 关于收费问题
 脚本本身免费使用，但是您需要支付 AI 模型调用的 tokens 费用。您可以使用内置的供应商，也可以接入自定义的 AI 服务商。

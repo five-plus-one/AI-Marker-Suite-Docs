@@ -1,3 +1,7 @@
+<script setup>
+import { withBase } from 'vitepress'
+</script>
+
 <template>
   <section class="home-hero" aria-labelledby="home-hero-title">
     <div class="home-hero__pattern" aria-hidden="true">
@@ -18,8 +22,8 @@
       </p>
 
       <div class="home-hero__actions">
-        <a class="home-hero__button home-hero__button--primary" href="/guide/installation">安装教程</a>
-        <a class="home-hero__button" href="/guide/quickstart">快速上手</a>
+        <a class="home-hero__button home-hero__button--primary" :href="withBase('/guide/installation')">安装教程</a>
+        <a class="home-hero__button" :href="withBase('/guide/quickstart')">快速上手</a>
         <a class="home-hero__button" href="https://github.com/five-plus-one/AI-Marker-Suite">GitHub</a>
       </div>
     </div>

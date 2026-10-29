@@ -3,3 +3,12 @@ node_modules
 .vitepress/cache
 .vitepress/temp
 .vitepress/.temp
+
+site/.config.mjs
+site/.server.mjs
+site/.server.css
+site/.config.mjs.map
+
+.work/
+
+site/review-images/
