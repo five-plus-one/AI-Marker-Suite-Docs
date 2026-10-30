@@ -19,7 +19,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.93.tgz",
+    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.94.tgz",
     "lucide-react": "^0.468.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"

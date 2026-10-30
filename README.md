@@ -119,7 +119,7 @@ npm run indexnow
 
 ## 场景展示、历史链接与内容发现
 
-首页通过共享 `ProductPreviewCard` 展示批改、双评和历史三个场景，支持方向键切换、内容与高度过渡。首个场景在构建时生成 HTML，浏览器接管标签交互；静态正文与链接可直接读取。页头、分区侧栏、搜索和阅读页的动态效果由共享样式与 `createDocumentationMotion` 统一，遵循减少动态效果偏好。
+首页通过共享 `ProductPreviewCard` 展示批改、双评和历史三个场景，支持方向键切换、内容与高度过渡。首个场景在构建时生成 HTML，浏览器接管标签交互；静态正文与链接可直接读取。页头、分区侧栏、搜索和阅读页的动态效果由共享样式与 `createDocumentationMotion` 统一。顶栏指示条、侧栏选中面和标签页标记在切换时连续伸展与回落，快速切换从当前可见位置衔接；容器缩放和减少动态效果偏好采用即时对齐。
 
 `site/audit-history.mjs` 从仓库全部历史 Markdown 对象生成 `site/historical-links.json`。当前清单覆盖 62 个历史路径、791 个章节锚点；`site/legacy-routes.json` 继续保留原站 62 个路径与 746 个锚点。旧 `/history` 工具地址由静态兼容页面引导到 `/tools`，保留查询参数并映射原锚点。该兼容页面使用即时 meta refresh、规范链接和 JavaScript 跳转，HTTP 状态为 200。
 
