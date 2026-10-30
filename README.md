@@ -119,12 +119,14 @@ npm run indexnow
 
 ## 场景展示、历史链接与内容发现
 
-首页通过共享 `ProductPreviewCard` 展示批改、双评和历史三个场景，支持方向键切换、内容与高度过渡。首个场景在构建时生成 HTML，浏览器接管标签交互；静态正文与链接可直接读取。页头、分区侧栏、搜索和阅读页的动态效果由共享样式与 `createDocumentationMotion` 统一。顶栏指示条、侧栏选中面和标签页标记在切换时连续伸展与回落，快速切换从当前可见位置衔接；容器缩放和减少动态效果偏好采用即时对齐。
+首页通过共享 `ProductPreviewCard` 展示批改、双评和历史三个场景，支持方向键切换、内容与高度过渡。首个场景在构建时生成 HTML，浏览器接管标签交互；静态正文与链接可直接读取。页头、分区侧栏、搜索和阅读页的动态效果由共享样式与 `createDocumentationMotion` 统一。顶栏指示条、侧栏选中面和标签页标记在切换时平滑伸展与滑动，快速切换从当前可见位置衔接；容器缩放和减少动态效果偏好采用即时对齐。
 
 `site/audit-history.mjs` 从仓库全部历史 Markdown 对象生成 `site/historical-links.json`。当前清单覆盖 62 个历史路径、791 个章节锚点；`site/legacy-routes.json` 继续保留原站 62 个路径与 746 个锚点。旧 `/history` 工具地址由静态兼容页面引导到 `/tools`，保留查询参数并映射原锚点。该兼容页面使用即时 meta refresh、规范链接和 JavaScript 跳转，HTTP 状态为 200。
 
-更新日志在构建时刷新 `site/release-notes.json`，抓取失败时使用已有有效快照；稳定版与预览版的完整内容直接输出到 HTML。浏览器可继续刷新版本与日志。历史版本锚点会展开对应条目。
+更新日志在构建时刷新 `site/release-notes.json`，抓取失败时使用已有有效快照；当前稳定版、历史稳定版与预览版增量直接输出到 HTML。浏览器可继续刷新版本与日志。历史版本锚点会展开对应条目。
 
 每次构建生成全部可索引页面的 `llms.txt` 目录和 `llms-full.txt` 正文、来源链接与图片说明。`npm run check` 检查元数据、结构化数据、sitemap、全部历史锚点、正文内部页面和资源链接，以及从首页出发的可达性。`npm run check:http` 自动启动临时预览，验证 63 个兼容路径的 137 种 URL 写法和 6 个发现文件。PR 与发布构建均在根路径、GitHub Pages 子路径运行检查。
 
 SEO 与生成式搜索的内容发现遵循 [Google AI 功能说明](https://developers.google.com/search/docs/appearance/ai-features)、[网址迁移指南](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)和[重定向说明](https://developers.google.com/search/docs/crawling-indexing/301-redirects)。可抓取正文、规范链接与准确结构化数据是主要依据，llms 文件是辅助入口；搜索收录和 AI 引用由各平台决定。
+
+更新日志使用共享 ReleaseNotes 分类展示当前稳定版与预览版相对稳定版新增的变化；数值版本排序、稳定版基线筛选与内容去重在构建和浏览器刷新时采用同一逻辑。历史稳定版本集中收纳，历史书签打开对应版本；预览版已包含在稳定版的内容自动归入稳定版。

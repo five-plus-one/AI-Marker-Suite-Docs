@@ -15,7 +15,7 @@ function SharedSearch(){
 }
 function ReadingActions(){
  const [state,setState]=useState(''),[minutes,setMinutes]=useState(1);
- useEffect(()=>{setMinutes(Math.max(1,Math.ceil((document.querySelector('.vp-doc')?.textContent.length||0)/500)))},[]);
+ useEffect(()=>{const content=document.querySelector('.vp-doc')?.cloneNode(true);content?.querySelectorAll('.fp-release-archive').forEach(node=>node.remove());setMinutes(Math.max(1,Math.ceil((content?.textContent.length||0)/500)))},[]);
  const copy=async()=>{try{await navigator.clipboard.writeText(location.href);setState('已复制')}catch{setState('复制失败，请重试')}};
  return <><span>约 {minutes} 分钟阅读</span><Button variant="ghost" onClick={copy} data-fp-tooltip="复制当前页面链接">{state||'复制链接'}</Button><span role="status" className="fp-sr-only">{state}</span></>;
 }

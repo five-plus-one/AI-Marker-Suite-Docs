@@ -10,7 +10,7 @@
     "preview": "vitepress preview",
     "indexnow": "node scripts/submit-indexnow.cjs",
     "check:http": "node site/verify-preview.mjs",
-    "check": "node site/verify.mjs && node site/verify-seo.mjs && node site/verify-discovery.mjs"
+    "check": "node --test site/release-model.test.mjs && node site/verify.mjs && node site/verify-seo.mjs && node site/verify-discovery.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",
@@ -19,7 +19,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.94.tgz",
+    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.97.tgz",
     "lucide-react": "^0.468.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"

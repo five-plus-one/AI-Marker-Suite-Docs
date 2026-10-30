@@ -19,8 +19,9 @@
   ],
   "reachablePages": 59,
   "releaseNotes": {
-    "stable": 30,
-    "preview": 44
+    "stable": 9,
+    "stableHistory": 29,
+    "previewAdditional": 18
   },
   "internalLinkErrors": [],
   "discovery": [

@@ -201,7 +201,7 @@
   {
     "route": "/changelog",
     "title": "更新日志 | AI 批改助手",
-    "description": "AI批改助手完整更新日志，所有版本更新记录。",
+    "description": "查看 AI 批改助手当前稳定版更新，以及预览版相对稳定版新增的功能、优化与修复。",
     "canonical": "https://aimarking.five-plus-one.com/changelog",
     "indexable": true,
     "schemas": [
@@ -215,7 +215,7 @@
         "@id": "https://aimarking.five-plus-one.com/changelog#page",
         "url": "https://aimarking.five-plus-one.com/changelog",
         "name": "更新日志 | AI 批改助手",
-        "description": "AI批改助手完整更新日志，所有版本更新记录。",
+        "description": "查看 AI 批改助手当前稳定版更新，以及预览版相对稳定版新增的功能、优化与修复。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"

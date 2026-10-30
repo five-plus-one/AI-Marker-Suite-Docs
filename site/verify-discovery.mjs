@@ -1,3 +1,4 @@
+import {createReleaseModels} from './release-model.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -60,11 +61,16 @@ for(const page of seo.filter(p=>p.indexable)){
  if(page.route!=='/')assert($('.vp-doc').text().trim().length>40,'Server-rendered text: '+page.route);
 }
 const changelog=await documentFor('/changelog'),notes=JSON.parse(await fs.readFile('site/release-notes.json','utf8'));
+const models=createReleaseModels(notes);
 for(const [channel,id] of [['stable','dynamic-changelog'],['preview','dynamic-changelog-preview']]){
- assert(changelog('#'+id+' details').length>=Object.keys(notes[channel].changelog).length,'Server-rendered release notes: '+channel);
- assert(changelog('#'+id).text().includes(Object.values(notes[channel].changelog)[0][0]));
+ const expected=models[channel].groups.flatMap(group=>group.items.map(item=>item.text));
+ const actual=changelog('#'+id+' .fp-release-group li').map((_,element)=>changelog(element).text()).get();
+ assert.deepEqual(actual,expected,'Categorized release notes: '+channel);
+ assert.equal(changelog('#'+id+' .fp-release-notes').length,1,'Channel panel: '+channel);
 }
+assert.equal(changelog('#dynamic-changelog .fp-release-history-item').length,models.stable.history.length,'Archived stable releases');
+assert.equal(changelog('#dynamic-changelog-preview details').length,0,'Preview delta is directly readable');
 const robots=await fs.readFile(root+'/robots.txt','utf8');assert(robots.includes('User-agent: *\nAllow: /'));assert(robots.includes('Sitemap: '+origin+'/sitemap.xml'));
-const result={base,historicalSources:historical.sources,historicalPaths:historical.pages.length,historicalAnchors:historical.pages.reduce((n,page)=>n+page.anchors.length,0),redirects,reachablePages:seo.filter(page=>page.indexable&&reached.has(page.route)).length,releaseNotes:{stable:Object.keys(notes.stable.changelog).length,preview:Object.keys(notes.preview.changelog).length},internalLinkErrors:issues,discovery:['llms.txt','llms-full.txt','robots.txt','sitemap.xml']};
+const result={base,historicalSources:historical.sources,historicalPaths:historical.pages.length,historicalAnchors:historical.pages.reduce((n,page)=>n+page.anchors.length,0),redirects,reachablePages:seo.filter(page=>page.indexable&&reached.has(page.route)).length,releaseNotes:{stable:models.stable.groups.reduce((count,group)=>count+group.items.length,0),stableHistory:models.stable.history.length,previewAdditional:models.preview.groups.reduce((count,group)=>count+group.items.length,0)},internalLinkErrors:issues,discovery:['llms.txt','llms-full.txt','robots.txt','sitemap.xml']};
 await fs.writeFile('site/discovery-report.json',JSON.stringify(result,null,2)+'\n');
 console.log(`Discovery verified: ${result.historicalPaths} historical paths, ${result.historicalAnchors} anchors, ${result.reachablePages} reachable indexable pages; full text and both release channels (${base}).`);

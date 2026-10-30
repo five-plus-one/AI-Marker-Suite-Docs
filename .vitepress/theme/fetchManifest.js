@@ -1,4 +1,5 @@
-import {renderReleaseNotes} from '../../site/changelog.mjs';
+import {renderChannelNotes} from '../../site/changelog.mjs';
+import savedNotes from '../../site/release-notes.json';
 /**
  * fetchManifest.js
  * 客户端脚本：从远端 manifest.json 动态加载版本号和 changelog
@@ -97,80 +98,32 @@ function updateJsonLdVersion(version) {
     }
 }
 
-/**
- * 渲染 changelog 到指定容器
- * @param {HTMLElement} container - 容器元素
- * @param {Object} changelog - 版本 changelog 对象 { '1.21.5': ['...'], ... }
- * @param {Object|null} changelogDates - 版本日期映射 { '1.21.5': '2026-05-16', ... }
- */
-export function renderChangelog(container, changelog, changelogDates) {
-    if (!changelog || typeof changelog !== 'object') return;
-    const channel=container.id==='dynamic-changelog-preview'?'preview':'stable';
-    container.innerHTML=renderReleaseNotes(changelog,changelogDates,channel);
-    revealChangelogAnchor();
-}
-
 export function revealChangelogAnchor() {
     if (!location.pathname.includes('/changelog')) return;
     let id;try{id=decodeURIComponent(location.hash.slice(1))}catch{return}
     if (!id) return;
     const target=document.getElementById(id);
     if(!target) return;
-    const details=target.closest('details') || (target.classList.contains('fp-anchor-alias')?target.nextElementSibling:null);
-    if(details?.tagName==='DETAILS') details.open=true;
+    for(let parent=target;parent;parent=parent.parentElement)if(parent.tagName==='DETAILS')parent.open=true;
     requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
 }
 
-/**
- * 初始化 changelog 页面（同时加载 stable 和 preview）
- */
+const validManifest=data=>typeof data?.version==='string'&&/^\d+(?:\.\d+)*(?:-[\w.]+)?$/.test(data.version)&&data.changelog&&Object.keys(data.changelog).length>0&&Object.values(data.changelog).every(items=>Array.isArray(items)&&items.every(item=>typeof item==='string'));
+
 export async function initChangelogPage() {
-    // 只在 changelog 页面执行
     if (!window.location.pathname.includes('/changelog')) return;
     revealChangelogAnchor();
-
-    const stableContainer = document.getElementById('dynamic-changelog');
-    const previewContainer = document.getElementById('dynamic-changelog-preview');
-
-    // 如果两个容器都不存在，跳过
-    if (!stableContainer && !previewContainer) return;
-
-    // 检查是否已经渲染过
-    if (stableContainer?.dataset.loaded === 'true' && previewContainer?.dataset.loaded === 'true') return;
-
-    // 并行加载 stable 和 preview
-    const [stableManifest, previewManifest] = await Promise.all([
-        fetchManifest(),
-        fetchPreviewManifest(),
-    ]);
-
-    // 渲染 stable changelog
-    if (stableContainer && stableContainer.dataset.loaded !== 'true') {
-        if (stableManifest?.changelog) {
-            // 更新 stable 版本号显示
-            const stableVersionEl = document.getElementById('stable-version');
-            if (stableVersionEl && stableManifest.version) {
-                stableVersionEl.textContent = `v${stableManifest.version}`;
-            }
-            renderChangelog(stableContainer, stableManifest.changelog, stableManifest.changelogDates);
-            stableContainer.dataset.loaded = 'true';
-        } else {
-            stableContainer.dataset.loaded = 'saved';
-        }
+    const stableContainer=document.getElementById('dynamic-changelog');
+    const previewContainer=document.getElementById('dynamic-changelog-preview');
+    if(!stableContainer||!previewContainer||stableContainer.dataset.loaded==='true')return;
+    const [stable,preview]=await Promise.all([fetchManifest(),fetchPreviewManifest()]);
+    if(!stableContainer.isConnected||!previewContainer.isConnected)return;
+    const notes={stable:validManifest(stable)?stable:savedNotes.stable,preview:validManifest(preview)?preview:savedNotes.preview};
+    // Keep server-rendered reading and expanded history intact when the snapshot matches.
+    if(JSON.stringify(notes.stable.changelog)!==JSON.stringify(savedNotes.stable.changelog)||notes.stable.version!==savedNotes.stable.version||JSON.stringify(notes.preview.changelog)!==JSON.stringify(savedNotes.preview.changelog)||notes.preview.version!==savedNotes.preview.version){
+        stableContainer.innerHTML=renderChannelNotes(notes,'stable');
+        previewContainer.innerHTML=renderChannelNotes(notes,'preview');
     }
-
-    // 渲染 preview changelog
-    if (previewContainer && previewContainer.dataset.loaded !== 'true') {
-        if (previewManifest?.changelog) {
-            // 更新 preview 版本号显示
-            const previewVersionEl = document.getElementById('preview-version');
-            if (previewVersionEl && previewManifest.version) {
-                previewVersionEl.textContent = `v${previewManifest.version}`;
-            }
-            renderChangelog(previewContainer, previewManifest.changelog, previewManifest.changelogDates);
-            previewContainer.dataset.loaded = 'true';
-        } else {
-            previewContainer.dataset.loaded = 'saved';
-        }
-    }
+    stableContainer.dataset.loaded='true';previewContainer.dataset.loaded='true';
+    revealChangelogAnchor();
 }
