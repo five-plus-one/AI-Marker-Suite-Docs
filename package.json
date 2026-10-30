@@ -2,6 +2,7 @@
   "name": "ai-marker-suite-docs",
   "version": "1.0.0",
   "type": "module",
+  "packageManager": "npm@10.9.9",
   "description": "AI-Marker-Suite 文档站",
   "scripts": {
     "dev": "npm run build && vitepress preview --host 127.0.0.1",

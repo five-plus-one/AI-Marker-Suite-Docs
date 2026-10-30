@@ -1,12 +1,14 @@
 # AI 批改助手 — 文档站
 
-本仓库包含 [AI 批改助手](https://aimarking.five-plus-one.com) 的文档站源码，正文由 [VitePress](https://vitepress.dev/) 编译，页面采用 React 与 `@fiveplusone/ui` 共享组件静态生成。
+本仓库包含 [AI 批改助手](https://aimarking.five-plus-one.com) 的文档站源码，页面由 [VitePress](https://vitepress.dev/) 编译，搜索、阅读操作和即时提示接入 `@fiveplusone/ui` 共享组件。
 
 ## 本地开发
 
+本地与 CI 使用 Node.js 22、npm 10。安装依赖使用锁文件；更新依赖时使用 `npx npm@10 install` 同步锁文件。
+
 ```bash
 # 安装依赖
-npm install
+npm ci
 
 # 启动开发服务器
 npm run dev
