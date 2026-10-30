@@ -82,7 +82,7 @@ npm run indexnow
 ├── public/          # 静态资源（llms.txt、robots.txt、图片等）
 ├── tools.md         # 工具页
 ├── support.md       # 帮助与反馈
-├── changelog.md     # 更新日志（从 OTA manifest 动态拉取）
+├── changelog.md     # 更新日志（构建快照与 OTA manifest 刷新）
 └── index.md         # 文档首页
 ```
 
@@ -115,3 +115,16 @@ npm run indexnow
 `npm run build` 编译 Markdown、代码与公式，再由 `site/build.mjs` 生成章节搜索索引和每页 SEO 元数据。搜索索引按标题与章节拆分，链接直达原文锚点；`?q=关键词` 可直接打开搜索。支持 `BASE_URL=/` 与 `BASE_URL=/AI-Marker-Suite-Docs/`。`npm run dev` 构建并启动预览，编辑后重新构建即可查看。
 
 `npm run check` 覆盖页面链接、原站 62 个路径与 746 个章节锚点，以及全部页面的标题、摘要、canonical、分享卡片、结构化数据和 sitemap。逐页 SEO 结果保存在 `site/seo-report.json`，兼容性结果保存在 `site/route-compatibility-report.json`，原站清单为 `site/legacy-routes.json`。
+
+
+## 场景展示、历史链接与内容发现
+
+首页通过共享 `ProductPreviewCard` 展示批改、双评和历史三个场景，支持方向键切换、内容与高度过渡。首个场景在构建时生成 HTML，浏览器接管标签交互；静态正文与链接可直接读取。页头、分区侧栏、搜索和阅读页的动态效果由共享样式与 `createDocumentationMotion` 统一，遵循减少动态效果偏好。
+
+`site/audit-history.mjs` 从仓库全部历史 Markdown 对象生成 `site/historical-links.json`。当前清单覆盖 62 个历史路径、791 个章节锚点；`site/legacy-routes.json` 继续保留原站 62 个路径与 746 个锚点。旧 `/history` 工具地址由静态兼容页面引导到 `/tools`，保留查询参数并映射原锚点。该兼容页面使用即时 meta refresh、规范链接和 JavaScript 跳转，HTTP 状态为 200。
+
+更新日志在构建时刷新 `site/release-notes.json`，抓取失败时使用已有有效快照；稳定版与预览版的完整内容直接输出到 HTML。浏览器可继续刷新版本与日志。历史版本锚点会展开对应条目。
+
+每次构建生成全部可索引页面的 `llms.txt` 目录和 `llms-full.txt` 正文、来源链接与图片说明。`npm run check` 检查元数据、结构化数据、sitemap、全部历史锚点、正文内部页面和资源链接，以及从首页出发的可达性。`npm run check:http` 自动启动临时预览，验证 63 个兼容路径的 137 种 URL 写法和 6 个发现文件。PR 与发布构建均在根路径、GitHub Pages 子路径运行检查。
+
+SEO 与生成式搜索的内容发现遵循 [Google AI 功能说明](https://developers.google.com/search/docs/appearance/ai-features)、[网址迁移指南](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)和[重定向说明](https://developers.google.com/search/docs/crawling-indexing/301-redirects)。可抓取正文、规范链接与准确结构化数据是主要依据，llms 文件是辅助入口；搜索收录和 AI 引用由各平台决定。

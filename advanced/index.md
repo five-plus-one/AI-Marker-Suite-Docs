@@ -4,6 +4,8 @@ description: AI批改助手进阶功能，包括分数纠错让AI越用越准、
 keywords: AI批改助手,进阶功能,分数纠错,批改历史,开发新适配器,导出报告,HTML报告,CSV导出,JSON导出,适配器开发,自动批改优化
 ---
 
+<span id="文档导航" class="fp-anchor-alias" aria-hidden="true"></span>
+
 # 进阶功能
 
 掌握基础批改后，以下进阶功能可以帮助你更好地使用 AI 批改助手。

@@ -6,10 +6,11 @@
   "description": "AI-Marker-Suite 文档站",
   "scripts": {
     "dev": "npm run build && vitepress preview --host 127.0.0.1",
-    "build": "vitepress build && node site/build.mjs",
+    "build": "node site/refresh-releases.mjs && node site/build-preview.mjs && vitepress build && node site/build.mjs",
     "preview": "vitepress preview",
     "indexnow": "node scripts/submit-indexnow.cjs",
-    "check": "node site/verify.mjs && node site/verify-seo.mjs"
+    "check:http": "node site/verify-preview.mjs",
+    "check": "node site/verify.mjs && node site/verify-seo.mjs && node site/verify-discovery.mjs"
   },
   "devDependencies": {
     "cheerio": "^1.2.0",
@@ -18,7 +19,7 @@
     "vitepress": "^1.6.3"
   },
   "dependencies": {
-    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.88.tgz",
+    "@fiveplusone/ui": "file:site/vendor/fiveplusone-ui-0.5.93.tgz",
     "lucide-react": "^0.468.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"

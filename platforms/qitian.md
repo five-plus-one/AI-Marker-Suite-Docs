@@ -8,6 +8,8 @@ keywords: 七天网络,AI批改,AI阅卷,自动批改,智能阅卷,7net.cc,qt7.n
 
 七天网络是 AI 批改助手支持的第二个阅卷平台，包含**旧版**和**新 UI** 两个适配器。
 
+<span id="旧版-7net-cc-qt7-net" class="fp-anchor-alias" aria-hidden="true"></span>
+
 ## 旧版 (7net.cc / qt7.net / qt7.cn)
 
 ### 支持的页面

@@ -1,3 +1,4 @@
+import {renderReleaseNotes} from '../../site/changelog.mjs';
 /**
  * fetchManifest.js
  * 客户端脚本：从远端 manifest.json 动态加载版本号和 changelog
@@ -103,43 +104,21 @@ function updateJsonLdVersion(version) {
  * @param {Object|null} changelogDates - 版本日期映射 { '1.21.5': '2026-05-16', ... }
  */
 export function renderChangelog(container, changelog, changelogDates) {
-    if (!changelog || typeof changelog !== 'object') {
-        container.innerHTML = '<p style="color: #999;">暂无更新日志</p>';
-        return;
-    }
+    if (!changelog || typeof changelog !== 'object') return;
+    const channel=container.id==='dynamic-changelog-preview'?'preview':'stable';
+    container.innerHTML=renderReleaseNotes(changelog,changelogDates,channel);
+    revealChangelogAnchor();
+}
 
-    const dates = changelogDates || {};
-
-    const versions = Object.keys(changelog).sort((a, b) => {
-        const pa = a.split('.').map(Number);
-        const pb = b.split('.').map(Number);
-        for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
-            if ((pa[i] || 0) > (pb[i] || 0)) return -1;
-            if ((pa[i] || 0) < (pb[i] || 0)) return 1;
-        }
-        return 0;
-    });
-
-    let html = '';
-    versions.forEach((ver, idx) => {
-        const items = changelog[ver];
-        const date = dates[ver] || '';
-        const isLatest = idx === 0;
-
-        html += `<div class="changelog-version${isLatest ? '' : ' collapsed'}">`;
-        html += `<div class="changelog-version-header" onclick="this.parentElement.classList.toggle('collapsed')">`;
-        html += `<svg class="changelog-toggle" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-        html += `<span class="changelog-ver">v${ver}</span>`;
-        if (date) html += `<span class="changelog-date">${date}</span>`;
-        html += `</div>`;
-        html += `<ul class="changelog-items">`;
-        items.forEach(item => {
-            html += `<li>${item}</li>`;
-        });
-        html += `</ul></div>`;
-    });
-
-    container.innerHTML = html;
+export function revealChangelogAnchor() {
+    if (!location.pathname.includes('/changelog')) return;
+    let id;try{id=decodeURIComponent(location.hash.slice(1))}catch{return}
+    if (!id) return;
+    const target=document.getElementById(id);
+    if(!target) return;
+    const details=target.closest('details') || (target.classList.contains('fp-anchor-alias')?target.nextElementSibling:null);
+    if(details?.tagName==='DETAILS') details.open=true;
+    requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
 }
 
 /**
@@ -148,6 +127,7 @@ export function renderChangelog(container, changelog, changelogDates) {
 export async function initChangelogPage() {
     // 只在 changelog 页面执行
     if (!window.location.pathname.includes('/changelog')) return;
+    revealChangelogAnchor();
 
     const stableContainer = document.getElementById('dynamic-changelog');
     const previewContainer = document.getElementById('dynamic-changelog-preview');
@@ -175,7 +155,7 @@ export async function initChangelogPage() {
             renderChangelog(stableContainer, stableManifest.changelog, stableManifest.changelogDates);
             stableContainer.dataset.loaded = 'true';
         } else {
-            stableContainer.innerHTML = '<p style="color: #999;">加载失败，请刷新页面重试</p>';
+            stableContainer.dataset.loaded = 'saved';
         }
     }
 
@@ -190,7 +170,7 @@ export async function initChangelogPage() {
             renderChangelog(previewContainer, previewManifest.changelog, previewManifest.changelogDates);
             previewContainer.dataset.loaded = 'true';
         } else {
-            previewContainer.innerHTML = '<p style="color: #999;">暂无预览版更新日志</p>';
+            previewContainer.dataset.loaded = 'saved';
         }
     }
 }

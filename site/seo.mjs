@@ -2,7 +2,7 @@ const origin='https://aimarking.five-plus-one.com';
 export function applyPageSeo($,{route,title,article,groups,base}){
  const canonical=origin+route,home=route==='/',excluded=route==='/404'||route==='/feedback/thankyou'||route==='/README';
  const clean=text=>text.replace(/[\u200b-\u200d]/g,'').replace(/\s+/g,' ').trim();
- const original=$('title').text();
+ const original=$('head > title').text();
  const pageTitle=home?'AI 批改助手 — 让 AI 替你改卷':route==='/404'?'页面未找到 | AI 批改助手':original.replace(/\s*(?:—|\||-)\s*AI 批改助手/g,'').trim()+' | AI 批改助手';
  const descriptions={
   '/README':'AI 批改助手文档站的本地开发、目录结构、部署流程与项目链接，提供面向维护者的文档站仓库说明。',
@@ -14,7 +14,7 @@ export function applyPageSeo($,{route,title,article,groups,base}){
   '/tools':'AI 批改助手的实用工具入口。安装并启用脚本后，查看评阅历史、检查脚本更新与管理设置。'
  };
  const description=descriptions[route]||clean($('meta[name="description"]').first().attr('content')||article.find('p').first().text()||title);
- $('title').text(pageTitle);
+ $('head > title').text(pageTitle);
  const meta=(attribute,name,content)=>{$(`meta[${attribute}="${name}"]`).remove();$('head').append($('<meta>').attr(attribute,name).attr('content',content))};
  meta('name','description',description);meta('name','robots',excluded?'noindex, follow':'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
  for(const [name,value] of Object.entries({'og:title':pageTitle,'og:description':description,'og:url':canonical,'og:type':home?'website':'article','og:site_name':'AI 批改助手','og:locale':'zh_CN','og:image':origin+'/img/1.png','og:image:alt':'AI 批改助手在线阅卷界面','og:image:width':'2086','og:image:height':'1342'}))meta('property',name,value);

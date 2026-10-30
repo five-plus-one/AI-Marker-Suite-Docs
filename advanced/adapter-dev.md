@@ -155,6 +155,8 @@ fillScores(scores) {
 }
 ```
 
+<span id="fillscore-request" class="fp-anchor-alias" aria-hidden="true"></span>
+
 #### `fillScore(request)`（已废弃）
 
 旧接口，仅为向后兼容保留。核心层会自动将 `fillScores` 包装为 `fillScore` 调用，**新适配器无需实现此方法**，统一实现 `fillScores` 即可。
@@ -216,6 +218,8 @@ isRegradeMode() {
 #### `getScoreInputs()`
 
 返回当前页面上所有分数输入框的信息数组。
+
+<span id="detectsubquestions" class="fp-anchor-alias" aria-hidden="true"></span>
 
 #### `detectSubQuestions()`（已废弃）
 

@@ -40,6 +40,8 @@ AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器
 安装本脚本前，需要先完成 **Tampermonkey 扩展安装** 与 **「允许用户脚本」设置**。这两个步骤是所有油猴脚本的通用前提，详细图文教程见 → **[油猴脚本安装指南](/guide/userscript-install)**
 :::
 
+<span id="第一步-安装-tampermonkey-浏览器扩展" class="fp-anchor-alias" aria-hidden="true"></span>
+
 ## 第一步：安装 Tampermonkey 扩展
 
 **Tampermonkey（油猴）** 是一个免费的浏览器扩展（插件），它可以让你在浏览器中运行额外的脚本程序。AI 批改助手就是通过它来运行的。

@@ -3,6 +3,7 @@ import path from 'node:path';
 import {build} from 'esbuild';
 import {load} from 'cheerio';
 import {applyPageSeo} from './seo.mjs';
+import {buildDiscovery} from './build-discovery.mjs';
 const base=process.env.BASE_URL||'/',out=path.resolve('.vitepress/dist');
 await build({entryPoints:['.vitepress/config.ts'],outfile:'site/.config.mjs',platform:'node',format:'esm',bundle:true,packages:'external'});
 const config=(await import('./.config.mjs?'+Date.now())).default;
@@ -11,7 +12,7 @@ async function walk(dir){const result=[];for(const e of await fs.readdir(dir,{wi
 const seo=[],search=[];
 for(const file of await walk(out)){
  const rel=path.relative(out,file).replaceAll('\\','/'),route=rel==='index.html'?'/':rel.endsWith('/index.html')?'/'+rel.slice(0,-10):'/'+rel.slice(0,-5);
- const $=load(await fs.readFile(file,'utf8')),article=$('.vp-doc').first(),title=article.find('h1').first().text().replace(/[\u200b-\u200d]/g,'').trim()||$('title').text().split('|')[0].trim();
+ const $=load(await fs.readFile(file,'utf8')),article=$('.vp-doc').first(),title=article.find('h1').first().text().replace(/[\u200b-\u200d]/g,'').trim()||$('head > title').text().split('|')[0].trim();
  seo.push(applyPageSeo($,{route,title,article,groups,base}));
  if(!['/404','/README','/feedback/thankyou','/'].includes(route)){
   const group=groups.find(g=>g.links.some(l=>l.href===base+route.slice(1)))?.label||'文档';
@@ -29,4 +30,5 @@ await fs.writeFile(out+'/search.json',JSON.stringify(search));
 sitemap('url').each((_,el)=>{const loc=sitemap(el).find('loc'),current=new URL(loc.text()),route=base!=='/'&&current.pathname.startsWith(base)?'/'+current.pathname.slice(base.length):current.pathname,canonical='https://aimarking.five-plus-one.com'+route;if(!indexed.has(canonical))sitemap(el).remove();else loc.text(canonical)});
 await fs.writeFile(out+'/sitemap.xml',sitemap.xml());await fs.writeFile(out+'/seo.json',JSON.stringify(seo));await fs.writeFile('site/seo-report.json',JSON.stringify(seo,null,2));await fs.writeFile(out+'/release.json',JSON.stringify({ui:JSON.parse(await fs.readFile('node_modules/@fiveplusone/ui/package.json','utf8')).version,pages:seo.length,builtAt:new Date().toISOString(),base},null,2));
 console.log(`Documentation compiled: ${seo.length} pages; original VitePress runtime; base ${base}`);
+await buildDiscovery({out,base,seo});
 

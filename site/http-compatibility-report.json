@@ -1,8 +1,8 @@
 {
-  "preview": "http://127.0.0.1:4201/",
+  "preview": "http://127.0.0.1:13152/",
   "baseline": "d4775ec462a6f22450badaa954ff0d2ad55713e7",
-  "pages": 62,
-  "requests": 124,
+  "pages": 63,
+  "requests": 137,
   "checks": [
     {
       "path": "404",
@@ -45,6 +45,14 @@
       "status": 200
     },
     {
+      "path": "advanced",
+      "status": 200
+    },
+    {
+      "path": "advanced/index",
+      "status": 200
+    },
+    {
       "path": "changelog",
       "status": 200
     },
@@ -74,6 +82,14 @@
     },
     {
       "path": "config/index.html",
+      "status": 200
+    },
+    {
+      "path": "config",
+      "status": 200
+    },
+    {
+      "path": "config/index",
       "status": 200
     },
     {
@@ -133,6 +149,14 @@
       "status": 200
     },
     {
+      "path": "guide",
+      "status": 200
+    },
+    {
+      "path": "guide/index",
+      "status": 200
+    },
+    {
       "path": "guide/installation",
       "status": 200
     },
@@ -173,6 +197,10 @@
       "status": 200
     },
     {
+      "path": "index",
+      "status": 200
+    },
+    {
       "path": "modes/dual",
       "status": 200
     },
@@ -186,6 +214,14 @@
     },
     {
       "path": "modes/index.html",
+      "status": 200
+    },
+    {
+      "path": "modes",
+      "status": 200
+    },
+    {
+      "path": "modes/index",
       "status": 200
     },
     {
@@ -314,6 +350,14 @@
     },
     {
       "path": "platforms/index.html",
+      "status": 200
+    },
+    {
+      "path": "platforms",
+      "status": 200
+    },
+    {
+      "path": "platforms/index",
       "status": 200
     },
     {
@@ -498,6 +542,14 @@
     },
     {
       "path": "tools.html",
+      "status": 200
+    },
+    {
+      "path": "history",
+      "status": 200
+    },
+    {
+      "path": "history.html",
       "status": 200
     }
   ]

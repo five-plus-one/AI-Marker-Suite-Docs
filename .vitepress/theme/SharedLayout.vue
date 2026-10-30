@@ -21,7 +21,7 @@ onUnmounted(()=>{searchRoot?.unmount();actionsRoot?.unmount()})
     <template #nav-bar-content-before><div ref="searchHost" class="fp-docs-search-host" /></template>
     <template #sidebar-nav-before>
       <div v-if="section" class="fp-docs-section-index">
-        <small>AI MARKER / DOCS</small><strong>{{sectionName}}</strong>
+        <strong>{{sectionName}}</strong>
         <p>{{descriptions[section[0]]}}</p>
       </div>
     </template>

@@ -1,0 +1,32 @@
+{
+  "base": "/",
+  "historicalSources": 314,
+  "historicalPaths": 62,
+  "historicalAnchors": 791,
+  "redirects": [
+    {
+      "from": "/history",
+      "to": "/tools",
+      "title": "评阅历史工具 | AI 批改助手",
+      "hashes": {
+        "评阅历史": "评阅历史",
+        "ai-history-root": "ai-tools-root",
+        "功能说明": "功能说明",
+        "使用方法": "使用方法",
+        "油猴菜单快捷方式": "评阅历史"
+      }
+    }
+  ],
+  "reachablePages": 59,
+  "releaseNotes": {
+    "stable": 30,
+    "preview": 44
+  },
+  "internalLinkErrors": [],
+  "discovery": [
+    "llms.txt",
+    "llms-full.txt",
+    "robots.txt",
+    "sitemap.xml"
+  ]
+}
