@@ -220,11 +220,11 @@ export default defineConfig({
     siteTitle: 'AI 批改助手',
 
     nav: [
-      { text: '快速上手', link: '/guide/' },
-      { text: '配置', link: '/config/' },
-      { text: '批改模式', link: '/modes/' },
-      { text: '平台', link: '/platforms/' },
-      { text: '进阶', link: '/advanced/' },
+      { text: '快速上手', link: '/guide/', activeMatch: '^/guide/' },
+      { text: '配置', link: '/config/', activeMatch: '^/config/' },
+      { text: '批改模式', link: '/modes/', activeMatch: '^/modes/' },
+      { text: '平台', link: '/platforms/', activeMatch: '^/platforms/' },
+      { text: '进阶', link: '/advanced/', activeMatch: '^/advanced/' },
       {
         text: '资源',
         items: [
