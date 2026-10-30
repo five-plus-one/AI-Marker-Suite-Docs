@@ -8,6 +8,7 @@ import { withBase } from 'vitepress'
 import { h } from 'vue'
 import HomeHero from './HomeHero.vue'
 import HomeSections from './HomeSections.vue'
+import SharedLayout from './SharedLayout.vue'
 
 let clientInitDone = false
 let navScrollStateBound = false
@@ -44,6 +45,7 @@ const Card = {
 
 export default {
   extends: DefaultTheme,
+  Layout: SharedLayout,
   enhanceApp({ app, router }) {
     app.component('CardGrid', CardGrid)
     app.component('Card', Card)

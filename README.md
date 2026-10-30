@@ -108,8 +108,8 @@ npm run indexnow
 
 ## 共享组件接入
 
-文档页面使用 VitePress 的导航、搜索、目录与页面运行时，保留首页组件、下载入口和双通道更新日志。共享库通过 `vitepress.css` 提供主题适配与通用即时提示。组件包保存在 `site/vendor/`，版本由 package.json 与锁文件固定。更新顺序为共享库实现、组件与实际页面验收、共享库发布，再替换安装包并更新引用。
+文档页面使用 VitePress 的导航、目录与页面运行时，保留首页组件、下载入口和双通道更新日志。共享库通过 `vitepress.css` 提供产品主题、阅读层级、表格与手机导航样式，通过 `DocumentationSearch` 提供章节搜索和键盘跳转；阅读操作使用共享 Button 与即时提示。Logo 来自共享 MarkerLogo。组件包保存在 `site/vendor/`，版本由 package.json 与锁文件固定。更新顺序为共享库实现、组件与实际页面验收、共享库发布，再替换安装包并更新引用。
 
-`npm run build` 编译 Markdown、代码、公式与全文搜索，再由 `site/build.mjs` 补充每页 SEO 元数据。支持 `BASE_URL=/` 与 `BASE_URL=/AI-Marker-Suite-Docs/`。`npm run dev` 构建并启动预览，编辑后重新构建即可查看。
+`npm run build` 编译 Markdown、代码与公式，再由 `site/build.mjs` 生成章节搜索索引和每页 SEO 元数据。搜索索引按标题与章节拆分，链接直达原文锚点；`?q=关键词` 可直接打开搜索。支持 `BASE_URL=/` 与 `BASE_URL=/AI-Marker-Suite-Docs/`。`npm run dev` 构建并启动预览，编辑后重新构建即可查看。
 
 `npm run check` 覆盖页面链接、原站 62 个路径与 746 个章节锚点，以及全部页面的标题、摘要、canonical、分享卡片、结构化数据和 sitemap。逐页 SEO 结果保存在 `site/seo-report.json`，兼容性结果保存在 `site/route-compatibility-report.json`，原站清单为 `site/legacy-routes.json`。

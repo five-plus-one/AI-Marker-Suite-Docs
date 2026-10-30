@@ -1,0 +1,62 @@
+[
+  {
+    "contentWidth": 380,
+    "page": "home",
+    "width": 390
+  },
+  {
+    "contentWidth": 590,
+    "page": "home",
+    "width": 600
+  },
+  {
+    "contentWidth": 758,
+    "page": "home",
+    "width": 768
+  },
+  {
+    "contentWidth": 1014,
+    "page": "home",
+    "width": 1024
+  },
+  {
+    "contentWidth": 1270,
+    "page": "home",
+    "width": 1280
+  },
+  {
+    "contentWidth": 1430,
+    "page": "home",
+    "width": 1440
+  },
+  {
+    "contentWidth": 380,
+    "page": "reading",
+    "width": 390
+  },
+  {
+    "contentWidth": 590,
+    "page": "reading",
+    "width": 600
+  },
+  {
+    "contentWidth": 758,
+    "page": "reading",
+    "width": 768
+  },
+  {
+    "contentWidth": 1014,
+    "page": "reading",
+    "width": 1024
+  },
+  {
+    "contentWidth": 1270,
+    "page": "reading",
+    "width": 1280
+  },
+  {
+    "contentWidth": 1430,
+    "page": "reading",
+    "width": 1440
+  }
+]
