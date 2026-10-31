@@ -37,6 +37,11 @@ jobs:
         env:
           BASE_URL: /AI-Marker-Suite-Docs/
 
+      - name: Verify GitHub Pages build
+        run: npm run check && npm run check:http
+        env:
+          BASE_URL: /AI-Marker-Suite-Docs/
+
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v4
         with:
@@ -44,6 +49,11 @@ jobs:
 
       - name: Build for server
         run: npm run build
+        env:
+          BASE_URL: /
+
+      - name: Verify server build
+        run: npm run check && npm run check:http
         env:
           BASE_URL: /
 

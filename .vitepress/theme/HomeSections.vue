@@ -1,47 +1,53 @@
 <template>
   <main class="home-sections">
-    <section class="home-panel home-panel--split">
-      <div>
-        <p class="home-kicker">Why it matters</p>
-        <h2>为什么你需要它？</h2>
+    <section id="home-features-title" class="home-panel home-panel--showcase" data-fp-reveal="" aria-labelledby="home-product-title">
+      <div class="fp-showcase-copy">
+        <p class="home-kicker">AI MARKER / WORKFLOW</p>
+        <span id="为什么你需要它" class="fp-anchor-alias" aria-hidden="true"></span>
+        <h2 id="home-product-title">把重复交给 AI，<br />把判断留给你。</h2>
         <p class="home-lead">
-          把重复、耗时、容易疲劳的主观题批改流程交给脚本处理，老师只需要把控评分标准与关键结果。
+          从识别手写答案到评分、填分，把一份答卷的批改连起来。你来制定标准，把控关键结果。
         </p>
-      </div>
-
-      <div class="home-pain-grid">
-        <div v-for="item in comparisons" :key="item.pain" class="home-pain-card">
-          <span>{{ item.pain }}</span>
-          <strong>{{ item.answer }}</strong>
+        <ul class="fp-showcase-points">
+          <li><strong>按你的标准评分</strong><span>参考答案、评分细则与分小题规则，一起参与判断。</span></li>
+          <li><strong>给评分多一重把关</strong><span>双模型独立评分，分差超过阈值时交给第三个模型仲裁。</span></li>
+          <li><strong>每一次批改，都能回看</strong><span>查看答题卡、分数和评语，导出报告与改卷材料包。</span></li>
+        </ul>
+        <div class="fp-showcase-actions">
+          <a class="fp-button fp-primary fp-md" :href="withBase('/guide/quickstart')">开始第一次批改 <span aria-hidden="true">→</span></a>
+          <a class="fp-button fp-secondary fp-md" :href="withBase('/config/rubric')">设置评分标准</a>
         </div>
       </div>
+      <ProductPreview />
     </section>
 
-    <section class="home-panel">
+    <section class="home-panel home-panel--modes" data-fp-reveal="">
       <div class="home-section-head">
         <div>
           <p class="home-kicker">Modes</p>
-          <h2>四种模式，按需选择</h2>
+          <span id="三种模式-按需选择" class="fp-anchor-alias" aria-hidden="true"></span>
+          <h2 id="四种模式-按需选择">四种模式，按需选择</h2>
         </div>
         <p>从首次试改到夜间批量挂机，再到高精度双评仲裁，按照风险和效率切换工作方式。</p>
       </div>
 
-      <div class="home-mode-grid">
-        <article v-for="mode in modes" :key="mode.name" class="home-mode-card">
-          <span>{{ mode.index }}</span>
+      <div class="fp-product-cards" data-columns="2">
+        <a v-for="mode in modes" :key="mode.name" :href="withBase(mode.href)" class="fp-card fp-product-card">
+          <span class="fp-product-card-label">{{ mode.index }} <span aria-hidden="true">↗</span></span>
           <h3>{{ mode.name }}</h3>
           <p>{{ mode.description }}</p>
           <ul>
             <li v-for="point in mode.points" :key="point">{{ point }}</li>
           </ul>
-        </article>
+          <span class="fp-product-card-link">了解{{ mode.name }} <span aria-hidden="true">→</span></span>
+        </a>
       </div>
     </section>
 
-    <section class="home-panel home-panel--community">
+    <section class="home-panel home-panel--community" data-fp-reveal="">
       <div>
         <p class="home-kicker">Community</p>
-        <h2>加入交流群</h2>
+        <h2 id="加入交流群">加入交流群</h2>
         <p class="home-lead">遇到问题、想分享使用经验，欢迎加入社群交流。</p>
       </div>
 
@@ -51,7 +57,7 @@
       </div>
     </section>
 
-    <section class="home-panel home-panel--support">
+    <section class="home-panel home-panel--support" data-fp-reveal="">
       <div class="home-support-main">
         <p class="home-kicker">Support</p>
         <h2>支持这个项目继续走下去</h2>
@@ -96,10 +102,10 @@
       </aside>
     </section>
 
-    <section class="home-panel home-panel--links">
+    <section class="home-panel home-panel--links" data-fp-reveal="">
       <div>
         <p class="home-kicker">Links</p>
-        <h2>友情链接</h2>
+        <h2 id="友情链接">友情链接</h2>
       </div>
 
       <div class="home-link-grid">
@@ -111,50 +117,33 @@
 </template>
 
 <script setup lang="ts">
-const comparisons = [
-  {
-    pain: '一份主观题看 2~3 分钟',
-    answer: 'AI 自动评分，生成分数和评语',
-  },
-  {
-    pain: '改到半夜眼睛酸',
-    answer: '无人值守模式，挂机自动批改',
-  },
-  {
-    pain: '评分标准难统一',
-    answer: '按同一套评分标准稳定执行',
-  },
-  {
-    pain: '每道题都要手动输分',
-    answer: '识别、打分、填入、提交自动完成',
-  },
-  {
-    pain: '改完想回看某份试卷',
-    answer: '评阅历史可回看并导出报告',
-  },
-]
-
+import { withBase } from 'vitepress'
+import ProductPreview from './ProductPreview.vue'
 const modes = [
   {
     index: '01',
+    href: '/modes/normal',
     name: '普通模式',
     description: '适合日常少量批改。提交前保留确认机会，方便随时暂停或取消。',
     points: ['5 秒倒计时提交', '弹窗提示错误', '支持分数纠错'],
   },
   {
     index: '02',
+    href: '/modes/trial',
     name: '试改模式',
     description: '适合首次使用和调优评分标准。先观察 AI 评分，再确认提交。',
     points: ['等待教师确认', '便于观察评分依据', '支持分数纠错'],
   },
   {
     index: '03',
+    href: '/modes/unattended',
     name: '无人值守模式',
     description: '适合大批量试卷和夜间挂机。流程稳定后，用它把重复动作交给脚本。',
     points: ['1 秒自动提交', '瞬态错误自动退避重试', '适合批量处理'],
   },
   {
     index: '04',
+    href: '/modes/dual',
     name: '双评模式',
     description: '适合高精度要求的场景。两个模型独立评分，分差超阈值自动触发第三模型仲裁。',
     points: ['双模型独立评分', '超阈值自动仲裁', '结果更可靠'],

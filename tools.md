@@ -33,6 +33,8 @@ onMounted(() => {
 
 安装脚本后，此页面将显示以下功能：
 
+<span id="📊-评阅历史" class="fp-anchor-alias" aria-hidden="true"></span>
+
 ### 评阅历史
 - 查看所有评阅记录
 - 支持 CSV、JSON、HTML、材料包 ZIP 四种格式导出
@@ -43,6 +45,8 @@ onMounted(() => {
 - 查看支持平台列表
 - 查看更新日志
 - 联系作者
+
+<span id="🔄-检查更新" class="fp-anchor-alias" aria-hidden="true"></span>
 
 ### 检查更新
 - 检查是否有新版本

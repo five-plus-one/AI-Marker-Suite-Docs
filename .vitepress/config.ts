@@ -8,6 +8,7 @@ export default defineConfig({
   lang: 'zh-CN',
   srcExclude: ['**/AGENTS.md'],
   title: 'AI 批改助手',
+  titleTemplate: false,
   description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)等 33 个平台。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
@@ -37,7 +38,7 @@ export default defineConfig({
   // ========== SEO & GEO: Head Meta ==========
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/png', href: `${BASE}img/icon.png` }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${BASE}img/marker-logo.svg` }],
 
     // SEO: Canonical & Robots
     ['link', { rel: 'canonical', href: SITE_URL }],
@@ -215,15 +216,15 @@ export default defineConfig({
 
   // ========== Theme Config ==========
   themeConfig: {
-    logo: '/img/icon.png',
+    logo: '/img/marker-logo.svg',
     siteTitle: 'AI 批改助手',
 
     nav: [
-      { text: '快速上手', link: '/guide/' },
-      { text: '配置', link: '/config/' },
-      { text: '批改模式', link: '/modes/' },
-      { text: '平台', link: '/platforms/' },
-      { text: '进阶', link: '/advanced/' },
+      { text: '快速上手', link: '/guide/', activeMatch: '^/guide/' },
+      { text: '配置', link: '/config/', activeMatch: '^/config/' },
+      { text: '批改模式', link: '/modes/', activeMatch: '^/modes/' },
+      { text: '平台', link: '/platforms/', activeMatch: '^/platforms/' },
+      { text: '进阶', link: '/advanced/', activeMatch: '^/advanced/' },
       {
         text: '资源',
         items: [
@@ -347,6 +348,18 @@ export default defineConfig({
 
     search: {
       provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+          modal: {
+            displayDetails: '显示详细结果',
+            resetButtonTitle: '清空搜索',
+            backButtonTitle: '返回',
+            noResultsText: '没有找到相关内容',
+            footer: { selectText: '打开', navigateText: '切换结果', closeText: '关闭' },
+          },
+        },
+      },
     },
 
     editLink: {

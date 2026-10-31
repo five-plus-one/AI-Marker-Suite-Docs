@@ -58,6 +58,8 @@ $$
 
 在脚本的设置面板中，点击**题目内容**、**标准答案**或**评分标准**旁边的「编辑」按钮，即可打开全屏 Markdown 编辑器。
 
+<span id="编辑器工具栏" class="fp-anchor-alias" aria-hidden="true"></span>
+
 ### 工具栏按钮
 
 编辑器顶部的工具栏提供以下公式相关功能：
@@ -126,6 +128,8 @@ AI 识别需要先配置 AI 供应商和 API Key。详见 [AI 接口配置](./ap
 点击模板即可插入到光标位置，无需手动输入语法。
 
 ---
+
+<span id="基础数学符号" class="fp-anchor-alias" aria-hidden="true"></span>
 
 ## 基础语法速查
 
@@ -315,7 +319,11 @@ $$
 
 ---
 
+<span id="常见题型示例" class="fp-anchor-alias" aria-hidden="true"></span>
+
 ## 学科示例
+
+<span id="数学-—-一元二次方程求根公式" class="fp-anchor-alias" aria-hidden="true"></span>
 
 ### 数学
 

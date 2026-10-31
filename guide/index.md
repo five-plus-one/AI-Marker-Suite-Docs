@@ -4,6 +4,8 @@ description: AI批改助手入门指南，了解项目介绍、安装教程、�
 keywords: AI批改助手,入门指南,安装教程,快速上手,常见问题,Tampermonkey,油猴脚本,自动批改,智能阅卷,智学网,七天网络,好分数
 ---
 
+<span id="文档导航" class="fp-anchor-alias" aria-hidden="true"></span>
+
 # 入门指南
 
 欢迎使用 AI 批改助手！以下是入门所需的核心文档。

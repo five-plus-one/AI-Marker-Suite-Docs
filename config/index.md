@@ -4,6 +4,8 @@ description: AI批改助手配置指南，包括AI接口配置、批改工作流
 keywords: AI批改助手,配置指南,AI接口配置,批改工作流,评分规则,预设方案,分小题配置,API密钥,多模态AI,自动批改配置
 ---
 
+<span id="文档导航" class="fp-anchor-alias" aria-hidden="true"></span>
+
 # 配置指南
 
 AI 批改助手提供了灵活的配置选项，让你可以根据不同科目和题目自定义批改行为。

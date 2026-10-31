@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-30",
+  "uiVersion": "0.5.88",
+  "packageSha256": "1e915e13f4fdaed4c973a69ecf40c0b9b7c94c43cc337a71577ab1fbe367ab3c",
+  "preview": "http://127.0.0.1:4201/guide/installation",
+  "builds": ["/", "/AI-Marker-Suite-Docs/"],
+  "pages": 62,
+  "indexablePages": 59,
+  "legacyAnchors": 746,
+  "searchEntries": 732,
+  "componentTests": 7,
+  "checks": [
+    "共享库 TypeScript 与展示目录覆盖检查通过",
+    "两种部署路径的构建、页面链接、SEO 与全部搜索章节链接检查通过",
+    "62 个页面的简洁 URL 与 .html URL、canonical 和章节锚点通过 HTTP 检查",
+    "桌面深浅色阅读、语义提示块、分区导航与复制链接通过实际页面检查",
+    "Ctrl K、方向键选择、Enter 跳转、Esc 关闭及焦点恢复通过实际页面检查",
+    "搜索链接 ?q=智学网 自动打开搜索并返回章节结果",
+    "390 像素下导航、下载菜单、分区抽屉、搜索与页内目录连续操作后顶栏保持吸顶",
+    "稳定版与预览版更新日志均加载成功",
+    "首页保留品牌文字构图、模式、交流与支持入口，两个赞赏二维码直接显示并加载成功",
+    "首页与阅读页在 390、600、768、1024、1280、1440 像素下的页面宽度检查通过"
+  ],
+  "screenshots": [
+    "home-preview.png",
+    "reading-preview.png",
+    "reading-dark-preview.png",
+    "reading-mobile-preview.png",
+    "search-preview.png",
+    "search-mobile-preview.png"
+  ],
+  "releaseWorkflow": "docs-dev → PR → main → GitHub Actions"
+}

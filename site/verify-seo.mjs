@@ -6,7 +6,7 @@ const root=path.resolve('.vitepress/dist'),report=JSON.parse(await fs.readFile('
 const sitemap=load(await fs.readFile(root+'/sitemap.xml','utf8'),{xmlMode:true});const sitemapUrls=new Set(sitemap('loc').map((_,el)=>sitemap(el).text()).get());
 assert(report.length>=61,'Every generated page has an SEO record');
 for(const page of report){const file=path.join(root,page.route==='/'?'index.html':page.route.endsWith('/')?page.route.slice(1)+'index.html':page.route.slice(1)+'.html');const $=load(await fs.readFile(file,'utf8'));
- assert.equal($('title').length,1);assert(!seen.has(page.title),'Unique title: '+page.route);seen.add(page.title);
+ assert.equal($('head > title').length,1);assert(!seen.has(page.title),'Unique title: '+page.route);seen.add(page.title);
  if(page.indexable)assert.equal($('h1').length,1,'Single primary heading: '+page.route);assert.equal($('html').attr('lang'),'zh-CN');
  assert(page.description.length>=20&&page.description.length<=180,'Concise page description: '+page.route);
  for(const [selector,value] of [['meta[name="description"]',page.description],['meta[property="og:title"]',page.title],['meta[name="twitter:title"]',page.title],['meta[property="og:description"]',page.description],['meta[name="twitter:description"]',page.description],['meta[property="og:url"]',page.canonical]]){assert.equal($(selector).length,1,selector+' '+page.route);assert.equal($(selector).attr('content'),value)}

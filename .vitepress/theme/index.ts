@@ -2,12 +2,14 @@ import DefaultTheme from 'vitepress/theme'
 import './custom.css'
 import '@fiveplusone/ui/vitepress.css'
 import {mountDocumentationEnhancements,synchronizeDocumentationSeo} from '../../site/enhancements.jsx'
-import { updateNavVersion, initChangelogPage } from './fetchManifest'
+import { updateNavVersion, initChangelogPage, revealChangelogAnchor } from './fetchManifest'
 import type { Theme } from 'vitepress'
 import { withBase } from 'vitepress'
-import { h } from 'vue'
+import { h,nextTick } from 'vue'
+import {createDocumentationMotion} from '@fiveplusone/ui/app-surfaces'
 import HomeHero from './HomeHero.vue'
 import HomeSections from './HomeSections.vue'
+import SharedLayout from './SharedLayout.vue'
 
 let clientInitDone = false
 let navScrollStateBound = false
@@ -44,6 +46,7 @@ const Card = {
 
 export default {
   extends: DefaultTheme,
+  Layout: SharedLayout,
   enhanceApp({ app, router }) {
     app.component('CardGrid', CardGrid)
     app.component('Card', Card)
@@ -61,13 +64,19 @@ export default {
       mountDocumentationEnhancements()
       synchronizeDocumentationSeo()
       initNavScrollState()
+      const motion=createDocumentationMotion()
+      motion.reveal()
+      router.onBeforePageLoad=()=>{motion.begin()}
 
       // 初始执行
       updateNavVersion()
       initChangelogPage()
+      window.addEventListener('hashchange', revealChangelogAnchor)
 
       // 监听路由变化
-      router.onAfterRouteChanged = (to) => {
+      router.onAfterRouteChanged = async (to) => {
+        await nextTick()
+        motion.complete()
         setTimeout(() => {
           synchronizeDocumentationSeo()
           updateNavVersion()

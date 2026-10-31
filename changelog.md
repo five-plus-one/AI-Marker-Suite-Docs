@@ -1,18 +1,20 @@
 ---
 title: 更新日志 — AI 批改助手
-description: AI批改助手完整更新日志，所有版本更新记录。
+description: 查看 AI 批改助手当前稳定版更新，以及预览版相对稳定版新增的功能、优化与修复。
 ---
 
 # 更新日志
 
-## 稳定版 <span id="stable-version" class="changelog-channel-version"></span>
+<script setup>
+import ReleaseNotes from './.vitepress/theme/ReleaseNotes.vue'
+</script>
 
-<div id="dynamic-changelog" class="changelog-container">
-  <p style="color: #999;">正在加载最新更新日志...</p>
-</div>
+了解当前版本的变化，选择适合自己的更新渠道。
 
-## 预览版 <span id="preview-version" class="changelog-channel-version"></span>
+## 稳定版 {#稳定版}
 
-<div id="dynamic-changelog-preview" class="changelog-container">
-  <p style="color: #999;">正在加载预览版更新日志...</p>
-</div>
+<ReleaseNotes channel="stable" />
+
+## 预览版 {#预览版}
+
+<ReleaseNotes channel="preview" />

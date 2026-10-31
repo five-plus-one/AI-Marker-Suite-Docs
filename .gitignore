@@ -12,3 +12,6 @@ site/.config.mjs.map
 .work/
 
 site/review-images/
+site/.historical-missing.json
+site/.product-preview.mjs
+site/.product-preview.json

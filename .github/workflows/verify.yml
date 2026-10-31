@@ -21,3 +21,6 @@ jobs:
         env:
           BASE_URL: ${{ matrix.base }}
       - run: npm run check
+      - run: npm run check:http
+        env:
+          BASE_URL: ${{ matrix.base }}
