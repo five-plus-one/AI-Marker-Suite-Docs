@@ -266,9 +266,12 @@
   },
   "preview": {
     "source": "https://auto-update.aimarking.five-plus-one.com/ota/preview/manifest.json",
-    "version": "1.21.16.14-preview.73",
-    "releaseDate": "2026-10-29",
+    "version": "1.21.16.15-preview.74",
+    "releaseDate": "2026-10-31",
     "changelog": {
+      "1.21.16.15": [
+        "【新平台】新增正确阅卷 (yuejuan.com) 平台适配：打分板点击式 + 小键盘输入框混合评分（#229）"
+      ],
       "1.21.16.14": [
         "【优化】答卷一致性校验改为实验性开关（设置面板「答卷校验」区），误报时可临时关闭继续批改（#225）"
       ],
