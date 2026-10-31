@@ -815,7 +815,7 @@
             "name": "支持哪些阅卷平台？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "目前支持以下 33 个平台，脚本会自动检测并加载对应适配器：智学网 (zhixue.com) — 最早支持的平台七天网络 (7net.cc / qt7.net / qt7.cn / yj5.7net.cc) — 支持新旧两种 UI好分数 (haofenshu.com) — v1.11.3 新增支持五岳阅卷 (wylkyj.com) — v1.12.1 新增支持阅小二 (haoyuejuan.com) — v1.21.12.1 新增支持，与五岳阅卷同构华翰云 (yunyuejuan.net) — v1.21.2 新增支持光大阅卷 (pj.yixx.cn) — v1.21.2 新增支持云阅卷 — 内网阅卷系统新教育 (xinjiaoyu.com) — 支持考试和作业两种批改模式润建学情 (aisusheng.runjian.com) — 支持 CSS 背景图和点击式评分54学霸 (54xueba.cn) — 支持 Canvas/base64 图片和多小题输入框九科星 (marking.jkxjxw.com) — 支持 OBS 图片裁剪和多小题评分慧阅卷 (web.17yuejuan.cn) — 支持 frame 架构和点击式评分乐华阅卷 (main.lhsvr.cn) — 支持 Canvas 渲染和点击式评分鑫考 — 内网阅卷系统，支持动态 IP 部署慧学星 (www.hxxai.com) — 支持 OSS 图片托管和分步骤评分模式粤教翔云 (rrtcp.gdedu.gov.cn) — 支持题组批改模式云阅卷(好分数) (haofenshuyize.com) — Vue 3 + Element Plus 框架科耘阅卷 (kaoshi.keewing.com) — 支持 SVG 图片渲染和延迟填分模式光大阅卷V2 — 支持 IP:端口部署版本威科姆(悦卷通) (wyna.onlyets.com) — 支持多小题评分和键盘/鼠标/步骤三种打分模式C30教育云 (zy.iclass30.com) — Canvas 答题卡，平台自动提交（v1.21.11 新增支持）AMEQP网上评卷 — 内网裸 IP 部署，题块裁剪图（v1.21.11.2 新增支持）海云智评 (zp.kaow.cn) — OSS 裁剪答题卡、多小题满分提取、提交二次确认（v1.21.12.3 新增支持）鑫考(内网) (内网裸 IP /biluo/display.jsp) — fen 属性满分提取、inputkey 键盘确认提交（v1.21.12.4 新增支持）九五优评 (timesphoenix.com) — iframe 阅卷界面取图、分给分点评分、提交限速自适应（v1.21.14 新增支持）上进教育服务云 (www.sipd.cn) — OSS 裁剪答题卡、0分确认弹窗自动处理（v1.21.14.4 新增支持）南昊AI教学提分 (nhcisc.com) — showimage 答题图取图、满分提取、clearNoNum 分数归一化（v1.21.14.7 新增支持）鑫考校园 (内网裸 IP:端口 /Marking/NormalReadPaper) — data-score 属性满分提取、inputkey 键盘确认提交（v1.21.16 新增支持）酷鱼网 (www.kuyuu.cn) — Canvas tainted canvas 安全取图、scores 属性满分提取、键模式填分（v1.21.16 新增支持）A佳教育 (y.ajia.cn) — 行级 num-source 评分、data-score 满分提取、确定按钮提交自动翻卷（v1.21.16.1 新增支持）云阅卷(开州) (yyj.kzedu.cn) — scoreitem 点击给分、自动给分勾选状态自适应提交、图片路径变化翻卷检测（v1.21.16.10 新增支持）"
+              "text": "目前支持以下 34 个平台，脚本会自动检测并加载对应适配器：智学网 (zhixue.com) — 最早支持的平台七天网络 (7net.cc / qt7.net / qt7.cn / yj5.7net.cc) — 支持新旧两种 UI好分数 (haofenshu.com) — v1.11.3 新增支持五岳阅卷 (wylkyj.com) — v1.12.1 新增支持阅小二 (haoyuejuan.com) — v1.21.12.1 新增支持，与五岳阅卷同构华翰云 (yunyuejuan.net) — v1.21.2 新增支持光大阅卷 (pj.yixx.cn) — v1.21.2 新增支持云阅卷 — 内网阅卷系统新教育 (xinjiaoyu.com) — 支持考试和作业两种批改模式润建学情 (aisusheng.runjian.com) — 支持 CSS 背景图和点击式评分54学霸 (54xueba.cn) — 支持 Canvas/base64 图片和多小题输入框九科星 (marking.jkxjxw.com) — 支持 OBS 图片裁剪和多小题评分慧阅卷 (web.17yuejuan.cn) — 支持 frame 架构和点击式评分乐华阅卷 (main.lhsvr.cn) — 支持 Canvas 渲染和点击式评分鑫考 — 内网阅卷系统，支持动态 IP 部署慧学星 (www.hxxai.com) — 支持 OSS 图片托管和分步骤评分模式粤教翔云 (rrtcp.gdedu.gov.cn) — 支持题组批改模式云阅卷(好分数) (haofenshuyize.com) — Vue 3 + Element Plus 框架科耘阅卷 (kaoshi.keewing.com) — 支持 SVG 图片渲染和延迟填分模式光大阅卷V2 — 支持 IP:端口部署版本威科姆(悦卷通) (wyna.onlyets.com) — 支持多小题评分和键盘/鼠标/步骤三种打分模式C30教育云 (zy.iclass30.com) — Canvas 答题卡，平台自动提交（v1.21.11 新增支持）AMEQP网上评卷 — 内网裸 IP 部署，题块裁剪图（v1.21.11.2 新增支持）海云智评 (zp.kaow.cn) — OSS 裁剪答题卡、多小题满分提取、提交二次确认（v1.21.12.3 新增支持）鑫考(内网) (内网裸 IP /biluo/display.jsp) — fen 属性满分提取、inputkey 键盘确认提交（v1.21.12.4 新增支持）九五优评 (timesphoenix.com) — iframe 阅卷界面取图、分给分点评分、提交限速自适应（v1.21.14 新增支持）上进教育服务云 (www.sipd.cn) — OSS 裁剪答题卡、0分确认弹窗自动处理（v1.21.14.4 新增支持）南昊AI教学提分 (nhcisc.com) — showimage 答题图取图、满分提取、clearNoNum 分数归一化（v1.21.14.7 新增支持）鑫考校园 (内网裸 IP:端口 /Marking/NormalReadPaper) — data-score 属性满分提取、inputkey 键盘确认提交（v1.21.16 新增支持）酷鱼网 (www.kuyuu.cn) — Canvas tainted canvas 安全取图、scores 属性满分提取、键模式填分（v1.21.16 新增支持）A佳教育 (y.ajia.cn) — 行级 num-source 评分、data-score 满分提取、确定按钮提交自动翻卷（v1.21.16.1 新增支持）云阅卷(开州) (yyj.kzedu.cn) — scoreitem 点击给分、自动给分勾选状态自适应提交、图片路径变化翻卷检测（v1.21.16.10 新增支持）正确阅卷 (www.yuejuan.com) — 打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测（v1.21.16.15 新增支持）"
             }
           },
           {
@@ -865,7 +865,7 @@
   {
     "route": "/guide/",
     "title": "入门指南 | AI 批改助手",
-    "description": "AI批改助手入门指南，了解项目介绍、安装教程、快速上手和常见问题。基于多模态AI的Tampermonkey油猴脚本，支持智学网等 33 个阅卷平台自动批改主观题试卷。",
+    "description": "AI批改助手入门指南，了解项目介绍、安装教程、快速上手和常见问题。基于多模态AI的Tampermonkey油猴脚本，支持智学网等 34 个阅卷平台自动批改主观题试卷。",
     "canonical": "https://aimarking.five-plus-one.com/guide/",
     "indexable": true,
     "schemas": [
@@ -879,7 +879,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/#page",
         "url": "https://aimarking.five-plus-one.com/guide/",
         "name": "入门指南 | AI 批改助手",
-        "description": "AI批改助手入门指南，了解项目介绍、安装教程、快速上手和常见问题。基于多模态AI的Tampermonkey油猴脚本，支持智学网等 33 个阅卷平台自动批改主观题试卷。",
+        "description": "AI批改助手入门指南，了解项目介绍、安装教程、快速上手和常见问题。基于多模态AI的Tampermonkey油猴脚本，支持智学网等 34 个阅卷平台自动批改主观题试卷。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -908,7 +908,7 @@
   {
     "route": "/guide/installation",
     "title": "安装教程 | AI 批改助手",
-    "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。",
+    "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 34 个阅卷平台自动批改主观题。",
     "canonical": "https://aimarking.five-plus-one.com/guide/installation",
     "indexable": true,
     "schemas": [
@@ -923,7 +923,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/installation#page",
         "url": "https://aimarking.five-plus-one.com/guide/installation",
         "name": "安装教程 | AI 批改助手",
-        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。",
+        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 34 个阅卷平台自动批改主观题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -958,7 +958,7 @@
         "@type": "HowTo",
         "name": "安装教程",
         "url": "https://aimarking.five-plus-one.com/guide/installation",
-        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。",
+        "description": "AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 34 个阅卷平台自动批改主观题。",
         "step": [
           {
             "@type": "HowToStep",
@@ -2935,6 +2935,55 @@
             "position": 3,
             "name": "粤教翔云智慧测评",
             "item": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/yuejuan",
+    "title": "正确阅卷适配 | AI 批改助手",
+    "description": "AI批改助手正确阅卷适配器使用说明。支持 www.yuejuan.com 阅卷平台（jQuery + layui），打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/yuejuan",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/yuejuan#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/yuejuan",
+        "name": "正确阅卷适配 | AI 批改助手",
+        "description": "AI批改助手正确阅卷适配器使用说明。支持 www.yuejuan.com 阅卷平台（jQuery + layui），打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "正确阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/yuejuan"
           }
         ]
       }
