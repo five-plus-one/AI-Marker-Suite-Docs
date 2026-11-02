@@ -6,6 +6,12 @@ keywords: 九科星,AI批改,AI阅卷,自动批改,智能阅卷,marking.jkxjxw.c
 
 # 九科星（考试阅卷 + 作业系统）
 
+<span id="九科星" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="平台简介" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="_1-安装脚本" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="_2-打开阅卷页面" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="_3-使用-ai-批改" class="fp-anchor-alias" aria-hidden="true"></span>
+
 九科星一体化平台有两个批改子系统，脚本均已适配（v1.21.16.18 起支持作业系统）：
 
 | 子系统 | 地址 | 说明 |
