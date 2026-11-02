@@ -18,10 +18,10 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 
 | | 智学网 | 七天网络 | 好分数 | 五岳阅卷 | 阅小二 | 华翰云 | 光大阅卷 | 云阅卷 | 新教育 | 润建学情 | 54学霸 | 九科星 | 慧阅卷 | 乐华阅卷 | 鑫考 | 慧学星 | 粤教翔云 | 云阅卷(好分数) | 科耘阅卷 | 光大阅卷V2 | 威科姆(悦卷通) | C30教育云 | AMEQP网上评卷 | 海云智评 | 鑫考(内网) | 九五优评 | 上进教育服务云 | 南昊AI教学提分 | 鑫考校园 | 酷鱼网 | A佳教育 | 云阅卷(开州) | 正确阅卷 |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 网址 | zhixue.com | 7net.cc / qt7.net / qt7.cn | haofenshu.com | wylkyj.com | haoyuejuan.com | yunyuejuan.net | pj.yixx.cn | 内网部署 | xinjiaoyu.com | aisusheng.runjian.com | 54xueba.cn | marking.jkxjxw.com | web.17yuejuan.cn | main.lhsvr.cn | 内网部署 | www.hxxai.com | rrtcp.gdedu.gov.cn | haofenshuyize.com | kaoshi.keewing.com | IP:端口 | wyna.onlyets.com | zy.iclass30.com | 内网 IP 部署 | zp.kaow.cn | 内网裸 IP /biluo/display.jsp | timesphoenix.com | www.sipd.cn | nhcisc.com | 内网裸 IP:端口 /Marking/NormalReadPaper | www.kuyuu.cn | y.ajia.cn | yyj.kzedu.cn | www.yuejuan.com |
-| 适配状态 | 完整支持 | 完整支持（含新旧 UI） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（题组批改） | 完整支持 | 完整支持 | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持（多评分单元） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（分给分点） | 完整支持 | 完整支持（多小题） | 完整支持（多小题） | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持 |
-| 答题卡渲染 | `<img>` 标签 | `<img>` / Canvas | SVG `<image>` | `<img>` 标签 | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | Canvas | `<img>` 标签 | Canvas / API | CSS background-image | Canvas + base64 img | OBS 图片裁剪 | `<img>` 标签 | Canvas | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | SVG `<image>` | Canvas | `<img>` 标签（OSS） | Canvas | `<img>` 标签（题块裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | `<img>` 标签（多页） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（showimage 裁剪） | `<img>` 标签（token 图） | Canvas（ems-imageview） | `<img>` 标签（按题裁剪） | `<img>` 标签（SVG 批注） | `<img>` 标签 |
-| 分数输入 | 输入框 | 输入框 | 输入框 | 输入框 | 输入框（多小题） | 输入框 | 点击选择 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框（多小题） | 点击按钮 | 点击按钮 | 输入框 | 输入框（分步骤） | 输入框 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框 + 快捷按钮 | 输入框（多评分单元） | 输入框（多小题） | 输入框（多小题） | 输入框（给分点） | 输入框（多小题） | 输入框（多小题） | 输入框（多小题） | 输入框（键模式） | 输入框（行级） | 点击按钮 + 只读框 | 点击按钮 + 输入框 |
+| 网址 | zhixue.com | 7net.cc / qt7.net / qt7.cn | haofenshu.com | wylkyj.com | haoyuejuan.com | yunyuejuan.net | pj.yixx.cn | 内网部署 | xinjiaoyu.com | aisusheng.runjian.com | 54xueba.cn | marking.jkxjxw.com / jxp.jkxjxw.com | web.17yuejuan.cn | main.lhsvr.cn | 内网部署 | www.hxxai.com | rrtcp.gdedu.gov.cn | haofenshuyize.com | kaoshi.keewing.com | IP:端口 | wyna.onlyets.com | zy.iclass30.com | 内网 IP 部署 | zp.kaow.cn | 内网裸 IP /biluo/display.jsp | timesphoenix.com | www.sipd.cn | nhcisc.com | 内网裸 IP:端口 /Marking/NormalReadPaper | www.kuyuu.cn | y.ajia.cn | yyj.kzedu.cn | www.yuejuan.com |
+| 适配状态 | 完整支持 | 完整支持（含新旧 UI） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（题组批改） | 完整支持 | 完整支持 | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持（多评分单元） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（分给分点） | 完整支持 | 完整支持（多小题） | 完整支持（多小题） | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持 |
+| 答题卡渲染 | `<img>` 标签 | `<img>` / Canvas | SVG `<image>` | `<img>` 标签 | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | Canvas | `<img>` 标签 | Canvas / API | CSS background-image | Canvas + base64 img | OBS 裁剪图 | `<img>` 标签 | Canvas | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | SVG `<image>` | Canvas | `<img>` 标签（OSS） | Canvas | `<img>` 标签（题块裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | `<img>` 标签（多页） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（showimage 裁剪） | `<img>` 标签（token 图） | Canvas（ems-imageview） | `<img>` 标签（按题裁剪） | `<img>` 标签（SVG 批注） | `<img>` 标签 |
+| 分数输入 | 输入框 | 输入框 | 输入框 | 输入框 | 输入框（多小题） | 输入框 | 点击选择 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框（多小题/单题） | 点击按钮 | 点击按钮 | 输入框 | 输入框（分步骤） | 输入框 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框 + 快捷按钮 | 输入框（多评分单元） | 输入框（多小题） | 输入框（多小题） | 输入框（给分点） | 输入框（多小题） | 输入框（多小题） | 输入框（多小题） | 输入框（键模式） | 输入框（行级） | 点击按钮 + 只读框 | 点击按钮 + 输入框 |
 | 批改流程 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 自动提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 自动提交 | 识别 → 打分 → 填入（同步隐藏字段） → 提交 | 识别 → 打分 → 填入 → 确认弹窗提交 | 识别 → 打分 → 填入 → 键盘确认提交 | 识别 → 打分 → 填入 → 确认弹窗提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 键盘确认提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 确定自动翻卷 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 点击 → 提交 |
 
 ## 快速导航
@@ -37,7 +37,7 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 9. **[新教育](/platforms/xinjiaoyu)** — 新教育平台的适配说明，支持考试和作业两种批改模式
 10. **[润建学情](/platforms/runjian)** — 润建学情平台的适配说明，支持 CSS 背景图和点击式评分
 11. **[54学霸](/platforms/xueba54)** — 54学霸平台的适配说明，支持 Canvas/base64 图片和多小题输入框
-12. **[九科星](/platforms/jiukexing)** — 九科星平台的适配说明，支持 OBS 图片裁剪和多小题评分
+12. **[九科星](/platforms/jiukexing)** — 九科星适配说明，考试阅卷 OBS 裁剪多小题 + 作业系统 API 取题块图（按学生批阅暂不支持）
 13. **[慧阅卷](/platforms/huiyuejuan)** — 慧阅卷平台的适配说明，支持 frame 架构和点击式评分
 14. **[乐华阅卷](/platforms/lehua)** — 乐华阅卷平台的适配说明，支持 Canvas 渲染和点击式评分
 15. **[鑫考](/platforms/xinkao)** — 鑫考网上阅卷平台的适配说明，支持动态 IP 部署
@@ -72,7 +72,7 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 <Card title="新教育" href="/platforms/xinjiaoyu" description="新教育平台的适配说明，支持考试和作业两种批改模式" />
 <Card title="润建学情" href="/platforms/runjian" description="润建学情平台的适配说明，支持 CSS 背景图和点击式评分" />
 <Card title="54学霸" href="/platforms/xueba54" description="54学霸平台的适配说明，支持 Canvas/base64 图片渲染和多小题输入框评分" />
-<Card title="九科星" href="/platforms/jiukexing" description="九科星平台的适配说明，支持 OBS 图片裁剪和多小题输入框评分" />
+<Card title="九科星" href="/platforms/jiukexing" description="九科星适配说明：考试阅卷 OBS 裁剪多小题，作业系统 API 取题块图 + 自动提交防护" />
 <Card title="慧阅卷" href="/platforms/huiyuejuan" description="慧阅卷平台的适配说明，支持 frame 架构和点击式评分" />
 <Card title="乐华阅卷" href="/platforms/lehua" description="乐华阅卷平台的适配说明，支持 Canvas 渲染和点击式评分" />
 <Card title="鑫考" href="/platforms/xinkao" description="鑫考网上阅卷平台的适配说明，支持动态 IP 部署" />

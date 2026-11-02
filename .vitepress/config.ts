@@ -88,7 +88,7 @@ export default defineConfig({
         name: '5plus1',
         url: 'https://five-plus-one.com',
       },
-      softwareVersion: '1.21.16.15',
+      softwareVersion: '1.21.16.18',
       screenshot: `${SITE_URL}/img/1.png`,
       featureList: [
         'AI自动评分：多模态视觉识别手写答案',

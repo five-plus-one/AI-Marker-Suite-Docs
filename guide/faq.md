@@ -233,7 +233,7 @@ DeepSeek 的模型是纯文本模型，不支持图片输入，无法识别手�
 - **新教育** (xinjiaoyu.com) — 支持考试和作业两种批改模式
 - **润建学情** (aisusheng.runjian.com) — 支持 CSS 背景图和点击式评分
 - **54学霸** (54xueba.cn) — 支持 Canvas/base64 图片和多小题输入框
-- **九科星** (marking.jkxjxw.com) — 支持 OBS 图片裁剪和多小题评分
+- **九科星** (marking.jkxjxw.com / jxp.jkxjxw.com) — 考试阅卷 OBS 裁剪多小题评分；作业系统 API 取题块图（按学生批阅暂不支持，有跳转提示）
 - **慧阅卷** (web.17yuejuan.cn) — 支持 frame 架构和点击式评分
 - **乐华阅卷** (main.lhsvr.cn) — 支持 Canvas 渲染和点击式评分
 - **鑫考** — 内网阅卷系统，支持动态 IP 部署
