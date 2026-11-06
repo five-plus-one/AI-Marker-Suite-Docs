@@ -1,6 +1,6 @@
 ---
 title: 安装教程 — AI 批改助手
-description: AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 33 个阅卷平台自动批改主观题。
+description: AI批改助手安装教程。需要在电脑端使用Edge浏览器，安装Tampermonkey扩展后一键安装脚本。支持智学网、七天网络、好分数等 37 个阅卷平台自动批改主观题。
 keywords: AI批改助手,安装教程,Tampermonkey,油猴脚本,Edge浏览器,一键安装,自动批改,智能阅卷,智学网,七天网络,好分数,浏览器扩展
 ---
 
@@ -73,9 +73,16 @@ AI 批改助手是一个**浏览器脚本**，必须在**电脑端**的浏览器
 
 #### Microsoft Edge
 
-1. 在 Edge 地址栏输入 `edge://extensions/`，打开扩展管理页。
+1. 在 Edge 地址栏输入 `edge://extensions/`，打开扩展管理页（也可以点击右上角 **扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展**）。
+
+![Edge 扩展菜单中的「管理扩展」入口](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
+
 2. 找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。
-3. 打开「允许用户脚本」。如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。
+3. 打开「允许用户脚本」。
+
+![Edge 扩展详情中的「允许用户脚本」开关](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
+
+如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。
 
 ![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
 
