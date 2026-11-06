@@ -29,7 +29,13 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,userscript,Gre
 
 **[点击安装 Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)**
 
-在打开的扩展商店页面点击 **「获取」**，弹出确认框后点 **「添加扩展」**。
+在打开的扩展商店页面点击 **「获取」**：
+
+![Edge 扩展商店中的「获取」按钮](https://img.assets.five-plus-one.com/2026/05/e4dda0a1047a12d49dc27e615d591dbd.png)
+
+弹出确认框后点 **「添加扩展」**：
+
+![安装确认提示中的「添加扩展」按钮](https://img.assets.five-plus-one.com/2026/05/0ee33f3b3677ce816010d9309704c9dc.png)
 
 ### Google Chrome
 
@@ -50,7 +56,12 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,userscript,Gre
 ### Microsoft Edge（新版）
 
 1. 点击浏览器右上角 **扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展**
+
+![Edge 扩展菜单中的「管理扩展」入口](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
+
 2. 勾选 **「允许用户脚本」** 和 **「允许访问文件 URL」**
+
+![Edge 扩展详情中的「允许用户脚本」开关](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
 
 ### Microsoft Edge（旧版）
 
