@@ -9,7 +9,7 @@ export default defineConfig({
   srcExclude: ['**/AGENTS.md'],
   title: 'AI 批改助手',
   titleTemplate: false,
-  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云等 37 个平台。晚上挂机睡觉，早上起来全改完。',
+  description: 'AI 批改助手 — 基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)等 38 个平台。晚上挂机睡觉，早上起来全改完。',
   base: BASE,
   cleanUrls: true,
 
@@ -48,7 +48,7 @@ export default defineConfig({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:site_name', content: 'AI 批改助手' }],
     ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云等 37 个平台，自动识别手写答案并评分，支持多种批改模式、分小题评分和分数纠错。' }],
+    ['meta', { property: 'og:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)等 38 个平台，自动识别手写答案并评分，支持多种批改模式、分小题评分和分数纠错。' }],
     ['meta', { property: 'og:url', content: SITE_URL }],
     ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
     ['meta', { property: 'og:image:width', content: '1200' }],
@@ -58,7 +58,7 @@ export default defineConfig({
     // SEO: Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
-    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云等 37 个平台，支持多种批改模式、分小题评分和分数纠错。' }],
+    ['meta', { name: 'twitter:description', content: '基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)等 38 个平台，支持多种批改模式、分小题评分和分数纠错。' }],
     ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
 
     // SEO: Additional Keywords
@@ -73,7 +73,7 @@ export default defineConfig({
       '@type': 'SoftwareApplication',
       name: 'AI 批改助手',
       alternateName: 'AI-Marker-Suite',
-      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云等 37 个平台。自动识别手写答案并评分，支持多种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
+      description: '基于多模态 AI 的在线阅卷自动批改工具，支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)等 38 个平台。自动识别手写答案并评分，支持多种批改模式、双评仲裁、工作流配置、分小题评分和分数纠错。',
       url: SITE_URL,
       applicationCategory: 'EducationalApplication',
       operatingSystem: '浏览器（Tampermonkey）',
@@ -154,7 +154,7 @@ export default defineConfig({
           name: 'AI批改助手支持哪些平台？',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / qt7.cn / yj5.7net.cc）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）、阅小二（haoyuejuan.com）、华翰云（yunyuejuan.net）、光大阅卷（pj.yixx.cn）、云阅卷、新教育（xinjiaoyu.com）、润建学情（aisusheng.runjian.com）、54学霸（54xueba.cn）、九科星（marking.jkxjxw.com）、慧阅卷（web.17yuejuan.cn）、乐华阅卷（main.lhsvr.cn）、鑫考、慧学星（www.hxxai.com）、粤教翔云（rrtcp.gdedu.gov.cn）、云阅卷(好分数)（haofenshuyize.com）、科耘阅卷（kaoshi.keewing.com）、光大阅卷V2、威科姆/悦卷通（wyna.onlyets.com）、C30教育云（zy.iclass30.com）、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云等 37 个平台，通过适配器模式自动检测当前平台。',
+            text: '目前支持智学网（zhixue.com）、七天网络（7net.cc / qt7.net / qt7.cn / yj5.7net.cc）、好分数（haofenshu.com）、五岳阅卷（wylkyj.com）、阅小二（haoyuejuan.com）、华翰云（yunyuejuan.net）、光大阅卷（pj.yixx.cn）、云阅卷、新教育（xinjiaoyu.com）、润建学情（aisusheng.runjian.com）、54学霸（54xueba.cn）、九科星（marking.jkxjxw.com）、慧阅卷（web.17yuejuan.cn）、乐华阅卷（main.lhsvr.cn）、鑫考、慧学星（www.hxxai.com）、粤教翔云（rrtcp.gdedu.gov.cn）、云阅卷(好分数)（haofenshuyize.com）、科耘阅卷（kaoshi.keewing.com）、光大阅卷V2、威科姆/悦卷通（wyna.onlyets.com）、C30教育云（zy.iclass30.com）、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)等 38 个平台，通过适配器模式自动检测当前平台。',
           },
         },
         {
