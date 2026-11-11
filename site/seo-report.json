@@ -2257,7 +2257,7 @@
   {
     "route": "/platforms/jzsmartedu",
     "title": "焦作精准教学阅卷使用说明 | AI 批改助手",
-    "description": "从焦作智慧教育公共平台进入精准教学，在单份单评键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+    "description": "从焦作智慧教育公共平台进入精准教学，在单份单评的评分板或键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
     "indexable": true,
     "schemas": [
@@ -2271,7 +2271,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/jzsmartedu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
         "name": "焦作精准教学阅卷使用说明 | AI 批改助手",
-        "description": "从焦作智慧教育公共平台进入精准教学，在单份单评键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+        "description": "从焦作智慧教育公共平台进入精准教学，在单份单评的评分板或键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
