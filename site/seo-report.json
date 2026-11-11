@@ -2502,7 +2502,7 @@
   {
     "route": "/platforms/qiguang",
     "title": "启光优测阅卷使用说明 | AI 批改助手",
-    "description": "在启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+    "description": "在不同学校地址的启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/qiguang",
     "indexable": true,
     "schemas": [
@@ -2516,7 +2516,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/qiguang#page",
         "url": "https://aimarking.five-plus-one.com/platforms/qiguang",
         "name": "启光优测阅卷使用说明 | AI 批改助手",
-        "description": "在启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+        "description": "在不同学校地址的启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
