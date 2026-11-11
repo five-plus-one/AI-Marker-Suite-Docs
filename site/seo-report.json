@@ -1479,7 +1479,7 @@
   {
     "route": "/platforms/ameqp",
     "title": "AMEQP网上评卷适配 | AI 批改助手",
-    "description": "AI批改助手AMEQP网上评卷适配器使用说明。支持内网裸IP部署的AMEQP/Webroot/mar阅卷系统，题块裁剪图取完整图、jQuery+EasyUI组件交互、多评分单元，v1.21.11.2新增支持。",
+    "description": "AMEQP 网上评卷的 AI 批改使用说明。支持不同内网地址、多小题给分、题块识别和连续阅卷，说明快速换卷后的自动继续及提交前核对。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/ameqp",
     "indexable": true,
     "schemas": [
@@ -1493,7 +1493,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/ameqp#page",
         "url": "https://aimarking.five-plus-one.com/platforms/ameqp",
         "name": "AMEQP网上评卷适配 | AI 批改助手",
-        "description": "AI批改助手AMEQP网上评卷适配器使用说明。支持内网裸IP部署的AMEQP/Webroot/mar阅卷系统，题块裁剪图取完整图、jQuery+EasyUI组件交互、多评分单元，v1.21.11.2新增支持。",
+        "description": "AMEQP 网上评卷的 AI 批改使用说明。支持不同内网地址、多小题给分、题块识别和连续阅卷，说明快速换卷后的自动继续及提交前核对。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
