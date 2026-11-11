@@ -109,7 +109,7 @@
   {
     "route": "/advanced/history",
     "title": "批改历史 | AI 批改助手",
-    "description": "查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记回评、批量管理。",
+    "description": "查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记待核查记录、批量管理。",
     "canonical": "https://aimarking.five-plus-one.com/advanced/history",
     "indexable": true,
     "schemas": [
@@ -123,7 +123,7 @@
         "@id": "https://aimarking.five-plus-one.com/advanced/history#page",
         "url": "https://aimarking.five-plus-one.com/advanced/history",
         "name": "批改历史 | AI 批改助手",
-        "description": "查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记回评、批量管理。",
+        "description": "查看所有AI批改记录，支持按时间/方案筛选、查看详情、导出 HTML/CSV/JSON/材料包ZIP 报告、标记待核查记录、批量管理。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -807,7 +807,7 @@
             "name": "怎么查看批改历史？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "点击页面右下角的历史按钮（时钟图标），可以查看所有批改记录，支持：按时间、方案筛选查看详情（含答题卡图片）导出为 CSV / JSON / HTML / 材料包ZIP 报告标记不正确的评分以便回评"
+              "text": "点击页面右下角的历史按钮（时钟图标），可以查看所有批改记录，支持：按时间、方案筛选查看详情（含答题卡图片）导出为 CSV / JSON / HTML / 材料包ZIP 报告标记需要人工核查的评分，按标记状态集中查看"
             }
           },
           {
