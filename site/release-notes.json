@@ -329,9 +329,12 @@
   },
   "preview": {
     "source": "https://auto-update.aimarking.five-plus-one.com/ota/preview/manifest.json",
-    "version": "1.21.19.5-preview.103",
+    "version": "1.21.19.6-preview.104",
     "releaseDate": "2026-11-11",
     "changelog": {
+      "1.21.19.6": [
+        "【修复】AMEQP 核对全部作答题块所属答卷，图片地址无法确认时暂停自动给分"
+      ],
       "1.21.19.5": [
         "【修复】AMEQP 在平台给分过程中换卷时立即停止写分，保留新答卷的分数状态"
       ],
