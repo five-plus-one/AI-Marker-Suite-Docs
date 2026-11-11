@@ -2500,6 +2500,55 @@
     ]
   },
   {
+    "route": "/platforms/qiguang",
+    "title": "启光优测阅卷使用说明 | AI 批改助手",
+    "description": "在启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/qiguang",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/qiguang#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/qiguang",
+        "name": "启光优测阅卷使用说明 | AI 批改助手",
+        "description": "在启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "启光优测",
+            "item": "https://aimarking.five-plus-one.com/platforms/qiguang"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/qitian",
     "title": "七天网络适配 | AI 批改助手",
     "description": "AI批改助手七天网络适配器使用说明。支持7net.cc/qt7.net/qt7.cn旧版和yj5.7net.cc新UI两个阅卷平台，自动识别答题卡图片、AI智能评分、自动填分提交，包含Canvas渲染和API拦截技术方案。",
