@@ -2255,6 +2255,55 @@
     ]
   },
   {
+    "route": "/platforms/jzsmartedu",
+    "title": "焦作精准教学阅卷使用说明 | AI 批改助手",
+    "description": "从焦作智慧教育公共平台进入精准教学，在单份单评键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/jzsmartedu#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
+        "name": "焦作精准教学阅卷使用说明 | AI 批改助手",
+        "description": "从焦作智慧教育公共平台进入精准教学，在单份单评键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "焦作精准教学",
+            "item": "https://aimarking.five-plus-one.com/platforms/jzsmartedu"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/keewing",
     "title": "科耘阅卷适配 | AI 批改助手",
     "description": "AI批改助手科耘阅卷适配器使用说明。支持kaoshi.keewing.com阅卷平台SVG图片渲染、Element UI组件、延迟填分模式。包含技术特点、操作流程和常见问题解答。",

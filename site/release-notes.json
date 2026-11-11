@@ -329,9 +329,12 @@
   },
   "preview": {
     "source": "https://auto-update.aimarking.five-plus-one.com/ota/preview/manifest.json",
-    "version": "1.21.19.6-preview.104",
+    "version": "1.21.19.7-preview.105",
     "releaseDate": "2026-11-11",
     "changelog": {
+      "1.21.19.7": [
+        "【新平台】支持诊学网统考单份键盘阅卷，识别平台名称并按题目给分档位校验分数"
+      ],
       "1.21.19.6": [
         "【修复】AMEQP 核对全部作答题块所属答卷，图片地址无法确认时暂停自动给分"
       ],
