@@ -309,6 +309,7 @@ export default defineConfig({
             { text: '云阅卷(好分数)', link: '/platforms/haofenshuyize' },
             { text: '科耘阅卷', link: '/platforms/keewing' },
             { text: '启光优测（预览版）', link: '/platforms/qiguang' },
+            { text: '诊学网（预览版）', link: '/platforms/zhenxue' },
             { text: '光大阅卷V2', link: '/platforms/guangda-2' },
             { text: '威科姆(悦卷通)', link: '/platforms/weicom' },
             { text: 'C30教育云', link: '/platforms/c30' },

@@ -3333,6 +3333,55 @@
     ]
   },
   {
+    "route": "/platforms/zhenxue",
+    "title": "诊学网统考阅卷使用说明 | AI 批改助手",
+    "description": "在诊学网统考单份键盘阅卷页面使用 AI 批改助手，核对满分与给分档位，查看评分后确认提交。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/zhenxue",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/zhenxue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/zhenxue",
+        "name": "诊学网统考阅卷使用说明 | AI 批改助手",
+        "description": "在诊学网统考单份键盘阅卷页面使用 AI 批改助手，核对满分与给分档位，查看评分后确认提交。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "诊学网",
+            "item": "https://aimarking.five-plus-one.com/platforms/zhenxue"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/zhixue",
     "title": "智学网适配 | AI 批改助手",
     "description": "AI批改助手智学网适配器详细说明。支持zhixue.com阅卷页面自动识别答题卡、AI智能评分、自动填分提交、分小题评分、图片防盗链绕过。包含页面检测、操作流程和常见问题解答。",
