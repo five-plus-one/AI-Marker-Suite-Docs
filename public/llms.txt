@@ -1,144 +1,37 @@
 # AI 批改助手 (AI-Marker-Suite)
 
-> 基于多模态 AI 的在线阅卷自动批改工具。支持智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷等 33 个平台，自动识别手写答案并评分。
+> 开源的浏览器阅卷脚本，识别手写答案并按教师评分标准给分。支持 43 个阅卷平台，提供试改确认、连续批改、双评仲裁、分小题评分和历史导出。
 
-## 概述
+## 产品与使用范围
 
-AI 批改助手是一款开源的 Tampermonkey（油猴）用户脚本，运行在电脑端 Edge 浏览器中，能够自动完成在线阅卷平台上的主观题批改工作。它使用多模态 AI 视觉识别技术，从阅卷页面抓取学生答题卡图片，识别手写答案，根据教师设定的评分标准自动打分，并填入分数提交。脚本本身免费，AI 服务需付费使用。不支持手机端。
+- 官方文档：https://aimarking.five-plus-one.com/
+- 源代码：https://github.com/five-plus-one/AI-Marker-Suite
+- 许可证：GPL-3.0
+- 最新稳定版与更新说明：https://aimarking.five-plus-one.com/changelog
+- 在电脑浏览器中安装 Tampermonkey；推荐 Edge。手机可阅读文档，批改需使用电脑。
+- 脚本免费开源，AI 服务可能收费。所选服务必须能处理图片输入。
+- 教师制定评分标准并审核关键结果；首次使用建议试改。不同平台支持的任务范围以对应指南为准。
 
-- 官网: https://aimarking.five-plus-one.com
-- 源码: https://github.com/five-plus-one/AI-Marker-Suite
-- 许可证: GPL-3.0
-- 最新版本与更新说明: https://aimarking.five-plus-one.com/changelog
+## 功能与操作
 
-## 核心功能
-
-- **AI 自动评分**: 使用多模态 AI（支持图片输入）识别手写答案，根据评分标准打分，生成评语
-- **四种批改模式**: 普通模式（5秒倒计时）、试改模式（等待教师确认）、无人值守模式（1秒自动提交，错误自动重试）、双评模式（双模型仲裁）
-- **双评仲裁模式**: 两个 AI 模型独立评分，分差超阈值自动触发第三模型仲裁
-- **分小题评分**: 一道大题拆分为多个小题分别评分（如作文分内容/语言/结构）
-- **分数纠错**: 教师输入正确分数后，AI 自动分析评分差异原因并优化评分标准
-- **批阅份数**: 支持设置目标批阅份数，达到后自动暂停
-- **批改进度面板**: 支持拖动，可自由调整位置，避免遮挡网页原有内容
-- **多平台支持**: 智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆（悦卷通）、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷
-- **多服务商兼容**: 5+1 AI（推荐）、火山引擎、硅基流动等支持图片识别的多模态 AI 接口
-- **评阅历史**: 记录所有批改结果，支持筛选、导出 HTML/CSV/JSON/材料包ZIP（HTML 与材料包ZIP 支持有图/无图）
-- **预设方案管理**: 不同题目保存不同配置，支持 URL 绑定自动切换
-- **配置导入导出**: 全量 JSON 备份恢复，单个方案可单独导出/导入（含插入图片）
-- **评分理由编辑**: 支持手动编辑评分理由，Markdown 格式与预览
-- **勉励分**: 支持自定义勉励分规则，鼓励性加分不超过总分上限
-
-## 支持平台
-
-- 智学网 (zhixue.com)
-- 七天网络 (7net.cc / qt7.net / qt7.cn / yj5.7net.cc)
-- 好分数 (haofenshu.com)
-- 五岳阅卷 (wylkyj.com)
-- 阅小二 (haoyuejuan.com)
-- 华翰云 (yunyuejuan.net)
-- 光大阅卷 (pj.yixx.cn)
-- 云阅卷（内网部署）
-- 新教育 (xinjiaoyu.com)
-- 润建学情 (aisusheng.runjian.com)
-- 54学霸 (54xueba.cn)
-- 九科星 (marking.jkxjxw.com / jxp.jkxjxw.com)
-- 慧阅卷 (web.17yuejuan.cn)
-- 乐华阅卷 (main.lhsvr.cn)
-- 鑫考（内网部署，支持动态 IP）
-- 慧学星 (www.hxxai.com)
-- 粤教翔云 (rrtcp.gdedu.gov.cn)
-- 云阅卷(好分数) (haofenshuyize.com)
-- 科耘阅卷 (kaoshi.keewing.com)
-- 光大阅卷V2（IP:端口部署）
-- 威科姆/悦卷通 (wyna.onlyets.com)
-- C30教育云 (zy.iclass30.com)
-- AMEQP网上评卷（内网 IP 部署）
-- 海云智评 (zp.kaow.cn)
-- 鑫考(内网)（内网裸 IP 部署，/biluo/display.jsp）
-- 九五优评 (timesphoenix.com)
-- 上进教育服务云 (www.sipd.cn)
-- 南昊AI教学提分 (nhcisc.com)
-- 鑫考校园 (内网裸 IP:端口 /Marking/NormalReadPaper)
-- 酷鱼网 (www.kuyuu.cn)
-- A佳教育 (y.ajia.cn)
-- 云阅卷(开州) (yyj.kzedu.cn)
-- 正确阅卷 (www.yuejuan.com)
-
-## 安装方式
-
-1. 在电脑端 Edge 浏览器中安装 Tampermonkey 扩展（手机不支持）
-2. 在 Edge 浏览器中访问 https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js 一键安装脚本
-3. 在阅卷页面配置支持图片识别的 AI 服务的 API 密钥（推荐 5+1 AI，新用户有少量试用额度）
-4. 点击"AI 批改"按钮开始使用
-
-## 技术架构
-
-- 纯原生 JavaScript，无框架依赖
-- 模块化 + 适配器模式架构
-- Tampermonkey API (GM_xmlhttpRequest, GM_setValue)
-- IndexedDB 存储图片数据
-- SSE 流式输出 AI 响应
-- 构建工具: Node.js + Terser
+- 普通模式、试改模式、无人值守模式，双评工作流可与提交模式组合使用。
+- 双评合并支持平均后四舍五入、向下／向上取整到梯度、取低分与取高分，超过分差阈值进入仲裁。
+- 详细输出为默认值；实验性精简输出侧重分数，确认窗口说明省略项并展示本轮作答图片。
+- 题目、参考答案与评分标准可引用图片；参考资料与学生作答分别处理。
+- 历史导出支持 HTML、CSV、JSON 和材料包 ZIP；支持待回评标记，已提交分数的修改通过平台入口处理。
+- 多页面配置合并保存；同一内容发生冲突时保留编辑并提示核对。
+- 配置备份可能包含 API 密钥和图片，分享前应检查敏感信息。
 
 ## 文档页面
 
-- 项目介绍: https://aimarking.five-plus-one.com/guide/introduction
-- 安装教程: https://aimarking.five-plus-one.com/guide/installation
-- 快速上手: https://aimarking.five-plus-one.com/guide/quickstart
-- 常见问题: https://aimarking.five-plus-one.com/guide/faq
-- AI 接口配置: https://aimarking.five-plus-one.com/config/api-setup
-- 批改工作流: https://aimarking.five-plus-one.com/config/workflow
-- 评分规则: https://aimarking.five-plus-one.com/config/rubric
-- 预设方案管理: https://aimarking.five-plus-one.com/config/presets
-- 分小题配置: https://aimarking.five-plus-one.com/config/sub-questions
-- 公式语法指南: https://aimarking.five-plus-one.com/config/formula
-- 普通模式: https://aimarking.five-plus-one.com/modes/normal
-- 试改模式: https://aimarking.five-plus-one.com/modes/trial
-- 无人值守模式: https://aimarking.five-plus-one.com/modes/unattended
-- 双评模式: https://aimarking.five-plus-one.com/modes/dual
-- 智学网适配: https://aimarking.five-plus-one.com/platforms/zhixue
-- 七天网络适配: https://aimarking.five-plus-one.com/platforms/qitian
-- 好分数适配: https://aimarking.five-plus-one.com/platforms/haofenshu
-- 五岳阅卷适配: https://aimarking.five-plus-one.com/platforms/wuyue
-- 阅小二适配: https://aimarking.five-plus-one.com/platforms/haoyuejuan
-- 华翰云适配: https://aimarking.five-plus-one.com/platforms/hanhan
-- 光大阅卷适配: https://aimarking.five-plus-one.com/platforms/guangda
-- 云阅卷适配: https://aimarking.five-plus-one.com/platforms/yunyuejuan
-- 新教育适配: https://aimarking.five-plus-one.com/platforms/xinjiaoyu
-- 润建学情适配: https://aimarking.five-plus-one.com/platforms/runjian
-- 54学霸适配: https://aimarking.five-plus-one.com/platforms/xueba54
-- 九科星适配: https://aimarking.five-plus-one.com/platforms/jiukexing
-- 慧阅卷适配: https://aimarking.five-plus-one.com/platforms/huiyuejuan
-- 乐华阅卷适配: https://aimarking.five-plus-one.com/platforms/lehua
-- 鑫考适配: https://aimarking.five-plus-one.com/platforms/xinkao
-- 慧学星适配: https://aimarking.five-plus-one.com/platforms/huixuexing
-- 粤教翔云适配: https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun
-- 云阅卷(好分数)适配: https://aimarking.five-plus-one.com/platforms/haofenshuyize
-- 科耘阅卷适配: https://aimarking.five-plus-one.com/platforms/keewing
-- 光大阅卷V2适配: https://aimarking.five-plus-one.com/platforms/guangda-2
-- 威科姆(悦卷通)适配: https://aimarking.five-plus-one.com/platforms/weicom
-- C30教育云适配: https://aimarking.five-plus-one.com/platforms/c30
-- AMEQP网上评卷适配: https://aimarking.five-plus-one.com/platforms/ameqp
-- 海云智评适配: https://aimarking.five-plus-one.com/platforms/haiyun
-- 鑫考(内网)适配: https://aimarking.five-plus-one.com/platforms/xinkao-2
-- 九五优评适配: https://aimarking.five-plus-one.com/platforms/jiuwuyouping
-- 上进教育服务云适配: https://aimarking.five-plus-one.com/platforms/sipd
-- 南昊AI教学提分适配: https://aimarking.five-plus-one.com/platforms/nhcisc
-- 鑫考校园适配: https://aimarking.five-plus-one.com/platforms/xinkao-campus
-- 酷鱼网适配: https://aimarking.five-plus-one.com/platforms/kuyuu
-- A佳教育适配: https://aimarking.five-plus-one.com/platforms/ajia
-- 云阅卷(开州)适配: https://aimarking.five-plus-one.com/platforms/kzedu
-- 正确阅卷适配: https://aimarking.five-plus-one.com/platforms/yuejuan
-- 分数纠错: https://aimarking.five-plus-one.com/advanced/correction
-- 批改历史: https://aimarking.five-plus-one.com/advanced/history
-- 开发新适配器: https://aimarking.five-plus-one.com/advanced/adapter-dev
-- 工具页: https://aimarking.five-plus-one.com/tools
-- 帮助与反馈: https://aimarking.five-plus-one.com/support
-- 更新日志: https://aimarking.five-plus-one.com/changelog
+- [平台支持范围](https://aimarking.five-plus-one.com/platforms/)
+- [安装教程](https://aimarking.five-plus-one.com/guide/installation)
+- [快速上手](https://aimarking.five-plus-one.com/guide/quickstart)
+- [项目介绍](https://aimarking.five-plus-one.com/guide/introduction)
 
 ## 社群与友情链接
 
-- 微信交流群: https://r-l.ink/s/L9Akf
-- QQ 交流群: https://r-l.ink/s/WbMrR
-- 五加一官网: https://five-plus-one.com/
-- 5+1 AI 服务: https://api.ai.five-plus-one.com/
+- [微信交流群](https://r-l.ink/s/L9Akf)
+- [QQ 交流群](https://r-l.ink/s/WbMrR)
+- [五加一官网](https://five-plus-one.com/)
+- [5+1 AI 服务](https://api.ai.five-plus-one.com/)

@@ -46,7 +46,7 @@ npm run indexnow
 │   ├── trial.md            # 试改模式
 │   ├── unattended.md       # 无人值守模式
 │   └── dual.md             # 双评模式
-├── platforms/       # 平台适配（38 页 / 39 个适配器）
+├── platforms/       # 平台适配（43 页 / 43 个适配器；七天新旧界面、九科星考试作业分别适配，睿芽与恒佳共用适配器）
 │   ├── index.md            # 平台对比与快速导航
 │   ├── zhixue.md           # 智学网
 │   ├── qitian.md           # 七天网络
@@ -71,7 +71,12 @@ npm run indexnow
 │   ├── c30.md              # C30教育云
 │   ├── ameqp.md            # AMEQP网上评卷
 │   ├── haiyun.md           # 海云智评
-│   └── xinkao-2.md         # 鑫考(内网)
+│   ├── xinkao-2.md         # 鑫考(内网)
+│   ├── dongni.md           # 懂你系统
+│   ├── xkw.md              # 学科网 e卷通
+│   ├── qiguang.md          # 启光优测
+│   ├── zhenxue.md          # 诊学网
+│   └── jzsmartedu.md       # 焦作精准教学
 ├── advanced/        # 进阶功能
 │   ├── index.md            # 概述
 │   ├── correction.md       # 分数纠错
@@ -130,3 +135,18 @@ npm run indexnow
 SEO 与生成式搜索的内容发现遵循 [Google AI 功能说明](https://developers.google.com/search/docs/appearance/ai-features)、[网址迁移指南](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes)和[重定向说明](https://developers.google.com/search/docs/crawling-indexing/301-redirects)。可抓取正文、规范链接与准确结构化数据是主要依据，llms 文件是辅助入口；搜索收录和 AI 引用由各平台决定。
 
 更新日志使用共享 ReleaseNotes 分类展示当前稳定版与预览版相对稳定版新增的变化；数值版本排序、稳定版基线筛选与内容去重在构建和浏览器刷新时采用同一逻辑。历史稳定版本集中收纳，历史书签打开对应版本；预览版已包含在稳定版的内容自动归入稳定版。
+
+## 稳定版配套内容同步
+
+当前配套版本：**1.21.20.0**（2026-11-12），支持 **43 个平台**。
+
+每次稳定版发布后，按以下顺序更新：
+
+1. 核对稳定版 OTA manifest、GitHub Release 与该 tag 的实际功能和平台范围。
+2. 更新主项目 README 的版本、平台清单、功能摘要和更新记录，以及 GitHub 仓库简介。
+3. 更新项目介绍、平台指南、FAQ 和受影响的配置说明，核对稳定版安装入口与任务限制。
+4. 运行构建刷新 `site/release-notes.json`；`site/product.mjs` 统一提供版本、平台名称和产品摘要，供首页、SEO 与 AI 可读文档使用。
+5. 在根路径和 GitHub Pages 子路径执行构建、`npm run check` 与 `npm run check:http`，检查桌面与手机宽度、深浅色、链接、搜索摘要和 AI 可读文档。
+6. 从 docs-dev 向 main 提交 PR，生产发布由仓库工作流完成；部署后检查规范链接、更新日志与发现文件。
+
+更改平台支持范围时，同步 `site/product.mjs`、平台目录、项目介绍、FAQ、主项目 README 与仓库简介。预览版增量以对应渠道的 manifest 为准。
