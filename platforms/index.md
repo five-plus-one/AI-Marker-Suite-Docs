@@ -1,12 +1,18 @@
 ---
 title: 支持平台 - AI 批改助手
-description: AI批改助手支持的38个在线阅卷平台，包括智学网、七天网络、好分数、五岳阅卷、阅小二、华翰云、光大阅卷、云阅卷、新教育、润建学情、54学霸、九科星、慧阅卷、乐华阅卷、鑫考、慧学星、粤教翔云、云阅卷(好分数)、科耘阅卷、光大阅卷V2、威科姆(悦卷通)、C30教育云、AMEQP网上评卷、海云智评、鑫考(内网)、九五优评、上进教育服务云、南昊AI教学提分、鑫考校园、酷鱼网、A佳教育、云阅卷(开州)、正确阅卷、精斗云(大数据精准教学)、小帆智能阅卷、睿芽考试服务云、恒佳考试服务云、云阅卷(华翰云)。一个脚本适配所有平台，自动检测当前平台并加载对应适配器。
-keywords: AI批改助手,支持平台,智学网,七天网络,好分数,五岳阅卷,阅小二,华翰云,光大阅卷,云阅卷,新教育,润建学情,54学霸,九科星,慧阅卷,乐华阅卷,鑫考,慧学星,粤教翔云,云阅卷好分数,科耘阅卷,光大阅卷V2,威科姆,悦卷通,C30教育云,iclass30,onlyets,AMEQP,AMEQP网上评卷,海云智评,zp.kaow.cn,鑫考内网,鑫考内网版,biluo,九五优评,timesphoenix,上进教育,智慧上进,sipd.cn,南昊,nhcisc,南昊AI教学提分平台,鑫考校园,酷鱼网,kuyuu,xinkao-campus,NormalReadPaper,A佳教育,ajia,y.ajia.cn,云阅卷开州,kzedu,yyj.kzedu.cn,正确阅卷,yuejuan,www.yuejuan.com,精斗云,大数据精准教学,jingdouyun,exam.wxy100.com,小帆智能阅卷,小帆科技,xfkj,xfkj.cc,睿芽,睿芽考试服务云,ruiya,ruiya.onlyets.com,恒佳,恒佳考试服务云,yuejuan51,x.yuejuan51.com,云阅卷华翰云,huahanyun,yj.lcedu.net.cn,鹿城云阅卷,阅卷平台,自动批改,智能阅卷,在线阅卷
+description: 查看 AI 批改助手稳定版支持的 43 个阅卷平台，查找智学网、七天网络、九科星、学科网 e卷通、启光优测、诊学网和焦作精准教学的使用范围与操作指南。
+keywords: AI批改助手,AI阅卷,手写识别,双评仲裁,智学网,七天网络,九科星,学科网e卷通,懂你系统,启光优测,诊学网,焦作精准教学,Tampermonkey
 ---
 
 # 支持平台
 
-AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚本即可在所有支持的平台上使用。
+<span id="预览版新增平台" class="fp-anchor-alias" aria-hidden="true"></span>
+
+## 稳定版平台支持
+
+当前稳定版 **1.21.20.0** 支持 **43 个阅卷平台**。启光优测、诊学网统考阅卷和焦作精准教学可安装稳定版使用；懂你系统和学科网 e卷通也已提供平台指南。
+
+各平台支持的任务类型、给分方式和提交要求不同，首次使用请先阅读对应指南，再用试改模式核对。
 
 ::: info 移动端用户
 如果你在手机上浏览，可以点击页面左上角的 **☰ 菜单按钮** 展开侧边目录，在各章节之间切换。
@@ -16,13 +22,51 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 
 ## 平台对比
 
-| | 智学网 | 七天网络 | 好分数 | 五岳阅卷 | 阅小二 | 华翰云 | 光大阅卷 | 云阅卷 | 新教育 | 润建学情 | 54学霸 | 九科星 | 慧阅卷 | 乐华阅卷 | 鑫考 | 慧学星 | 粤教翔云 | 云阅卷(好分数) | 科耘阅卷 | 光大阅卷V2 | 威科姆(悦卷通) | C30教育云 | AMEQP网上评卷 | 海云智评 | 鑫考(内网) | 九五优评 | 上进教育服务云 | 南昊AI教学提分 | 鑫考校园 | 酷鱼网 | A佳教育 | 云阅卷(开州) | 正确阅卷 | 精斗云(大数据精准教学) | 小帆智能阅卷 | 睿芽考试服务云 | 恒佳考试服务云 | 云阅卷(华翰云) |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 网址 | zhixue.com | 7net.cc / qt7.net / qt7.cn | haofenshu.com | wylkyj.com | haoyuejuan.com | yunyuejuan.net | pj.yixx.cn | 内网部署 | xinjiaoyu.com | aisusheng.runjian.com | 54xueba.cn | marking.jkxjxw.com / jxp.jkxjxw.com | web.17yuejuan.cn | main.lhsvr.cn | 内网部署 | www.hxxai.com | rrtcp.gdedu.gov.cn | haofenshuyize.com | kaoshi.keewing.com | IP:端口 | wyna.onlyets.com | zy.iclass30.com | 内网 IP 部署 | zp.kaow.cn | 内网裸 IP /biluo/display.jsp | timesphoenix.com | www.sipd.cn | nhcisc.com | 内网裸 IP:端口 /Marking/NormalReadPaper | www.kuyuu.cn | y.ajia.cn | yyj.kzedu.cn | www.yuejuan.com | exam.wxy100.com | xfkj.cc（租户子域） | ruiya.onlyets.com | x.yuejuan51.com | yj.lcedu.net.cn |
-| 适配状态 | 完整支持 | 完整支持（含新旧 UI） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持（考试+作业） | 完整支持 | 完整支持 | 完整支持 | 完整支持 | 完整支持（题组批改） | 完整支持 | 完整支持 | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持（多评分单元） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（分给分点） | 完整支持 | 完整支持（多小题） | 完整支持（多小题） | 完整支持 | 完整支持（多小题） | 完整支持 | 完整支持 | 完整支持（按题批阅） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（多小题） | 完整支持（单题块单分框） |
-| 答题卡渲染 | `<img>` 标签 | `<img>` / Canvas | SVG `<image>` | `<img>` 标签 | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | Canvas | `<img>` 标签 | Canvas / API | CSS background-image | Canvas + base64 img | OBS 裁剪图 | `<img>` 标签 | Canvas | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | `<img>` 标签 | SVG `<image>` | Canvas | `<img>` 标签（OSS） | Canvas | `<img>` 标签（题块裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签 | `<img>` 标签（多页） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（showimage 裁剪） | `<img>` 标签（token 图） | Canvas（ems-imageview） | `<img>` 标签（按题裁剪） | `<img>` 标签（SVG 批注） | `<img>` 标签 | `<img>` 标签（按题渲染） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（OSS 裁剪） | `<img>` 标签（OBS 题块裁剪） |
-| 分数输入 | 输入框 | 输入框 | 输入框 | 输入框 | 输入框（多小题） | 输入框 | 点击选择 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框（多小题/单题） | 点击按钮 | 点击按钮 | 输入框 | 输入框（分步骤） | 输入框 | 输入框 | 输入框 | 点击选择 | 输入框（多小题） | 输入框 + 快捷按钮 | 输入框（多评分单元） | 输入框（多小题） | 输入框（多小题） | 输入框（给分点） | 输入框（多小题） | 输入框（多小题） | 输入框（多小题） | 输入框（键模式） | 输入框（行级） | 点击按钮 + 只读框 | 点击按钮 + 输入框 | 输入框（ng-model） | 输入框（多小题） | 输入框（多小题） | 输入框（多小题） | 输入框（单题块单分框） |
-| 批改流程 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 自动提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 自动提交 | 识别 → 打分 → 填入（同步隐藏字段） → 提交 | 识别 → 打分 → 填入 → 确认弹窗提交 | 识别 → 打分 → 填入 → 键盘确认提交 | 识别 → 打分 → 填入 → 确认弹窗提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 键盘确认提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 确定自动翻卷 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 点击 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 | 识别 → 打分 → 填入 → 提交 |
+| 平台 | 入口 | 使用说明 |
+|---|---|---|
+| [智学网](/platforms/zhixue) | zhixue.com | 评分与提交要求见平台指南 |
+| [七天网络](/platforms/qitian) | 7net.cc / qt7.net / qt7.cn | 评分与提交要求见平台指南 |
+| [好分数](/platforms/haofenshu) | haofenshu.com | 评分与提交要求见平台指南 |
+| [五岳阅卷](/platforms/wuyue) | wylkyj.com | 评分与提交要求见平台指南 |
+| [阅小二](/platforms/haoyuejuan) | haoyuejuan.com | 评分与提交要求见平台指南 |
+| [华翰云](/platforms/hanhan) | yunyuejuan.net | 评分与提交要求见平台指南 |
+| [光大阅卷](/platforms/guangda) | pj.yixx.cn | 评分与提交要求见平台指南 |
+| [云阅卷](/platforms/yunyuejuan) | 内网部署 | 评分与提交要求见平台指南 |
+| [新教育](/platforms/xinjiaoyu) | xinjiaoyu.com | 评分与提交要求见平台指南 |
+| [润建学情](/platforms/runjian) | aisusheng.runjian.com | 评分与提交要求见平台指南 |
+| [54学霸](/platforms/xueba54) | 54xueba.cn | 评分与提交要求见平台指南 |
+| [九科星](/platforms/jiukexing) | marking.jkxjxw.com / jxp.jkxjxw.com | 考试阅卷；作业系统按题批阅 |
+| [慧阅卷](/platforms/huiyuejuan) | web.17yuejuan.cn | 评分与提交要求见平台指南 |
+| [乐华阅卷](/platforms/lehua) | main.lhsvr.cn | 评分与提交要求见平台指南 |
+| [鑫考](/platforms/xinkao) | 内网部署 | 评分与提交要求见平台指南 |
+| [慧学星](/platforms/huixuexing) | www.hxxai.com | 评分与提交要求见平台指南 |
+| [粤教翔云](/platforms/yuejiaoxiangyun) | rrtcp.gdedu.gov.cn | 题组批改 |
+| [云阅卷(好分数)](/platforms/haofenshuyize) | haofenshuyize.com | 评分与提交要求见平台指南 |
+| [科耘阅卷](/platforms/keewing) | kaoshi.keewing.com | 评分与提交要求见平台指南 |
+| [光大阅卷V2](/platforms/guangda-2) | IP:端口 | 评分与提交要求见平台指南 |
+| [威科姆(悦卷通)](/platforms/weicom) | wyna.onlyets.com | 评分与提交要求见平台指南 |
+| [C30教育云](/platforms/c30) | zy.iclass30.com | 评分与提交要求见平台指南 |
+| [AMEQP网上评卷](/platforms/ameqp) | 内网 IP 部署 | 单题或多评分单元；等待完整答卷后提交 |
+| [海云智评](/platforms/haiyun) | zp.kaow.cn | 评分与提交要求见平台指南 |
+| [鑫考(内网)](/platforms/xinkao-2) | 内网裸 IP /biluo/display.jsp | 评分与提交要求见平台指南 |
+| [九五优评](/platforms/jiuwuyouping) | timesphoenix.com | 评分与提交要求见平台指南 |
+| [上进教育服务云](/platforms/sipd) | www.sipd.cn | 评分与提交要求见平台指南 |
+| [南昊AI教学提分](/platforms/nhcisc) | nhcisc.com | 评分与提交要求见平台指南 |
+| [鑫考校园](/platforms/xinkao-campus) | 内网裸 IP:端口 /Marking/NormalReadPaper | 评分与提交要求见平台指南 |
+| [酷鱼网](/platforms/kuyuu) | www.kuyuu.cn | 评分与提交要求见平台指南 |
+| [A佳教育](/platforms/ajia) | y.ajia.cn | 评分与提交要求见平台指南 |
+| [云阅卷(开州)](/platforms/kzedu) | yyj.kzedu.cn | 评分与提交要求见平台指南 |
+| [正确阅卷](/platforms/yuejuan) | www.yuejuan.com | 评分与提交要求见平台指南 |
+| [精斗云(大数据精准教学)](/platforms/jingdouyun) | exam.wxy100.com | 评分与提交要求见平台指南 |
+| [小帆智能阅卷](/platforms/xfkj) | xfkj.cc（租户子域） | 评分与提交要求见平台指南 |
+| [睿芽考试服务云](/platforms/ruiya) | ruiya.onlyets.com | 评分与提交要求见平台指南 |
+| [恒佳考试服务云](/platforms/yuejuan51) | x.yuejuan51.com | 评分与提交要求见平台指南 |
+| [云阅卷(华翰云)](/platforms/huahanyun) | yj.lcedu.net.cn | 单题块、单分框 |
+| [懂你系统](/platforms/dongni) | dongni100.com | 按题批改；首次使用先试改核对 |
+| [学科网 e卷通](/platforms/xkw) | yuejuan.xkw.com | 按题批改，支持多小题给分 |
+| [启光优测](/platforms/qiguang) | 学校阅卷地址 | 单份键盘阅卷 |
+| [诊学网](/platforms/zhenxue) | 学校门户 → 统考阅卷 | 统考单份键盘给分 |
+| [焦作精准教学](/platforms/jzsmartedu) | jzsmartedu.cn → 精准教学 | 单份单评，默认评分板或键盘打分 |
 
 ## 快速导航
 
@@ -65,6 +109,12 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 37. **[恒佳考试服务云](/platforms/yuejuan51)** — 恒佳适配说明，与睿芽同构（OnlyETS 租户）多租户支持
 38. **[云阅卷(华翰云)](/platforms/huahanyun)** — 云阅卷(华翰云)平台的适配说明，单题块单分框批改流
 
+39. **[懂你系统](/platforms/dongni)** — 按题批改；首次使用先试改核对
+40. **[学科网 e卷通](/platforms/xkw)** — 按题批改，支持多小题给分
+41. **[启光优测](/platforms/qiguang)** — 单份键盘阅卷
+42. **[诊学网](/platforms/zhenxue)** — 统考单份键盘给分
+43. **[焦作精准教学](/platforms/jzsmartedu)** — 单份单评，默认评分板或键盘打分
+
 <CardGrid>
 <Card title="智学网" href="/platforms/zhixue" description="智学网平台的适配说明，包括页面识别和操作流程" />
 <Card title="七天网络" href="/platforms/qitian" description="七天网络平台的适配说明，支持新旧两种 UI 界面" />
@@ -103,6 +153,11 @@ AI 批改助手通过适配器模式支持多个在线阅卷平台。一个脚�
 <Card title="小帆智能阅卷" href="/platforms/xfkj" description="小帆智能阅卷适配说明，OSS 裁剪答题卡多页取图、多小题满分提取和图片路径变化翻卷检测" />
 <Card title="睿芽考试服务云" href="/platforms/ruiya" description="睿芽适配说明，OSS 题块裁剪图、多小题键盘打分和密号/图片/data-stu 三重翻卷检测" />
 <Card title="恒佳考试服务云" href="/platforms/yuejuan51" description="恒佳适配说明，与睿芽同构（OnlyETS 租户）多租户支持" />
+<Card title="懂你系统" href="/platforms/dongni" description="按题批改；首次使用先试改核对" />
+<Card title="学科网 e卷通" href="/platforms/xkw" description="按题批改，支持多小题给分" />
+<Card title="启光优测" href="/platforms/qiguang" description="单份键盘阅卷" />
+<Card title="诊学网" href="/platforms/zhenxue" description="统考单份键盘给分" />
+<Card title="焦作精准教学" href="/platforms/jzsmartedu" description="单份单评，默认评分板或键盘打分" />
 </CardGrid>
 
 ::: tip 关于适配器
