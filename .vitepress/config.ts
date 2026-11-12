@@ -301,6 +301,7 @@ export default defineConfig({
             { text: '启光优测', link: '/platforms/qiguang' },
             { text: '诊学网', link: '/platforms/zhenxue' },
             { text: '焦作精准教学', link: '/platforms/jzsmartedu' },
+            { text: '文通云（预览）', link: '/platforms/wentongyun' },
             { text: '光大阅卷V2', link: '/platforms/guangda-2' },
             { text: '威科姆(悦卷通)', link: '/platforms/weicom' },
             { text: 'C30教育云', link: '/platforms/c30' },

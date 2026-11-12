@@ -23,8 +23,14 @@ for(const page of report){const file=path.join(root,page.route==='/'?'index.html
 console.log(`SEO verified: ${report.length} pages; ${report.filter(p=>p.indexable).length} indexable; titles, descriptions, canonical, social previews, schema and sitemap.`);
 
 const platforms=load(await fs.readFile(root+'/platforms/index.html','utf8'));
-assert.equal(platforms('.vp-doc table tbody tr').length,platformNames.length,'Every stable platform has a catalogue row');
+const stableRows=platforms('#平台对比').nextUntil('h2').find('table tbody tr');
+assert.equal(stableRows.length,platformNames.length,'Every stable platform has a catalogue row');
+const {base}=JSON.parse(await fs.readFile(root+'/release.json','utf8'));
+const previewPath=base+'platforms/wentongyun';
+assert(platforms('.vp-doc a[href]').toArray().some(el=>
+ new URL(platforms(el).attr('href'),'https://local.test'+base+'platforms/').pathname.replace(/\.html$/,'')===previewPath
+),'Preview catalogue links to 文通云');
 for(const name of platformNames)assert(platforms('.vp-doc').text().includes(name),'Platform documented: '+name);
 const llms=await fs.readFile(root+'/llms.txt','utf8');
 assert(llms.includes(stableRelease.version),'AI discovery uses stable release version');
-for(const slug of ['dongni','xkw','qiguang','zhenxue','jzsmartedu'])assert(llms.includes('/platforms/'+slug),'AI discovery includes '+slug);
+for(const slug of ['dongni','xkw','qiguang','zhenxue','jzsmartedu','wentongyun'])assert(llms.includes('/platforms/'+slug),'AI discovery includes '+slug);
