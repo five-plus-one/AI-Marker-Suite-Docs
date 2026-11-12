@@ -1,9 +1,12 @@
 {
   "stable": {
     "source": "https://auto-update.aimarking.five-plus-one.com/ota/manifest.json",
-    "version": "1.21.21.0",
+    "version": "1.21.22.0",
     "releaseDate": "2026-11-12",
     "changelog": {
+      "1.21.22": [
+        "【修复】多小题评分完整解析给分算式，按小题明细汇总总分，并统一单评、双评和仲裁结果"
+      ],
       "1.21.21": [
         "【修复】好分数兼容原始裁剪答题卡图片，恢复取图并统一答卷标识与换卷判断"
       ],
