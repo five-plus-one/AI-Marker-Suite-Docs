@@ -9,7 +9,7 @@ export function applyPageSeo($,{route,title,article,groups,base}){
   '/README':'AI 批改助手文档站的本地开发、目录结构、部署流程与项目链接，提供面向维护者的文档站仓库说明。',
   '/':productDescription,
   '/guide/introduction':`了解 AI 批改助手 v${stableRelease.version} 稳定版的工作方式与核心功能。支持 ${platformCount} 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。`,
-  '/platforms/':`查看 AI 批改助手稳定版支持的 ${platformCount} 个阅卷平台，查找智学网、七天网络、九科星、学科网 e卷通、启光优测、诊学网和焦作精准教学的使用指南。`,
+  '/platforms/':`查看 AI 批改助手稳定版支持的 ${platformCount} 个阅卷平台，按名称查找平台入口、使用指南、评分方式与操作要求。`,
   '/feedback/thankyou':'感谢你为 AI 批改助手提供反馈。查看后续交流方式，或返回文档首页继续阅读。',
   '/404':'此页面暂时无法找到。请返回 AI 批改助手文档首页，或搜索安装、配置与阅卷平台指南。',
   '/tools':'AI 批改助手的实用工具入口。安装并启用脚本后，查看评阅历史、检查脚本更新与管理设置。'
