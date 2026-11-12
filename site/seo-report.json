@@ -483,7 +483,7 @@
   {
     "route": "/config/sub-questions",
     "title": "分小题配置 | AI 批改助手",
-    "description": "将大题拆分为多个小题分别评分。支持作文分内容/语言/结构评分，解答题分小问评分，自动检测页面小题输入框。",
+    "description": "根据阅卷页面实际评分框配置各小题的标签、满分与给分步长，核对分项得分和总分。",
     "canonical": "https://aimarking.five-plus-one.com/config/sub-questions",
     "indexable": true,
     "schemas": [
@@ -497,7 +497,7 @@
         "@id": "https://aimarking.five-plus-one.com/config/sub-questions#page",
         "url": "https://aimarking.five-plus-one.com/config/sub-questions",
         "name": "分小题配置 | AI 批改助手",
-        "description": "将大题拆分为多个小题分别评分。支持作文分内容/语言/结构评分，解答题分小问评分，自动检测页面小题输入框。",
+        "description": "根据阅卷页面实际评分框配置各小题的标签、满分与给分步长，核对分项得分和总分。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
