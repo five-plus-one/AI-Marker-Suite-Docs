@@ -10,11 +10,7 @@ AI 批改助手通过 OpenAI 兼容的 `/v1/chat/completions` 接口与 AI 服�
 ::: danger 必须使用支持图片识别的模型
 AI 批改助手的核心功能是**识别手写答案图片**，因此所选模型**必须支持图片输入（多模态）**。
 
-以下模型**不能使用**：
-- DeepSeek 的纯文本模型（deepseek-chat、deepseek-coder 等）
-- 其他任何不支持图片输入的纯文本模型
-
-使用纯文本模型会导致 AI 无法看到答题卡图片，只能"猜"答案，评分结果毫无意义。
+仅支持文本的端点不适用于答题卡图片阅卷。使用自定义供应商时，请检查端点与所选模型的图片处理能力；5+1 AI 内置模型按其服务配置使用。
 :::
 
 ## 推荐：5+1 AI
@@ -24,7 +20,7 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 | 配置项 | 值 |
 |-------|---|
 | 端点 | `https://api.ai.five-plus-one.com/v1/chat/completions`（脚本内置，无需手动填写） |
-| 模型 | `aimarker-fast`（脚本内置，无需手动填写） |
+| 模型 | 默认 `aimarker-fast`；另有 `aimarker-pro` 与 DeepSeek Flash 可在工作流中选择 |
 | API KEY | [注册获取](https://api.ai.five-plus-one.com/keys) |
 
 ### 获取步骤

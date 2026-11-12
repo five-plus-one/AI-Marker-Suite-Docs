@@ -1,3 +1,4 @@
+import {platformNames,stableRelease} from './product.mjs';
 import fs from 'node:fs/promises';
 import {load} from 'cheerio';
 import {escapeHtml} from './changelog.mjs';
@@ -11,7 +12,7 @@ export async function buildDiscovery({out,base,seo}){
   await fs.writeFile(out+redirect.from+'.html',`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(redirect.title)}</title><link rel="canonical" href="${canonical}"><meta name="robots" content="noindex,follow"><script>${script}</script><meta http-equiv="refresh" content="0;url=${target}"></head><body><main><h1>评阅历史工具</h1><p>请前往<a href="${target}">工具页面</a>查看评阅历史。</p></main></body></html>`);
  }
  const pages=seo.filter(p=>p.indexable),source=await fs.readFile('public/llms.txt','utf8');
- const lead=source.split('## 文档页面')[0],tail=source.includes('## 社群与友情链接')?'## 社群与友情链接'+source.split('## 社群与友情链接')[1]:'';
+ const lead=source.split('## 文档页面')[0]+`## 当前稳定版\n\n- 版本：${stableRelease.version}\n- 发布日期：${stableRelease.releaseDate}\n- 支持平台（${platformNames.length} 个）：${platformNames.join('、')}。\n- 稳定版安装：https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js\n\n`,tail=source.includes('## 社群与友情链接')?'## 社群与友情链接'+source.split('## 社群与友情链接')[1]:'';
  const entries=pages.map(page=>`- [${page.title.replace(/ \| AI 批改助手$/,'')}](${page.canonical}): ${page.description}`).join('\n');
  await fs.writeFile(out+'/llms.txt',`${lead}## 文档页面\n\n${entries}\n\n## 完整文档\n\n- [AI 批改助手完整文档](${origin}/llms-full.txt)：按页面整理的可读正文，以各页规范链接为准。\n\n${tail}`);
  const full=['# AI 批改助手完整文档','',`文档站：${origin}/`,'','脚本本身开源免费；AI 服务可能收费。脚本运行在电脑浏览器，不支持手机批改。',''];
