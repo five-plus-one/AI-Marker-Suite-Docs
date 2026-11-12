@@ -25,7 +25,11 @@ console.log(`SEO verified: ${report.length} pages; ${report.filter(p=>p.indexabl
 const platforms=load(await fs.readFile(root+'/platforms/index.html','utf8'));
 const stableRows=platforms('#平台对比').nextUntil('h2').find('table tbody tr');
 assert.equal(stableRows.length,platformNames.length,'Every stable platform has a catalogue row');
-assert.equal(platforms('a[href="./wentongyun.html"],a[href="/platforms/wentongyun.html"],a[href="/platforms/wentongyun"]').length>0,true,'Preview catalogue links to 文通云');
+const {base}=JSON.parse(await fs.readFile(root+'/release.json','utf8'));
+const previewPath=base+'platforms/wentongyun';
+assert(platforms('.vp-doc a[href]').toArray().some(el=>
+ new URL(platforms(el).attr('href'),'https://local.test'+base+'platforms/').pathname.replace(/\.html$/,'')===previewPath
+),'Preview catalogue links to 文通云');
 for(const name of platformNames)assert(platforms('.vp-doc').text().includes(name),'Platform documented: '+name);
 const llms=await fs.readFile(root+'/llms.txt','utf8');
 assert(llms.includes(stableRelease.version),'AI discovery uses stable release version');
