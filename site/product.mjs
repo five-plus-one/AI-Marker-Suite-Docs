@@ -47,5 +47,5 @@ export const platformNames = [
 ];
 export const platformCount = platformNames.length;
 export const stableRelease = releases.stable;
-export const productDescription = `AI 批改助手是开源的浏览器阅卷脚本，支持智学网、七天网络、好分数、九科星、学科网 e卷通、启光优测、诊学网等 ${platformCount} 个平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。`;
+export const productDescription = `AI 批改助手是开源的浏览器阅卷脚本，支持 ${platformCount} 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。`;
 export const productFeatures = ['手写答案识别与按标准评分', '普通、试改、无人值守与双评仲裁', '双评合并策略与自定义给分步长', '参考图片与学生答卷分别识别', '精简输出（实验性）', '评阅历史与 HTML、CSV、JSON、材料包 ZIP 导出', '方案管理与配置备份'];
