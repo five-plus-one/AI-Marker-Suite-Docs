@@ -292,6 +292,7 @@ export default defineConfig({
             { text: '慧阅卷', link: '/platforms/huiyuejuan' },
             { text: '乐华阅卷', link: '/platforms/lehua' },
             { text: '鑫考', link: '/platforms/xinkao' },
+            { text: '天喻慧学（预览版）', link: '/platforms/huixue' },
             { text: '慧学星', link: '/platforms/huixuexing' },
             { text: '粤教翔云', link: '/platforms/yuejiaoxiangyun' },
             { text: '云阅卷(好分数)', link: '/platforms/haofenshuyize' },
