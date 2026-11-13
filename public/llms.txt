@@ -24,7 +24,7 @@
 
 ## 预览版平台
 
-- 园丁邦云阅卷：1.21.23.6 预览版，支持普通单评、键盘给分及得分点校验。指南：https://aimarking.five-plus-one.com/platforms/yuandingbang
+- 园丁邦云阅卷：通过最新预览版提供支持，支持普通单评、键盘给分及得分点校验。指南：https://aimarking.five-plus-one.com/platforms/yuandingbang
 
 ## 文档页面
 
