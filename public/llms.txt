@@ -24,6 +24,8 @@
 
 ## 预览版平台
 
+- 小闲 AI 网上阅卷：通过最新预览版提供支持，适用于普通单题、单份答卷的键盘给分，按合法分值与步进检查分数，确认保存后继续。开始前关闭平台自动提交并先试改。指南：https://aimarking.five-plus-one.com/platforms/xiaoxianai
+
 - 园丁邦云阅卷：通过最新预览版提供支持，支持普通单评、键盘给分及得分点校验。指南：https://aimarking.five-plus-one.com/platforms/yuandingbang
 
 ## 文档页面
