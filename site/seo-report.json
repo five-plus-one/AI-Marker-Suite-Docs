@@ -820,6 +820,14 @@
           },
           {
             "@type": "Question",
+            "name": "园丁邦云阅卷如何使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "请使用包含园丁邦适配的 1.21.23.5 预览版，进入普通单评的键盘给分页，核对得分点满分、步长和参考答案后先试改。具体操作见园丁邦云阅卷指南。"
+            }
+          },
+          {
+            "@type": "Question",
             "name": "支持哪些阅卷平台？",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -3299,6 +3307,55 @@
             "position": 3,
             "name": "54学霸",
             "item": "https://aimarking.five-plus-one.com/platforms/xueba54"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/yuandingbang",
+    "title": "园丁邦云阅卷使用说明 | AI 批改助手",
+    "description": "在园丁邦云阅卷的普通单评任务中使用 AI 批改助手，选择键盘给分，核对得分点、满分及给分步长，试改确认后开始连续批改。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/yuandingbang",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/yuandingbang#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/yuandingbang",
+        "name": "园丁邦云阅卷使用说明 | AI 批改助手",
+        "description": "在园丁邦云阅卷的普通单评任务中使用 AI 批改助手，选择键盘给分，核对得分点、满分及给分步长，试改确认后开始连续批改。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "园丁邦云阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/yuandingbang"
           }
         ]
       }

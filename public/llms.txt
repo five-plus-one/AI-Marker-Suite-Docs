@@ -22,6 +22,10 @@
 - 多页面配置合并保存；同一内容发生冲突时保留编辑并提示核对。
 - 配置备份可能包含 API 密钥和图片，分享前应检查敏感信息。
 
+## 预览版平台
+
+- 园丁邦云阅卷：1.21.23.5 预览版，支持普通单评、键盘给分及得分点校验。指南：https://aimarking.five-plus-one.com/platforms/yuandingbang
+
 ## 文档页面
 
 - [平台支持范围](https://aimarking.five-plus-one.com/platforms/)
