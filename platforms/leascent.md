@@ -6,7 +6,7 @@ keywords: 丽升阅卷,LeaScent,铜山高二,英语阅卷,打分板,AI批改助�
 
 # 丽升阅卷
 
-丽升阅卷适配通过**开发测试版**提供，适用于铜山高二选择考的英语填空与写作任务。首次使用请先试改，核对评分结果后再提交。
+丽升阅卷适配通过[预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)提供，适用于铜山高二选择考的英语填空与写作任务。首次使用请先试改，核对评分结果后再提交。
 
 ## 开始使用
 

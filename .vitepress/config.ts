@@ -320,7 +320,7 @@ export default defineConfig({
             { text: '睿芽考试服务云', link: '/platforms/ruiya' },
             { text: '恒佳考试服务云', link: '/platforms/yuejuan51' },
             { text: '小闲 AI 网上阅卷（预览版）', link: '/platforms/xiaoxianai' },
-            { text: '丽升阅卷（开发测试版）', link: '/platforms/leascent' },
+            { text: '丽升阅卷（预览版）', link: '/platforms/leascent' },
             { text: '园丁邦云阅卷（预览版）', link: '/platforms/yuandingbang' },
           ],
         },
