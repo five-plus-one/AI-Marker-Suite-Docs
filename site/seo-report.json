@@ -849,6 +849,14 @@
               "@type": "Answer",
               "text": "完整支持列表见上一条（也可查看 支持平台 页面）。如果你需要适配其他平台，请 联系作者 或参考 开发新适配器 自行开发。"
             }
+          },
+          {
+            "@type": "Question",
+            "name": "小闲 AI 网上阅卷如何使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "请安装最新预览版脚本，进入普通单题、单份答卷的键盘给分页，关闭平台自动提交，核对题目满分、合法分值和参考答案后先试改。具体操作见小闲 AI 网上阅卷指南。"
+            }
           }
         ]
       },
@@ -1192,7 +1200,7 @@
         "alternateName": "AI-Marker-Suite",
         "url": "https://aimarking.five-plus-one.com/",
         "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 43 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。",
-        "softwareVersion": "1.21.22.0",
+        "softwareVersion": "1.21.23.4",
         "datePublished": "2026-11-12",
         "downloadUrl": "https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js",
         "featureList": [
@@ -3013,6 +3021,55 @@
             "position": 3,
             "name": "小帆智能阅卷",
             "item": "https://aimarking.five-plus-one.com/platforms/xfkj"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/xiaoxianai",
+    "title": "小闲 AI 网上阅卷使用说明 | AI 批改助手",
+    "description": "在小闲 AI 网上阅卷中使用预览版 AI 批改助手，核对题目、合法分值和评分标准，试改确认后进行普通单题键盘给分。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/xiaoxianai",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xiaoxianai#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xiaoxianai",
+        "name": "小闲 AI 网上阅卷使用说明 | AI 批改助手",
+        "description": "在小闲 AI 网上阅卷中使用预览版 AI 批改助手，核对题目、合法分值和评分标准，试改确认后进行普通单题键盘给分。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "小闲 AI 网上阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/xiaoxianai"
           }
         ]
       }

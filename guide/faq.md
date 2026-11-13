@@ -292,3 +292,7 @@ AI 批改助手提供三个版本渠道：
 - **问题反馈**：[GitHub Issues](https://github.com/five-plus-one/AI-Marker-Suite/issues)
 - **联系方式**：[https://r-l.ink/contact](https://r-l.ink/contact)
 - **支持作者**：[请作者喝咖啡](http://r-l.ink/support)
+
+### 小闲 AI 网上阅卷如何使用？
+
+请安装最新预览版脚本，进入普通单题、单份答卷的键盘给分页，关闭平台自动提交，核对题目满分、合法分值和参考答案后先试改。具体操作见[小闲 AI 网上阅卷指南](/platforms/xiaoxianai)。
