@@ -1009,7 +1009,7 @@
   {
     "route": "/guide/introduction",
     "title": "项目介绍 | AI 批改助手",
-    "description": "了解 AI 批改助手 v1.21.23.4 稳定版的工作方式与核心功能。支持 43 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
+    "description": "了解 AI 批改助手 v1.21.22.0 稳定版的工作方式与核心功能。支持 43 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
     "canonical": "https://aimarking.five-plus-one.com/guide/introduction",
     "indexable": true,
     "schemas": [
@@ -1023,7 +1023,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/introduction#page",
         "url": "https://aimarking.five-plus-one.com/guide/introduction",
         "name": "项目介绍 | AI 批改助手",
-        "description": "了解 AI 批改助手 v1.21.23.4 稳定版的工作方式与核心功能。支持 43 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
+        "description": "了解 AI 批改助手 v1.21.22.0 稳定版的工作方式与核心功能。支持 43 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
