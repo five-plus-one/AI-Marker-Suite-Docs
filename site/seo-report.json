@@ -2053,6 +2053,55 @@
     ]
   },
   {
+    "route": "/platforms/huixue",
+    "title": "天喻慧学使用说明 | AI 批改助手",
+    "description": "在天喻慧学普通阅卷页面使用预览版 AI 批改助手，核对参考答案、评分点和有效分值，确认保存后继续下一份答卷。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/huixue",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/huixue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/huixue",
+        "name": "天喻慧学使用说明 | AI 批改助手",
+        "description": "在天喻慧学普通阅卷页面使用预览版 AI 批改助手，核对参考答案、评分点和有效分值，确认保存后继续下一份答卷。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "天喻慧学",
+            "item": "https://aimarking.five-plus-one.com/platforms/huixue"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/huixuexing",
     "title": "慧学星适配 | AI 批改助手",
     "description": "AI批改助手慧学星适配器使用说明。支持www.hxxai.com阅卷平台OSS图片托管、分步骤评分模式、满分/零分快捷按钮。包含技术特点、操作流程和常见问题解答。",
