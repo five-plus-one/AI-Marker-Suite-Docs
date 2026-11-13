@@ -319,6 +319,7 @@ export default defineConfig({
             { text: '小帆智能阅卷', link: '/platforms/xfkj' },
             { text: '睿芽考试服务云', link: '/platforms/ruiya' },
             { text: '恒佳考试服务云', link: '/platforms/yuejuan51' },
+            { text: '丽升阅卷（预览版）', link: '/platforms/leascent' },
           ],
         },
       ],
