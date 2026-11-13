@@ -2537,6 +2537,55 @@
     ]
   },
   {
+    "route": "/platforms/leascent",
+    "title": "丽升阅卷使用说明 | AI 批改助手",
+    "description": "在铜山高二选择考的丽升阅卷平台中使用 AI 批改助手，核对英语填空与写作题的满分和给分步长，通过打分板填写并确认保存。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/leascent",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/leascent#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/leascent",
+        "name": "丽升阅卷使用说明 | AI 批改助手",
+        "description": "在铜山高二选择考的丽升阅卷平台中使用 AI 批改助手，核对英语填空与写作题的满分和给分步长，通过打分板填写并确认保存。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "丽升阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/leascent"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/lehua",
     "title": "乐华阅卷适配 | AI 批改助手",
     "description": "AI批改助手乐华阅卷适配器使用说明。支持main.lhsvr.cn阅卷平台Canvas图片渲染、点击式评分按钮、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
