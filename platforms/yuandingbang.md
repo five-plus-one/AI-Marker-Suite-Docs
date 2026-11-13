@@ -6,7 +6,7 @@ keywords: 园丁邦,园丁邦云阅卷,yuandingbang,键盘给分,得分点,AI批
 
 # 园丁邦云阅卷
 
-园丁邦云阅卷适配包含在 **1.21.23.5 预览版**，支持普通单评任务的键盘给分。请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)，并在首次使用时先试改核对。
+园丁邦云阅卷适配包含在 **1.21.23.6 预览版**，支持普通单评任务的键盘给分。请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)，并在首次使用时先试改核对。
 
 ## 开始使用
 
