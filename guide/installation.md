@@ -1,6 +1,6 @@
 ---
 title: 安装教程 — AI 批改助手
-description: 在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 43 个阅卷平台。
+description: 在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 44 个阅卷平台。
 keywords: AI批改助手,安装教程,Tampermonkey,油猴脚本,Edge浏览器,一键安装,自动批改,智能阅卷,智学网,七天网络,好分数,浏览器扩展
 ---
 

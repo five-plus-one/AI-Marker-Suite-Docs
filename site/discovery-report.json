@@ -17,11 +17,11 @@
       }
     }
   ],
-  "reachablePages": 70,
+  "reachablePages": 73,
   "releaseNotes": {
-    "stable": 1,
-    "stableHistory": 42,
-    "previewAdditional": 6
+    "stable": 4,
+    "stableHistory": 45,
+    "previewAdditional": 2
   },
   "internalLinkErrors": [],
   "discovery": [
