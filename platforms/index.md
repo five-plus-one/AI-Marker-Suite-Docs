@@ -1,6 +1,6 @@
 ---
 title: 支持平台 - AI 批改助手
-description: 查看 AI 批改助手稳定版支持的 43 个阅卷平台，按名称查找平台入口、使用指南、评分方式与操作要求。
+description: 查看 AI 批改助手稳定版支持的 44 个阅卷平台，按名称查找平台入口、使用指南、评分方式与操作要求。
 keywords: AI批改助手,AI阅卷,主观题批改,手写识别,双评仲裁,分小题评分,评阅历史,Tampermonkey
 ---
 
@@ -14,7 +14,7 @@ keywords: AI批改助手,AI阅卷,主观题批改,手写识别,双评仲裁,分�
 
 ## 稳定版平台支持
 
-当前稳定版 **1.21.22.0** 支持 **43 个阅卷平台**。下方目录提供各平台的入口和使用指南。
+当前稳定版 **1.21.25.0** 支持 **44 个阅卷平台**。下方目录提供各平台的入口和使用指南。
 
 各平台支持的任务类型、给分方式和提交要求不同，首次使用请先阅读对应指南，再用试改模式核对。
 
@@ -71,6 +71,7 @@ keywords: AI批改助手,AI阅卷,主观题批改,手写识别,双评仲裁,分�
 | [启光优测](/platforms/qiguang) | 学校阅卷地址 | 单份键盘阅卷 |
 | [诊学网](/platforms/zhenxue) | 学校门户 → 统考阅卷 | 统考单份键盘给分 |
 | [焦作精准教学](/platforms/jzsmartedu) | jzsmartedu.cn → 精准教学 | 单份单评，默认评分板或键盘打分 |
+| [园丁邦云阅卷](/platforms/yuandingbang) | yuejuan.yuandingbang.cn | 普通单评，键盘给分 |
 
 ## 快速导航
 
@@ -118,6 +119,7 @@ keywords: AI批改助手,AI阅卷,主观题批改,手写识别,双评仲裁,分�
 41. **[启光优测](/platforms/qiguang)** — 单份键盘阅卷
 42. **[诊学网](/platforms/zhenxue)** — 统考单份键盘给分
 43. **[焦作精准教学](/platforms/jzsmartedu)** — 单份单评，默认评分板或键盘打分
+44. **[园丁邦云阅卷](/platforms/yuandingbang)** — 普通单评，键盘给分
 
 <CardGrid>
 <Card title="智学网" href="/platforms/zhixue" description="智学网平台的适配说明，包括页面识别和操作流程" />
@@ -162,6 +164,7 @@ keywords: AI批改助手,AI阅卷,主观题批改,手写识别,双评仲裁,分�
 <Card title="启光优测" href="/platforms/qiguang" description="单份键盘阅卷" />
 <Card title="诊学网" href="/platforms/zhenxue" description="统考单份键盘给分" />
 <Card title="焦作精准教学" href="/platforms/jzsmartedu" description="单份单评，默认评分板或键盘打分" />
+<Card title="园丁邦云阅卷" href="/platforms/yuandingbang" description="普通单评，核对得分点与给分档位后填写分数" />
 </CardGrid>
 
 ::: tip 关于适配器

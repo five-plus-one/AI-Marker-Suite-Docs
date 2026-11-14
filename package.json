@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "packageManager": "npm@10.9.9",
-  "description": "AI 批改助手官方文档 — 43 个阅卷平台指南、安装配置、双评仲裁与评阅历史",
+  "description": "AI 批改助手官方文档 — 44 个阅卷平台指南、安装配置、双评仲裁与评阅历史",
   "scripts": {
     "dev": "npm run build && vitepress preview --host 127.0.0.1",
     "build": "node site/refresh-releases.mjs && node site/build-preview.mjs && vitepress build && node site/build.mjs",

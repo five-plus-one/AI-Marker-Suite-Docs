@@ -1,6 +1,6 @@
 # AI 批改助手 (AI-Marker-Suite)
 
-> 开源的浏览器阅卷脚本，识别手写答案并按教师评分标准给分。支持 43 个阅卷平台，提供试改确认、连续批改、双评仲裁、分小题评分和历史导出。
+> 开源的浏览器阅卷脚本，识别手写答案并按教师评分标准给分。支持 44 个阅卷平台，提供试改确认、连续批改、双评仲裁、分小题评分和历史导出。
 
 ## 产品与使用范围
 
@@ -25,6 +25,7 @@
 ## 文档页面
 
 - [平台支持范围](https://aimarking.five-plus-one.com/platforms/)
+- [园丁邦云阅卷](https://aimarking.five-plus-one.com/platforms/yuandingbang)：稳定版 1.21.25.0 起支持普通单评与键盘给分，查看整图后关闭窗口再继续批改。
 - [安装教程](https://aimarking.five-plus-one.com/guide/installation)
 - [快速上手](https://aimarking.five-plus-one.com/guide/quickstart)
 - [项目介绍](https://aimarking.five-plus-one.com/guide/introduction)

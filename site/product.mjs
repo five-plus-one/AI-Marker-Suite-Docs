@@ -43,7 +43,8 @@ export const platformNames = [
   "学科网 e卷通",
   "启光优测",
   "诊学网",
-  "焦作精准教学"
+  "焦作精准教学",
+  "园丁邦云阅卷"
 ];
 export const platformCount = platformNames.length;
 export const stableRelease = releases.stable;
