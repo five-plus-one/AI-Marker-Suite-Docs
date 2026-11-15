@@ -93,11 +93,11 @@ npm run indexnow
 
 ## 部署
 
-文档站通过 GitHub Actions 自动部署（见 `.github/workflows/deploy.yml`），推送 `main` 分支后自动触发：
+文档站通过内部 Forgejo CI 构建与部署（见 `.forgejo/workflows/ci.yml`），发布约定见 `.forgejo/README.md`：
 
-1. **GitHub Pages** — `https://five-plus-one.github.io/AI-Marker-Suite-Docs/`（BASE_URL=`/AI-Marker-Suite-Docs/`）
-2. **云服务器** — `/opt/1panel/www/sites/aimarking-docs/index`，对应主域名
-3. 部署完成后自动向 IndexNow 提交站点更新通知搜索引擎
+1. docs-dev 与 PR 验证根路径和 `/AI-Marker-Suite-Docs/` 子路径，保存可下载的构建产物
+2. main 的可信 push 经全部门禁后，通过独立 HTTPS 接收端发布到主站
+3. 发布完成后向 IndexNow 提交站点更新；选定分支与 GitHub 发布展示由服务器私有程序同步
 
 开发分支为 `docs-dev`，通过 PR 合并到 `main` 后触发部署。
 

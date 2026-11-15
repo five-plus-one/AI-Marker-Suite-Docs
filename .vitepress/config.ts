@@ -7,7 +7,7 @@ const SITE_URL = 'https://aimarking.five-plus-one.com'
 
 export default defineConfig({
   lang: 'zh-CN',
-  srcExclude: ['**/AGENTS.md'],
+  srcExclude: ['**/AGENTS.md', '**/CLAUDE.md', '**/CONTRIBUTING.md'],
   title: 'AI 批改助手',
   titleTemplate: false,
   description: productDescription,
