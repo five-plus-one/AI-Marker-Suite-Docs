@@ -8,6 +8,14 @@
 
 部署回执 artifact 保留 30 天，成功发布后通知 IndexNow；通知失败单独记录，不影响已完成的站点发布。选定分支和 GitHub 发布展示由服务器私有同步程序维护。根路径与历史子路径兼容检查始终保留。
 
-构建会刷新稳定与预览渠道的 OTA 更新日志快照；网络不可用时采用仓库保存的有效快照。构建与校验也会写出本地报告，因此必须在隔离 CI checkout 运行。内部开发说明通过 VitePress srcExclude 排除，不进入面向用户的站点内容。
+构建会刷新稳定与预览渠道的 OTA 更新日志快照；网络不可用时采用仓库保存的有效快照。构建与校验也会写出本地报告，因此必须在隔离 CI checkout 运行。`AGENTS.md`、`CLAUDE.md`、`CONTRIBUTING.md` 通过 VitePress `srcExclude` 排除。根 `README.md` 仍参与渲染，站点后处理将 `/README` 排除出搜索与索引，公开入口将 `/README`、`/README.html` 重定向到首页。
 
-修改先关联内部 Issue，在 docs-dev 的功能分支实施并通过 PR 验收，再按授权向 main 提交发布 PR。本次基础设施同步保持现有站点内容、共享组件版本与依赖锁文件。
+修改先关联 GitHub 或内部 Issue，在 docs-dev 的功能分支实施并通过 PR 验收，再按授权向 main 提交发布 PR。本次基础设施同步保持现有站点内容、共享组件版本与依赖锁文件。
+
+## 公开与内部协作
+
+[GitHub 公开仓库](https://github.com/five-plus-one/AI-Marker-Suite-Docs) 与 [内部 Forgejo 仓库](https://git.work.five-plus-one.com/fiveplusone-dev/AI-Marker-Suite-Docs) 通过服务器同步已准入的公开分支、Issue 与 PR，可在任一侧参与协作。功能修改面向 `docs-dev` 提交 PR，发布到 `main` 也通过 PR。
+
+同步以仓库和对象的稳定数字 ID 记录来源，已核验的同一维护者账号按双方数字 ID 配对。两侧的 Issue/PR 编号独立，引用对端事项时使用完整来源链接；内容同步保留来源身份和隐私准入边界。
+
+仍开放的 PR 使用两侧原生 PR 协作；历史已关闭 PR 以带来源链接的关闭归档 Issue 保存原状态、合并提交、作者与讨论。归档 Issue 的重新打开只影响归档讨论，不改变来源 PR 的已合入状态；原先未合入的 PR 重新打开时按活动 PR 规则处理，并保留归档关联。历史归档本身不触发 PR 检查或临时部署。
