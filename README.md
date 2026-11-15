@@ -4,7 +4,7 @@
 
 ## 本地开发
 
-本地与 CI 使用 Node.js 22、npm 10。安装依赖使用锁文件；更新依赖时使用 `npx npm@10 install` 同步锁文件。
+本地开发约定使用 Node.js 22 和 npm 10，`packageManager` 固定为 `npm@10.9.9`。正式 CI 使用 `aimarker-ci:20261115` 镜像，实际版本为 Node.js 24.22.3、npm 11.19.1。安装依赖使用锁文件；更新依赖时使用 `npx npm@10.9.9 install` 同步锁文件。
 
 ```bash
 # 安装依赖
