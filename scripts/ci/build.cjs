@@ -8,6 +8,7 @@ async function main(){
   const commit=C.sha(ctx.eventName==='pull_request'?ctx.event.pull_request.head.sha:ctx.sha);
   C.invariant(execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim()===commit,'Checkout differs from source revision');
   C.invariant(['/','/AI-Marker-Suite-Docs/'].includes(process.env.BASE_URL),'Unexpected documentation base');
+  C.run(process.execPath,['--test',C.path.join(__dirname,'compat.test.cjs')]);
   C.npm(['ci']);
   C.npm(['run','build']);
   C.npm(['run','check']);
