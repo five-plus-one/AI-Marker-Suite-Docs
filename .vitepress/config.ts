@@ -1,13 +1,13 @@
 import { defineConfig } from 'vitepress'
 import { productDescription, productFeatures, platformNames, stableRelease } from '../site/product.mjs'
 
-// 环境变量 BASE_URL：本地构建默认 '/'，GitHub Actions 构建传入 '/AI-Marker-Suite-Docs/'
+// BASE_URL 默认为 '/'；内部 CI 同时验证根路径和 '/AI-Marker-Suite-Docs/' 子路径。
 const BASE = process.env.BASE_URL || '/'
 const SITE_URL = 'https://aimarking.five-plus-one.com'
 
 export default defineConfig({
   lang: 'zh-CN',
-  srcExclude: ['**/AGENTS.md'],
+  srcExclude: ['**/AGENTS.md', '**/CLAUDE.md', '**/CONTRIBUTING.md'],
   title: 'AI 批改助手',
   titleTemplate: false,
   description: productDescription,
