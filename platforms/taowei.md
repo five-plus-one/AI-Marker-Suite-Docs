@@ -6,7 +6,7 @@ keywords: 韬普教育,云阅卷,AI批改助手,作文评分,给分点,试改,�
 
 # 韬普教育云阅卷
 
-AI 批改助手适用于韬普教育云阅卷普通单题任务的键盘给分，支持单评、双评和2+1评。请使用 **1.21.26.3 或更新的[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)**，首次使用先试改核对。
+AI 批改助手适用于韬普教育云阅卷普通单题任务的键盘给分，支持单评、双评和2+1评。请使用 **1.21.27.2 或更新的[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)**，首次使用先试改核对。
 
 ## 进入阅卷
 
