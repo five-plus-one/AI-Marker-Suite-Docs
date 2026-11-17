@@ -308,6 +308,7 @@ export default defineConfig({
             { text: '海云智评', link: '/platforms/haiyun' },
             { text: '鑫考(内网)', link: '/platforms/xinkao-2' },
             { text: '九五优评', link: '/platforms/jiuwuyouping' },
+            { text: '韬普教育云阅卷', link: '/platforms/taowei' },
             { text: '上进教育服务云', link: '/platforms/sipd' },
             { text: '南昊AI教学提分', link: '/platforms/nhcisc' },
             { text: '鑫考校园', link: '/platforms/xinkao-campus' },
