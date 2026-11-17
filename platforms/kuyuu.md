@@ -1,7 +1,7 @@
 ---
 title: 酷鱼网适配 — AI 批改助手
-description: AI批改助手酷鱼网适配器使用说明。支持www.kuyuu.cn阅卷平台Canvas答题卡渲染（tainted canvas安全取图）、键/鼠/批三种打分模式、scores属性满分提取。包含技术特点、操作流程和常见问题解答。
-keywords: 酷鱼网,酷鱼,kuyuu,AI批改,AI阅卷,自动批改,智能阅卷,www.kuyuu.cn,Canvas答题卡,ems-imageview,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
+description: 酷鱼网使用指南：答题卡识别、键盘给分与分数确认。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 酷鱼网,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 酷鱼网
