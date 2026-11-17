@@ -1,7 +1,7 @@
 ---
 title: 九科星适配（考试阅卷 + 作业系统）— AI 批改助手
-description: AI批改助手九科星适配器使用说明，覆盖考试阅卷（marking.jkxjxw.com）与作业系统（jxp.jkxjxw.com）。OBS 图片裁剪、多小题输入框评分、API 拦截取题块图、自动提交防护。包含技术特点、操作流程和常见问题解答。
-keywords: 九科星,AI批改,AI阅卷,自动批改,智能阅卷,marking.jkxjxw.com,jxp.jkxjxw.com,九科星作业,OBS图片裁剪,题块图,答题卡识别,AI评分,多小题评分,自动提交,手写识别,在线阅卷助手
+description: 九科星（考试阅卷 + 作业系统）使用指南：考试阅卷与按题批改作业。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 九科星（考试阅卷 + 作业系统）,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 九科星（考试阅卷 + 作业系统）
@@ -12,7 +12,7 @@ keywords: 九科星,AI批改,AI阅卷,自动批改,智能阅卷,marking.jkxjxw.c
 <span id="_2-打开阅卷页面" class="fp-anchor-alias" aria-hidden="true"></span>
 <span id="_3-使用-ai-批改" class="fp-anchor-alias" aria-hidden="true"></span>
 
-九科星一体化平台有两个批改子系统，脚本均已适配（v1.21.16.18 起支持作业系统）：
+九科星一体化平台有两个批改子系统，均可使用 AI 批改助手：
 
 | 子系统 | 地址 | 说明 |
 |--------|------|------|

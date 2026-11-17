@@ -22,3 +22,15 @@ test('same-base additions remain visible and repeated formatting is normalized',
  const preview={version:'1.2.0.0-preview.1',changelog:{'1.2.0':['【新功能】导出 记录','【新功能】新的功能']}};
  assert.deepEqual(items(createReleaseModels({stable,preview}).preview),['新的功能']);
 });
+
+test('a newer stable release preserves older preview version and channel guidance',()=>{
+ const stable={version:'1.21.26.0',changelog:{'1.21.26':['【新平台】普通阅卷']}};
+ const preview={version:'1.21.25.1-preview.5',changelog:{'1.21.25.1':['【新功能】可选题号核对']}};
+ const model=createReleaseModels({stable,preview}).preview;
+ assert.equal(model.version,preview.version);
+ assert.deepEqual(items(model),[]);
+ assert.equal(model.badge,'预览功能');
+ assert(model.description.includes(stable.version));
+ assert(model.description.includes('版本较新'));
+ assert(model.emptyMessage.includes('对应使用指南'));
+});

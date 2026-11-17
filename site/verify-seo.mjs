@@ -23,7 +23,11 @@ for(const page of report){const file=path.join(root,page.route==='/'?'index.html
 console.log(`SEO verified: ${report.length} pages; ${report.filter(p=>p.indexable).length} indexable; titles, descriptions, canonical, social previews, schema and sitemap.`);
 
 const platforms=load(await fs.readFile(root+'/platforms/index.html','utf8'));
-assert.equal(platforms('.vp-doc table tbody tr').length,platformNames.length,'Every stable platform has a catalogue row');
+const {base}=JSON.parse(await fs.readFile(root+'/release.json','utf8'));
+const guideRoutes=report.filter(page=>page.route.startsWith('/platforms/')&&page.route!=='/platforms/').map(page=>page.route).sort();
+const catalogueRoutes=platforms('.vp-doc table tbody tr a[href]').map((_,el)=>'/'+platforms(el).attr('href').slice(base.length)).get().sort();
+assert.deepEqual(catalogueRoutes,guideRoutes,'Every platform guide has exactly one catalogue entry');
+assert.equal(platforms('.vp-doc table tbody tr').length,guideRoutes.length,'Every catalogue row links to a platform guide');
 for(const name of platformNames)assert(platforms('.vp-doc').text().includes(name),'Platform documented: '+name);
 const llms=await fs.readFile(root+'/llms.txt','utf8');
 assert(llms.includes(stableRelease.version),'AI discovery uses stable release version');
