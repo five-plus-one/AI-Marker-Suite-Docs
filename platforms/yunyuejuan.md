@@ -1,7 +1,7 @@
 ---
 title: 云阅卷适配 — AI 批改助手
-description: AI批改助手云阅卷适配器使用说明。支持内网部署的云阅卷平台答题卡识别、AI智能评分、自动填分提交、分小题评分功能。包含技术特点、操作流程和常见问题解答。
-keywords: 云阅卷,AI批改,AI阅卷,自动批改,智能阅卷,内网阅卷,答题卡识别,AI评分,自动提交,分小题评分,手写识别,在线阅卷助手
+description: 云阅卷使用指南：内网阅卷与分小题评分。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 云阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 云阅卷
@@ -59,10 +59,9 @@ keywords: 云阅卷,AI批改,AI阅卷,自动批改,智能阅卷,内网阅卷,答
 | URL 匹配 | `*://*/Marking/*` |
 | 适配器路径 | `src/adapters/yunyuejuan/` |
 
-## 更新日志
+<span id="更新日志" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="v1-21-4" class="fp-anchor-alias" aria-hidden="true"></span>
 
-### v1.21.4
+## 版本与更新
 
-- 新增云阅卷平台支持
-- 支持分小题评分
-- 支持内网阅卷系统
+脚本版本与更新记录见[更新日志](/changelog)。

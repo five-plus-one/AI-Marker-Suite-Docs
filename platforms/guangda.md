@@ -1,7 +1,7 @@
 ---
 title: 光大阅卷适配 — AI 批改助手
-description: AI批改助手光大阅卷适配器使用说明。支持pj.yixx.cn阅卷平台Canvas图片渲染、点击式分数选择、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。
-keywords: 光大阅卷,AI批改,AI阅卷,自动批改,智能阅卷,pj.yixx.cn,Canvas渲染,答题卡识别,AI评分,点击式评分,自动提交,手写识别,在线阅卷助手
+description: 光大阅卷使用指南：给分点选择与分小题评分。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 光大阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 光大阅卷
@@ -97,11 +97,9 @@ AI 批改助手默认使用"给分点"模式，通过点击分数选项来填入
 | URL 匹配 | `*://pj.yixx.cn/*` |
 | 适配器路径 | `src/adapters/guangda/` |
 
-## 更新日志
+<span id="更新日志" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="v1-21-2-104" class="fp-anchor-alias" aria-hidden="true"></span>
 
-### v1.21.2.104
+## 版本与更新
 
-- 新增光大阅卷平台支持
-- 支持 Canvas 图片提取
-- 支持点击式分数选择
-- 支持小题识别
+脚本版本与更新记录见[更新日志](/changelog)。

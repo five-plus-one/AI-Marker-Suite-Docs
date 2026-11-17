@@ -1,7 +1,7 @@
 ---
 title: 云阅卷(好分数)适配 — AI 批改助手
-description: AI批改助手云阅卷(好分数)适配器使用说明。支持haofenshuyize.com阅卷平台Vue 3 + Element Plus框架、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。
-keywords: 云阅卷,好分数,haofenshuyize,AI批改,AI阅卷,自动批改,智能阅卷,haofenshuyize.com,Vue 3,Element Plus,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
+description: 云阅卷(好分数)使用指南：答题卡识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 云阅卷(好分数),AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 云阅卷(好分数)
