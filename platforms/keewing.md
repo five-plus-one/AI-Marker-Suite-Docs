@@ -1,7 +1,7 @@
 ---
 title: 科耘阅卷适配 — AI 批改助手
-description: AI批改助手科耘阅卷适配器使用说明。支持kaoshi.keewing.com阅卷平台SVG图片渲染、Element UI组件、延迟填分模式。包含技术特点、操作流程和常见问题解答。
-keywords: 科耘阅卷,科耘,AI批改,AI阅卷,自动批改,智能阅卷,kaoshi.keewing.com,SVG图片,Element UI,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
+description: 科耘阅卷使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 科耘阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 科耘阅卷

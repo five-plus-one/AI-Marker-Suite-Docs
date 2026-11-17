@@ -1,7 +1,7 @@
 ---
 title: A佳教育适配 — AI 批改助手
-description: AI批改助手A佳教育适配器使用说明。支持y.ajia.cn在线阅卷（marking.html），行级 num-source 评分、data-score 满分提取、「确定」按钮提交自动翻卷。包含技术特点、操作流程和常见问题解答。
-keywords: A佳教育,A佳,ajia,y.ajia.cn,AI批改,AI阅卷,自动批改,智能阅卷,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手,num-source,在线阅卷
+description: A佳教育使用指南：逐项评分与确认提交。查看平台入口、批改设置、操作要求与常见问题。
+keywords: A佳教育,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # A佳教育

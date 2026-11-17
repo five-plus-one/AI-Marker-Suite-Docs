@@ -1,12 +1,12 @@
 ---
 title: 小闲 AI 网上阅卷使用说明 — AI 批改助手
-description: 在小闲 AI 网上阅卷中使用预览版 AI 批改助手，核对题目、合法分值和评分标准，试改确认后进行普通单题键盘给分。
-keywords: 小闲AI,小闲网上阅卷,xiaoxianai,键盘给分,半分,AI批改助手
+description: 小闲 AI 网上阅卷使用指南：普通单题、单份答卷的键盘给分。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 小闲 AI 网上阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 小闲 AI 网上阅卷
 
-小闲 AI 网上阅卷目前提供**预览版支持**，适用于普通单题、单份答卷的键盘给分。请安装最新[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)，首次使用先试改核对。
+AI 批改助手适用于小闲 AI 网上阅卷普通单题、单份答卷的键盘给分。使用前请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)，首次使用先试改核对。
 
 ## 开始使用
 

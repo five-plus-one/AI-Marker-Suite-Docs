@@ -1,7 +1,7 @@
 ---
 title: 新教育适配 — AI 批改助手
-description: AI批改助手新教育适配器使用说明。支持xinjiaoyu.com阅卷平台考试系统和作业系统两种批改模式，通过API拦截获取答题卡图片，AI智能评分自动提交。
-keywords: 新教育,AI批改,AI阅卷,自动批改,智能阅卷,xinjiaoyu.com,考试系统,作业系统,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手
+description: 新教育使用指南：考试阅卷与作业批改。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 新教育,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 新教育
@@ -92,11 +92,9 @@ GET /api/v3/server_homework/homework/answer/sheet/review/progress?homeworkId=...
 | URL 匹配 | `*://www.xinjiaoyu.com/*` |
 | 适配器路径 | `src/adapters/xinjiaoyu/` |
 
-## 更新日志
+<span id="更新日志" class="fp-anchor-alias" aria-hidden="true"></span>
+<span id="v1-21-4" class="fp-anchor-alias" aria-hidden="true"></span>
 
-### v1.21.4
+## 版本与更新
 
-- 新增新教育平台支持
-- 支持考试系统和作业系统两种批改模式
-- 通过 API 拦截获取答题卡图片
-- 支持 Ant Design InputNumber 分数输入
+脚本版本与更新记录见[更新日志](/changelog)。

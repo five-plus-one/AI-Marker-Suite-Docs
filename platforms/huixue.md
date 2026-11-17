@@ -1,12 +1,12 @@
 ---
 title: 天喻慧学与惠州智慧教育阅卷使用说明 — AI 批改助手
-description: 在天喻慧学及惠州市智慧教育平台的普通阅卷页面使用 AI 批改助手，核对参考答案、评分点和有效分值，确认保存后继续下一份答卷。
-keywords: 天喻慧学,惠州市智慧教育平台,惠州阅卷,hzjy,慧学,tyhuixue,普通阅卷,键盘给分,AI批改助手
+description: 天喻慧学使用指南：普通阅卷的键盘给分与保存核对。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 天喻慧学,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 天喻慧学
 
-天喻慧学目前通过[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)提供支持，适用于考试任务中的**普通阅卷、键盘给分**。
+AI 批改助手适用于天喻慧学考试任务中的**普通阅卷、键盘给分**。使用前请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)。
 
 ## 开始使用
 
