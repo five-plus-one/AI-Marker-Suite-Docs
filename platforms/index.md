@@ -47,6 +47,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [海云智评](/platforms/haiyun) | zp.kaow.cn | 多页答题卡、分小题评分与提交确认 |
 | [鑫考(内网)](/platforms/xinkao-2) | 内网裸 IP /biluo/display.jsp | 内网阅卷、分小题评分与键盘确认提交 |
 | [九五优评](/platforms/jiuwuyouping) | timesphoenix.com | 分给分点评分与提交确认 |
+| [韬普教育云阅卷](/platforms/taowei) | yj.taoweiedu.com | 单题键盘给分、完整题块与给分点核对 |
 | [上进教育服务云](/platforms/sipd) | www.sipd.cn | 答题卡识别、填分与零分确认 |
 | [南昊AI教学提分](/platforms/nhcisc) | nhcisc.com | 答题卡识别、满分核对与提交 |
 | [鑫考校园](/platforms/xinkao-campus) | 内网裸 IP:端口 /Marking/NormalReadPaper | 内网阅卷、分小题评分与键盘确认提交 |
