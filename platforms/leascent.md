@@ -6,7 +6,7 @@ keywords: 丽升阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,
 
 # 丽升阅卷
 
-AI 批改助手适用于丽升阅卷铜山高二选择考的英语填空与写作任务。使用前请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)。首次使用请先试改，核对评分结果后再提交。
+AI 批改助手适用于丽升阅卷铜山高二选择考的英语填空与写作任务。使用前请安装[稳定版脚本](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)。首次使用请先试改，核对评分结果后再提交。
 
 ## 开始使用
 

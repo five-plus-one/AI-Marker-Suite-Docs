@@ -58,7 +58,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [小帆智能阅卷](/platforms/xfkj) | xfkj.cc（租户子域） | 多页答题卡与分小题评分 |
 | [睿芽考试服务云](/platforms/ruiya) | ruiya.onlyets.com | 题块识别与多小题键盘给分 |
 | [恒佳考试服务云](/platforms/yuejuan51) | x.yuejuan51.com | 学校阅卷入口与多小题键盘给分 |
-| [云阅卷(华翰云)](/platforms/huahanyun) | yj.lcedu.net.cn | 单题块批改、填分与提交核对 |
+| [云阅卷(华翰云)](/platforms/huahanyun) | yj.lcedu.net.cn / yuejuan.wzedu.cn | 单题与温州绑定批阅、填分与保存核对 |
 | [懂你系统](/platforms/dongni) | dongni100.com | 按题批改与试改核对 |
 | [学科网 e卷通](/platforms/xkw) | yuejuan.xkw.com | 按题批改与多小题给分 |
 | [启光优测](/platforms/qiguang) | 学校阅卷地址 | 单份答卷的键盘给分 |
@@ -68,6 +68,10 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [小闲 AI 网上阅卷](/platforms/xiaoxianai) | ls.xiaoxianai.cn | 普通单题、单份答卷的键盘给分 |
 | [园丁邦云阅卷](/platforms/yuandingbang) | yuejuan.yuandingbang.cn | 普通单评、得分点核对与键盘给分 |
 | [丽升阅卷](/platforms/leascent) | 学校阅卷入口（铜山高二选择考） | 正评中的英语填空与写作题打分板给分 |
+| [文通云](/platforms/wentongyun) | www.wtjy.com | 普通单题、单份的一键给分 |
+| [优分优学](/platforms/youfen) | liankao.1000cb.com | 普通单评的键盘给分与保存核对 |
+| [小乐优阅](/platforms/xiaoleyouyue) | yy.eduer.co | 初评题块与多个评分项 |
+| [享尚学](/platforms/xiangshangxue) | xinluolk.fjjxhl.com | 正常单评、双评与多个评分点 |
 
 找不到你的平台？请[联系作者](https://r-l.ink/contact)，提供平台名称和阅卷入口。开发者可参考[开发新适配器](/advanced/adapter-dev)。
 
