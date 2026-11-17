@@ -1,12 +1,12 @@
 ---
 title: 丽升阅卷使用说明 — AI 批改助手
-description: 在铜山高二选择考的丽升阅卷平台中使用 AI 批改助手，核对英语填空与写作题的满分和给分步长，通过打分板填写并确认保存。
-keywords: 丽升阅卷,LeaScent,铜山高二,英语阅卷,打分板,AI批改助手
+description: 丽升阅卷使用指南：正评中的英语填空与写作题打分板给分。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 丽升阅卷,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 丽升阅卷
 
-丽升阅卷适配通过[预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)提供，适用于铜山高二选择考的英语填空与写作任务。首次使用请先试改，核对评分结果后再提交。
+AI 批改助手适用于丽升阅卷铜山高二选择考的英语填空与写作任务。使用前请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)。首次使用请先试改，核对评分结果后再提交。
 
 ## 开始使用
 

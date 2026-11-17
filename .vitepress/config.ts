@@ -322,7 +322,7 @@ export default defineConfig({
             { text: '天喻慧学 / 惠州智慧教育', link: '/platforms/huixue' },
             { text: '小闲 AI 网上阅卷（预览版）', link: '/platforms/xiaoxianai' },
             { text: '丽升阅卷（预览版）', link: '/platforms/leascent' },
-            { text: '园丁邦云阅卷（预览版）', link: '/platforms/yuandingbang' },
+            { text: '园丁邦云阅卷', link: '/platforms/yuandingbang' },
           ],
         },
       ],

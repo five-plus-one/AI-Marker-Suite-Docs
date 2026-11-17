@@ -1,12 +1,12 @@
 ---
 title: 鑫考校园适配 — AI 批改助手
-description: AI批改助手鑫考校园适配器使用说明。支持内网裸 IP:端口部署的 Marking/NormalReadPaper 鑫考校园6.0系统，data-score 属性满分提取、inputkey 键盘确认提交、subId+teaCode 任务标识和 token 换卷检测，v1.21.16 新增支持。
-keywords: 鑫考校园,鑫考校园6.0,xinkao-campus,NormalReadPaper,AI批改,AI阅卷,自动批改,智能阅卷,内网阅卷,jQuery,答题卡识别,AI评分,自动提交,手写识别,在线阅卷助手,多小题评分,云阅卷
+description: 鑫考校园使用指南：内网阅卷、分小题评分与键盘确认提交。查看平台入口、批改设置、操作要求与常见问题。
+keywords: 鑫考校园,AI批改助手,阅卷平台,使用指南,答题卡识别,评分标准,试改
 ---
 
 # 鑫考校园
 
-鑫考校园是 AI 批改助手 v1.21.16 新增支持的阅卷平台（河北鑫考科技股份有限公司「鑫考校园 6.0」），运行在内网裸 IP:端口的 `/Marking/NormalReadPaper`，与[鑫考](/platforms/xinkao)（公网版 `/Marking/DisPlay`）、[鑫考(内网)](/platforms/xinkao-2)（`/biluo/display.jsp`）是三套独立系统。
+鑫考校园支持使用 AI 批改助手进行阅卷（河北鑫考科技股份有限公司「鑫考校园 6.0」），运行在内网裸 IP:端口的 `/Marking/NormalReadPaper`，与[鑫考](/platforms/xinkao)（公网版 `/Marking/DisPlay`）、[鑫考(内网)](/platforms/xinkao-2)（`/biluo/display.jsp`）是三套独立系统。
 
 ::: warning 与另外两个鑫考的区别
 三者同名但代码血缘不同：鑫考校园与鑫考(内网)、云阅卷同属「云阅卷」代码家族（提交都走 `inputkey(']')`），但满分来源、小题标签、任务标识方式各不相同；公网版鑫考则与这一族无关。脚本会根据路径和 DOM 特征自动加载对应适配器，无需手动切换。
@@ -68,11 +68,11 @@ keywords: 鑫考校园,鑫考校园6.0,xinkao-campus,NormalReadPaper,AI批改,AI
 
 | 功能 | 支持状态 |
 |------|---------|
-| 自动获取答题卡图片 | 支持（token 图直接下载） |
+| 自动获取答题卡图片 | 支持 |
 | 自动提取满分 | 支持（`data-score` 属性解析） |
-| 自动填入分数 | 支持（输入框 + clearNoNum 归一化） |
-| 自动提交 | 支持（`inputkey(']')` 键盘确认） |
-| 等待下一份试卷 | 支持（图片 token 变化检测） |
+| 自动填入分数 | 支持 |
+| 自动提交 | 支持 |
+| 等待下一份试卷 | 支持 |
 | 多小题评分 | 支持 |
 | 回评模式检测 | 支持（`markingOrReview`/`huipFlag` 判断） |
 
