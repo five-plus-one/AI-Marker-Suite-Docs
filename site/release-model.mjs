@@ -15,9 +15,10 @@ function groupItems(records){
  for(const text of records){const match=text.match(/^【([^】]+)】\s*(.*)$/s);groups.get(categories.get(match?.[1])||'其他更新').push({text:match?match[2]:text})}
  return [...groups].filter(([,items])=>items.length).map(([title,items])=>({title,items}));
 }
-/** The preview is a delta against the complete stable channel, including promoted releases. */
+/** Compare release-note entries while preserving each channel's version and usage guidance. */
 export function createReleaseModels(notes,historicalAnchors=[]){
  const stable=notes.stable,preview=notes.preview;
+ const previewIsOlder=compareVersions(preview.version,stable.version)<0;
  const stableEntries=entries(stable).filter(([version])=>compareVersions(version,stable.version)<=0);
  const [current,...past]=stableEntries;
  const stableItems=new Set(stableEntries.flatMap(([,items])=>items).map(normalized));
@@ -29,6 +30,8 @@ export function createReleaseModels(notes,historicalAnchors=[]){
  const legacyFor=version=>historicalAnchors.filter(id=>id.startsWith('v'+version.replaceAll('.','-')+'-'));
  return {
   stable:{version:stable.version,versionId:'stable-version',date:stable.releaseDate,badge:'推荐使用',description:'当前稳定版的新增功能、体验优化与问题修复。',groups:groupItems(current?.[1]||[]),anchors:current?[releaseId('stable',current[0]),...legacyFor(current[0])]:[],history:past.map(([version,items])=>({version,date:stable.changelogDates?.[version],items,id:releaseId('stable',version),aliases:legacyFor(version)}))},
-  preview:{version:preview.version,versionId:'preview-version',date:preview.releaseDate,badge:'提前体验',description:`相对稳定版 v${stable.version} 新增的变化。预览功能仍在持续完善，日常使用建议选择稳定版。`,groups:groupItems(additional),emptyMessage:'当前预览版的更新已包含在稳定版中。',anchors:entries(preview).map(([version])=>releaseId('preview',version))},
+  preview:{version:preview.version,versionId:'preview-version',date:preview.releaseDate,badge:previewIsOlder?'预览功能':'提前体验',description:previewIsOlder
+   ? `当前稳定版 v${stable.version} 的版本较新。预览功能与适用范围见对应使用指南，日常使用建议选择稳定版。`
+   : `相对稳定版 v${stable.version} 新增的变化。预览功能仍在持续完善，日常使用建议选择稳定版。`,groups:groupItems(additional),emptyMessage:'预览功能与适用范围请查看对应使用指南。',anchors:entries(preview).map(([version])=>releaseId('preview',version))},
  };
 }
