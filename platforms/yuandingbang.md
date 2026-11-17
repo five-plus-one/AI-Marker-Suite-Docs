@@ -6,7 +6,7 @@ keywords: 园丁邦云阅卷,AI批改助手,阅卷平台,使用指南,答题卡�
 
 # 园丁邦云阅卷
 
-AI 批改助手适用于园丁邦云阅卷普通单评任务的键盘给分。使用前请安装[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)，并在首次使用时先试改核对。
+AI 批改助手适用于园丁邦云阅卷普通单评任务的键盘给分。使用前请安装 **1.21.25.0 或更新的[稳定版脚本](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)**，并在首次使用时先试改核对。
 
 ## 开始使用
 
