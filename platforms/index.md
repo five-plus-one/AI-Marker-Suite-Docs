@@ -68,7 +68,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [天喻慧学（含惠州）](/platforms/huixue) | hx-webscan.tyhuixue.com / 惠州教育门户 | 普通阅卷的键盘给分与保存核对 |
 | [小闲 AI 网上阅卷](/platforms/xiaoxianai) | ls.xiaoxianai.cn | 普通单题、单份答卷的键盘给分 |
 | [园丁邦云阅卷](/platforms/yuandingbang) | yuejuan.yuandingbang.cn | 普通单评、得分点核对与键盘给分 |
-| [丽升阅卷](/platforms/leascent) | 学校阅卷入口（铜山高二选择考） | 正评中的英语填空与写作题打分板给分 |
+| [丽升阅卷](/platforms/leascent) | 湖北阅卷、铜山高二选择考 | 正评中的打分板给分 |
 | [文通云](/platforms/wentongyun) | www.wtjy.com | 普通单题、单份的一键给分 |
 | [优分优学](/platforms/youfen) | liankao.1000cb.com | 普通单评的键盘给分与保存核对 |
 | [小乐优阅](/platforms/xiaoleyouyue) | yy.eduer.co | 初评题块与多个评分项 |
