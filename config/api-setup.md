@@ -1,6 +1,6 @@
 ---
 title: AI 接口配置 — AI 批改助手
-description: AI批改助手需要支持图片识别的多模态AI服务。推荐5+1 AI，也支持火山引擎、硅基流动等OpenAI兼容接口。
+description: 配置支持图片识别的 AI 接口，了解 5plus1API 主端点、上海备用端点、密钥获取、充值与连接排查。
 ---
 
 # AI 接口配置
@@ -15,34 +15,36 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 
 ## 推荐：5+1 AI
 
-**5+1 AI** 是内置的默认服务商。使用同一个 API 密钥即可连接主端点或上海备用端点。
+**5plus1API** 是内置的默认服务商。两个端点共用账号、API 密钥和余额。
 
 | 配置项 | 值 |
 |-------|---|
 | 主端点 | `https://api.ai.five-plus-one.com/v1/chat/completions` |
 | 上海备用端点 | `https://api-sh.ai.five-plus-one.com/v1/chat/completions` |
 | 模型 | 默认 `aimarker-fast`；另有 `aimarker-pro` 与 DeepSeek Flash 可在工作流中选择 |
-| API KEY | [注册获取](https://api.ai.five-plus-one.com/keys) |
+| API 密钥 | [主站密钥页](https://api.ai.five-plus-one.com/keys) · [上海备用密钥页](https://api-sh.ai.five-plus-one.com/keys) |
 
 ### 获取步骤
 
-1. 访问 [5+1 AI 控制台](https://api.ai.five-plus-one.com/keys)
+1. 打开表中的任一密钥页
 2. 注册账号（支持手机号或邮箱）
 3. 新注册用户会获得**少量试用额度**
 4. 在控制台中创建 API Token
 5. 复制 Token，粘贴到脚本设置面板的「API 密钥」输入框
 
-::: warning 关于费用
-5+1 AI 为新用户提供少量试用额度。试用额度用完后，需要在控制台中充值才能继续使用。脚本本身完全免费，费用来自 AI 服务的调用。
-:::
-
 ### 连接与切换端点
 
-主端点带宽较大。国内部分地区访问受限时，可使用上海备用端点。首次配置时，主端点连接失败会自动验证备用端点，验证通过后保存为当前端点。批改遇到连接故障时也会尝试可用线路。
+主端点带宽较大。国内部分地区访问受限时，可使用上海备用端点。首次配置时，主端点连接失败会自动验证备用端点，验证通过后保存为当前端点。批改遇到连接故障时也会尝试切换线路。
 
 脚本会获取最新的官方线路配置。暂时无法连接配置服务时，仍可使用已知的官方线路。
 
 之后也可以在「批改配置 → 供应商与模型」中选择「5plus1官方」，通过「5plus1API 端点」切换，继续使用已有的密钥和模型。
+
+### 余额与充值
+
+脚本免费使用，费用来自 AI 服务调用。试用额度用完或收到余额不足提醒时，请登录同一个 5plus1API 账号充值，到账后再继续批改。
+
+通常可打开[主站充值页](https://api.ai.five-plus-one.com/wallet)。主站打不开时，可打开[上海备用充值页](https://api-sh.ai.five-plus-one.com/wallet)。两个入口共用余额，一笔充值到账后两个端点都可使用。
 
 <span id="deepseek" class="fp-anchor-alias" aria-hidden="true"></span>
 
