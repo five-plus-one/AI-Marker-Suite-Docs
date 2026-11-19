@@ -48,6 +48,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [鑫考(内网)](/platforms/xinkao-2) | 内网裸 IP /biluo/display.jsp | 内网阅卷、分小题评分与键盘确认提交 |
 | [九五优评](/platforms/jiuwuyouping) | timesphoenix.com | 分给分点评分与提交确认 |
 | [韬普教育云阅卷](/platforms/taowei) | yj.taoweiedu.com | 单题键盘给分、完整题块与给分点核对 |
+| [百师联盟](/platforms/baishi) | ebs.bsedu.com | 单题评阅、按步长给分与保存核对 |
 | [上进教育服务云](/platforms/sipd) | www.sipd.cn | 答题卡识别、填分与零分确认 |
 | [南昊AI教学提分](/platforms/nhcisc) | nhcisc.com | 答题卡识别、满分核对与提交 |
 | [鑫考校园](/platforms/xinkao-campus) | 内网裸 IP:端口 /Marking/NormalReadPaper | 内网阅卷、分小题评分与键盘确认提交 |
@@ -69,6 +70,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [小闲 AI 网上阅卷](/platforms/xiaoxianai) | ls.xiaoxianai.cn | 普通单题、单份答卷的键盘给分 |
 | [园丁邦云阅卷](/platforms/yuandingbang) | yuejuan.yuandingbang.cn | 普通单评、得分点核对与键盘给分 |
 | [丽升阅卷](/platforms/leascent) | 湖北阅卷、铜山高二选择考 | 正评中的打分板给分 |
+| [悦卷通](/platforms/yuejuantong) | www.yuejuantong.com | 键盘按题阅卷和分小题评分 |
 | [文通云](/platforms/wentongyun) | www.wtjy.com | 普通单题、单份的一键给分 |
 | [优分优学](/platforms/youfen) | liankao.1000cb.com | 普通单评的键盘给分与保存核对 |
 | [小乐优阅](/platforms/xiaoleyouyue) | yy.eduer.co | 初评题块与多个评分项 |
