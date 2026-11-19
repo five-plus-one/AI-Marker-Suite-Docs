@@ -141,9 +141,13 @@ AI 批改助手提供三个版本渠道：
 
 ### API 密钥在哪里获取？
 
-推荐使用 5+1 AI 服务：[获取 API KEY](https://api.ai.five-plus-one.com/keys)。新注册用户有少量试用额度，用完后需充值。
+推荐使用 5plus1API。可在[主站](https://api.ai.five-plus-one.com/keys)或[上海备用入口](https://api-sh.ai.five-plus-one.com/keys)登录同一个账号获取 API 密钥。
 
 也支持火山引擎、硅基流动等其他 OpenAI 兼容接口，但所选模型**必须支持图片输入**。
+
+### 5plus1API 连不上或提示余额不足怎么办？
+
+主端点访问受限时，在「批改配置 → 供应商与模型」中把 5plus1API 端点切换到上海备用端点。两个端点共用密钥和余额。余额不足时，请在主站或上海备用入口充值，到账后继续批改。详见[余额与充值](../config/api-setup#余额与充值)。
 
 ### 支持哪些 AI 服务商？
 
