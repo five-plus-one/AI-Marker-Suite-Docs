@@ -63,6 +63,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [云阅卷(华翰云)](/platforms/huahanyun) | yj.lcedu.net.cn / yuejuan.wzedu.cn | 单题与温州绑定批阅、填分与保存核对 |
 | [懂你系统](/platforms/dongni) | dongni100.com | 按题批改与试改核对 |
 | [学科网 e卷通](/platforms/xkw) | yuejuan.xkw.com | 按题批改与多小题给分 |
+| [学科网云阅卷](/platforms/xkw-cloud) | xycp.xkw.com | 普通阅卷、题块总分与保存核对 |
 | [启光优测](/platforms/qiguang) | 学校阅卷地址 | 单份答卷的键盘给分 |
 | [诊学网](/platforms/zhenxue) | 学校门户 → 统考阅卷 | 统考阅卷与单份键盘给分 |
 | [焦作精准教学](/platforms/jzsmartedu) | jzsmartedu.cn → 精准教学 | 普通单评与评分板或键盘给分 |
