@@ -8,7 +8,7 @@ keywords: 丽升阅卷,湖北丽升,铜山阅卷,AI批改助手,打分板给分,
 
 AI 批改助手可在丽升阅卷的正评打分板中读取当前作答，按题目允许的分值评分，并核对平台的保存结果。
 
-- [湖北阅卷入口](http://hb.leascent.com:83/)。使用[预览版脚本](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js) 1.21.27.8 或更新版本，登录后进入网络阅卷。
+- [湖北阅卷入口](http://hb.leascent.com:83/)。正式版请使用 1.21.28.0 或更新版本，登录后进入网络阅卷。
 - [铜山阅卷入口](http://tsyj.jsleascent.com/)。使用[稳定版脚本](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)，在平台选择「铜山高二选择考」。
 
 ## 开始使用
