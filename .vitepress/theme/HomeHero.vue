@@ -17,15 +17,15 @@ const stableVersion = releases.stable.version
     <div class="home-hero__content">
       <p class="home-hero__eyebrow">Open source grading assistant</p>
       <h1 id="home-hero-title">AI 批改助手</h1>
-      <p class="home-hero__subtitle">让 AI 替你改卷</p>
+      <p class="home-hero__subtitle">按评分标准批改手写答卷</p>
       <p class="home-hero__description">
-        基于多模态 AI 的在线阅卷自动批改工具，支持 43 个阅卷平台、双评仲裁、
-        分小题评分与批改历史，适合日常批改和大批量试卷处理。
+        在支持的网页阅卷任务中识别手写作答、建议得分并填写原站分数。支持试改确认、
+        分小题评分、双评仲裁和评阅历史导出。
       </p>
 
       <div class="home-hero__actions">
         <a class="home-hero__button home-hero__button--primary" :href="withBase('/guide/installation')">安装教程</a>
-        <a class="home-hero__button" :href="withBase('/guide/quickstart')">快速上手</a>
+        <a class="home-hero__button" :href="withBase('/platforms/')">查看支持平台</a>
         <a class="home-hero__button" href="https://github.com/five-plus-one/AI-Marker-Suite">GitHub</a>
       </div>
     </div>
