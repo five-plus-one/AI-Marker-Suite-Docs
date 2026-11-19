@@ -15,11 +15,12 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 
 ## 推荐：5+1 AI
 
-**5+1 AI** 是内置的默认服务商，开箱即用，无需手动配置端点和模型。
+**5+1 AI** 是内置的默认服务商。使用同一个 API 密钥即可连接主端点或上海备用端点。
 
 | 配置项 | 值 |
 |-------|---|
-| 端点 | `https://api.ai.five-plus-one.com/v1/chat/completions`（脚本内置，无需手动填写） |
+| 主端点 | `https://api.ai.five-plus-one.com/v1/chat/completions` |
+| 上海备用端点 | `https://api-sh.ai.five-plus-one.com/v1/chat/completions` |
 | 模型 | 默认 `aimarker-fast`；另有 `aimarker-pro` 与 DeepSeek Flash 可在工作流中选择 |
 | API KEY | [注册获取](https://api.ai.five-plus-one.com/keys) |
 
@@ -34,6 +35,14 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 ::: warning 关于费用
 5+1 AI 为新用户提供少量试用额度。试用额度用完后，需要在控制台中充值才能继续使用。脚本本身完全免费，费用来自 AI 服务的调用。
 :::
+
+### 连接与切换端点
+
+主端点带宽较大。国内部分地区访问受限时，可使用上海备用端点。首次配置时，主端点连接失败会自动验证备用端点，验证通过后保存为当前端点。批改遇到连接故障时也会尝试可用线路。
+
+脚本会获取最新的官方线路配置。暂时无法连接配置服务时，仍可使用已知的官方线路。
+
+之后也可以在「批改配置 → 供应商与模型」中选择「5plus1官方」，通过「5plus1API 端点」切换，继续使用已有的密钥和模型。
 
 <span id="deepseek" class="fp-anchor-alias" aria-hidden="true"></span>
 
