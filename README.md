@@ -1,10 +1,10 @@
 # AI 批改助手 — 文档站
 
-本仓库包含 [AI 批改助手](https://aimarking.five-plus-one.com) 的文档站源码，页面由 [VitePress](https://vitepress.dev/) 编译，搜索、阅读操作和即时提示接入 `@fiveplusone/ui` 共享组件。
+AI 批改助手文档提供脚本安装、评分设置和平台使用步骤。平台目录可按名称查找阅卷入口、适用任务、给分方式和安装要求。[使用文档](https://aimarking.five-plus-one.com/) · [平台目录](https://aimarking.five-plus-one.com/platforms/) · [脚本源码](https://github.com/five-plus-one/AI-Marker-Suite)
 
 ## 本地开发
 
-本地开发约定使用 Node.js 22 和 npm 10，`packageManager` 固定为 `npm@10.9.9`。正式 CI 使用 `aimarker-ci:20261115` 镜像，实际版本为 Node.js 24.22.3、npm 11.19.1。安装依赖使用锁文件；更新依赖时使用 `npx npm@10.9.9 install` 同步锁文件。
+站点由 VitePress 构建，搜索、阅读操作和即时提示使用 `@fiveplusone/ui`。本地开发约定使用 Node.js 22 和 npm 10，`packageManager` 固定为 `npm@10.9.9`。正式 CI 使用 `aimarker-ci:20261115` 镜像，实际版本为 Node.js 24.22.3、npm 11.19.1。安装依赖使用锁文件；更新依赖时使用 `npx npm@10.9.9 install` 同步锁文件。
 
 ```bash
 # 安装依赖
@@ -46,37 +46,7 @@ npm run indexnow
 │   ├── trial.md            # 试改模式
 │   ├── unattended.md       # 无人值守模式
 │   └── dual.md             # 双评模式
-├── platforms/       # 平台使用指南，按平台入口与阅卷任务说明
-│   ├── index.md            # 平台对比与快速导航
-│   ├── zhixue.md           # 智学网
-│   ├── qitian.md           # 七天网络
-│   ├── haofenshu.md        # 好分数
-│   ├── wuyue.md            # 五岳阅卷
-│   ├── hanhan.md           # 华翰云
-│   ├── guangda.md          # 光大阅卷
-│   ├── yunyuejuan.md       # 云阅卷
-│   ├── xinjiaoyu.md        # 新教育
-│   ├── runjian.md          # 润建学情
-│   ├── xueba54.md          # 54学霸
-│   ├── jiukexing.md        # 九科星
-│   ├── huiyuejuan.md       # 慧阅卷
-│   ├── lehua.md            # 乐华阅卷
-│   ├── xinkao.md           # 鑫考
-│   ├── huixuexing.md       # 慧学星
-│   ├── yuejiaoxiangyun.md  # 粤教翔云
-│   ├── haofenshuyize.md    # 云阅卷(好分数)
-│   ├── keewing.md          # 科耘阅卷
-│   ├── guangda-2.md        # 光大阅卷V2
-│   ├── weicom.md           # 威科姆(悦卷通)
-│   ├── c30.md              # C30教育云
-│   ├── ameqp.md            # AMEQP网上评卷
-│   ├── haiyun.md           # 海云智评
-│   ├── xinkao-2.md         # 鑫考(内网)
-│   ├── dongni.md           # 懂你系统
-│   ├── xkw.md              # 学科网 e卷通
-│   ├── qiguang.md          # 启光优测
-│   ├── zhenxue.md          # 诊学网
-│   └── jzsmartedu.md       # 焦作精准教学
+├── platforms/       # 平台指南与平台目录
 ├── advanced/        # 进阶功能
 │   ├── index.md            # 概述
 │   ├── correction.md       # 分数纠错
@@ -137,8 +107,6 @@ SEO 与生成式搜索的内容发现遵循 [Google AI 功能说明](https://dev
 更新日志使用共享 ReleaseNotes 分类展示当前稳定版与预览版相对稳定版新增的变化；数值版本排序、稳定版基线筛选与内容去重在构建和浏览器刷新时采用同一逻辑。历史稳定版本集中收纳，历史书签打开对应版本；预览版已包含在稳定版的内容自动归入稳定版。
 
 ## 稳定版配套内容同步
-
-当前配套版本：**1.21.29.0**，支持 **55 个平台**。
 
 概述与搜索摘要以产品整体能力为主，平台名称采用完整清单；具体入口、操作步骤与适用范围写在对应平台指南中。更新日志记录实际发布变化。
 
