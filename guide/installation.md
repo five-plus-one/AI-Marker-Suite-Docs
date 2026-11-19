@@ -1,6 +1,6 @@
 ---
 title: 安装教程 — AI 批改助手
-description: 在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 51 个阅卷平台。
+description: 在电脑浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，按平台指南进入阅卷任务。
 keywords: AI批改助手,安装教程,Tampermonkey,油猴脚本,Edge浏览器,一键安装,自动批改,智能阅卷,智学网,七天网络,好分数,浏览器扩展
 ---
 
@@ -112,14 +112,10 @@ AI 批改助手提供两个版本渠道，请根据需要选择：
 
 | 版本 | 说明 | 安装链接 |
 |------|------|---------|
-| **稳定版** | 经过充分测试，推荐日常使用 | **[点击安装稳定版](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)** |
-| **预览版** | 包含最新功能，可能不够稳定 | **[点击安装预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)** |
+| **稳定版** | 用于日常阅卷 | **[安装稳定版](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)** |
+| **预览版** | 提前体验功能和平台适配 | **[安装预览版](https://auto-update.aimarking.five-plus-one.com/ota/preview/ai_marker.user.js)** |
 
-::: tip 稳定版和预览版的区别
-- **稳定版**：经过充分测试的功能版本，适合日常批改使用
-- **预览版**：包含正在测试中的新功能，适合想提前体验的用户。如遇到问题可随时在脚本设置中切换回稳定版
-- **开发版**：面向开发者的自动构建版本，不提供公开安装链接
-:::
+可先在[支持平台](/platforms/)查找阅卷入口、适用任务和安装要求。已安装脚本的用户可在助手设置中切换渠道。
 
 1. **在 Edge 浏览器中**点击上方安装链接（不要在微信中打开）
 2. 浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限

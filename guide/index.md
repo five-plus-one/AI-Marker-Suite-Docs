@@ -1,6 +1,6 @@
 ---
 title: 入门指南 - AI 批改助手
-description: AI 批改助手入门指南：了解支持 51 个阅卷平台的浏览器脚本，完成安装、API 配置和首次试改，查看使用建议与常见问题。
+description: 查找 AI 批改助手支持的阅卷平台，完成脚本安装、API 配置和首次试改。
 keywords: AI批改助手,入门指南,安装教程,快速上手,常见问题,Tampermonkey,油猴脚本,自动批改,智能阅卷,智学网,七天网络,好分数
 ---
 
@@ -18,13 +18,13 @@ keywords: AI批改助手,入门指南,安装教程,快速上手,常见问题,Tam
 
 1. **[项目介绍](/guide/introduction)** — 了解 AI 批改助手是什么、能做什么
 2. **[油猴脚本安装](/guide/userscript-install) · [安装教程](/guide/installation)** — 在 Edge 浏览器中安装 Tampermonkey 扩展和用户脚本
-3. **[快速上手](/guide/quickstart)** — 配置 AI 服务，5 分钟完成第一次批改
+3. **[快速上手](/guide/quickstart)** — 配置 AI 服务并完成第一次试改
 4. **[常见问题](/guide/faq)** — 浏览器兼容、手机端、费用等常见问题
 
 <CardGrid>
 <Card title="项目介绍" href="/guide/introduction" description="了解 AI 批改助手是什么、能做什么、核心功能概览" />
 <Card title="安装教程" href="/guide/installation" description="在 Edge 浏览器中安装 Tampermonkey 扩展和用户脚本的完整步骤" />
-<Card title="快速上手" href="/guide/quickstart" description="从安装到第一次成功批改的完整流程，5 分钟搞定" />
+<Card title="快速上手" href="/guide/quickstart" description="配置 AI 服务、选择评分方案并核对第一次试改" />
 <Card title="常见问题" href="/guide/faq" description="使用过程中遇到的问题和解答，包括浏览器兼容、手机端、费用等" />
 </CardGrid>
 
