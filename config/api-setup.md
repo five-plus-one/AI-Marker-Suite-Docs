@@ -23,8 +23,10 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 | --- | --- | --- |
 | 主端点（自动分流） | `https://api.ai.five-plus-one.com/v1/chat/completions` | 日常使用。由服务自动分配接入节点。 |
 | 香港端点 | `https://api-hk.ai.five-plus-one.com/v1/chat/completions` | 需要固定从香港接入时使用。 |
-| 绍兴端点 | `https://api.ai.five-plus-one.com/regional/shaoxing/v1/chat/completions` | 通过主入口定向到绍兴。需要固定由绍兴处理时使用。 |
+| 绍兴端点（定向入口） | `https://api.ai.five-plus-one.com/regional/shaoxing/v1/chat/completions` | 经主端点入口定向到绍兴，供脚本选择。 |
 | 上海备用端点 | `https://api-sh.ai.five-plus-one.com/v1/chat/completions` | 当前线路访问受限或连接不稳时使用。 |
+
+绍兴节点的直连地址为 `https://api-sx.ai.five-plus-one.com/v1/chat/completions`。部分网络访问直连地址时会在 HTTPS 握手阶段断开，脚本当前通过表中的定向入口使用绍兴。
 
 当前网络无法连接主域名时，可先试香港端点或上海备用端点。
 
