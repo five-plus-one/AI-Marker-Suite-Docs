@@ -1,6 +1,6 @@
 ---
 title: AI 接口配置 — AI 批改助手
-description: 配置支持图片识别的 AI 接口，了解 5plus1API 主端点、上海备用端点、密钥获取、充值与连接排查。
+description: 配置支持图片识别的 AI 接口，了解 5plus1API 自动选择与手动切换端点、密钥获取、充值与连接排查。
 ---
 
 # AI 接口配置
@@ -15,18 +15,26 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 
 ## 推荐：5+1 AI
 
-**5plus1API** 是内置的默认服务商。两个端点共用账号、API 密钥和余额。
+**5plus1API** 是内置的默认服务商。官方端点共用账号、API 密钥和余额。
 
-| 配置项 | 值 |
-|-------|---|
-| 主端点 | `https://api.ai.five-plus-one.com/v1/chat/completions` |
-| 上海备用端点 | `https://api-sh.ai.five-plus-one.com/v1/chat/completions` |
-| 模型 | 默认 `aimarker-fast`；另有 `aimarker-pro` 与 DeepSeek Flash 可在工作流中选择 |
-| API 密钥 | [主站密钥页](https://api.ai.five-plus-one.com/keys) · [上海备用密钥页](https://api-sh.ai.five-plus-one.com/keys) |
+### 官方端点
+
+| 端点 | 地址 | 使用场景 |
+| --- | --- | --- |
+| 主端点（自动分流） | `https://api.ai.five-plus-one.com/v1/chat/completions` | 日常使用。由服务自动分配接入节点。 |
+| 香港端点 | `https://api-hk.ai.five-plus-one.com/v1/chat/completions` | 需要固定从香港接入时使用。 |
+| 绍兴端点（定向入口） | `https://api.ai.five-plus-one.com/regional/shaoxing/v1/chat/completions` | 经主端点入口定向到绍兴，供脚本选择。 |
+| 上海备用端点 | `https://api-sh.ai.five-plus-one.com/v1/chat/completions` | 当前线路访问受限或连接不稳时使用。 |
+
+绍兴节点的直连地址为 `https://api-sx.ai.five-plus-one.com/v1/chat/completions`。部分网络访问直连地址时会在 HTTPS 握手阶段断开，脚本当前通过表中的定向入口使用绍兴。
+
+当前网络无法连接主域名时，可先试香港端点或上海备用端点。
+
+默认模型为 `aimarker-fast`，也可在工作流中选择 `aimarker-pro` 或 DeepSeek Flash。API 密钥可在[主站密钥页](https://api.ai.five-plus-one.com/keys)或[上海备用密钥页](https://api-sh.ai.five-plus-one.com/keys)创建。
 
 ### 获取步骤
 
-1. 打开表中的任一密钥页
+1. 打开上方任一密钥页
 2. 注册账号（支持手机号或邮箱）
 3. 新注册用户会获得**少量试用额度**
 4. 在控制台中创建 API Token
@@ -34,11 +42,9 @@ AI 批改助手的核心功能是**识别手写答案图片**，因此所选模�
 
 ### 连接与切换端点
 
-主端点带宽较大。国内部分地区访问受限时，可使用上海备用端点。首次配置时，主端点连接失败会自动验证备用端点，验证通过后保存为当前端点。批改遇到连接故障时也会尝试切换线路。
+从 1.21.33.0 开始，在「批改配置 → 供应商与模型」选择「5plus1官方」，然后在「5plus1API 端点」选择「跟随云控」或指定线路。跟随云控的脚本会采用官方默认端点，手动选择的线路会作为首选。切换后可继续使用原有密钥和模型。
 
-脚本会获取最新的官方线路配置。暂时无法连接配置服务时，仍可使用已知的官方线路。
-
-之后也可以在「批改配置 → 供应商与模型」中选择「5plus1官方」，通过「5plus1API 端点」切换，继续使用已有的密钥和模型。
+所选端点连接失败时，脚本会尝试备用端点。暂时无法读取最新配置时，脚本会使用已有的官方线路。
 
 ### 余额与充值
 
