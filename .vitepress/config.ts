@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { productDescription, productFeatures, platformNames, stableRelease } from '../site/product.mjs'
+import { markerLogo, socialPreview } from '../site/images.mjs'
 
 // BASE_URL 默认为 '/'；内部 CI 同时验证根路径和 '/AI-Marker-Suite-Docs/' 子路径。
 const BASE = process.env.BASE_URL || '/'
@@ -39,7 +40,7 @@ export default defineConfig({
   // ========== SEO & GEO: Head Meta ==========
   head: [
     // Favicon
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: `${BASE}img/marker-logo.svg` }],
+    ['link', { rel: 'icon', type: 'image/png', href: markerLogo }],
 
     // SEO: Canonical & Robots
     ['link', { rel: 'canonical', href: SITE_URL }],
@@ -51,16 +52,16 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
     ['meta', { property: 'og:description', content: productDescription }],
     ['meta', { property: 'og:url', content: SITE_URL }],
-    ['meta', { property: 'og:image', content: `${SITE_URL}/img/1.png` }],
-    ['meta', { property: 'og:image:width', content: '1200' }],
-    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image', content: socialPreview.url }],
+    ['meta', { property: 'og:image:width', content: String(socialPreview.width) }],
+    ['meta', { property: 'og:image:height', content: String(socialPreview.height) }],
     ['meta', { property: 'og:locale', content: 'zh_CN' }],
 
     // SEO: Twitter Card
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: 'AI 批改助手 — 让 AI 替你改卷' }],
     ['meta', { name: 'twitter:description', content: productDescription }],
-    ['meta', { name: 'twitter:image', content: `${SITE_URL}/img/1.png` }],
+    ['meta', { name: 'twitter:image', content: socialPreview.url }],
 
     // SEO: Additional Keywords
     ['meta', { name: 'keywords', content: ['AI批改助手', 'AI阅卷', '手写识别', '双评仲裁', 'Tampermonkey', ...platformNames].join(',') }],
@@ -88,7 +89,7 @@ export default defineConfig({
         url: 'https://five-plus-one.com',
       },
       softwareVersion: stableRelease.version,
-      screenshot: `${SITE_URL}/img/1.png`,
+      screenshot: socialPreview.url,
       featureList: productFeatures,
     })],
 
@@ -204,7 +205,7 @@ export default defineConfig({
 
   // ========== Theme Config ==========
   themeConfig: {
-    logo: '/img/marker-logo.svg',
+    logo: markerLogo,
     siteTitle: 'AI 批改助手',
 
     nav: [
