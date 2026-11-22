@@ -4,10 +4,6 @@ description: 配置 AI 服务、批改工作流、题目资料与分小题评分
 keywords: AI批改助手,配置指南,AI接口配置,批改工作流,评分规则,预设方案,分小题配置,API密钥,多模态AI,自动批改配置
 ---
 
-<script setup>
-import automationExample from './images/automation-settings-example.png'
-</script>
-
 <span id="文档导航" class="fp-anchor-alias" aria-hidden="true"></span>
 
 # 配置指南
@@ -46,9 +42,9 @@ import automationExample from './images/automation-settings-example.png'
 
 下图是自动化设置示例。勾选状态、核对策略和填写的数值仅用于演示，请按本题需要设置。新方案需要核对时默认暂停，保存待复核、随机提交延迟和随机休息默认关闭。
 
-![自动化设置示例，包含配置引导、批阅份数、自动重试、答卷核对与批改节奏](./images/automation-settings-example.png)
+![自动化设置示例，包含配置引导、批阅份数、自动重试、答卷核对与批改节奏](https://img.five-plus-one.com/i/2026/11/22/712fe6e480cd39e1.png)
 
-<a :href="automationExample">查看自动化设置原图</a>
+[查看自动化设置原图](https://img.five-plus-one.com/i/2026/11/22/712fe6e480cd39e1.png)
 
 ## 批改节奏（实验性）
 

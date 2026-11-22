@@ -91,11 +91,11 @@
         <p>你的支持会变成继续适配平台、维护文档和处理反馈的动力。</p>
         <div class="home-donate-grid">
           <figure>
-            <img src="https://r-l.ink/paywx1" alt="微信赞赏二维码" loading="lazy" />
+            <img :src="supportQr.wechat" alt="微信赞赏二维码" loading="lazy" />
             <figcaption>微信赞赏</figcaption>
           </figure>
           <figure>
-            <img src="https://r-l.ink/payzfb1" alt="支付宝赞赏二维码" loading="lazy" />
+            <img :src="supportQr.alipay" alt="支付宝赞赏二维码" loading="lazy" />
             <figcaption>支付宝赞赏</figcaption>
           </figure>
         </div>
@@ -117,6 +117,7 @@
 </template>
 
 <script setup lang="ts">
+import { supportQr } from '../../site/images.mjs'
 import { withBase } from 'vitepress'
 import ProductPreview from './ProductPreview.vue'
 const modes = [

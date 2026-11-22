@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react';
 import {MarkerLogo,DocumentationLayout,DocumentationCards,ThemeToggle,TooltipProvider,ButtonLink,Button,DocumentationSearch,ProductStatementHero,ProductEditorialSection,ProductEditorialSections} from '@fiveplusone/ui/app-surfaces';
 import '@fiveplusone/ui/app-surfaces.css';
 import './site.css';
+import {supportQr} from './images.mjs';
 export function App({page,groups,base}){
  const [dark,setDark]=useState(false),[query,setQuery]=useState(''),[index,setIndex]=useState(null),[searchError,setSearchError]=useState(false);
  const [searchOpen,setSearchOpen]=useState(false);
@@ -107,11 +108,11 @@ function Home({base}){return <>
         <p>你的支持会变成继续适配平台、维护文档和处理反馈的动力。</p>
         <div className="fp-editorial-donate-grid">
           <figure>
-            <a href="https://r-l.ink/paywx1" target="_blank" rel="noopener noreferrer" aria-label="查看微信赞赏二维码大图"><img src="https://r-l.ink/paywx1" alt="微信赞赏二维码" loading="lazy" /></a>
+            <a href={supportQr.wechat} target="_blank" rel="noopener noreferrer" aria-label="查看微信赞赏二维码大图"><img src={supportQr.wechat} alt="微信赞赏二维码" loading="lazy" /></a>
             <figcaption>微信赞赏</figcaption>
           </figure>
           <figure>
-            <a href="https://r-l.ink/payzfb1" target="_blank" rel="noopener noreferrer" aria-label="查看支付宝赞赏二维码大图"><img src="https://r-l.ink/payzfb1" alt="支付宝赞赏二维码" loading="lazy" /></a>
+            <a href={supportQr.alipay} target="_blank" rel="noopener noreferrer" aria-label="查看支付宝赞赏二维码大图"><img src={supportQr.alipay} alt="支付宝赞赏二维码" loading="lazy" /></a>
             <figcaption>支付宝赞赏</figcaption>
           </figure>
         </div>
