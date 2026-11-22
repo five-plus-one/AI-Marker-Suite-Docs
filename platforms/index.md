@@ -66,6 +66,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [学科网云阅卷](/platforms/xkw-cloud) | xycp.xkw.com | 普通阅卷、题块总分与保存核对 |
 | [爱多分](/platforms/eiduo) | eiduo.com | 普通单题阅卷、打分板给分与保存核对 |
 | [百分智考试服务](/platforms/bfzks) | www.bfzks.com | 普通键盘阅卷、按题给分与保存核对 |
+| [教学质量监测管理系统](/platforms/dcesa) | dcesa.cn | 区级正评、给分板给分与同题续批 |
 | [启光优测](/platforms/qiguang) | 学校阅卷地址 | 单份答卷的键盘给分 |
 | [诊学网](/platforms/zhenxue) | 学校门户 → 统考阅卷 | 统考阅卷与单份键盘给分 |
 | [焦作精准教学](/platforms/jzsmartedu) | jzsmartedu.cn → 精准教学 | 普通单评与评分板或键盘给分 |
