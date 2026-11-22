@@ -8,7 +8,7 @@
 - 源代码：https://github.com/five-plus-one/AI-Marker-Suite
 - 许可证：GPL-3.0
 - 最新稳定版与更新说明：https://aimarking.five-plus-one.com/changelog
-- 在电脑浏览器中安装 Tampermonkey；推荐 Edge。手机可阅读文档，批改需使用电脑。
+- 可在电脑浏览器或支持扩展的 Android 平板 Edge 中安装 Tampermonkey。手机满足扩展和网页阅卷条件时可尝试，正式阅卷优先用电脑或平板。
 - 脚本免费开源，AI 服务可能收费。所选服务必须能处理图片输入。
 - 教师制定评分标准并审核关键结果；首次使用建议试改。不同平台支持的任务范围以对应指南为准。
 

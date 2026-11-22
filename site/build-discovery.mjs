@@ -15,7 +15,7 @@ export async function buildDiscovery({out,base,seo}){
  const lead=source.split('## 文档页面')[0]+`## 当前稳定版\n\n- 版本：${stableRelease.version}\n- 发布日期：${stableRelease.releaseDate}\n- 支持平台（${platformNames.length} 个）：${platformNames.join('、')}。\n- 稳定版安装：https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js\n\n`,tail=source.includes('## 社群与友情链接')?'## 社群与友情链接'+source.split('## 社群与友情链接')[1]:'';
  const entries=pages.map(page=>`- [${page.title.replace(/ \| AI 批改助手$/,'')}](${page.canonical}): ${page.description}`).join('\n');
  await fs.writeFile(out+'/llms.txt',`${lead}## 文档页面\n\n${entries}\n\n## 完整文档\n\n- [AI 批改助手完整文档](${origin}/llms-full.txt)：按页面整理的可读正文，以各页规范链接为准。\n\n${tail}`);
- const full=['# AI 批改助手完整文档','',`文档站：${origin}/`,'','脚本本身开源免费；AI 服务可能收费。脚本运行在电脑浏览器，不支持手机批改。',''];
+ const full=['# AI 批改助手完整文档','',`文档站：${origin}/`,'','脚本开源免费，AI 服务可能收费。电脑和支持 Tampermonkey 扩展的 Android 平板 Edge 可安装脚本。手机满足扩展和网页阅卷条件时可尝试，正式阅卷优先用电脑或平板。',''];
  for(const page of pages){
   const file=page.route==='/'?'index.html':page.route.endsWith('/')?page.route.slice(1)+'index.html':page.route.slice(1)+'.html';
   const $=load(await fs.readFile(out+'/'+file,'utf8')),content=page.route==='/'?$('.home-hero,.home-sections').clone():$('.vp-doc').first().clone();
