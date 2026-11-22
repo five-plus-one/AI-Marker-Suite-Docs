@@ -8,7 +8,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 
 查找你的阅卷平台，打开对应指南了解安装渠道、适用任务与操作步骤。
 
-各平台的给分方式与提交要求不同。首次使用请按指南配置参考答案和评分标准，先用试改模式核对结果。
+首次使用请按[快速上手](/guide/quickstart)连接批改服务，按平台指南核对给分方式和提交要求，填写[参考答案和评分标准](/config/rubric)，再用[试改模式](/modes/trial)核对结果。
 
 <span id="平台对比" class="fp-anchor-alias" aria-hidden="true"></span>
 <span id="快速导航" class="fp-anchor-alias" aria-hidden="true"></span>
@@ -21,7 +21,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 
 | 平台 | 入口 | 使用说明 |
 |---|---|---|
-| [智学网](/platforms/zhixue) | zhixue.com | 答题卡识别、自动填分与分小题评分 |
+| [智学网](/platforms/zhixue) | zhixue.com | 考试分小题评分与同题续批、网页版作业整题给分 |
 | [七天网络](/platforms/qitian) | 7net.cc / qt7.net / qt7.cn | 新旧阅卷页面与分小题评分 |
 | [好分数](/platforms/haofenshu) | haofenshu.com | 答题卡识别、分小题评分与提交设置 |
 | [五岳阅卷](/platforms/wuyue) | wylkyj.com | 答题卡识别与分小题评分 |
@@ -70,7 +70,7 @@ keywords: AI批改助手,阅卷平台,平台入口,使用指南,键盘给分,分
 | [诊学网](/platforms/zhenxue) | 学校门户 → 统考阅卷 | 统考阅卷与单份键盘给分 |
 | [焦作精准教学](/platforms/jzsmartedu) | jzsmartedu.cn → 精准教学 | 普通单评与评分板或键盘给分 |
 | [天喻慧学（含惠州）](/platforms/huixue) | hx-webscan.tyhuixue.com / 惠州教育门户 | 普通阅卷的键盘给分与保存核对 |
-| [小闲 AI 网上阅卷](/platforms/xiaoxianai) | ls.xiaoxianai.cn | 普通单题、单份答卷的键盘给分 |
+| [小闲 AI 网上阅卷](/platforms/xiaoxianai) | ls.xiaoxianai.cn | 普通考试和联考的单题键盘给分 |
 | [园丁邦云阅卷](/platforms/yuandingbang) | yuejuan.yuandingbang.cn | 普通单评、得分点核对与键盘给分 |
 | [丽升阅卷](/platforms/leascent) | 湖北阅卷、铜山高二选择考 | 正评中的打分板给分 |
 | [悦卷通](/platforms/yuejuantong) | www.yuejuantong.com | 键盘按题阅卷和分小题评分 |
