@@ -40,11 +40,11 @@ Windows 电脑通常已安装 Edge，可直接从 Edge 扩展商店获取篡改�
 
 3. 在打开的页面中，点击 **「获取」** 按钮
 
-![](https://img.assets.five-plus-one.com/2026/05/e4dda0a1047a12d49dc27e615d591dbd.png)
+![](https://img.five-plus-one.com/i/2026/11/22/51e8eb846cba688b.png)
 
 4. 浏览器会弹出确认提示，点击 **「添加扩展」**
 
-![](https://img.assets.five-plus-one.com/2026/05/0ee33f3b3677ce816010d9309704c9dc.png)
+![](https://img.five-plus-one.com/i/2026/11/22/0a6b9bab44a90e5a.png)
 
 5. 安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标
 
@@ -60,26 +60,26 @@ Windows 电脑通常已安装 Edge，可直接从 Edge 扩展商店获取篡改�
 
 1. 在 Edge 地址栏输入 `edge://extensions/`，打开扩展管理页（也可以点击右上角 **扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展**）。
 
-![Edge 扩展菜单中的「管理扩展」入口](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
+![Edge 扩展菜单中的「管理扩展」入口](https://img.five-plus-one.com/i/2026/11/22/0209a55505dfcedd.png)
 
 2. 找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。
 3. 打开「允许用户脚本」。
 
-![Edge 扩展详情中的「允许用户脚本」开关](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
+![Edge 扩展详情中的「允许用户脚本」开关](https://img.five-plus-one.com/i/2026/11/22/f221445652b05f42.png)
 
 如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。
 
-![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
+![Edge 扩展管理页中的开发人员模式开关](https://img.five-plus-one.com/i/2026/11/22/576d90c33f29d7f5.png)
 
 #### Google Chrome
 
 1. 在篡改猴扩展图标上**右键** → 点击 **「管理扩展程序」**
 
-![通过篡改猴图标进入扩展管理](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
+![通过篡改猴图标进入扩展管理](https://img.five-plus-one.com/i/2026/11/22/484371fbfcd5481a.png)
 
 2. 打开 **「允许运行用户脚本」**。如果当前版本没有这个开关，可在扩展程序管理页打开「开发者模式」。
 
-![Chrome 扩展详情中的用户脚本权限](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
+![Chrome 扩展详情中的用户脚本权限](https://img.five-plus-one.com/i/2026/11/22/f71498ec7cb495c8.png)
 
 不同浏览器版本的设置位置可参阅[篡改猴官方权限说明](https://www.tampermonkey.net/faq.php#Q209)。
 
@@ -102,7 +102,7 @@ Windows 电脑通常已安装 Edge，可直接从 Edge 扩展商店获取篡改�
 2. 浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限
 3. 点击 **「安装」** 按钮
 
-![](https://img.assets.five-plus-one.com/2026/05/230fdabb40dffd845252170452402a32.png)
+![](https://img.five-plus-one.com/i/2026/11/22/2bb11d8a8732650d.png)
 
 ::: warning 点击链接后没有反应？
 - 在已安装篡改猴的浏览器中重新打开安装链接。
@@ -121,11 +121,11 @@ Windows 电脑通常已安装 Edge，可直接从 Edge 扩展商店获取篡改�
 
 **✅ 正常情况** —— 显示「✓ 已启用」，下方列出 AI-Marker-Suite：
 
-![AI-Marker-Suite 脚本已启用](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
+![AI-Marker-Suite 脚本已启用](https://img.five-plus-one.com/i/2026/11/22/ebcfdec6bb51d7f2.png)
 
 **❌ 异常情况** —— 顶部出现蓝色提示「请启用"允许用户脚本"扩展设置」：
 
-![尚未允许用户脚本时的扩展提示](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
+![尚未允许用户脚本时的扩展提示](https://img.five-plus-one.com/i/2026/11/22/6c8c6b4a5c76a0ff.png)
 
 出现异常提示时，请回到上一步完成「允许扩展运行」设置，然后刷新阅卷页面。
 
@@ -138,11 +138,11 @@ Windows 电脑通常已安装 Edge，可直接从 Edge 扩展商店获取篡改�
 1. 在平板上打开 Microsoft Edge，点浏览器菜单中的「扩展」。搜索「篡改猴」或「Tampermonkey」，点「获取」并按提示添加扩展。
 2. 进入 **Edge → 扩展 → 篡改猴 → 允许用户脚本**。在「已安装」列表里点「篡改猴」右侧的「···」，确认「启用」已打开，再打开「允许用户脚本」。
 
-   ![Android 平板 Edge 的扩展列表，篡改猴菜单中已打开允许用户脚本](./images/android-edge-allow-user-scripts.jpg)
+   ![Android 平板 Edge 的扩展列表，篡改猴菜单中已打开允许用户脚本](https://img.five-plus-one.com/i/2026/11/22/ea39c8bcacf03ccd.jpg)
 
 3. 在同一个 Edge 浏览器中打开[安装稳定版](https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js)，等篡改猴打开确认页，首次安装时点「安装」。下图演示的是已安装脚本后切换到预览渠道的「更新用户脚本」页面。
 
-   ![Android 平板上篡改猴的脚本确认页，示例为切换到预览渠道](./images/android-edge-script-confirmation.jpg)
+   ![Android 平板上篡改猴的脚本确认页，示例为切换到预览渠道](https://img.five-plus-one.com/i/2026/11/22/059b5f413dd2c55c.jpg)
 
 4. 在 Edge 中进入阅卷平台的待阅答卷。若阅卷页面已打开，先刷新，等答题卡和给分区加载后，确认页面出现「AI 批改」入口。
 

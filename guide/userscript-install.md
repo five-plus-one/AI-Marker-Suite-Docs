@@ -20,11 +20,11 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,脚本安装,E
 
 在打开的扩展商店页面点击 **「获取」**：
 
-![Edge 扩展商店中的「获取」按钮](https://img.assets.five-plus-one.com/2026/05/e4dda0a1047a12d49dc27e615d591dbd.png)
+![Edge 扩展商店中的「获取」按钮](https://img.five-plus-one.com/i/2026/11/22/51e8eb846cba688b.png)
 
 弹出确认框后点 **「添加扩展」**：
 
-![安装确认提示中的「添加扩展」按钮](https://img.assets.five-plus-one.com/2026/05/0ee33f3b3677ce816010d9309704c9dc.png)
+![安装确认提示中的「添加扩展」按钮](https://img.five-plus-one.com/i/2026/11/22/0a6b9bab44a90e5a.png)
 
 ### Google Chrome
 
@@ -50,17 +50,17 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,脚本安装,E
 
 1. 点击浏览器右上角 **扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展**
 
-![Edge 扩展菜单中的「管理扩展」入口](https://img.assets.five-plus-one.com/2026/05/de36528fb825f706bf118834112b390f.png)
+![Edge 扩展菜单中的「管理扩展」入口](https://img.five-plus-one.com/i/2026/11/22/0209a55505dfcedd.png)
 
 2. 在扩展详情里打开 **「允许用户脚本」**。
 
-![Edge 扩展详情中的「允许用户脚本」开关](https://img.assets.five-plus-one.com/2026/05/45e126528a82494b866a5c7ad5d946d1.png)
+![Edge 扩展详情中的「允许用户脚本」开关](https://img.five-plus-one.com/i/2026/11/22/f221445652b05f42.png)
 
 ### Microsoft Edge（旧版）
 
 部分旧版 Edge 的扩展设置里**没有「允许用户脚本」这一项**。此时打开 **「开发人员模式」** 开关即可：
 
-![Edge 扩展管理页中的开发人员模式开关](https://img.assets.five-plus-one.com/img/2026/10/4f8035363d77b85cb233f5eaacd97ac1.png)
+![Edge 扩展管理页中的开发人员模式开关](https://img.five-plus-one.com/i/2026/11/22/576d90c33f29d7f5.png)
 
 开启后脚本即可正常运行。
 
@@ -68,11 +68,11 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,脚本安装,E
 
 1. 在篡改猴扩展图标上**右键** → 点击 **「管理扩展程序」**
 
-![通过篡改猴图标进入扩展管理](https://img.assets.five-plus-one.com/img/2026/10/c4f371298159b08c8a545666445e8b49.png)
+![通过篡改猴图标进入扩展管理](https://img.five-plus-one.com/i/2026/11/22/484371fbfcd5481a.png)
 
 2. 打开 **「允许运行用户脚本」**。如果当前版本没有这个开关，可在扩展程序管理页打开「开发者模式」。
 
-![Chrome 扩展详情中的用户脚本权限](https://img.assets.five-plus-one.com/img/2026/10/f9466dc624165e29827bf1abd43cbdd5.png)
+![Chrome 扩展详情中的用户脚本权限](https://img.five-plus-one.com/i/2026/11/22/f71498ec7cb495c8.png)
 
 ### Android 平板 Edge 的用户脚本权限
 
@@ -96,11 +96,11 @@ keywords: 油猴脚本,油猴,Tampermonkey,篡改猴,用户脚本,脚本安装,E
 
 **✅ 正常情况** —— 显示「✓ 已启用」，下方列出你安装的脚本：
 
-![AI-Marker-Suite 脚本已启用](https://img.assets.five-plus-one.com/img/2026/10/13a2a8c709a9463a2e6baf138d060d56.png)
+![AI-Marker-Suite 脚本已启用](https://img.five-plus-one.com/i/2026/11/22/ebcfdec6bb51d7f2.png)
 
 **❌ 异常情况** —— 顶部出现蓝色提示「请启用"允许用户脚本"扩展设置」：
 
-![尚未允许用户脚本时的扩展提示](https://img.assets.five-plus-one.com/img/2026/10/13e5096cfd941365f5786c7681ace7a2.png)
+![尚未允许用户脚本时的扩展提示](https://img.five-plus-one.com/i/2026/11/22/6c8c6b4a5c76a0ff.png)
 
 出现异常提示时，请回到上一步完成「允许扩展运行用户脚本」的设置，然后**刷新页面**。
 

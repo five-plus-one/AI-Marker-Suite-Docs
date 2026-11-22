@@ -14,7 +14,7 @@ lastUpdated: false
 如果需要进一步沟通，欢迎扫码添加微信，方便与你对接。
 
 <figure class="feedback-qr">
-  <img src="https://img.assets.five-plus-one.com/i/2025/02/06/1738833911361/wx.jpg" alt="微信二维码" />
+  <img src="https://img.five-plus-one.com/i/2026/11/22/bbe7997df9394e10.jpg" alt="微信二维码" />
   <figcaption>扫码添加微信</figcaption>
 </figure>
 

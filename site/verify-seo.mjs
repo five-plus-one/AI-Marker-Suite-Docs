@@ -1,4 +1,5 @@
 import {stableRelease,platformNames} from './product.mjs';
+import {imageOrigin,markerLogo,socialPreview} from './images.mjs';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -16,8 +17,14 @@ for(const page of report){const file=path.join(root,page.route==='/'?'index.html
  assert.equal(sitemapUrls.has(page.canonical),page.indexable,'Sitemap matches indexing intent: '+page.route);
  const schemas=$('script[type="application/ld+json"]').toArray().map(el=>JSON.parse($(el).text()));
  assert.deepEqual(schemas.map(s=>s['@type']),page.schemas);
- for(const schema of schemas){assert.equal(schema['@context'],'https://schema.org');if(schema['@type']==='FAQPage'){assert.equal(page.route,'/guide/faq');assert(schema.mainEntity.length>0);for(const q of schema.mainEntity){assert(q.name&&q.acceptedAnswer.text);assert($('.vp-doc').text().replace(/[\u200b-\u200d]/g,'').replace(/\s+/g,' ').includes(q.name))}}if(schema['@type']==='HowTo'){assert.equal(page.route,'/guide/installation');assert.equal(schema.step.length,3)}if(schema['@type']==='SoftwareApplication'){assert.equal(page.route,'/');assert.equal(schema.softwareVersion,stableRelease.version);assert.equal(schema.datePublished,stableRelease.releaseDate);assert(schema.featureList.length>=5);}}
- const image=new URL($('meta[property="og:image"]').attr('content'));await fs.access(path.join(root,image.pathname));
+ for(const schema of schemas){assert.equal(schema['@context'],'https://schema.org');if(schema['@type']==='FAQPage'){assert.equal(page.route,'/guide/faq');assert(schema.mainEntity.length>0);for(const q of schema.mainEntity){assert(q.name&&q.acceptedAnswer.text);assert($('.vp-doc').text().replace(/[\u200b-\u200d]/g,'').replace(/\s+/g,' ').includes(q.name))}}if(schema['@type']==='HowTo'){assert.equal(page.route,'/guide/installation');assert.equal(schema.step.length,3)}if(schema['@type']==='SoftwareApplication'){assert.equal(page.route,'/');assert.equal(schema.softwareVersion,stableRelease.version);assert.equal(schema.datePublished,stableRelease.releaseDate);assert(schema.featureList.length>=5);assert.equal(schema.screenshot,socialPreview.url);}}
+ assert.equal($('meta[property="og:image"]').attr('content'),socialPreview.url,page.route);
+ assert.equal($('meta[name="twitter:image"]').attr('content'),socialPreview.url,page.route);
+ assert.equal($('link[rel="icon"]').attr('href'),markerLogo,page.route);
+ for(const element of $('img[src]').toArray()){
+   const src=$(element).attr('src');
+   assert(src.startsWith(imageOrigin+'/'), 'Hosted image: '+page.route+' '+src);
+ }
  assert(!$('main').text().includes('鏇存柊'),'Readable rendered content: '+page.route);
 }
 console.log(`SEO verified: ${report.length} pages; ${report.filter(p=>p.indexable).length} indexable; titles, descriptions, canonical, social previews, schema and sitemap.`);
