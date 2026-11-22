@@ -60,7 +60,7 @@
   {
     "route": "/advanced/correction",
     "title": "分数纠错 | AI 批改助手",
-    "description": "当AI打分不准时，输入正确分数，AI自动分析原因并优化评分标准。支持分小题独立纠错，越用越准。",
+    "description": "核对并更正当份答卷得分，按需让 AI 根据教师反馈提出参考答案与评分标准的修改建议。",
     "canonical": "https://aimarking.five-plus-one.com/advanced/correction",
     "indexable": true,
     "schemas": [
@@ -74,7 +74,7 @@
         "@id": "https://aimarking.five-plus-one.com/advanced/correction#page",
         "url": "https://aimarking.five-plus-one.com/advanced/correction",
         "name": "分数纠错 | AI 批改助手",
-        "description": "当AI打分不准时，输入正确分数，AI自动分析原因并优化评分标准。支持分小题独立纠错，越用越准。",
+        "description": "核对并更正当份答卷得分，按需让 AI 根据教师反馈提出参考答案与评分标准的修改建议。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -158,7 +158,7 @@
   {
     "route": "/advanced/",
     "title": "进阶功能 | AI 批改助手",
-    "description": "AI批改助手进阶功能，包括分数纠错让AI越用越准、批改历史记录导出 HTML/CSV/JSON/材料包ZIP 报告、开发新适配器扩展支持平台。掌握这些功能让AI批改更高效。",
+    "description": "核对和更正得分，查看待复核答卷，导出评阅历史，或为新的阅卷平台开发适配器。",
     "canonical": "https://aimarking.five-plus-one.com/advanced/",
     "indexable": true,
     "schemas": [
@@ -172,7 +172,7 @@
         "@id": "https://aimarking.five-plus-one.com/advanced/#page",
         "url": "https://aimarking.five-plus-one.com/advanced/",
         "name": "进阶功能 | AI 批改助手",
-        "description": "AI批改助手进阶功能，包括分数纠错让AI越用越准、批改历史记录导出 HTML/CSV/JSON/材料包ZIP 报告、开发新适配器扩展支持平台。掌握这些功能让AI批改更高效。",
+        "description": "核对和更正得分，查看待复核答卷，导出评阅历史，或为新的阅卷平台开发适配器。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -244,7 +244,7 @@
   {
     "route": "/config/api-setup",
     "title": "AI 接口配置 | AI 批改助手",
-    "description": "AI批改助手需要支持图片识别的多模态AI服务。推荐5+1 AI，也支持火山引擎、硅基流动等OpenAI兼容接口。",
+    "description": "使用五加一账号或 API 密钥连接批改服务，测试官方线路，配置兼容供应商，并查看余额与计费说明。",
     "canonical": "https://aimarking.five-plus-one.com/config/api-setup",
     "indexable": true,
     "schemas": [
@@ -258,7 +258,7 @@
         "@id": "https://aimarking.five-plus-one.com/config/api-setup#page",
         "url": "https://aimarking.five-plus-one.com/config/api-setup",
         "name": "AI 接口配置 | AI 批改助手",
-        "description": "AI批改助手需要支持图片识别的多模态AI服务。推荐5+1 AI，也支持火山引擎、硅基流动等OpenAI兼容接口。",
+        "description": "使用五加一账号或 API 密钥连接批改服务，测试官方线路，配置兼容供应商，并查看余额与计费说明。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -342,7 +342,7 @@
   {
     "route": "/config/",
     "title": "配置指南 | AI 批改助手",
-    "description": "AI批改助手配置指南，包括AI接口配置、批改工作流、评分规则、预设方案管理和分小题配置。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商，灵活自定义批改行为。",
+    "description": "配置 AI 服务、批改工作流、题目资料与分小题评分，管理场景方案和自动化设置。",
     "canonical": "https://aimarking.five-plus-one.com/config/",
     "indexable": true,
     "schemas": [
@@ -356,7 +356,7 @@
         "@id": "https://aimarking.five-plus-one.com/config/#page",
         "url": "https://aimarking.five-plus-one.com/config/",
         "name": "配置指南 | AI 批改助手",
-        "description": "AI批改助手配置指南，包括AI接口配置、批改工作流、评分规则、预设方案管理和分小题配置。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商，灵活自定义批改行为。",
+        "description": "配置 AI 服务、批改工作流、题目资料与分小题评分，管理场景方案和自动化设置。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -434,7 +434,7 @@
   {
     "route": "/config/rubric",
     "title": "评分规则 | AI 批改助手",
-    "description": "如何编写高质量的AI评分标准。包含题目内容、标准答案、评分标准三个关键字段的编写技巧和不同题型的配置建议。",
+    "description": "填写题目内容、参考答案和评卷标准，添加或识别参考图片，并按不同题型设置给分规则。",
     "canonical": "https://aimarking.five-plus-one.com/config/rubric",
     "indexable": true,
     "schemas": [
@@ -448,7 +448,7 @@
         "@id": "https://aimarking.five-plus-one.com/config/rubric#page",
         "url": "https://aimarking.five-plus-one.com/config/rubric",
         "name": "评分规则 | AI 批改助手",
-        "description": "如何编写高质量的AI评分标准。包含题目内容、标准答案、评分标准三个关键字段的编写技巧和不同题型的配置建议。",
+        "description": "填写题目内容、参考答案和评卷标准，添加或识别参考图片，并按不同题型设置给分规则。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -590,7 +590,7 @@
   {
     "route": "/guide/faq",
     "title": "常见问题 | AI 批改助手",
-    "description": "AI批改助手常见问题解答。手机能用吗、用什么浏览器、识别不准怎么办、支持哪些平台和题型、API密钥怎么获取、无人值守模式安全吗、分数填入失败怎么办等使用疑难解答。",
+    "description": "查找 AI 批改助手在电脑、平板和手机上的使用条件，以及安装权限、账号连接、线路测试、答卷核对和诊断包的处理方法。",
     "canonical": "https://aimarking.five-plus-one.com/guide/faq",
     "indexable": true,
     "schemas": [
@@ -604,7 +604,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/faq#page",
         "url": "https://aimarking.five-plus-one.com/guide/faq",
         "name": "常见问题 | AI 批改助手",
-        "description": "AI批改助手常见问题解答。手机能用吗、用什么浏览器、识别不准怎么办、支持哪些平台和题型、API密钥怎么获取、无人值守模式安全吗、分数填入失败怎么办等使用疑难解答。",
+        "description": "查找 AI 批改助手在电脑、平板和手机上的使用条件，以及安装权限、账号连接、线路测试、答卷核对和诊断包的处理方法。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -615,7 +615,7 @@
             "name": "手机能用吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "不能。 AI 批改助手是一个浏览器脚本，必须在电脑端的 Edge 浏览器中运行。手机、平板、微信内置浏览器均不支持。"
+              "text": "可以在支持 Tampermonkey 扩展的 Android 平板 Edge 上使用。手机端若能安装扩展、开启用户脚本并打开对应平台的网页版阅卷页，也可尝试。正式阅卷优先使用电脑或平板，方便同时核对答卷和得分。 平板 Edge 安装步骤"
             }
           },
           {
@@ -623,7 +623,7 @@
             "name": "用什么浏览器？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "推荐使用 Edge 浏览器（Windows 10/11 自带）。Chrome 也可以，但其扩展商店在国内无法直接访问。以下浏览器不支持：360 安全浏览器、搜狗浏览器、QQ 浏览器等国产浏览器。"
+              "text": "电脑端推荐 Edge。Chrome、Firefox 等支持 Tampermonkey 的浏览器也可使用。打开阅卷链接时，请使用已经安装脚本的浏览器。 通用扩展安装指南"
             }
           },
           {
@@ -671,7 +671,7 @@
             "name": "Chrome 浏览器如何启用用户脚本？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "在篡改猴扩展图标上右键 → 点击 「管理扩展程序」打开右上角的 「开发者模式」，再打开 「允许运行用户脚本」 与 「允许访问文件网址」提示不打开「开发者模式」的话，看不到「允许运行用户脚本」这一项。"
+              "text": "打开 Tampermonkey 的扩展详情，开启「允许用户脚本」，然后刷新阅卷页。扩展详情没有该开关时，参照用户脚本权限指南。"
             }
           },
           {
@@ -695,7 +695,7 @@
             "name": "识别不准怎么办？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "填写「题目内容」「标准答案」「评分标准」三项，准确率会大幅提升。AI 需要这些上下文信息才能做出准确判断。建议先用试改模式批改几份试卷，观察 AI 的识别和评分结果，根据实际情况调整评分标准。"
+              "text": "先核对答卷图片是否完整，再填写题目、参考答案和评分标准。用试改模式查看识别出的作答和评分依据，按样卷调整给分点后再继续。 评分规则"
             }
           },
           {
@@ -703,7 +703,7 @@
             "name": "遇到 403 错误怎么办？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "脚本会自动检测 403 错误并刷新页面，无需手动处理。这通常是阅卷平台的会话过期导致的。"
+              "text": "答卷图片返回 403 时，助手会刷新页面尝试恢复。如果仍无法读取，先确认阅卷平台仍处于登录状态，再重新打开待阅答卷。若是 AI 接口返回 403，可在「批改配置 → AI」检查账号连接或密钥权限。"
             }
           },
           {
@@ -711,7 +711,7 @@
             "name": "无人值守模式安全吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "建议先用普通模式批改几份试卷，确认 AI 评分准确后再开启无人值守模式。无人值守模式下：提交间隔为 1 秒AI 识别失败时瞬态错误退避重试（次数可配），其余暂停提示连续失败会自动停止，避免误操作"
+              "text": "先试改几份样卷，核对分数和原站保存结果，再开启连续批改。可设置批阅份数限制、每步重试次数和需核对答卷的处理方式。出现无法确认的答卷或保存结果时，按助手提示核对。 无人值守模式"
             }
           },
           {
@@ -719,7 +719,7 @@
             "name": "支持哪些题型？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "所有有手写答案的主观题都支持，包括：作文解答题论述题简答题翻译题客观题（选择题、填空题等）请使用阅卷平台自带的功能。"
+              "text": "助手用于作文、解答题、论述题和简答题等主观题。对应平台能否读取答卷、分小题给分和保存，以各平台指南列出的任务为准。客观题可用阅卷平台自带的功能判分。"
             }
           },
           {
@@ -735,7 +735,15 @@
             "name": "弹窗没出现？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "按 F12 打开浏览器控制台，查看带 [诊断] 标记的日志，截图反馈给作者。"
+              "text": "先刷新阅卷页，等待答卷图加载，再查看右下角是否有助手入口。仍有问题时，可以从油猴菜单导出诊断包。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "怎么导出诊断包？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "打开 批改配置 → 关于 → 帮助与支持 → 导出诊断包。也可在 Tampermonkey 菜单选择「导出诊断包」。选择问题发生的时间范围，默认最近两小时，时间按当前设备显示。点击「下载 ZIP」。压缩包可能包含运行日志、批改过程、阅卷记录、配置和可读取的答卷图片。发送前核对内容，随后通过帮助与支持联系维护者。在同一位置选择「上传诊断包」，可登录五加一账号后向支持人员提交日志、阅卷结果和配置摘要。"
             }
           },
           {
@@ -743,7 +751,15 @@
             "name": "API 密钥在哪里获取？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "推荐使用 5+1 AI 服务：获取 API KEY。新注册用户有少量试用额度，用完后需充值。也支持火山引擎、硅基流动等其他 OpenAI 兼容接口，但所选模型必须支持图片输入。"
+              "text": "使用五加一服务时，可直接在阅卷页登录五加一账号连接。需要手动配置时，可在管理控制台的 API 密钥页创建密钥，再填入助手。自定义供应商请选择支持图片输入的模型。 AI 接口配置"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "5plus1API 连不上或提示余额不足怎么办？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "打开 批改配置 → AI → 批改线路，先点「测试线路」。如果当前线路仍不可用，可从线路设置选择另一条官方线路后重试。余额不足时，在 AI 页点「余额与充值」，到账后继续。 官方线路与余额说明"
             }
           },
           {
@@ -767,7 +783,7 @@
             "name": "配置会丢失吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "配置保存在浏览器的 Tampermonkey 存储中，除非手动清除浏览器数据，否则不会丢失。脚本还支持配置导出/导入功能，可以将所有配置导出为 JSON 文件备份。"
+              "text": "方案、供应商和工作流保存于当前浏览器，可在「批改配置 → 数据」导出 JSON，换浏览器时再导入。配置文件可能包含 API 密钥，请妥善保存。浏览器偏好可在新浏览器中按需设置。 方案管理"
             }
           },
           {
@@ -799,7 +815,7 @@
             "name": "AI 返回结果不完整 / 被截断怎么办？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "深度思考类模型可能把输出额度消耗在思考链上，导致正式回答被截断、解析不到分数。v1.21.12.3 起可：打开配置面板「批改工作流」→ 编辑当前工作流勾选「限制单次回答长度」并设置上限（默认 2048）保存后重新批改脚本在回答被截断时会自动升级额度重试。详见 批改工作流。"
+              "text": "深度思考类模型可能把输出额度消耗在思考链上，导致正式回答被截断、解析不到分数。可按以下步骤调整：打开配置面板「批改工作流」→ 编辑当前工作流勾选「限制单次回答长度」并设置上限（默认 2048）保存后重新批改脚本在回答被截断时会自动升级额度重试。详见 批改工作流。"
             }
           },
           {
@@ -820,10 +836,26 @@
           },
           {
             "@type": "Question",
+            "name": "智学网的续批选项在哪里？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "在智学网考试阅卷页打开一份答卷，进入 批改配置 → 自动化 → 智学网。其中「本题分配量完成后继续多阅」默认关闭，适用于考试阅卷的无人批改。作业阅卷可在「方案」和「批改」中配置参考答案、评分标准及批改模式。 智学网使用指南"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "园丁邦云阅卷如何使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "请安装 1.21.25.0 或更新的稳定版脚本，进入普通单评的键盘给分页，核对得分点满分、步长和参考答案后先试改。具体操作见园丁邦云阅卷指南。"
+            }
+          },
+          {
+            "@type": "Question",
             "name": "支持哪些阅卷平台？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "当前 1.21.25.0 稳定版支持以下 44 个平台，脚本会自动检测并加载对应适配器：智学网 (zhixue.com) — 最早支持的平台七天网络 (7net.cc / qt7.net / qt7.cn / yj5.7net.cc) — 支持新旧两种 UI好分数 (haofenshu.com) — v1.11.3 新增支持五岳阅卷 (wylkyj.com) — v1.12.1 新增支持阅小二 (haoyuejuan.com) — v1.21.12.1 新增支持，与五岳阅卷同构华翰云 (yunyuejuan.net) — v1.21.2 新增支持光大阅卷 (pj.yixx.cn) — v1.21.2 新增支持云阅卷 — 内网阅卷系统新教育 (xinjiaoyu.com) — 支持考试和作业两种批改模式润建学情 (aisusheng.runjian.com) — 支持 CSS 背景图和点击式评分54学霸 (54xueba.cn) — 支持 Canvas/base64 图片和多小题输入框九科星 (marking.jkxjxw.com / jxp.jkxjxw.com) — 考试阅卷 OBS 裁剪多小题评分；作业系统 API 取题块图（按学生批阅暂不支持，有跳转提示）慧阅卷 (web.17yuejuan.cn) — 支持 frame 架构和点击式评分乐华阅卷 (main.lhsvr.cn) — 支持 Canvas 渲染和点击式评分鑫考 — 内网阅卷系统，支持动态 IP 部署慧学星 (www.hxxai.com) — 支持 OSS 图片托管和分步骤评分模式粤教翔云 (rrtcp.gdedu.gov.cn) — 支持题组批改模式云阅卷(好分数) (haofenshuyize.com) — Vue 3 + Element Plus 框架科耘阅卷 (kaoshi.keewing.com) — 支持 SVG 图片渲染和延迟填分模式光大阅卷V2 — 支持 IP:端口部署版本威科姆(悦卷通) (wyna.onlyets.com) — 支持多小题评分和键盘/鼠标/步骤三种打分模式C30教育云 (zy.iclass30.com) — Canvas 答题卡，平台自动提交（v1.21.11 新增支持）AMEQP网上评卷 — 内网裸 IP 部署，题块裁剪图（v1.21.11.2 新增支持）海云智评 (zp.kaow.cn) — OSS 裁剪答题卡、多小题满分提取、提交二次确认（v1.21.12.3 新增支持）鑫考(内网) (内网裸 IP /biluo/display.jsp) — fen 属性满分提取、inputkey 键盘确认提交（v1.21.12.4 新增支持）九五优评 (timesphoenix.com) — iframe 阅卷界面取图、分给分点评分、提交限速自适应（v1.21.14 新增支持）上进教育服务云 (www.sipd.cn) — OSS 裁剪答题卡、0分确认弹窗自动处理（v1.21.14.4 新增支持）南昊AI教学提分 (nhcisc.com) — showimage 答题图取图、满分提取、clearNoNum 分数归一化（v1.21.14.7 新增支持）鑫考校园 (内网裸 IP:端口 /Marking/NormalReadPaper) — data-score 属性满分提取、inputkey 键盘确认提交（v1.21.16 新增支持）酷鱼网 (www.kuyuu.cn) — Canvas tainted canvas 安全取图、scores 属性满分提取、键模式填分（v1.21.16 新增支持）A佳教育 (y.ajia.cn) — 行级 num-source 评分、data-score 满分提取、确定按钮提交自动翻卷（v1.21.16.1 新增支持）云阅卷(开州) (yyj.kzedu.cn) — scoreitem 点击给分、自动给分勾选状态自适应提交、图片路径变化翻卷检测（v1.21.16.10 新增支持）正确阅卷 (www.yuejuan.com) — 打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测（v1.21.16.15 新增支持）精斗云(大数据精准教学) (exam.wxy100.com) — AngularJS 分数框填分、缓存参数剥离翻卷检测、自动提交开关接管（v1.21.16.19 新增支持）小帆智能阅卷 (xfkj.cc，登录后跳租户子域) — OSS 裁剪答题卡多页取图、多小题满分提取、图片路径变化翻卷检测（v1.21.16.20 新增支持）睿芽考试服务云 (ruiya.onlyets.com) — OSS 题块裁剪图、多小题键盘打分、密号/图片/data-stu 三重翻卷检测（v1.21.16.21 新增支持）恒佳考试服务云 (x.yuejuan51.com) — 与睿芽同构（OnlyETS 租户）多租户支持（v1.21.16.22 新增支持）懂你系统 — 按题批改；首次使用先试改核对学科网 e卷通 — 按题批改，支持多小题给分启光优测 — 单份键盘阅卷诊学网 — 统考单份键盘给分焦作精准教学 — 单份单评，默认评分板或键盘打分园丁邦云阅卷 — 普通单评，键盘给分云阅卷(华翰云) (yj.lcedu.net.cn) — 单题块单分框批改流、OBS 题块裁剪图、考生号强换卷信号（v1.21.17 新增支持）"
+              "text": "在支持平台中按名称查找阅卷入口、安装要求、适用任务和给分方式。"
             }
           },
           {
@@ -831,7 +863,15 @@
             "name": "不同平台有什么区别？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "脚本对所有平台的核心功能一致（识别 → 打分 → 填入 → 提交），差异在于页面结构和交互方式。脚本会自动检测当前平台并加载对应的适配器，用户无需手动选择。"
+              "text": "部分平台按整题给一个分数，部分平台按小题或给分点评分。进入待阅任务后，按对应指南核对给分方式和提交设置，再用试改确认识别结果。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "小闲 AI 网上阅卷如何使用？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "使用稳定版脚本，进入普通单题、单份答卷的键盘给分页。关闭平台自动提交，核对题目满分和允许的分值后先试改。小闲 AI 网上阅卷指南"
             }
           },
           {
@@ -839,7 +879,7 @@
             "name": "支持其他阅卷平台吗？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "完整支持列表见上一条（也可查看 支持平台 页面）。如果你需要适配其他平台，请 联系作者 或参考 开发新适配器 自行开发。"
+              "text": "完整支持列表见支持平台。如果你需要适配其他平台，请 联系作者 或参考 开发新适配器 自行开发。"
             }
           }
         ]
@@ -873,7 +913,7 @@
   {
     "route": "/guide/",
     "title": "入门指南 | AI 批改助手",
-    "description": "AI 批改助手入门指南：了解支持 44 个阅卷平台的浏览器脚本，完成安装、API 配置和首次试改，查看使用建议与常见问题。",
+    "description": "查找 AI 批改助手支持的阅卷平台，在电脑或平板安装脚本、连接批改服务并完成首次试改。",
     "canonical": "https://aimarking.five-plus-one.com/guide/",
     "indexable": true,
     "schemas": [
@@ -887,7 +927,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/#page",
         "url": "https://aimarking.five-plus-one.com/guide/",
         "name": "入门指南 | AI 批改助手",
-        "description": "AI 批改助手入门指南：了解支持 44 个阅卷平台的浏览器脚本，完成安装、API 配置和首次试改，查看使用建议与常见问题。",
+        "description": "查找 AI 批改助手支持的阅卷平台，在电脑或平板安装脚本、连接批改服务并完成首次试改。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -916,7 +956,7 @@
   {
     "route": "/guide/installation",
     "title": "安装教程 | AI 批改助手",
-    "description": "在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 44 个阅卷平台。",
+    "description": "在电脑或 Android 平板的 Edge 中安装 Tampermonkey，开启允许用户脚本，安装 AI 批改助手稳定版并在阅卷页验证。",
     "canonical": "https://aimarking.five-plus-one.com/guide/installation",
     "indexable": true,
     "schemas": [
@@ -931,7 +971,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/installation#page",
         "url": "https://aimarking.five-plus-one.com/guide/installation",
         "name": "安装教程 | AI 批改助手",
-        "description": "在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 44 个阅卷平台。",
+        "description": "在电脑或 Android 平板的 Edge 中安装 Tampermonkey，开启允许用户脚本，安装 AI 批改助手稳定版并在阅卷页验证。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -966,19 +1006,19 @@
         "@type": "HowTo",
         "name": "安装教程",
         "url": "https://aimarking.five-plus-one.com/guide/installation",
-        "description": "在电脑端 Edge 等浏览器安装 Tampermonkey 和 AI 批改助手，选择稳定版或预览版，完成权限设置后开始使用。支持 44 个阅卷平台。",
+        "description": "在电脑或 Android 平板的 Edge 中安装 Tampermonkey，开启允许用户脚本，安装 AI 批改助手稳定版并在阅卷页验证。",
         "step": [
           {
             "@type": "HowToStep",
             "name": "第一步：安装 Tampermonkey 扩展",
             "url": "https://aimarking.five-plus-one.com/guide/installation#第一步-安装-tampermonkey-扩展",
-            "text": "Tampermonkey（油猴） 是一个免费的浏览器扩展（插件），它可以让你在浏览器中运行额外的脚本程序。AI 批改助手就是通过它来运行的。操作步骤 打开 Edge 浏览器（在开始菜单或桌面搜索 \"Edge\"）点击下方链接打开 Tampermonkey 安装页面：点击安装 Tampermonkey 扩展在打开的页面中，点击 「获取」 按钮浏览器会弹出确认提示，点击 「添加扩展」安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标找不到图标？安装完成后如果看不到图标，点击浏览器右上角的 拼图图标（扩展管理），找到 Tampermonkey，点击 「在工具栏中显示」。允许扩展运行 安装扩展后必须允许它运行用户脚本，否则脚本不会生效。不同浏览器/版本操作略有不同。Microsoft Edge 在 Edge 地址栏输入 edge://extensions/，打开扩展管理页（也可以点击右上角 扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展）。找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。打开「允许用户脚本」。如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。Google Chrome 在篡改猴扩展图标上右键 → 点击 「管理扩展程序」打开 「允许运行用户脚本」 与 「允许访问文件网址」提示Chrome 需先打开右上角的 「开发者模式」（见上图右上角），才会出现「允许运行用户脚本」选项。"
+            "text": "Tampermonkey（油猴） 是一个免费的浏览器扩展（插件），它可以让你在浏览器中运行额外的脚本程序。AI 批改助手就是通过它来运行的。操作步骤 打开 Edge 浏览器（在开始菜单或桌面搜索 \"Edge\"）点击下方链接打开 Tampermonkey 安装页面：点击安装 Tampermonkey 扩展在打开的页面中，点击 「获取」 按钮浏览器会弹出确认提示，点击 「添加扩展」安装完成后，浏览器右上角会出现 Tampermonkey 的黑色图标找不到图标？安装完成后如果看不到图标，点击浏览器右上角的 拼图图标（扩展管理），找到 Tampermonkey，点击 「在工具栏中显示」。允许扩展运行 安装扩展后必须允许它运行用户脚本，否则脚本不会生效。不同浏览器/版本操作略有不同。Microsoft Edge 在 Edge 地址栏输入 edge://extensions/，打开扩展管理页（也可以点击右上角 扩展（拼图图标）→ 篡改猴旁的「···」→ 管理扩展）。找到 Tampermonkey，确认扩展已启用，并进入「详细信息」。打开「允许用户脚本」。如果当前版本没有这个选项，打开扩展管理页左下角的「开发人员模式」，然后刷新阅卷页面。Google Chrome 在篡改猴扩展图标上右键 → 点击 「管理扩展程序」打开 「允许运行用户脚本」。如果当前版本没有这个开关，可在扩展程序管理页打开「开发者模式」。不同浏览器版本的设置位置可参阅篡改猴官方权限说明。"
           },
           {
             "@type": "HowToStep",
             "name": "第二步：安装 AI 批改助手脚本",
             "url": "https://aimarking.five-plus-one.com/guide/installation#第二步-安装-ai-批改助手脚本",
-            "text": "重要前提执行这一步前，请你确保你已经按照上面的操作完成了 Tampermonkey 扩展的安装和启用。Tampermonkey 安装好之后，就可以安装 AI 批改助手脚本了。AI 批改助手提供两个版本渠道，请根据需要选择：版本说明安装链接稳定版经过充分测试，推荐日常使用点击安装稳定版预览版包含最新功能，可能不够稳定点击安装预览版稳定版和预览版的区别稳定版：经过充分测试的功能版本，适合日常批改使用预览版：包含正在测试中的新功能，适合想提前体验的用户。如遇到问题可随时在脚本设置中切换回稳定版开发版：面向开发者的自动构建版本，不提供公开安装链接在 Edge 浏览器中点击上方安装链接（不要在微信中打开）浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限点击 「安装」 按钮点击链接后没有反应？确认你是在 Edge 浏览器 中打开的，不是微信或其他 App确认 Tampermonkey 扩展已安装并启用尝试刷新页面后重新点击"
+            "text": "重要前提执行这一步前，请你确保你已经按照上面的操作完成了 Tampermonkey 扩展的安装和启用。日常阅卷推荐安装稳定版。版本说明安装链接稳定版用于日常阅卷安装稳定版预览版提前体验功能和平台适配安装预览版可先在支持平台查找阅卷入口、适用任务和安装要求。已安装脚本的用户可在助手设置中切换渠道。在已启用篡改猴的浏览器中打开上方安装链接。从微信收到链接时，选择在 Edge 中打开。浏览器会自动弹出 Tampermonkey 的安装确认页面，显示脚本的名称和权限点击 「安装」 按钮点击链接后没有反应？在已安装篡改猴的浏览器中重新打开安装链接。检查扩展的「启用」和「允许用户脚本」开关，再刷新页面重试。"
           },
           {
             "@type": "HowToStep",
@@ -993,7 +1033,7 @@
   {
     "route": "/guide/introduction",
     "title": "项目介绍 | AI 批改助手",
-    "description": "了解 AI 批改助手 v1.21.24.0 稳定版的工作方式与核心功能。支持 44 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
+    "description": "了解 AI 批改助手的工作方式与核心功能，查看手写识别、双评仲裁、参考图片、精简输出和评阅历史管理的使用方法。",
     "canonical": "https://aimarking.five-plus-one.com/guide/introduction",
     "indexable": true,
     "schemas": [
@@ -1007,7 +1047,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/introduction#page",
         "url": "https://aimarking.five-plus-one.com/guide/introduction",
         "name": "项目介绍 | AI 批改助手",
-        "description": "了解 AI 批改助手 v1.21.24.0 稳定版的工作方式与核心功能。支持 44 个阅卷平台，提供手写识别、双评仲裁、参考图片、精简输出和评阅历史管理。",
+        "description": "了解 AI 批改助手的工作方式与核心功能，查看手写识别、双评仲裁、参考图片、精简输出和评阅历史管理的使用方法。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1042,7 +1082,7 @@
   {
     "route": "/guide/quickstart",
     "title": "快速上手 | AI 批改助手",
-    "description": "3分钟完成AI批改助手的配置并开始使用。获取API密钥、配置评分标准、选择批改模式，立即开始AI自动批改主观题试卷。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商。",
+    "description": "在阅卷页用五加一账号或已有 API 密钥连接批改服务，选择试改和批改工作流，填写评分标准并核对第一份答卷。",
     "canonical": "https://aimarking.five-plus-one.com/guide/quickstart",
     "indexable": true,
     "schemas": [
@@ -1056,7 +1096,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/quickstart#page",
         "url": "https://aimarking.five-plus-one.com/guide/quickstart",
         "name": "快速上手 | AI 批改助手",
-        "description": "3分钟完成AI批改助手的配置并开始使用。获取API密钥、配置评分标准、选择批改模式，立即开始AI自动批改主观题试卷。支持5+1 AI、火山引擎、硅基流动等多模态AI服务商。",
+        "description": "在阅卷页用五加一账号或已有 API 密钥连接批改服务，选择试改和批改工作流，填写评分标准并核对第一份答卷。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1091,7 +1131,7 @@
   {
     "route": "/guide/userscript-install",
     "title": "油猴脚本安装指南 — Tampermonkey 用户脚本通用教程 | AI 批改助手",
-    "description": "油猴脚本（用户脚本）通用安装教程，适用于所有 Tampermonkey 脚本。覆盖 Edge 与 Chrome 浏览器的 Tampermonkey 扩展安装、允许用户脚本、旧版 Edge 开发人员模式、安装验证与常见问题排查。",
+    "description": "在电脑的 Edge、Chrome 或 Android 平板的 Edge 中安装 Tampermonkey，开启允许用户脚本，安装脚本并在目标网页验证。",
     "canonical": "https://aimarking.five-plus-one.com/guide/userscript-install",
     "indexable": true,
     "schemas": [
@@ -1105,7 +1145,7 @@
         "@id": "https://aimarking.five-plus-one.com/guide/userscript-install#page",
         "url": "https://aimarking.five-plus-one.com/guide/userscript-install",
         "name": "油猴脚本安装指南 — Tampermonkey 用户脚本通用教程 | AI 批改助手",
-        "description": "油猴脚本（用户脚本）通用安装教程，适用于所有 Tampermonkey 脚本。覆盖 Edge 与 Chrome 浏览器的 Tampermonkey 扩展安装、允许用户脚本、旧版 Edge 开发人员模式、安装验证与常见问题排查。",
+        "description": "在电脑的 Edge、Chrome 或 Android 平板的 Edge 中安装 Tampermonkey，开启允许用户脚本，安装脚本并在目标网页验证。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1140,7 +1180,7 @@
   {
     "route": "/",
     "title": "AI 批改助手 — 让 AI 替你改卷",
-    "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 44 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。",
+    "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 57 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有电脑和平板安装及批改配置指南。",
     "canonical": "https://aimarking.five-plus-one.com/",
     "indexable": true,
     "schemas": [
@@ -1155,7 +1195,7 @@
         "@id": "https://aimarking.five-plus-one.com/#page",
         "url": "https://aimarking.five-plus-one.com/",
         "name": "AI 批改助手 — 让 AI 替你改卷",
-        "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 44 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。",
+        "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 57 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有电脑和平板安装及批改配置指南。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1183,9 +1223,9 @@
         "name": "AI 批改助手",
         "alternateName": "AI-Marker-Suite",
         "url": "https://aimarking.five-plus-one.com/",
-        "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 44 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有安装和配置指南。",
-        "softwareVersion": "1.21.24.0",
-        "datePublished": "2026-11-13",
+        "description": "AI 批改助手是开源的浏览器阅卷脚本，支持 57 个阅卷平台。提供手写识别、按标准评分、双评仲裁、分小题评分与历史导出，配有电脑和平板安装及批改配置指南。",
+        "softwareVersion": "1.21.35.6",
+        "datePublished": "2026-11-22",
         "downloadUrl": "https://auto-update.aimarking.five-plus-one.com/ota/ai_marker.user.js",
         "featureList": [
           "手写答案识别与按标准评分",
@@ -1261,7 +1301,7 @@
   {
     "route": "/modes/",
     "title": "批改模式 | AI 批改助手",
-    "description": "AI批改助手批改模式介绍：普通模式5秒倒计时、试改模式等待确认、无人值守模式1秒自动提交错误自动重试、双评模式双模型仲裁。按需选择适合的批改模式。",
+    "description": "选择普通、试改或无人模式，设置提交方式与换题校验，并搭配单模型或双评工作流。",
     "canonical": "https://aimarking.five-plus-one.com/modes/",
     "indexable": true,
     "schemas": [
@@ -1275,7 +1315,7 @@
         "@id": "https://aimarking.five-plus-one.com/modes/#page",
         "url": "https://aimarking.five-plus-one.com/modes/",
         "name": "批改模式 | AI 批改助手",
-        "description": "AI批改助手批改模式介绍：普通模式5秒倒计时、试改模式等待确认、无人值守模式1秒自动提交错误自动重试、双评模式双模型仲裁。按需选择适合的批改模式。",
+        "description": "选择普通、试改或无人模式，设置提交方式与换题校验，并搭配单模型或双评工作流。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1402,7 +1442,7 @@
   {
     "route": "/modes/unattended",
     "title": "无人值守模式 | AI 批改助手",
-    "description": "无人值守模式专为大批量批改设计，1秒自动提交，瞬态错误自动退避重试（次数可配）。适合夜间挂机，睡一觉几百份试卷全部改完。",
+    "description": "设置无人模式的每步重试、答卷核对、待复核和批阅份数，了解批改暂停后如何继续。",
     "canonical": "https://aimarking.five-plus-one.com/modes/unattended",
     "indexable": true,
     "schemas": [
@@ -1416,7 +1456,7 @@
         "@id": "https://aimarking.five-plus-one.com/modes/unattended#page",
         "url": "https://aimarking.five-plus-one.com/modes/unattended",
         "name": "无人值守模式 | AI 批改助手",
-        "description": "无人值守模式专为大批量批改设计，1秒自动提交，瞬态错误自动退避重试（次数可配）。适合夜间挂机，睡一觉几百份试卷全部改完。",
+        "description": "设置无人模式的每步重试、答卷核对、待复核和批阅份数，了解批改暂停后如何继续。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1451,7 +1491,7 @@
   {
     "route": "/platforms/ajia",
     "title": "A佳教育适配 | AI 批改助手",
-    "description": "AI批改助手A佳教育适配器使用说明。支持y.ajia.cn在线阅卷（marking.html），行级 num-source 评分、data-score 满分提取、「确定」按钮提交自动翻卷。包含技术特点、操作流程和常见问题解答。",
+    "description": "A佳教育使用指南：逐项评分与确认提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/ajia",
     "indexable": true,
     "schemas": [
@@ -1465,7 +1505,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/ajia#page",
         "url": "https://aimarking.five-plus-one.com/platforms/ajia",
         "name": "A佳教育适配 | AI 批改助手",
-        "description": "AI批改助手A佳教育适配器使用说明。支持y.ajia.cn在线阅卷（marking.html），行级 num-source 评分、data-score 满分提取、「确定」按钮提交自动翻卷。包含技术特点、操作流程和常见问题解答。",
+        "description": "A佳教育使用指南：逐项评分与确认提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1500,7 +1540,7 @@
   {
     "route": "/platforms/ameqp",
     "title": "AMEQP网上评卷适配 | AI 批改助手",
-    "description": "AMEQP 网上评卷的 AI 批改使用说明。支持不同内网地址、多小题给分、题块识别和连续阅卷，说明快速换卷后的自动继续及提交前核对。",
+    "description": "AMEQP网上评卷使用指南：单题或多评分项批改与提交核对。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/ameqp",
     "indexable": true,
     "schemas": [
@@ -1514,7 +1554,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/ameqp#page",
         "url": "https://aimarking.five-plus-one.com/platforms/ameqp",
         "name": "AMEQP网上评卷适配 | AI 批改助手",
-        "description": "AMEQP 网上评卷的 AI 批改使用说明。支持不同内网地址、多小题给分、题块识别和连续阅卷，说明快速换卷后的自动继续及提交前核对。",
+        "description": "AMEQP网上评卷使用指南：单题或多评分项批改与提交核对。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1547,9 +1587,107 @@
     ]
   },
   {
+    "route": "/platforms/baishi",
+    "title": "百师联盟使用指南 | AI 批改助手",
+    "description": "在百师联盟从任务列表进入单题评阅，按打分步长配置评分并核对保存结果。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/baishi",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/baishi#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/baishi",
+        "name": "百师联盟使用指南 | AI 批改助手",
+        "description": "在百师联盟从任务列表进入单题评阅，按打分步长配置评分并核对保存结果。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "百师联盟",
+            "item": "https://aimarking.five-plus-one.com/platforms/baishi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/bfzks",
+    "title": "百分智考试服务 | AI 批改助手",
+    "description": "在百分智考试服务网上阅卷中选择键盘打分，核对参考答案、得分和保存进度。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/bfzks",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/bfzks#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/bfzks",
+        "name": "百分智考试服务 | AI 批改助手",
+        "description": "在百分智考试服务网上阅卷中选择键盘打分，核对参考答案、得分和保存进度。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "百分智考试服务",
+            "item": "https://aimarking.five-plus-one.com/platforms/bfzks"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/c30",
     "title": "C30教育云适配 | AI 批改助手",
-    "description": "AI批改助手C30教育云适配器使用说明。支持zy.iclass30.com阅卷平台，Canvas答题卡自动导出、AI智能评分、自动填分提交，v1.21.11新增支持。",
+    "description": "C30教育云使用指南：答题卡识别、快捷给分与平台提交设置。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/c30",
     "indexable": true,
     "schemas": [
@@ -1563,7 +1701,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/c30#page",
         "url": "https://aimarking.five-plus-one.com/platforms/c30",
         "name": "C30教育云适配 | AI 批改助手",
-        "description": "AI批改助手C30教育云适配器使用说明。支持zy.iclass30.com阅卷平台，Canvas答题卡自动导出、AI智能评分、自动填分提交，v1.21.11新增支持。",
+        "description": "C30教育云使用指南：答题卡识别、快捷给分与平台提交设置。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1598,7 +1736,7 @@
   {
     "route": "/platforms/dongni",
     "title": "懂你系统 | AI 批改助手",
-    "description": "在懂你系统按题批改页面使用 AI 批改助手，检查题块、给分档位和提交结果，先通过试改核对评分标准。",
+    "description": "懂你系统使用指南：按题批改与试改核对。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/dongni",
     "indexable": true,
     "schemas": [
@@ -1612,7 +1750,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/dongni#page",
         "url": "https://aimarking.five-plus-one.com/platforms/dongni",
         "name": "懂你系统 | AI 批改助手",
-        "description": "在懂你系统按题批改页面使用 AI 批改助手，检查题块、给分档位和提交结果，先通过试改核对评分标准。",
+        "description": "懂你系统使用指南：按题批改与试改核对。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1645,9 +1783,58 @@
     ]
   },
   {
+    "route": "/platforms/eiduo",
+    "title": "爱多分阅卷使用说明 | AI 批改助手",
+    "description": "在爱多分网页版按题阅卷时使用 AI 批改助手，设置原站打分板、核对参考答案并试改。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/eiduo",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/eiduo#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/eiduo",
+        "name": "爱多分阅卷使用说明 | AI 批改助手",
+        "description": "在爱多分网页版按题阅卷时使用 AI 批改助手，设置原站打分板、核对参考答案并试改。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "爱多分",
+            "item": "https://aimarking.five-plus-one.com/platforms/eiduo"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/guangda-2",
     "title": "光大阅卷 V2 适配 | AI 批改助手",
-    "description": "AI批改助手光大阅卷V2适配器使用说明。支持IP:端口部署的光大阅卷平台Canvas图片渲染、点击式评分、XHR拦截获取图片。包含技术特点、操作流程和常见问题解答。",
+    "description": "光大阅卷 V2使用指南：阅卷页面识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/guangda-2",
     "indexable": true,
     "schemas": [
@@ -1661,7 +1848,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/guangda-2#page",
         "url": "https://aimarking.five-plus-one.com/platforms/guangda-2",
         "name": "光大阅卷 V2 适配 | AI 批改助手",
-        "description": "AI批改助手光大阅卷V2适配器使用说明。支持IP:端口部署的光大阅卷平台Canvas图片渲染、点击式评分、XHR拦截获取图片。包含技术特点、操作流程和常见问题解答。",
+        "description": "光大阅卷 V2使用指南：阅卷页面识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1696,7 +1883,7 @@
   {
     "route": "/platforms/guangda",
     "title": "光大阅卷适配 | AI 批改助手",
-    "description": "AI批改助手光大阅卷适配器使用说明。支持pj.yixx.cn阅卷平台Canvas图片渲染、点击式分数选择、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+    "description": "光大阅卷使用指南：给分点选择与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/guangda",
     "indexable": true,
     "schemas": [
@@ -1710,7 +1897,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/guangda#page",
         "url": "https://aimarking.five-plus-one.com/platforms/guangda",
         "name": "光大阅卷适配 | AI 批改助手",
-        "description": "AI批改助手光大阅卷适配器使用说明。支持pj.yixx.cn阅卷平台Canvas图片渲染、点击式分数选择、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "description": "光大阅卷使用指南：给分点选择与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1745,7 +1932,7 @@
   {
     "route": "/platforms/haiyun",
     "title": "海云智评适配 | AI 批改助手",
-    "description": "AI批改助手海云智评适配器使用说明。支持 zp.kaow.cn 区域学业监测智能阅卷平台，OSS裁剪答题卡多页取图、多小题满分提取、提交二次确认弹窗自动处理，v1.21.12.3新增支持。",
+    "description": "海云智评使用指南：多页答题卡、分小题评分与提交确认。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/haiyun",
     "indexable": true,
     "schemas": [
@@ -1759,7 +1946,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/haiyun#page",
         "url": "https://aimarking.five-plus-one.com/platforms/haiyun",
         "name": "海云智评适配 | AI 批改助手",
-        "description": "AI批改助手海云智评适配器使用说明。支持 zp.kaow.cn 区域学业监测智能阅卷平台，OSS裁剪答题卡多页取图、多小题满分提取、提交二次确认弹窗自动处理，v1.21.12.3新增支持。",
+        "description": "海云智评使用指南：多页答题卡、分小题评分与提交确认。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1794,7 +1981,7 @@
   {
     "route": "/platforms/hanhan",
     "title": "华翰云适配 | AI 批改助手",
-    "description": "AI批改助手华翰云适配器使用说明。支持yunyuejuan.net阅卷平台答题卡识别、Vue响应式输入框分数填充、自动提交功能。包含技术特点、操作流程和常见问题解答。",
+    "description": "华翰云使用指南：答题卡识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/hanhan",
     "indexable": true,
     "schemas": [
@@ -1808,7 +1995,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/hanhan#page",
         "url": "https://aimarking.five-plus-one.com/platforms/hanhan",
         "name": "华翰云适配 | AI 批改助手",
-        "description": "AI批改助手华翰云适配器使用说明。支持yunyuejuan.net阅卷平台答题卡识别、Vue响应式输入框分数填充、自动提交功能。包含技术特点、操作流程和常见问题解答。",
+        "description": "华翰云使用指南：答题卡识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1843,7 +2030,7 @@
   {
     "route": "/platforms/haofenshu",
     "title": "好分数适配 | AI 批改助手",
-    "description": "好分数阅卷使用指南：配置 AI 批改助手、核对满分和自动提交设置，使用普通、试改或无人模式完成批改，并处理答题卡图片识别问题。",
+    "description": "好分数使用指南：答题卡识别、分小题评分与提交设置。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/haofenshu",
     "indexable": true,
     "schemas": [
@@ -1857,7 +2044,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/haofenshu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/haofenshu",
         "name": "好分数适配 | AI 批改助手",
-        "description": "好分数阅卷使用指南：配置 AI 批改助手、核对满分和自动提交设置，使用普通、试改或无人模式完成批改，并处理答题卡图片识别问题。",
+        "description": "好分数使用指南：答题卡识别、分小题评分与提交设置。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1892,7 +2079,7 @@
   {
     "route": "/platforms/haofenshuyize",
     "title": "云阅卷(好分数)适配 | AI 批改助手",
-    "description": "AI批改助手云阅卷(好分数)适配器使用说明。支持haofenshuyize.com阅卷平台Vue 3 + Element Plus框架、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+    "description": "云阅卷(好分数)使用指南：答题卡识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/haofenshuyize",
     "indexable": true,
     "schemas": [
@@ -1906,7 +2093,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/haofenshuyize#page",
         "url": "https://aimarking.five-plus-one.com/platforms/haofenshuyize",
         "name": "云阅卷(好分数)适配 | AI 批改助手",
-        "description": "AI批改助手云阅卷(好分数)适配器使用说明。支持haofenshuyize.com阅卷平台Vue 3 + Element Plus框架、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+        "description": "云阅卷(好分数)使用指南：答题卡识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1941,7 +2128,7 @@
   {
     "route": "/platforms/haoyuejuan",
     "title": "阅小二适配 | AI 批改助手",
-    "description": "AI批改助手阅小二适配器使用说明。支持haoyuejuan.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分与回评模式识别。包含技术特点、操作流程和常见问题解答。",
+    "description": "阅小二使用指南：答题卡识别、分小题评分与回评状态核对。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/haoyuejuan",
     "indexable": true,
     "schemas": [
@@ -1955,7 +2142,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/haoyuejuan#page",
         "url": "https://aimarking.five-plus-one.com/platforms/haoyuejuan",
         "name": "阅小二适配 | AI 批改助手",
-        "description": "AI批改助手阅小二适配器使用说明。支持haoyuejuan.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分与回评模式识别。包含技术特点、操作流程和常见问题解答。",
+        "description": "阅小二使用指南：答题卡识别、分小题评分与回评状态核对。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -1989,8 +2176,8 @@
   },
   {
     "route": "/platforms/huahanyun",
-    "title": "云阅卷(华翰云)适配 | AI 批改助手",
-    "description": "AI批改助手云阅卷(华翰云)适配器使用说明。支持yj.lcedu.net.cn阅卷平台单题块单分框批改流、OBS 题块裁剪图取图、考生号强换卷信号。包含技术特点、操作流程和常见问题解答。",
+    "title": "云阅卷与温州绑定批阅使用说明 | AI 批改助手",
+    "description": "云阅卷（华翰云）与温州云阅卷使用指南：单题键盘给分、一键给分及绑定批阅，核对评分项与满分，确认保存后继续下一份。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/huahanyun",
     "indexable": true,
     "schemas": [
@@ -2003,8 +2190,8 @@
         "@type": "WebPage",
         "@id": "https://aimarking.five-plus-one.com/platforms/huahanyun#page",
         "url": "https://aimarking.five-plus-one.com/platforms/huahanyun",
-        "name": "云阅卷(华翰云)适配 | AI 批改助手",
-        "description": "AI批改助手云阅卷(华翰云)适配器使用说明。支持yj.lcedu.net.cn阅卷平台单题块单分框批改流、OBS 题块裁剪图取图、考生号强换卷信号。包含技术特点、操作流程和常见问题解答。",
+        "name": "云阅卷与温州绑定批阅使用说明 | AI 批改助手",
+        "description": "云阅卷（华翰云）与温州云阅卷使用指南：单题键盘给分、一键给分及绑定批阅，核对评分项与满分，确认保存后继续下一份。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2038,8 +2225,8 @@
   },
   {
     "route": "/platforms/huixue",
-    "title": "天喻慧学使用说明 | AI 批改助手",
-    "description": "在天喻慧学普通阅卷页面使用预览版 AI 批改助手，核对参考答案、评分点和有效分值，确认保存后继续下一份答卷。",
+    "title": "天喻慧学与惠州智慧教育阅卷使用说明 | AI 批改助手",
+    "description": "天喻慧学使用指南：普通阅卷的键盘给分与保存核对。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/huixue",
     "indexable": true,
     "schemas": [
@@ -2052,8 +2239,8 @@
         "@type": "WebPage",
         "@id": "https://aimarking.five-plus-one.com/platforms/huixue#page",
         "url": "https://aimarking.five-plus-one.com/platforms/huixue",
-        "name": "天喻慧学使用说明 | AI 批改助手",
-        "description": "在天喻慧学普通阅卷页面使用预览版 AI 批改助手，核对参考答案、评分点和有效分值，确认保存后继续下一份答卷。",
+        "name": "天喻慧学与惠州智慧教育阅卷使用说明 | AI 批改助手",
+        "description": "天喻慧学使用指南：普通阅卷的键盘给分与保存核对。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2088,7 +2275,7 @@
   {
     "route": "/platforms/huixuexing",
     "title": "慧学星适配 | AI 批改助手",
-    "description": "AI批改助手慧学星适配器使用说明。支持www.hxxai.com阅卷平台OSS图片托管、分步骤评分模式、满分/零分快捷按钮。包含技术特点、操作流程和常见问题解答。",
+    "description": "慧学星使用指南：答题卡识别与分步骤给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/huixuexing",
     "indexable": true,
     "schemas": [
@@ -2102,7 +2289,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/huixuexing#page",
         "url": "https://aimarking.five-plus-one.com/platforms/huixuexing",
         "name": "慧学星适配 | AI 批改助手",
-        "description": "AI批改助手慧学星适配器使用说明。支持www.hxxai.com阅卷平台OSS图片托管、分步骤评分模式、满分/零分快捷按钮。包含技术特点、操作流程和常见问题解答。",
+        "description": "慧学星使用指南：答题卡识别与分步骤给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2137,7 +2324,7 @@
   {
     "route": "/platforms/huiyuejuan",
     "title": "慧阅卷适配 | AI 批改助手",
-    "description": "AI批改助手慧阅卷适配器使用说明。支持web.17yuejuan.cn阅卷平台frameset/frame架构访问、点击式分数按钮评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+    "description": "慧阅卷使用指南：答题卡识别与点击给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/huiyuejuan",
     "indexable": true,
     "schemas": [
@@ -2151,7 +2338,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/huiyuejuan#page",
         "url": "https://aimarking.five-plus-one.com/platforms/huiyuejuan",
         "name": "慧阅卷适配 | AI 批改助手",
-        "description": "AI批改助手慧阅卷适配器使用说明。支持web.17yuejuan.cn阅卷平台frameset/frame架构访问、点击式分数按钮评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "description": "慧阅卷使用指南：答题卡识别与点击给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2186,7 +2373,7 @@
   {
     "route": "/platforms/",
     "title": "支持平台 | AI 批改助手",
-    "description": "查看 AI 批改助手稳定版支持的 44 个阅卷平台，按名称查找平台入口、使用指南、评分方式与操作要求。",
+    "description": "按名称查找 AI 批改助手支持的阅卷平台，查看平台入口、适用任务、安装渠道与操作指南。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/",
     "indexable": true,
     "schemas": [
@@ -2200,7 +2387,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/#page",
         "url": "https://aimarking.five-plus-one.com/platforms/",
         "name": "支持平台 | AI 批改助手",
-        "description": "查看 AI 批改助手稳定版支持的 44 个阅卷平台，按名称查找平台入口、使用指南、评分方式与操作要求。",
+        "description": "按名称查找 AI 批改助手支持的阅卷平台，查看平台入口、适用任务、安装渠道与操作指南。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2229,7 +2416,7 @@
   {
     "route": "/platforms/jingdouyun",
     "title": "精斗云(大数据精准教学) 适配 | AI 批改助手",
-    "description": "AI批改助手精斗云（大数据精准教学系统，exam.wxy100.com）适配器使用说明。支持 AngularJS 分数框填分、多图/合并图答题卡、自动提交开关接管与缓存参数剥离翻卷检测。包含技术特点、操作流程和常见问题。",
+    "description": "精斗云(大数据精准教学)使用指南：分数填写与平台自动提交设置。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/jingdouyun",
     "indexable": true,
     "schemas": [
@@ -2243,7 +2430,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/jingdouyun#page",
         "url": "https://aimarking.five-plus-one.com/platforms/jingdouyun",
         "name": "精斗云(大数据精准教学) 适配 | AI 批改助手",
-        "description": "AI批改助手精斗云（大数据精准教学系统，exam.wxy100.com）适配器使用说明。支持 AngularJS 分数框填分、多图/合并图答题卡、自动提交开关接管与缓存参数剥离翻卷检测。包含技术特点、操作流程和常见问题。",
+        "description": "精斗云(大数据精准教学)使用指南：分数填写与平台自动提交设置。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2278,7 +2465,7 @@
   {
     "route": "/platforms/jiukexing",
     "title": "九科星适配（考试阅卷 + 作业系统） | AI 批改助手",
-    "description": "AI批改助手九科星适配器使用说明，覆盖考试阅卷（marking.jkxjxw.com）与作业系统（jxp.jkxjxw.com）。OBS 图片裁剪、多小题输入框评分、API 拦截取题块图、自动提交防护。包含技术特点、操作流程和常见问题解答。",
+    "description": "九科星（考试阅卷 + 作业系统）使用指南：考试阅卷与按题批改作业。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/jiukexing",
     "indexable": true,
     "schemas": [
@@ -2292,7 +2479,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/jiukexing#page",
         "url": "https://aimarking.five-plus-one.com/platforms/jiukexing",
         "name": "九科星适配（考试阅卷 + 作业系统） | AI 批改助手",
-        "description": "AI批改助手九科星适配器使用说明，覆盖考试阅卷（marking.jkxjxw.com）与作业系统（jxp.jkxjxw.com）。OBS 图片裁剪、多小题输入框评分、API 拦截取题块图、自动提交防护。包含技术特点、操作流程和常见问题解答。",
+        "description": "九科星（考试阅卷 + 作业系统）使用指南：考试阅卷与按题批改作业。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2327,7 +2514,7 @@
   {
     "route": "/platforms/jiuwuyouping",
     "title": "九五优评适配 | AI 批改助手",
-    "description": "AI批改助手九五优评（timesphoenix.com）适配器使用说明。支持iframe阅卷界面取图、分给分点评分、提交限速自适应和打分确认弹窗自动确认。包含技术特点、操作流程和常见问题解答。",
+    "description": "九五优评使用指南：分给分点评分与提交确认。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping",
     "indexable": true,
     "schemas": [
@@ -2341,7 +2528,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping#page",
         "url": "https://aimarking.five-plus-one.com/platforms/jiuwuyouping",
         "name": "九五优评适配 | AI 批改助手",
-        "description": "AI批改助手九五优评（timesphoenix.com）适配器使用说明。支持iframe阅卷界面取图、分给分点评分、提交限速自适应和打分确认弹窗自动确认。包含技术特点、操作流程和常见问题解答。",
+        "description": "九五优评使用指南：分给分点评分与提交确认。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2376,7 +2563,7 @@
   {
     "route": "/platforms/jzsmartedu",
     "title": "焦作精准教学阅卷使用说明 | AI 批改助手",
-    "description": "从焦作智慧教育公共平台进入精准教学，在单份单评的评分板或键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+    "description": "焦作精准教学使用指南：普通单评与评分板或键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
     "indexable": true,
     "schemas": [
@@ -2390,7 +2577,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/jzsmartedu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/jzsmartedu",
         "name": "焦作精准教学阅卷使用说明 | AI 批改助手",
-        "description": "从焦作智慧教育公共平台进入精准教学，在单份单评的评分板或键盘打分页使用 AI 批改助手，核对题目满分与给分档位后确认提交。",
+        "description": "焦作精准教学使用指南：普通单评与评分板或键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2425,7 +2612,7 @@
   {
     "route": "/platforms/keewing",
     "title": "科耘阅卷适配 | AI 批改助手",
-    "description": "AI批改助手科耘阅卷适配器使用说明。支持kaoshi.keewing.com阅卷平台SVG图片渲染、Element UI组件、延迟填分模式。包含技术特点、操作流程和常见问题解答。",
+    "description": "科耘阅卷使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/keewing",
     "indexable": true,
     "schemas": [
@@ -2439,7 +2626,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/keewing#page",
         "url": "https://aimarking.five-plus-one.com/platforms/keewing",
         "name": "科耘阅卷适配 | AI 批改助手",
-        "description": "AI批改助手科耘阅卷适配器使用说明。支持kaoshi.keewing.com阅卷平台SVG图片渲染、Element UI组件、延迟填分模式。包含技术特点、操作流程和常见问题解答。",
+        "description": "科耘阅卷使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2474,7 +2661,7 @@
   {
     "route": "/platforms/kuyuu",
     "title": "酷鱼网适配 | AI 批改助手",
-    "description": "AI批改助手酷鱼网适配器使用说明。支持www.kuyuu.cn阅卷平台Canvas答题卡渲染（tainted canvas安全取图）、键/鼠/批三种打分模式、scores属性满分提取。包含技术特点、操作流程和常见问题解答。",
+    "description": "酷鱼网使用指南：答题卡识别、键盘给分与分数确认。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/kuyuu",
     "indexable": true,
     "schemas": [
@@ -2488,7 +2675,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/kuyuu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/kuyuu",
         "name": "酷鱼网适配 | AI 批改助手",
-        "description": "AI批改助手酷鱼网适配器使用说明。支持www.kuyuu.cn阅卷平台Canvas答题卡渲染（tainted canvas安全取图）、键/鼠/批三种打分模式、scores属性满分提取。包含技术特点、操作流程和常见问题解答。",
+        "description": "酷鱼网使用指南：答题卡识别、键盘给分与分数确认。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2523,7 +2710,7 @@
   {
     "route": "/platforms/kzedu",
     "title": "云阅卷(开州)适配 | AI 批改助手",
-    "description": "AI批改助手云阅卷(开州)适配器使用说明。支持 yyj.kzedu.cn 阅卷平台（Vue 3 + Element Plus），scoreitem 点击给分、「自动给分」勾选状态自适应提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+    "description": "云阅卷(开州)使用指南：点击给分与自动给分设置。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/kzedu",
     "indexable": true,
     "schemas": [
@@ -2537,7 +2724,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/kzedu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/kzedu",
         "name": "云阅卷(开州)适配 | AI 批改助手",
-        "description": "AI批改助手云阅卷(开州)适配器使用说明。支持 yyj.kzedu.cn 阅卷平台（Vue 3 + Element Plus），scoreitem 点击给分、「自动给分」勾选状态自适应提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+        "description": "云阅卷(开州)使用指南：点击给分与自动给分设置。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2572,7 +2759,7 @@
   {
     "route": "/platforms/leascent",
     "title": "丽升阅卷使用说明 | AI 批改助手",
-    "description": "在铜山高二选择考的丽升阅卷平台中使用 AI 批改助手，核对英语填空与写作题的满分和给分步长，通过打分板填写并确认保存。",
+    "description": "丽升阅卷使用指南，提供湖北和铜山阅卷入口、正评打分板设置、数学与英语题目的给分示例。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/leascent",
     "indexable": true,
     "schemas": [
@@ -2586,7 +2773,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/leascent#page",
         "url": "https://aimarking.five-plus-one.com/platforms/leascent",
         "name": "丽升阅卷使用说明 | AI 批改助手",
-        "description": "在铜山高二选择考的丽升阅卷平台中使用 AI 批改助手，核对英语填空与写作题的满分和给分步长，通过打分板填写并确认保存。",
+        "description": "丽升阅卷使用指南，提供湖北和铜山阅卷入口、正评打分板设置、数学与英语题目的给分示例。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2621,7 +2808,7 @@
   {
     "route": "/platforms/lehua",
     "title": "乐华阅卷适配 | AI 批改助手",
-    "description": "AI批改助手乐华阅卷适配器使用说明。支持main.lhsvr.cn阅卷平台Canvas图片渲染、点击式评分按钮、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+    "description": "乐华阅卷使用指南：答题卡识别与点击给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/lehua",
     "indexable": true,
     "schemas": [
@@ -2635,7 +2822,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/lehua#page",
         "url": "https://aimarking.five-plus-one.com/platforms/lehua",
         "name": "乐华阅卷适配 | AI 批改助手",
-        "description": "AI批改助手乐华阅卷适配器使用说明。支持main.lhsvr.cn阅卷平台Canvas图片渲染、点击式评分按钮、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "description": "乐华阅卷使用指南：答题卡识别与点击给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2670,7 +2857,7 @@
   {
     "route": "/platforms/nhcisc",
     "title": "南昊AI教学提分平台适配 | AI 批改助手",
-    "description": "AI批改助手南昊AI教学提分平台（nhcisc.com）适配器使用说明。支持showimage答题图取图、满分提取、clearNoNum分数归一化和自动换卷检测。包含技术特点、操作流程和常见问题解答。",
+    "description": "南昊AI教学提分平台使用指南：答题卡识别、满分核对与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/nhcisc",
     "indexable": true,
     "schemas": [
@@ -2684,7 +2871,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/nhcisc#page",
         "url": "https://aimarking.five-plus-one.com/platforms/nhcisc",
         "name": "南昊AI教学提分平台适配 | AI 批改助手",
-        "description": "AI批改助手南昊AI教学提分平台（nhcisc.com）适配器使用说明。支持showimage答题图取图、满分提取、clearNoNum分数归一化和自动换卷检测。包含技术特点、操作流程和常见问题解答。",
+        "description": "南昊AI教学提分平台使用指南：答题卡识别、满分核对与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2719,7 +2906,7 @@
   {
     "route": "/platforms/qiguang",
     "title": "启光优测阅卷使用说明 | AI 批改助手",
-    "description": "在不同学校地址的启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+    "description": "启光优测使用指南：单份答卷的键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/qiguang",
     "indexable": true,
     "schemas": [
@@ -2733,7 +2920,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/qiguang#page",
         "url": "https://aimarking.five-plus-one.com/platforms/qiguang",
         "name": "启光优测阅卷使用说明 | AI 批改助手",
-        "description": "在不同学校地址的启光优测单份键盘阅卷页面使用 AI 批改助手，设置满分和给分步长，核对作答与评分后确认提交。",
+        "description": "启光优测使用指南：单份答卷的键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2768,7 +2955,7 @@
   {
     "route": "/platforms/qitian",
     "title": "七天网络适配 | AI 批改助手",
-    "description": "AI批改助手七天网络适配器使用说明。支持7net.cc/qt7.net/qt7.cn旧版和yj5.7net.cc新UI两个阅卷平台，自动识别答题卡图片、AI智能评分、自动填分提交，包含Canvas渲染和API拦截技术方案。",
+    "description": "七天网络使用指南：新旧阅卷页面与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/qitian",
     "indexable": true,
     "schemas": [
@@ -2782,7 +2969,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/qitian#page",
         "url": "https://aimarking.five-plus-one.com/platforms/qitian",
         "name": "七天网络适配 | AI 批改助手",
-        "description": "AI批改助手七天网络适配器使用说明。支持7net.cc/qt7.net/qt7.cn旧版和yj5.7net.cc新UI两个阅卷平台，自动识别答题卡图片、AI智能评分、自动填分提交，包含Canvas渲染和API拦截技术方案。",
+        "description": "七天网络使用指南：新旧阅卷页面与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2817,7 +3004,7 @@
   {
     "route": "/platforms/ruiya",
     "title": "睿芽考试服务云平台 适配 | AI 批改助手",
-    "description": "AI批改助手睿芽考试服务云平台（ruiya.onlyets.com）适配器使用说明。支持 OSS 题块裁剪图取图、多小题键盘打分、密号/图片/data-stu 三重翻卷检测与回评面板判定。包含技术特点、操作流程和常见问题。",
+    "description": "睿芽考试服务云平台使用指南：题块识别与多小题键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/ruiya",
     "indexable": true,
     "schemas": [
@@ -2831,7 +3018,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/ruiya#page",
         "url": "https://aimarking.five-plus-one.com/platforms/ruiya",
         "name": "睿芽考试服务云平台 适配 | AI 批改助手",
-        "description": "AI批改助手睿芽考试服务云平台（ruiya.onlyets.com）适配器使用说明。支持 OSS 题块裁剪图取图、多小题键盘打分、密号/图片/data-stu 三重翻卷检测与回评面板判定。包含技术特点、操作流程和常见问题。",
+        "description": "睿芽考试服务云平台使用指南：题块识别与多小题键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2866,7 +3053,7 @@
   {
     "route": "/platforms/runjian",
     "title": "润建学情适配 | AI 批改助手",
-    "description": "AI批改助手润建学情适配器使用说明。支持aisusheng.runjian.com阅卷平台CSS背景图渲染、点击式评分按钮、API拦截获取答题卡图片。包含技术特点、操作流程和常见问题解答。",
+    "description": "润建学情使用指南：答题卡识别、点击给分与多题块批改。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/runjian",
     "indexable": true,
     "schemas": [
@@ -2880,7 +3067,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/runjian#page",
         "url": "https://aimarking.five-plus-one.com/platforms/runjian",
         "name": "润建学情适配 | AI 批改助手",
-        "description": "AI批改助手润建学情适配器使用说明。支持aisusheng.runjian.com阅卷平台CSS背景图渲染、点击式评分按钮、API拦截获取答题卡图片。包含技术特点、操作流程和常见问题解答。",
+        "description": "润建学情使用指南：答题卡识别、点击给分与多题块批改。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2915,7 +3102,7 @@
   {
     "route": "/platforms/sipd",
     "title": "上进教育服务云平台适配 | AI 批改助手",
-    "description": "AI批改助手上进教育服务云平台（智慧上进，sipd.cn）适配器使用说明。支持OSS裁剪答题卡、键盘打分、0分确认弹窗自动处理和方案绑定。包含技术特点、操作流程和常见问题解答。",
+    "description": "上进教育服务云平台（智慧上进）使用指南：答题卡识别、填分与零分确认。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/sipd",
     "indexable": true,
     "schemas": [
@@ -2929,7 +3116,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/sipd#page",
         "url": "https://aimarking.five-plus-one.com/platforms/sipd",
         "name": "上进教育服务云平台适配 | AI 批改助手",
-        "description": "AI批改助手上进教育服务云平台（智慧上进，sipd.cn）适配器使用说明。支持OSS裁剪答题卡、键盘打分、0分确认弹窗自动处理和方案绑定。包含技术特点、操作流程和常见问题解答。",
+        "description": "上进教育服务云平台（智慧上进）使用指南：答题卡识别、填分与零分确认。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -2962,9 +3149,58 @@
     ]
   },
   {
+    "route": "/platforms/taowei",
+    "title": "韬普教育云阅卷使用说明 | AI 批改助手",
+    "description": "韬普教育云阅卷使用指南：选择阅卷入口、核对题块与给分点，配置参考答案和评分标准，先试改再开始辅助批改。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/taowei",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/taowei#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/taowei",
+        "name": "韬普教育云阅卷使用说明 | AI 批改助手",
+        "description": "韬普教育云阅卷使用指南：选择阅卷入口、核对题块与给分点，配置参考答案和评分标准，先试改再开始辅助批改。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "韬普教育云阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/taowei"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/weicom",
     "title": "威科姆（悦卷通）适配 | AI 批改助手",
-    "description": "AI批改助手威科姆阅卷（悦卷通）适配器使用说明。支持wyna.onlyets.com阅卷平台多小题评分、OSS图片、键盘/鼠标/步骤三种打分模式。包含技术特点、操作流程和常见问题解答。",
+    "description": "威科姆（悦卷通）使用指南：多小题评分与给分方式选择。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/weicom",
     "indexable": true,
     "schemas": [
@@ -2978,7 +3214,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/weicom#page",
         "url": "https://aimarking.five-plus-one.com/platforms/weicom",
         "name": "威科姆（悦卷通）适配 | AI 批改助手",
-        "description": "AI批改助手威科姆阅卷（悦卷通）适配器使用说明。支持wyna.onlyets.com阅卷平台多小题评分、OSS图片、键盘/鼠标/步骤三种打分模式。包含技术特点、操作流程和常见问题解答。",
+        "description": "威科姆（悦卷通）使用指南：多小题评分与给分方式选择。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3011,9 +3247,58 @@
     ]
   },
   {
+    "route": "/platforms/wentongyun",
+    "title": "文通云阅卷使用说明 | AI 批改助手",
+    "description": "在文通云单题一键给分页使用 AI 批改助手，核对答案、满分与给分档位，确认提交结果后继续阅卷。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/wentongyun",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/wentongyun#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/wentongyun",
+        "name": "文通云阅卷使用说明 | AI 批改助手",
+        "description": "在文通云单题一键给分页使用 AI 批改助手，核对答案、满分与给分档位，确认提交结果后继续阅卷。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "文通云",
+            "item": "https://aimarking.five-plus-one.com/platforms/wentongyun"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/wuyue",
     "title": "五岳阅卷适配 | AI 批改助手",
-    "description": "AI批改助手五岳阅卷适配器使用说明。支持wylkyj.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+    "description": "五岳阅卷使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/wuyue",
     "indexable": true,
     "schemas": [
@@ -3027,7 +3312,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/wuyue#page",
         "url": "https://aimarking.five-plus-one.com/platforms/wuyue",
         "name": "五岳阅卷适配 | AI 批改助手",
-        "description": "AI批改助手五岳阅卷适配器使用说明。支持wylkyj.com阅卷平台答题卡识别、Vue3响应式输入框分数填充、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+        "description": "五岳阅卷使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3062,7 +3347,7 @@
   {
     "route": "/platforms/xfkj",
     "title": "小帆智能阅卷 适配 | AI 批改助手",
-    "description": "AI批改助手小帆智能阅卷（xfkj.cc）适配器使用说明。支持阿里云 OSS 裁剪答题卡多页取图、多小题满分提取、提交后翻卷检测与回评模式识别。包含技术特点、操作流程和常见问题。",
+    "description": "小帆智能阅卷使用指南：多页答题卡与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xfkj",
     "indexable": true,
     "schemas": [
@@ -3076,7 +3361,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xfkj#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xfkj",
         "name": "小帆智能阅卷 适配 | AI 批改助手",
-        "description": "AI批改助手小帆智能阅卷（xfkj.cc）适配器使用说明。支持阿里云 OSS 裁剪答题卡多页取图、多小题满分提取、提交后翻卷检测与回评模式识别。包含技术特点、操作流程和常见问题。",
+        "description": "小帆智能阅卷使用指南：多页答题卡与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3109,9 +3394,156 @@
     ]
   },
   {
+    "route": "/platforms/xiangshangxue",
+    "title": "享尚学 | AI 批改助手",
+    "description": "享尚学阅卷使用指南：正常单评、双评及多个评分点，核对题目满分与评分标准，确认保存后继续下一份。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/xiangshangxue",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xiangshangxue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xiangshangxue",
+        "name": "享尚学 | AI 批改助手",
+        "description": "享尚学阅卷使用指南：正常单评、双评及多个评分点，核对题目满分与评分标准，确认保存后继续下一份。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "享尚学",
+            "item": "https://aimarking.five-plus-one.com/platforms/xiangshangxue"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/xiaoleyouyue",
+    "title": "小乐优阅 | AI 批改助手",
+    "description": "小乐优阅阅卷使用指南：初评题块与多个评分项，核对各项满分和评分标准，确认保存后继续下一份。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/xiaoleyouyue",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xiaoleyouyue#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xiaoleyouyue",
+        "name": "小乐优阅 | AI 批改助手",
+        "description": "小乐优阅阅卷使用指南：初评题块与多个评分项，核对各项满分和评分标准，确认保存后继续下一份。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "小乐优阅",
+            "item": "https://aimarking.five-plus-one.com/platforms/xiaoleyouyue"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/platforms/xiaoxianai",
+    "title": "小闲 AI 网上阅卷使用说明 | AI 批改助手",
+    "description": "在小闲 AI 网上阅卷批改普通考试和联考的单题答卷，配置键盘给分、核对分值并试改。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/xiaoxianai",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xiaoxianai#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xiaoxianai",
+        "name": "小闲 AI 网上阅卷使用说明 | AI 批改助手",
+        "description": "在小闲 AI 网上阅卷批改普通考试和联考的单题答卷，配置键盘给分、核对分值并试改。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "小闲 AI 网上阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/xiaoxianai"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/xinjiaoyu",
     "title": "新教育适配 | AI 批改助手",
-    "description": "AI批改助手新教育适配器使用说明。支持xinjiaoyu.com阅卷平台考试系统和作业系统两种批改模式，通过API拦截获取答题卡图片，AI智能评分自动提交。",
+    "description": "新教育使用指南：考试阅卷与作业批改。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu",
     "indexable": true,
     "schemas": [
@@ -3125,7 +3557,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xinjiaoyu",
         "name": "新教育适配 | AI 批改助手",
-        "description": "AI批改助手新教育适配器使用说明。支持xinjiaoyu.com阅卷平台考试系统和作业系统两种批改模式，通过API拦截获取答题卡图片，AI智能评分自动提交。",
+        "description": "新教育使用指南：考试阅卷与作业批改。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3160,7 +3592,7 @@
   {
     "route": "/platforms/xinkao-2",
     "title": "鑫考(内网版)适配 | AI 批改助手",
-    "description": "AI批改助手鑫考内网版适配器使用说明。支持内网裸 IP 部署的 biluo/display.jsp 鑫考网上阅卷系统，fen 属性满分提取、inputkey 键盘确认提交、URL query 任务标识，v1.21.12.4 新增支持。",
+    "description": "鑫考(内网版)使用指南：内网阅卷、分小题评分与键盘确认提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xinkao-2",
     "indexable": true,
     "schemas": [
@@ -3174,7 +3606,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xinkao-2#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xinkao-2",
         "name": "鑫考(内网版)适配 | AI 批改助手",
-        "description": "AI批改助手鑫考内网版适配器使用说明。支持内网裸 IP 部署的 biluo/display.jsp 鑫考网上阅卷系统，fen 属性满分提取、inputkey 键盘确认提交、URL query 任务标识，v1.21.12.4 新增支持。",
+        "description": "鑫考(内网版)使用指南：内网阅卷、分小题评分与键盘确认提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3209,7 +3641,7 @@
   {
     "route": "/platforms/xinkao-campus",
     "title": "鑫考校园适配 | AI 批改助手",
-    "description": "AI批改助手鑫考校园适配器使用说明。支持内网裸 IP:端口部署的 Marking/NormalReadPaper 鑫考校园6.0系统，data-score 属性满分提取、inputkey 键盘确认提交、subId+teaCode 任务标识和 token 换卷检测，v1.21.16 新增支持。",
+    "description": "鑫考校园使用指南：内网阅卷、分小题评分与键盘确认提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xinkao-campus",
     "indexable": true,
     "schemas": [
@@ -3223,7 +3655,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xinkao-campus#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xinkao-campus",
         "name": "鑫考校园适配 | AI 批改助手",
-        "description": "AI批改助手鑫考校园适配器使用说明。支持内网裸 IP:端口部署的 Marking/NormalReadPaper 鑫考校园6.0系统，data-score 属性满分提取、inputkey 键盘确认提交、subId+teaCode 任务标识和 token 换卷检测，v1.21.16 新增支持。",
+        "description": "鑫考校园使用指南：内网阅卷、分小题评分与键盘确认提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3258,7 +3690,7 @@
   {
     "route": "/platforms/xinkao",
     "title": "鑫考网上阅卷适配 | AI 批改助手",
-    "description": "AI批改助手鑫考适配器使用说明。支持鑫考网上阅卷系统答题卡识别、AI智能评分、自动填分提交。通过DOM特征检测平台，兼容动态IP部署。包含技术特点、操作流程和常见问题解答。",
+    "description": "鑫考使用指南：阅卷页面识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xinkao",
     "indexable": true,
     "schemas": [
@@ -3272,7 +3704,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xinkao#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xinkao",
         "name": "鑫考网上阅卷适配 | AI 批改助手",
-        "description": "AI批改助手鑫考适配器使用说明。支持鑫考网上阅卷系统答题卡识别、AI智能评分、自动填分提交。通过DOM特征检测平台，兼容动态IP部署。包含技术特点、操作流程和常见问题解答。",
+        "description": "鑫考使用指南：阅卷页面识别、填分与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3305,9 +3737,58 @@
     ]
   },
   {
+    "route": "/platforms/xkw-cloud",
+    "title": "学科网云阅卷使用说明 | AI 批改助手",
+    "description": "在学科网云阅卷的普通阅卷页面使用 AI 批改助手。了解一键给分、计算器给分、数学题组评分和提交后的答卷核对。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/xkw-cloud",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/xkw-cloud#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/xkw-cloud",
+        "name": "学科网云阅卷使用说明 | AI 批改助手",
+        "description": "在学科网云阅卷的普通阅卷页面使用 AI 批改助手。了解一键给分、计算器给分、数学题组评分和提交后的答卷核对。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "学科网云阅卷",
+            "item": "https://aimarking.five-plus-one.com/platforms/xkw-cloud"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/xkw",
     "title": "学科网 e卷通 | AI 批改助手",
-    "description": "在学科网 e卷通阅卷任务中使用 AI 批改助手，核对当前作答图、各小题满分与给分结果，确认后提交分数。",
+    "description": "学科网 e卷通使用指南：按题批改与多小题给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xkw",
     "indexable": true,
     "schemas": [
@@ -3321,7 +3802,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xkw#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xkw",
         "name": "学科网 e卷通 | AI 批改助手",
-        "description": "在学科网 e卷通阅卷任务中使用 AI 批改助手，核对当前作答图、各小题满分与给分结果，确认后提交分数。",
+        "description": "学科网 e卷通使用指南：按题批改与多小题给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3356,7 +3837,7 @@
   {
     "route": "/platforms/xueba54",
     "title": "54学霸阅卷平台适配 | AI 批改助手",
-    "description": "AI批改助手54学霸适配器使用说明。支持54xueba.cn阅卷平台Canvas/base64图片渲染、多小题输入框评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+    "description": "54学霸使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/xueba54",
     "indexable": true,
     "schemas": [
@@ -3370,7 +3851,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/xueba54#page",
         "url": "https://aimarking.five-plus-one.com/platforms/xueba54",
         "name": "54学霸阅卷平台适配 | AI 批改助手",
-        "description": "AI批改助手54学霸适配器使用说明。支持54xueba.cn阅卷平台Canvas/base64图片渲染、多小题输入框评分、自动识别答题卡AI评分提交。包含技术特点、操作流程和常见问题解答。",
+        "description": "54学霸使用指南：答题卡识别与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3403,9 +3884,58 @@
     ]
   },
   {
+    "route": "/platforms/youfen",
+    "title": "优分优学 | AI 批改助手",
+    "description": "优分优学阅卷使用指南：普通单评的键盘给分，核对本题合法分值与评分标准，试改确认后保存成绩。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/youfen",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/youfen#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/youfen",
+        "name": "优分优学 | AI 批改助手",
+        "description": "优分优学阅卷使用指南：普通单评的键盘给分，核对本题合法分值与评分标准，试改确认后保存成绩。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "优分优学",
+            "item": "https://aimarking.five-plus-one.com/platforms/youfen"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/yuandingbang",
     "title": "园丁邦云阅卷使用说明 | AI 批改助手",
-    "description": "在园丁邦云阅卷的普通单评任务中使用 AI 批改助手，选择键盘给分，核对得分点、满分及给分步长，试改确认后开始连续批改。",
+    "description": "园丁邦云阅卷使用指南：普通单评、得分点核对与键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/yuandingbang",
     "indexable": true,
     "schemas": [
@@ -3419,7 +3949,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/yuandingbang#page",
         "url": "https://aimarking.five-plus-one.com/platforms/yuandingbang",
         "name": "园丁邦云阅卷使用说明 | AI 批改助手",
-        "description": "在园丁邦云阅卷的普通单评任务中使用 AI 批改助手，选择键盘给分，核对得分点、满分及给分步长，试改确认后开始连续批改。",
+        "description": "园丁邦云阅卷使用指南：普通单评、得分点核对与键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3454,7 +3984,7 @@
   {
     "route": "/platforms/yuejiaoxiangyun",
     "title": "粤教翔云智慧测评适配 | AI 批改助手",
-    "description": "AI批改助手粤教翔云智慧测评适配器使用说明。支持rrtcp.gdedu.gov.cn阅卷平台题组批改模式、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+    "description": "粤教翔云智慧测评使用指南：题组批改与逐题给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun",
     "indexable": true,
     "schemas": [
@@ -3468,7 +3998,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun#page",
         "url": "https://aimarking.five-plus-one.com/platforms/yuejiaoxiangyun",
         "name": "粤教翔云智慧测评适配 | AI 批改助手",
-        "description": "AI批改助手粤教翔云智慧测评适配器使用说明。支持rrtcp.gdedu.gov.cn阅卷平台题组批改模式、答题卡识别和自动评分。包含技术特点、操作流程和常见问题解答。",
+        "description": "粤教翔云智慧测评使用指南：题组批改与逐题给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3503,7 +4033,7 @@
   {
     "route": "/platforms/yuejuan",
     "title": "正确阅卷适配 | AI 批改助手",
-    "description": "AI批改助手正确阅卷适配器使用说明。支持 www.yuejuan.com 阅卷平台（jQuery + layui），打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+    "description": "正确阅卷使用指南：打分板给分、键盘输入与提交。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/yuejuan",
     "indexable": true,
     "schemas": [
@@ -3517,7 +4047,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/yuejuan#page",
         "url": "https://aimarking.five-plus-one.com/platforms/yuejuan",
         "name": "正确阅卷适配 | AI 批改助手",
-        "description": "AI批改助手正确阅卷适配器使用说明。支持 www.yuejuan.com 阅卷平台（jQuery + layui），打分板点击式 + 小键盘输入框混合评分、「提交分数」按钮提交、图片路径变化翻卷检测。包含技术特点、操作流程和常见问题解答。",
+        "description": "正确阅卷使用指南：打分板给分、键盘输入与提交。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3552,7 +4082,7 @@
   {
     "route": "/platforms/yuejuan51",
     "title": "恒佳考试服务云平台 适配 | AI 批改助手",
-    "description": "AI批改助手恒佳考试服务云平台（yuejuan51.com）适配器使用说明。与睿芽同构（OnlyETS 租户），支持 OSS 题块裁剪图、多小题键盘打分、三重翻卷检测与回评面板判定。",
+    "description": "恒佳考试服务云平台使用指南：学校阅卷入口与多小题键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/yuejuan51",
     "indexable": true,
     "schemas": [
@@ -3566,7 +4096,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/yuejuan51#page",
         "url": "https://aimarking.five-plus-one.com/platforms/yuejuan51",
         "name": "恒佳考试服务云平台 适配 | AI 批改助手",
-        "description": "AI批改助手恒佳考试服务云平台（yuejuan51.com）适配器使用说明。与睿芽同构（OnlyETS 租户），支持 OSS 题块裁剪图、多小题键盘打分、三重翻卷检测与回评面板判定。",
+        "description": "恒佳考试服务云平台使用指南：学校阅卷入口与多小题键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3599,9 +4129,58 @@
     ]
   },
   {
+    "route": "/platforms/yuejuantong",
+    "title": "悦卷通使用指南 | AI 批改助手",
+    "description": "在悦卷通按题批改，选择键盘打分，核对各小题分数与提交结果。",
+    "canonical": "https://aimarking.five-plus-one.com/platforms/yuejuantong",
+    "indexable": true,
+    "schemas": [
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "schemaData": [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://aimarking.five-plus-one.com/platforms/yuejuantong#page",
+        "url": "https://aimarking.five-plus-one.com/platforms/yuejuantong",
+        "name": "悦卷通使用指南 | AI 批改助手",
+        "description": "在悦卷通按题批改，选择键盘打分，核对各小题分数与提交结果。",
+        "inLanguage": "zh-CN",
+        "isPartOf": {
+          "@id": "https://aimarking.five-plus-one.com/#website"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://aimarking.five-plus-one.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "支持平台",
+            "item": "https://aimarking.five-plus-one.com/platforms/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "悦卷通",
+            "item": "https://aimarking.five-plus-one.com/platforms/yuejuantong"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "route": "/platforms/yunyuejuan",
     "title": "云阅卷适配 | AI 批改助手",
-    "description": "AI批改助手云阅卷适配器使用说明。支持内网部署的云阅卷平台答题卡识别、AI智能评分、自动填分提交、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+    "description": "云阅卷使用指南：内网阅卷与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/yunyuejuan",
     "indexable": true,
     "schemas": [
@@ -3615,7 +4194,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/yunyuejuan#page",
         "url": "https://aimarking.five-plus-one.com/platforms/yunyuejuan",
         "name": "云阅卷适配 | AI 批改助手",
-        "description": "AI批改助手云阅卷适配器使用说明。支持内网部署的云阅卷平台答题卡识别、AI智能评分、自动填分提交、分小题评分功能。包含技术特点、操作流程和常见问题解答。",
+        "description": "云阅卷使用指南：内网阅卷与分小题评分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3650,7 +4229,7 @@
   {
     "route": "/platforms/zhenxue",
     "title": "诊学网统考阅卷使用说明 | AI 批改助手",
-    "description": "在诊学网统考单份键盘阅卷页面使用 AI 批改助手，核对满分与给分档位，查看评分后确认提交。",
+    "description": "诊学网使用指南：统考阅卷与单份键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/zhenxue",
     "indexable": true,
     "schemas": [
@@ -3664,7 +4243,7 @@
         "@id": "https://aimarking.five-plus-one.com/platforms/zhenxue#page",
         "url": "https://aimarking.five-plus-one.com/platforms/zhenxue",
         "name": "诊学网统考阅卷使用说明 | AI 批改助手",
-        "description": "在诊学网统考单份键盘阅卷页面使用 AI 批改助手，核对满分与给分档位，查看评分后确认提交。",
+        "description": "诊学网使用指南：统考阅卷与单份键盘给分。查看平台入口、批改设置、操作要求与常见问题。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
@@ -3698,8 +4277,8 @@
   },
   {
     "route": "/platforms/zhixue",
-    "title": "智学网适配 | AI 批改助手",
-    "description": "AI批改助手智学网适配器详细说明。支持zhixue.com阅卷页面自动识别答题卡、AI智能评分、自动填分提交、分小题评分、图片防盗链绕过。包含页面检测、操作流程和常见问题解答。",
+    "title": "智学网考试阅卷与作业批改 | AI 批改助手",
+    "description": "在智学网批改考试答卷和网页版作业，设置考试同题续批，读取作业整题满分与给分步长，先试改再提交。",
     "canonical": "https://aimarking.five-plus-one.com/platforms/zhixue",
     "indexable": true,
     "schemas": [
@@ -3712,8 +4291,8 @@
         "@type": "WebPage",
         "@id": "https://aimarking.five-plus-one.com/platforms/zhixue#page",
         "url": "https://aimarking.five-plus-one.com/platforms/zhixue",
-        "name": "智学网适配 | AI 批改助手",
-        "description": "AI批改助手智学网适配器详细说明。支持zhixue.com阅卷页面自动识别答题卡、AI智能评分、自动填分提交、分小题评分、图片防盗链绕过。包含页面检测、操作流程和常见问题解答。",
+        "name": "智学网考试阅卷与作业批改 | AI 批改助手",
+        "description": "在智学网批改考试答卷和网页版作业，设置考试同题续批，读取作业整题满分与给分步长，先试改再提交。",
         "inLanguage": "zh-CN",
         "isPartOf": {
           "@id": "https://aimarking.five-plus-one.com/#website"
