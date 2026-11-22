@@ -302,6 +302,7 @@ export default defineConfig({
             { text: '学科网云阅卷', link: '/platforms/xkw-cloud' },
             { text: '爱多分', link: '/platforms/eiduo' },
             { text: '百分智考试服务', link: '/platforms/bfzks' },
+            { text: '教学质量监测管理系统', link: '/platforms/dcesa' },
             { text: '启光优测', link: '/platforms/qiguang' },
             { text: '诊学网', link: '/platforms/zhenxue' },
             { text: '焦作精准教学', link: '/platforms/jzsmartedu' },
